@@ -1,5 +1,5 @@
 TestId,Stage,Check,Expected,Observed,Result,Evidence
-T01,01,Required services,Selected pilot can use enabled workloads,Exchange validated separately in T03; other workload functional checks pending,NOT_RUN,tests/day-01.md
+T01,01,Required services,Selected pilot can use enabled workloads,Exchange round trip; OneDrive and SharePoint contents retained after reopen; Teams message retained after refresh,PASS,tests/day-01.md
 T02,01,Ordinary-user administrative attempt,The intended administrative operation is denied,Anna receives an explicit Admin Center permission denial,PASS,evidence/day-01/04-pilot-admin-center-denied.png
 T03,02,Licensed pilot service access,Selected workload is usable after provisioning,Executed early in Stage 01: Anna sends mail to external Gmail and receives its reply,PASS,tests/day-01.md
 T04,02,Missing entitlement recovery,Empty test account recovers service access after the correct entitlement is assigned,Not recorded,NOT_RUN,None
@@ -14,7 +14,7 @@ T12,05,Scoped training rule,Marked message to the selected recipient is rejected
 T13,05,Mail-flow recovery,Delivery succeeds after disabling the training rule and allowing for propagation,Not recorded,NOT_RUN,None
 T14,06,Client identity and activation,Correct licensed identity is active in the recorded client,Not recorded,NOT_RUN,None
 T15,06,Browser and desktop comparison,Observed differences support a specific account or client diagnosis,Not recorded,NOT_RUN,None
-T16,07,Standard-channel files,Team member accesses the expected parent-site folder,Not recorded,NOT_RUN,None
+T16,07,Standard-channel files,Team member accesses the expected parent-site folder,Executed early in Stage 01: Anna accesses Baltic Finance Lab Documents > General through Teams and creates/reopens the test document,PASS,tests/day-01.md
 T17,07,Private-channel boundary,Authorized channel member succeeds and excluded team member is denied,Not recorded,NOT_RUN,None
 T18,08,SharePoint reader,Reader opens the document but cannot edit it,Not recorded,NOT_RUN,None
 T19,08,SharePoint member,Member can make and save the intended change,Not recorded,NOT_RUN,None

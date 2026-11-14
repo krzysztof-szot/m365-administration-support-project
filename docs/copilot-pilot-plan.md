@@ -2,7 +2,7 @@
 
 Status: **PLANNED — license assignment captured; functional Copilot use NOT_RUN**.
 
-The active bundle provides one Copilot seat. Anna is the fixed pilot. Additional ordinary Business Premium seats do not create additional Copilot seats. The visible Summary by Copilot button in Outlook is not evidence of a successful generated result.
+The active bundle provides one Copilot seat. Anna is the fixed pilot. Additional ordinary Business Premium seats do not create additional Copilot seats. Visible Copilot controls and Word summary panels in Day 01 are interface observations. No deliberate pilot exercise, source-checked output or permission-sensitive retrieval test has been recorded. The completed Word web tests verify document persistence.
 
 ## Three planned sessions within the existing roadmap
 

@@ -1,6 +1,6 @@
 # Planned lab architecture
 
-Status: target design with Stage 01 partially implemented. Anna's license/mail access and the one-member SG-M365-MFA-Pilot group are captured; other collaboration objects and the remaining two pilots are still planned. The diagram is conceptual and does not establish deployment of every node.
+Status: **Stage 01 COMPLETE; the full diagram remains a target design.** Anna's browser workloads and the one-member MFA pilot are verified. The existing Baltic Finance Lab team/site was used for baseline access; it is distinct from the planned Finance team below. Piotr, Marek, the private channel, Helpdesk mailbox and independent knowledge site remain planned. The diagram does not establish deployment of every node.
 
 ```mermaid
 flowchart TB
@@ -23,6 +23,12 @@ flowchart TB
 This is a conceptual relationship diagram, not a network/protocol trace. The private-channel site has its own channel membership boundary; membership in the parent team alone does not establish access. See [Microsoft's Teams and SharePoint description](https://learn.microsoft.com/en-us/sharepoint/teams-connected-sites).
 
 The core uses the default onmicrosoft.com domain. An owned custom domain is optional. There is no required Azure VM, on-premises Exchange server or hybrid identity integration in this project.
+
+## Observed Day 01 path
+
+Anna (Chrome on Windows 11) used Exchange Online, OneDrive/Word web and Teams. The existing team's General files led to SharePoint > Documents > General, where Anna created and reopened the synthetic test document. Its Public group / 28 members state is recorded as background, not a hardened membership design.
+
+The pilot MFA policy moved from Report-only to On. Its successful Exchange evaluation used an existing MFA claim. The configuration CA role was removed afterwards; continued admin access and both recovery paths were checked.
 
 [Access matrix](access-matrix.md) · [Roadmap](roadmap.md)
 

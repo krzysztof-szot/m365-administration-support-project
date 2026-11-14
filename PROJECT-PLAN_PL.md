@@ -2,7 +2,9 @@
 
 Aktualizacja: 14 listopada 2026 r.
 
-Etap 01 jest IN_PROGRESS. Dostępne produkty to Business Standard (25 miejsc), Business Premium (25) i Business Premium with Copilot (1). Opublikowano 9 zredagowanych screenów: licencja Anny, poczta z zewnętrznym Gmail, odmowa dostępu administracyjnego, logowanie single-factor i grupa MFA. Globalna tabela ma 2 PASS i 30 NOT_RUN. MFA nie zostało jeszcze wdrożone ani zweryfikowane po zmianie.
+Etap 01 jest COMPLETE; etapy 02–14 pozostają PLANNED. Dostępne produkty to Business Standard (25 miejsc), Business Premium (25) i Business Premium with Copilot (1). W GitHub jest 31 screenów Day 01. Globalna tabela ma 4 PASS i 28 NOT_RUN: T01, T02, T03 oraz T16. T03 i T16 wykonano wcześniej, podczas Day 01, bez zamykania całych etapów 02 i 07.
+
+Zweryfikowano pocztę z zewnętrznym Gmail, zapis i ponowne otwarcie dokumentów OneDrive/SharePoint, trwałość wiadomości Teams oraz odmowę panelu administracyjnego dla Anny. Politykę MFA oceniono w Report-only, włączono i uzyskano Success z istniejącym claimem MFA. Świeże zatwierdzenie push nie zostało uchwycone. Dodatkową rolę CA usunięto; właściciel potwierdził dalszy dostęp adm-lab oraz nowe logowania i aktywny Global Administrator dla obu kont awaryjnych.
 
 ## Cel i sposób pracy
 
@@ -22,7 +24,7 @@ Szczegółowe zadania i warunki zakończenia: [etap 01](docs/stages/01-tenant-an
 
 ### 02. Użytkownicy i licencje — dzień 2–3
 
-Utwórz Annę, Piotra i Marka. Poznaj lokalizację użycia i plany usług. Porównaj grupę zabezpieczeń, Microsoft 365 i listę dystrybucyjną. Na pustym koncie zdiagnozuj brak uprawnienia do usługi i potwierdź naprawę.
+Annę przygotowano w Day 01; wykorzystaj jej konto i utwórz Piotra oraz Marka. Poznaj lokalizację użycia i plany usług. Porównaj grupę zabezpieczeń, Microsoft 365 i listę dystrybucyjną. Na pustym koncie zdiagnozuj brak uprawnienia do usługi i potwierdź naprawę.
 
 Szczegółowe zadania i warunki zakończenia: [etap 02](docs/stages/02-users-licenses-and-groups.md).
 
@@ -106,14 +108,14 @@ Szczegółowe zadania i warunki zakończenia: [etap 14](docs/stages/14-portfolio
 - Instrukcje użytkownika, w tym jeden niemiecki odpowiednik.
 - Zweryfikowany runbook cyklu życia i pięć samodzielnych zadań końcowych.
 
-To cele projektu. Etap 01 pozostaje IN_PROGRESS, a etapy 02–14 są PLANNED. Publikowane wyniki muszą odpowiadać zapisanym obserwacjom i dowodom; przypisanie licencji lub utworzenie pliku nie kończy etapu.
+To cele całego projektu. Etap 01 jest COMPLETE, a etapy 02–14 pozostają PLANNED. Publikowane wyniki muszą odpowiadać zapisanym obserwacjom i dowodom; przypisanie licencji lub utworzenie pliku nie kończy etapu.
 
-W Day 01 przygotowujemy ograniczony pilot MFA przez Conditional Access w istniejącym tenancie. Licencje Premium umożliwiają rozszerzenia z Intune. Dodatkowy [pilot Copilot](docs/copilot-pilot-plan.md) obejmuje trzy sesje, około 5–7 godzin, zintegrowane z etapami 06, 08, 10 i 13; mamy jedno miejsce Copilot. Własna domena i udostępnienie zewnętrzne pozostają rozszerzeniami. PIM, pełne odtworzenie E5/Entra Suite, hybrydowy Exchange, Teams Phone i zaawansowane holdy są poza zakresem podstawowym.
+W Day 01 wdrożono ograniczony pilot MFA przez Conditional Access w istniejącym tenancie. Windows 11, Chrome 157.0.8103.52 dla Anny i Edge 157.0.4341.46 dla administratorów zapisano na podstawie raportu właściciela. Service health pokazało pięć advisories dla Microsoft 365 suite; nie wnioskujemy z tego o zdrowiu wszystkich usług ani o odtworzonym incydencie. Licencje Premium umożliwiają rozszerzenia z Intune. Dodatkowy [pilot Copilot](docs/copilot-pilot-plan.md) obejmuje trzy sesje, około 5–7 godzin, zintegrowane z etapami 06, 08, 10 i 13; mamy jedno miejsce Copilot. Własna domena i udostępnienie zewnętrzne pozostają rozszerzeniami. PIM, pełne odtworzenie E5/Entra Suite, hybrydowy Exchange, Teams Phone i zaawansowane holdy są poza zakresem podstawowym.
 
 ## Start
 
-Przejdź do [etapu 01](docs/stages/01-tenant-and-roles.md) i [baseline](docs/01-environment-baseline.md). Rzeczywiste dane logowania, domenę, identyfikatory, termin triala i szczegóły rozliczeń przechowuj prywatnie. Źródła techniczne i licencyjne: [Microsoft](docs/sources.md).
+Przejrzyj [zakończony etap 01](docs/stages/01-tenant-and-roles.md) i [baseline](docs/01-environment-baseline.md), a następnie rozpocznij [etap 02](docs/stages/02-users-licenses-and-groups.md). Rzeczywiste dane logowania, domenę, identyfikatory, termin triala i szczegóły rozliczeń przechowuj prywatnie. Źródła techniczne i licencyjne: [Microsoft](docs/sources.md).
 
 ## Screeny podczas ćwiczeń
 
-Przy każdym istotnym kroku prowadzący wskazuje moment wykonania screena, widok i nazwę pliku. [Checklistę Day 01](evidence/day-01/README.md) uzupełniamy wyłącznie rzeczywiście zebranymi dowodami. Kolejny screen to 09a: szczegółowy tryb i zakres Microsoft Authenticator. Kodów QR rejestracji i sekretów uwierzytelniania nie publikujemy.
+Przy każdym istotnym kroku prowadzący wskazuje moment wykonania screena, widok i nazwę pliku. [Indeks Day 01](evidence/day-01/README.md) opisuje 31 rzeczywiście opublikowanych screenów i ograniczenia dowodowe. Nie ma zaległych screenów Day 01. Nazwy i moment wykonania dowodów Day 02 zostaną wskazane podczas odpowiednich ćwiczeń. Kodów QR rejestracji i sekretów uwierzytelniania nie publikujemy.

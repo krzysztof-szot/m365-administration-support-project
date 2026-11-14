@@ -1,6 +1,8 @@
 # Planned access matrix
 
-Status: collaboration access targets remain PLANNED. Stage 01 has verified Anna's mail access and admin-portal denial, and captured her sole membership in SG-M365-MFA-Pilot. The resource matrix below is a target, not a claim that team/site/delegation permissions have been deployed.
+Status: the dedicated collaboration access model below remains PLANNED. Completed Day 01 verifies Anna's mail, personal OneDrive, Teams self-chat, existing team-connected SharePoint writing and admin-portal denial. The scoped MFA pilot is enforced; the added CA role was removed.
+
+The reused Baltic Finance Lab site is labelled Public group with 28 members. Anna's successful write there does not establish the planned Owner/Member/Visitor/Excluded boundaries. The new Finance team, private channel, knowledge site and delegation model below have not been deployed.
 
 | Resource | Anna Finance | Piotr Operations | Marek IT |
 | --- | --- | --- | --- |

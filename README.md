@@ -4,12 +4,12 @@
 
 <p align="center">
   <img alt="14 learning stages" src="https://img.shields.io/badge/LABS-14%20STAGES-6f42c1?style=for-the-badge">
-  <img alt="Stage 01 in progress" src="https://img.shields.io/badge/STATUS-IN%20PROGRESS-0078D4?style=for-the-badge">
-  <img alt="Global matrix: 2 pass and 30 not run" src="https://img.shields.io/badge/CHECKS-2%20PASS%20%2F%2030%20NOT%20RUN-607078?style=for-the-badge">
+  <img alt="Project in progress; 1 of 14 stages complete" src="https://img.shields.io/badge/PROGRESS-1%20%2F%2014%20COMPLETE-0078D4?style=for-the-badge">
+  <img alt="Global matrix: 4 pass and 28 not run" src="https://img.shields.io/badge/CHECKS-4%20PASS%20%2F%2028%20NOT%20RUN-607078?style=for-the-badge">
 </p>
 
 <p align="center">
-  <img alt="Microsoft 365 Business Standard" src="https://img.shields.io/badge/Microsoft%20365-Business%20Standard-0078D4?style=flat-square">
+  <img alt="Microsoft 365 Business Premium" src="https://img.shields.io/badge/Microsoft%20365-Business%20Premium-0078D4?style=flat-square">
   <img alt="Exchange Online" src="https://img.shields.io/badge/Microsoft-Exchange%20Online-0078D4?style=flat-square">
   <img alt="Microsoft Teams" src="https://img.shields.io/badge/Microsoft-Teams-5C2D91?style=flat-square">
   <img alt="SharePoint Online" src="https://img.shields.io/badge/Microsoft-SharePoint%20Online-038387?style=flat-square">
@@ -34,10 +34,10 @@ This repository complements the owner's Microsoft Entra, hybrid security and IAM
 
 ## Project Overview
 
-**Status: Stage 01 in progress; Stages 02–14 planned.**  
-The lab now uses **Business Standard (25 seats)**, **Business Premium (25 seats)** and **Business Premium with Copilot (1 seat)** according to the owner's active subscription views. Anna's one-seat bundle assignment, mail test and denied admin access are captured. See the [current baseline](docs/01-environment-baseline.md) for source limits and pending checks.
+**Status: Stage 01 complete; Stages 02–14 planned.**  
+The lab now uses **Business Standard (25 seats)**, **Business Premium (25 seats)** and **Business Premium with Copilot (1 seat)** according to the owner's active subscription views. Anna's one-seat bundle assignment, working browser services and restricted MFA pilot are documented. See the [current baseline](docs/01-environment-baseline.md) for the observed state and source limits.
 
-**Recorded execution: 0 completed stages, 2 PASS / 30 NOT_RUN in the global matrix, and 9 published screenshots.** Day 01 records an external Gmail mail round trip, an ordinary-user admin denial and a single-factor sign-in baseline. MFA enforcement remains pending. [Stage notes](docs/stages/01-tenant-and-roles.md) · [Results](tests/day-01.md) · [Evidence](evidence/day-01/README.md)
+**Recorded execution: 1 completed stage, 4 PASS / 28 NOT_RUN in the global matrix, and 31 published screenshots.** Day 01 verifies mail, OneDrive/Word web, Teams and SharePoint; a scoped MFA policy moves from Report-only to On. The successful after-change sign-in satisfies MFA through an existing claim. Role cleanup and reported recovery checks close the stage. [Stage notes](docs/stages/01-tenant-and-roles.md) · [Results](tests/day-01.md) · [Evidence](evidence/day-01/README.md)
 
 The target roles are **Junior Microsoft 365 Administrator**, **Junior System Administrator** and **IT Support Specialist**.
 
@@ -55,7 +55,7 @@ Each stage is designed to include:
 | Architecture | Implementation | Validation | Evidence |
 |:---:|:---:|:---:|:---:|
 | [View design](#target-architecture) | [Browse stages](#implementation-progress) | [Open test matrix](tests/test-matrix.csv) | [Open Day 01 evidence](evidence/day-01/README.md) |
-| Target design and recorded baseline | Stage 01 in progress; 13 stages planned | 2 PASS / 30 NOT_RUN | 9 published Day 01 screenshots |
+| Target design and recorded baseline | Stage 01 complete; 13 stages planned | 4 PASS / 28 NOT_RUN | 31 published Day 01 screenshots |
 
 ## Technologies and Concepts
 
@@ -85,10 +85,10 @@ Day 01 adds a scoped Conditional Access MFA pilot in the existing tenant. Ordina
 | Learning plan | 14 stage documents with objectives, exercises and exit checks |
 | Subscription | Standard 25, Premium 25 and Premium with Copilot 1 reported active; Anna's bundle assignment captured |
 | Synthetic inputs | Anna provisioned; Piotr and Marek planned; 15 planned support cases |
-| Validation | 32 global checks: 2 PASS and 30 NOT_RUN; supporting Day 01 observations recorded separately |
+| Validation | 32 global checks: 4 PASS and 28 NOT_RUN; supporting Day 01 observations recorded separately |
 | Operational documentation | Lab/ticket templates, lifecycle template and user-article plan |
 | PowerShell | Three report contracts defined; no executable scripts yet |
-| Implementation evidence | Nine Day 01 screenshots: configuration, mail, denied administration and authentication baseline |
+| Implementation evidence | 31 Day 01 screenshots: baseline, MFA rollout, workloads and CA role cleanup |
 
 Captured configuration, functional results and owner-reported details are distinguished in the stage notes. Assigned services and a visible Copilot button do not establish full workload operation or validated AI output.
 
@@ -110,28 +110,38 @@ These are learning targets. They will become demonstrated outcomes only after ex
 
 ## Featured Implementation Evidence
 
-Selected, redacted Day 01 captures. These show the baseline and initial mail/access results; they do not show enforced MFA or functioning Copilot output.
+Selected Day 01 captures connect the functional workload checks with the MFA rollout and role cleanup. [All 31 captions and limits](evidence/day-01/README.md) · [Detailed results](tests/day-01.md)
 
 <table>
 <tr>
 <td width="50%" align="center">
-  <a href="evidence/day-01/03-pilot-mail-received.png"><img src="evidence/day-01/03-pilot-mail-received.png" alt="Anna's Inbox with a redacted external Gmail reply" width="100%"></a><br>
-  <strong>Exchange Online Mail Test</strong><br>
-  <sub><a href="tests/day-01.md">Results</a> · <a href="evidence/day-01/README.md">Evidence index</a></sub>
+  <a href="evidence/day-01/03-pilot-mail-received.png"><img src="evidence/day-01/03-pilot-mail-received.png" alt="Anna's Inbox with the matching external Gmail reply" width="100%"></a><br>
+  <strong>Exchange Online Mail Round Trip</strong><br>
+  <sub>Synthetic send and reply verified</sub>
 </td>
 <td width="50%" align="center">
-  <a href="evidence/day-01/07-signin-before-conditional-access.png"><img src="evidence/day-01/07-signin-before-conditional-access.png" alt="Pre-change Exchange sign-in with visible CA results Not applied or Disabled" width="100%"></a><br>
-  <strong>Pre-change MFA Coverage Baseline</strong><br>
-  <sub><a href="docs/stages/01-tenant-and-roles.md">Stage 01 notes</a> · <a href="evidence/day-01/README.md">Evidence index</a></sub>
+  <a href="evidence/day-01/15-signin-after-conditional-access.png"><img src="evidence/day-01/15-signin-after-conditional-access.png" alt="Enforced pilot MFA policy returns Success for Anna's Exchange sign-in" width="100%"></a><br>
+  <strong>MFA Pilot — Applied Successfully</strong><br>
+  <sub>Existing MFA claim satisfies the requirement; no fresh push captured</sub>
+</td>
+</tr>
+<tr>
+<td width="50%" align="center">
+  <a href="evidence/day-01/20a-sharepoint-library-location.png"><img src="evidence/day-01/20a-sharepoint-library-location.png" alt="Test document in Baltic Finance Lab Documents General modified by Anna" width="100%"></a><br>
+  <strong>Teams-Connected SharePoint Files</strong><br>
+  <sub>Create, save and reopen confirmed</sub>
+</td>
+<td width="50%" align="center">
+  <a href="evidence/day-01/21-ca-operator-role-removed.png"><img src="evidence/day-01/21-ca-operator-role-removed.png" alt="No matching active Conditional Access Administrator assignment after removal" width="100%"></a><br>
+  <strong>Configuration Role Removed</strong><br>
+  <sub>Continued administrator access checked afterwards</sub>
 </td>
 </tr>
 </table>
 
-[All nine screenshots](evidence/day-01/README.md) · [Remaining capture checkpoints](evidence/day-01/README.md#next-capture-checkpoints)
-
 ## Target Architecture
 
-The diagram is a **target design**. Stage 01 has captured Anna's mail/access baseline and a separate MFA security group; the remaining collaboration objects are planned. It is not a network/protocol trace.
+The diagram is a **target design**. Stage 01 verifies Anna's browser workloads and MFA pilot, reusing the existing Baltic Finance Lab team/site. The dedicated Finance team, private channel and knowledge site below remain planned. It is not a network/protocol trace.
 
 ```mermaid
 flowchart TB
@@ -186,7 +196,7 @@ flowchart TB
 <summary><strong>Architecture notes and planned lab scope</strong></summary>
 
 - The core uses a personal lab tenant and the default onmicrosoft.com domain. An owned custom domain is optional.
-- Anna is created and licensed; Piotr and Marek remain planned. SG-M365-MFA-Pilot has Anna as its sole captured member. Operator context and remaining role/recovery checks are recorded separately.
+- Anna is created and licensed; Piotr and Marek remain planned. SG-M365-MFA-Pilot has Anna as its sole captured member. The added CA role was removed and both recovery-account checks were reported successful.
 - Standard channels use the parent team's SharePoint site. A private channel has its own site and membership boundary.
 - The independent knowledge site is separate from the Finance team's connected site.
 - User permission checks will use ordinary user sessions. An elevated administrator session is not the excluded-user control.
@@ -201,7 +211,7 @@ flowchart TB
 
 ## Implementation Progress
 
-**0 of 14 stages completed. Stage 01 is IN_PROGRESS; Stages 02–14 are PLANNED.**
+**1 of 14 stages completed. Stage 01 is COMPLETE; Stages 02–14 are PLANNED.**
 
 The schedule targets approximately **50–65 hours over a 30-day trial**, including documentation. Day ranges are estimates and must fit the actual subscription end date. Notes and evidence are saved throughout the project; the final days are a buffer.
 
@@ -209,7 +219,7 @@ The schedule targets approximately **50–65 hours over a 30-day trial**, includ
 
 | Stage | Target days | Lab | Documentation | Status |
 | --- | --- | --- | --- | --- |
-| 01 | 1 | Tenant baseline and administrative roles | [Stage plan](docs/stages/01-tenant-and-roles.md) | IN_PROGRESS |
+| 01 | 1 | Tenant baseline and administrative roles | [Stage notes](docs/stages/01-tenant-and-roles.md) | COMPLETE |
 | 02 | 2–3 | Users, licenses and group types | [Stage plan](docs/stages/02-users-licenses-and-groups.md) | PLANNED |
 | 03 | 4–5 | Exchange recipients, aliases and distribution | [Stage plan](docs/stages/03-exchange-recipients-and-mail.md) | PLANNED |
 | 04 | 6–7 | Shared mailboxes, calendars and room booking | [Stage plan](docs/stages/04-delegation-calendars-and-rooms.md) | PLANNED |
@@ -228,26 +238,25 @@ The schedule targets approximately **50–65 hours over a 30-day trial**, includ
 
 ### Detailed Lab Notes
 
-Expand a stage to see its scope. Stage 01 includes captured checkpoints; unchecked items remain future work. Other stages remain planned.
+Expand a stage to see its scope. Stage 01 is complete; the remaining stages retain their planned scope. T03 and T16 were exercised early during Day 01 without completing their parent stages.
 
 <details>
-<summary><strong>Stage 01 — Tenant baseline and administrative roles</strong> · implementation in progress</summary>
+<summary><strong>Stage 01 — Tenant baseline and administrative roles</strong> · complete</summary>
 
-Record the existing tenant, license the distinct M365 pilot and connect configuration to actual mail, access and sign-in behavior.
+Provision a distinct ordinary pilot, connect service configuration to actual user behavior, and introduce a controlled MFA requirement.
 
 - [x] Captured Anna's Business Premium with Copilot assignment and Poland usage location.
-- [x] Sent a synthetic message to external Gmail and received the matching reply.
-- [x] Captured an explicit ordinary-user Microsoft 365 Admin Center denial.
-- [x] Captured the same interactive Exchange event across Basic info, empty Authentication Details and visible CA results.
-- [x] Created SG-M365-MFA-Pilot with Anna as its only direct member.
-- [x] Captured Authenticator enabled for All users in the overview.
-- [ ] Verify detailed Authenticator mode, exclusions and completed registration.
-- [ ] Record an appropriate CA operator, report-only evaluation and enforced pilot MFA.
-- [ ] Complete the remaining workload, service-health, client-version and recovery checks.
+- [x] Verified external mail, OneDrive/Word web, Teams self-chat and SharePoint document persistence.
+- [x] Verified ordinary-user administration denied before and after MFA.
+- [x] Recorded the initial single-factor Exchange sign-in and one-member MFA pilot group.
+- [x] Captured Authenticator mode, scope, exclusions and Anna's completed registration.
+- [x] Evaluated the pilot in Report-only, then enabled it and recorded policy Success.
+- [x] Removed the added CA operator role and verified continued basic administration.
+- [x] Recorded Service health, client versions and both owner-reported emergency-account checks.
 
-**Current limit:** The selected baseline event required single-factor authentication. No applied MFA policy or post-change result has been captured.
+**Evidence limit:** The successful MFA event reuses an existing claim; a fresh Authenticator push approval is not captured. Recovery checks are owner-reported without screenshots.
 
-[Stage documentation](docs/stages/01-tenant-and-roles.md) · [Day 01 results](tests/day-01.md) · [Nine screenshots](evidence/day-01/README.md)
+[Stage implementation](docs/stages/01-tenant-and-roles.md) · [Day 01 results](tests/day-01.md) · [31 screenshots](evidence/day-01/README.md)
 
 </details>
 
@@ -258,7 +267,8 @@ Record the existing tenant, license the distinct M365 pilot and connect configur
 
 Prepare pilot identities and choose an appropriate group type for each business requirement.
 
-- [ ] Create Anna Finance, Piotr Operations and Marek IT as synthetic users.
+- [x] Anna Finance provisioned in Day 01; licensed Exchange access already passes T03.
+- [ ] Create Piotr Operations and Marek IT as synthetic users.
 - [ ] Set usage locations and assign only the service entitlements required by the exercise.
 - [ ] Compare security groups, Microsoft 365 groups and distribution lists.
 - [ ] On an empty test account, investigate a deliberately missing service entitlement and restore it.
@@ -496,9 +506,9 @@ Publish accurate project evidence and close or deliberately retain the lab.
 | Resource | Purpose |
 | --- | --- |
 | [English roadmap](docs/roadmap.md) and [Polish coaching plan](PROJECT-PLAN_PL.md) | Learning sequence, workload and completion criteria |
-| [Environment baseline](docs/01-environment-baseline.md) | Known subscription state and checks still to perform |
+| [Environment baseline](docs/01-environment-baseline.md) | Recorded subscriptions, client versions, verified baseline and limitations |
 | [Architecture](docs/architecture.md) and [access matrix](docs/access-matrix.md) | Planned objects, service relationships and permission boundaries |
-| [Stage index](docs/stages/README.md) and [lab-note template](docs/LAB-NOTE-TEMPLATE.md) | Planned exercises and later implementation records |
+| [Stage index](docs/stages/README.md) and [lab-note template](docs/LAB-NOTE-TEMPLATE.md) | Completed Day 01 implementation and thirteen planned stages |
 | [Support workflow](tickets/README.md), [case template](tickets/TICKET-TEMPLATE.md) and [backlog](samples/ticket-backlog.csv) | Diagnostic reasoning, recovery and user verification |
 | [Functional validation guide](tests/README.md), [32-check matrix](tests/test-matrix.csv) and [Day 01 results](tests/day-01.md) | Global results, supporting observations and evidence links |
 | [PowerShell report plan](scripts/README.md) | Report scope, permission requirements and verification contracts |
@@ -541,7 +551,7 @@ Plan mailbox/file handover and check applicable preservation and licensing condi
 
 This is an educational lab and technical portfolio. The organization, users and support cases are synthetic.
 
-Published Day 01 evidence supports initial Exchange operation, an ordinary-user admin denial, a one-member MFA pilot group and the pre-change sign-in baseline. Empty Authentication Details is recorded as a limitation, not a reconstructed password/MFA sequence. Detailed Authenticator mode/exclusions and enforced MFA are pending. No completed support incident, Copilot output, PowerShell execution, automated test success or production outcome is claimed.
+Published Day 01 evidence supports working browser workloads, ordinary-user admin denial, a scoped MFA rollout and CA role cleanup. The matching enforced-policy result uses an existing MFA claim; empty baseline details and absence of a fresh push capture remain explicit. Refresh/reopen results, client versions and recovery checks include owner-reported observations. No completed support incident, validated Copilot exercise, PowerShell execution, automated test success or production outcome is claimed.
 
 Configuration evidence, functional results and any future offline script checks will be recorded separately. A blocked result remains blocked until the dependency is resolved; it is not converted into a pass.
 
@@ -558,8 +568,8 @@ An owned custom domain with SPF/DKIM/DMARC and controlled external sharing are o
 | [README.md](README.md) | Project overview, architecture, stage roadmap and current evidence status |
 | [docs/](docs/roadmap.md) | Fourteen stage plans, baseline, access model, architecture and sources |
 | [tickets/](tickets/README.md) | Support workflow and case template |
-| [tests/](tests/README.md) | Thirty-two global checks, two recorded passes and detailed Day 01 observations |
-| [evidence/](evidence/README.md) | Nine Day 01 captures, review rules and explicit future screenshot checkpoints |
+| [tests/](tests/README.md) | Thirty-two global checks, four recorded passes and detailed Day 01 observations |
+| [evidence/](evidence/README.md) | 31 indexed Day 01 captures, review rules and screenshot timing guidance |
 | [scripts/](scripts/README.md) | Planned read-only operational reports |
 | [runbooks/](runbooks/README.md) | Employee lifecycle procedure template |
 | [knowledge-base/](knowledge-base/README.md) | Planned user-facing articles |
@@ -572,4 +582,4 @@ An owned custom domain with SPF/DKIM/DMARC and controlled external sharing are o
 - [Microsoft Hybrid Enterprise Security Project](https://github.com/krzysztof-szot/hybrid-enterprise-security-project)
 - [IAM PowerShell Automation Project](https://github.com/krzysztof-szot/iam-powershell-automation-project)
 
-Start with [Stage 01 — tenant baseline and administrative roles](docs/stages/01-tenant-and-roles.md).
+Review [completed Day 01](docs/stages/01-tenant-and-roles.md), then continue with [Stage 02 — users, licenses and groups](docs/stages/02-users-licenses-and-groups.md).

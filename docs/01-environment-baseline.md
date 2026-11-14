@@ -1,36 +1,37 @@
 # Environment baseline
 
-Status: **PARTIALLY VERIFIED — Stage 01 IN_PROGRESS**. The tenant is an existing identity lab; the new project uses separate M365 pilot identities.
+Status: **DAY 01 BASELINE COMPLETE**, 14 November 2026. This project reuses an existing identity lab and adds a distinct M365 pilot.
 
 | Field | Recorded state and source |
 | --- | --- |
-| Active products | Owner-supplied subscription views: Business Standard 25 seats; Business Premium 25; Business Premium with Copilot 1 |
-| Trial/billing decisions | Reviewed privately; recurring billing off reported by the owner; no billing records published |
-| Existing products | E5 and Entra Suite reported expired/disabled; historical assignments remain visible |
-| Administrative identity | Existing adm-lab, with User Administrator and several other roles visible in the earlier operator screenshot; ordinary Premium assignment reported by owner |
-| Ordinary pilot | M365 Anna Finance / m365.anna |
-| Pilot license | Business Premium with Copilot; Poland usage location, captured in evidence 01 |
-| Service plans | Exchange, SharePoint, Teams, Apps, Entra P1 and Copilot reported enabled by owner; expanded plans not captured |
-| Functional service access | Exchange browser mail sent to external Gmail and a reply received; other workloads pending |
-| Ordinary-user admin boundary | Explicit Admin Center denial captured |
-| Pre-change sign-in | Interactive One Outlook Web to Exchange; Success; Single-factor at 2026-11-14T07:15:27Z |
-| Authentication Details | No authentication events recorded in that selected event |
-| CA result | Captured tab: visible policies Not applied or Disabled; separate Report only tab not captured |
-| MFA pilot group | SG-M365-MFA-Pilot, one direct member: Anna |
-| Authenticator | Overview Enabled=Yes, Target=All users; detailed mode/exclusions and registration not yet verified |
-| User/browser/client versions | Not recorded |
-| MFA enforcement, recovery and service health | Pending |
+| Products | Owner-supplied active subscription views: Business Standard 25 seats; Business Premium 25; Business Premium with Copilot 1 |
+| Billing decisions | Recurring billing off reported privately; billing records are not published |
+| Historical subscriptions | E5 and Entra Suite reported disabled/expired; old assignments and policies remain background state |
+| Ordinary pilot | M365 Anna Finance / m365.anna; Business Premium with Copilot and Poland usage location captured in 01 |
+| Service plans | Exchange, SharePoint, Teams, Apps, Entra P1 and Copilot reported enabled; expanded service plans not captured |
+| Administrator | Existing adm-lab; ordinary Premium assignment reported; historical broad role set remains |
+| Temporary use of CA role | Direct/Active/Permanent Conditional Access Administrator captured in 09b; manually removed in 21 |
+| Browser workload results | Exchange round trip; OneDrive/Word web and SharePoint create/save/reopen; Teams self-chat persistence |
+| User/admin boundary | Anna explicitly denied Admin Center before and after MFA; adm-lab access after cleanup reported and list shown in 22 |
+| Baseline Exchange sign-in | 07:15:27Z: Success, single-factor, no method events; visible CA policies Not applied/Disabled |
+| Pilot group | SG-M365-MFA-Pilot; Anna is sole captured direct member |
+| Authenticator | Enabled, All users, Any mode, registration Optional, no excluded groups; Anna's completed push method captured |
+| Pilot CA policy | CA-M365-001-Require-MFA-Pilot; pilot group; both emergency accounts excluded; All resources; Multifactor authentication strength |
+| Policy evaluation | 08:36:27Z Report-only: User action required; later saved On |
+| Enforced sign-in | 08:54:24Z: MFA requirement, claim reuse and pilot policy Success; no fresh push approval captured |
+| Existing collaboration site | Baltic Finance Lab > Documents > General; Public group, 28 members visible; reused rather than provisioned in this stage |
+| Service health | Microsoft 365 suite: five advisories. Separate Exchange/SharePoint/Teams service rows not present in the owner's available view |
+| OS | Windows 11, owner-reported; edition/build not recorded |
+| User browser | Chrome 157.0.8103.52, 64-bit, owner-reported |
+| Admin browser | Edge 157.0.4341.46, 64-bit, owner-reported |
+| Recovery validation | Owner reports fresh bg01/bg02 sign-ins and active Global Administrator for both; no screenshots or secrets published |
 
-## Remaining baseline work
+## Baseline conclusion and later work
 
-- [ ] Capture the detailed Authenticator mode and effective scope/exclusions.
-- [ ] Confirm a CA operator with the required role rather than treating User Administrator as CA authority.
-- [ ] Record report-only evaluation and then enforced MFA for the restricted pilot.
-- [ ] Verify administrative recovery without publishing recovery material.
-- [ ] Functionally check remaining workloads and record client versions.
-- [ ] Inspect Service health and record the actual state.
-- [ ] Record the final remaining resources and unresolved limitations.
+The Day 01 baseline exit checks are complete. License assignment and configuration are distinguished from functional tests; reported recovery/refresh actions are explicitly attributed.
 
-The broad role set on the reused admin is background state, not proof of a newly implemented least-privilege design. A new Premium license does not itself require MFA or restore every expired E5/Suite capability.
+The reused administrator's wider roles are background state, not a newly implemented least-privilege design. Removing the added CA role does not establish removal of all possible administrative access. The public team's membership and permission model will be examined later.
 
-[Stage 01 notes](stages/01-tenant-and-roles.md) · [Evidence](../evidence/day-01/README.md) · [Result record](../tests/day-01.md) · [Copilot pilot plan](copilot-pilot-plan.md)
+Desktop Office activation, deliberate Copilot exercises/output validation, explicit permission-role comparisons, private-channel isolation, synchronization and data recovery are not established by this baseline. Client versions are recorded as supplied, without a compatibility audit or OS build inventory.
+
+[Stage 01 notes](stages/01-tenant-and-roles.md) · [31 evidence captions](../evidence/day-01/README.md) · [Results](../tests/day-01.md) · [Copilot pilot plan](copilot-pilot-plan.md)

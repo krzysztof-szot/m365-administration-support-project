@@ -1,6 +1,6 @@
 # Evidence handling
 
-Nine reviewed screenshots are published in [Day 01](day-01/README.md). The remaining capture checkpoints are planned; a filename alone does not establish a result.
+Thirty-one screenshots are published and captioned in [Day 01](day-01/README.md), which is COMPLETE. Results distinguish visible evidence from the owner's reported refresh/reopen and recovery checks. A filename alone does not establish a result.
 
 ## Capture checkpoints during guided work
 
@@ -14,7 +14,7 @@ Record the tested identity/role, client, actual timestamp, action, expected beha
 
 A saved permission or policy setting does not establish allowed/denied access or an enforced MFA challenge. Keep configuration, functional results and recovery proof separate.
 
-Use the same sign-in record when comparing its Basic info, Authentication Details and Conditional Access tabs. If no authentication events are recorded, preserve that limitation rather than inferring an unseen password or MFA step.
+Use the same sign-in record when comparing its Basic info, Authentication Details and Conditional Access tabs. If no authentication events are recorded, preserve that limitation rather than inferring an unseen password or MFA step. Previously satisfied / MFA requirement satisfied by claim in the token documents claim reuse, not a fresh MFA approval. Registration, requirement, method details and the matching policy result answer different questions.
 
 ## Publication review
 

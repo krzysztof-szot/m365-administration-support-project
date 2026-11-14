@@ -32,13 +32,17 @@ This is a planned lab scenario. No incident, root cause or repair outcome has be
 - [ ] A team member excluded from the private channel is denied at the direct file URL.
 - [ ] The parent site and separate private-channel site are identified correctly.
 
+## Carry-forward from Day 01
+
+T16 was exercised early: Anna opened General files of the existing Baltic Finance Lab team through Teams, created a document in the parent site's Documents > General folder and reopened it successfully. See [20/20a and the result record](../../tests/day-01.md). This passes the baseline standard-channel folder-access check. It does not provision BFL-M365-Finance or establish its planned membership/private-channel boundary; repeat the relevant access check when those new resources are built.
+
 ## Execution record
 
-- Starting state and expected result: not recorded.
+- Starting state and expected result: Day 01 carry-forward above; planned Stage 07 deployment has not started.
 - Actions and reasoning: not recorded.
 - Observations and propagation delays: not recorded.
-- Functional/negative/recovery results: NOT_RUN.
-- Evidence: none.
+- Functional/negative/recovery results: T16 PASS on the existing team from Day 01; T17 NOT_RUN; new Finance-resource checks remain planned.
+- Evidence: [Day 01 captures 19/20/20a](../../evidence/day-01/README.md); no new Stage 07 captures.
 - Remaining resources, restoration and limitations: not recorded.
 - What I can explain without a click-by-click guide: not recorded.
 

@@ -1,10 +1,10 @@
 # Stage index
 
-Stage 01 contains an implementation record in progress and links to nine screenshots. Stages 02–14 remain planned. Configuration and functional results are distinguished in the [Day 01 result record](../../tests/day-01.md).
+Stage 01 is COMPLETE with 31 indexed screenshots. Stages 02–14 remain planned. The global matrix records 4 PASS / 28 NOT_RUN, including T03 and T16 exercised early in Day 01. Configuration, functional observations and owner-reported recovery results are distinguished in the [Day 01 record](../../tests/day-01.md).
 
 | Stage | Target days | Topic | Execution |
 | --- | --- | --- | --- |
-| 01 | 1 | [Tenant baseline and administrative roles](01-tenant-and-roles.md) | IN_PROGRESS |
+| 01 | 1 | [Tenant baseline and administrative roles](01-tenant-and-roles.md) | COMPLETE |
 | 02 | 2–3 | [Users, licenses and group types](02-users-licenses-and-groups.md) | PLANNED |
 | 03 | 4–5 | [Exchange recipients, aliases and distribution](03-exchange-recipients-and-mail.md) | PLANNED |
 | 04 | 6–7 | [Shared mailboxes, calendars and room booking](04-delegation-calendars-and-rooms.md) | PLANNED |

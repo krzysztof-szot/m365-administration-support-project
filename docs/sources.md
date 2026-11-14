@@ -15,3 +15,17 @@ Reviewed for project planning on 14 November 2026. Availability, interfaces and 
 | Service health | [Check Microsoft 365 service health](https://learn.microsoft.com/en-us/microsoft-365/enterprise/view-service-health?view=o365-worldwide) |
 | Email troubleshooting | [Find and fix email delivery issues](https://learn.microsoft.com/en-us/troubleshoot/exchange/email-delivery/email-delivery-issues) |
 
+## Day 01 implementation references
+
+These references support the interpretation of the observed lab results; they do not independently verify the owner's tenant or reported client versions.
+
+| Area | Official source |
+| --- | --- |
+| MFA pilot with authentication strength | [Require MFA with Conditional Access](https://learn.microsoft.com/en-us/entra/identity/conditional-access/policy-all-users-mfa-strength) |
+| Report-only results | [Conditional Access report-only mode](https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-report-only) |
+| Authentication details and existing MFA claims | [Microsoft Entra MFA reporting](https://learn.microsoft.com/en-us/entra/identity/authentication/howto-mfa-reporting) |
+| Administrative role changes | [Manage Microsoft Entra user roles](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/users-assign-role-azure-portal) |
+| Recovery-account validation | [Manage emergency access accounts](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/security-emergency-access) |
+| Word web document workflow | [Create a document from OneDrive for work or school](https://support.microsoft.com/en-gb/onedrive/create-a-document-from-onedrive-for-work-or-school?wt.mc_id=otc_onedrive) |
+| Teams standard-channel storage | [Standard channels](https://learn.microsoft.com/en-us/microsoftteams/standard-channels) |
+| Opening channel files in SharePoint | [Collaborate on files in Teams](https://support.microsoft.com/en-gb/teams/files/collaborate-on-files-in-microsoft-teams) |

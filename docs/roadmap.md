@@ -1,12 +1,12 @@
 # Thirty-day learning roadmap
 
-Status: **Stage 01 IN_PROGRESS; Stages 02–14 PLANNED.** Nine Day 01 captures support initial Exchange/access tests and the pre-change MFA baseline. See the [result record](../tests/day-01.md).
+Status: **Stage 01 COMPLETE; Stages 02–14 PLANNED.** Day 01 has 31 indexed captures covering browser workloads, the MFA rollout, administration boundaries and role cleanup. The global matrix has **4 PASS / 28 NOT_RUN**; T03 and T16 were exercised early. See the [result record](../tests/day-01.md).
 
 The target workload is about 50–65 hours including documentation. The ranges below are estimates, not elapsed execution dates. Record the actual subscription expiry privately and shorten the schedule if necessary. Save evidence after each session rather than waiting until the end.
 
 | Stage | Target days | Topic | Execution |
 | --- | --- | --- | --- |
-| 01 | 1 | [Tenant baseline and administrative roles](stages/01-tenant-and-roles.md) | IN_PROGRESS |
+| 01 | 1 | [Tenant baseline and administrative roles](stages/01-tenant-and-roles.md) | COMPLETE |
 | 02 | 2–3 | [Users, licenses and group types](stages/02-users-licenses-and-groups.md) | PLANNED |
 | 03 | 4–5 | [Exchange recipients, aliases and distribution](stages/03-exchange-recipients-and-mail.md) | PLANNED |
 | 04 | 6–7 | [Shared mailboxes, calendars and room booking](stages/04-delegation-calendars-and-rooms.md) | PLANNED |
