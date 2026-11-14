@@ -57,6 +57,10 @@ The owner explicitly confirmed that the OneDrive and SharePoint documents retain
 
 Client context reported by the owner: Windows 11; Anna uses Chrome **157.0.8103.52** (64-bit); administrators use Edge **157.0.4341.46** (64-bit).
 
+## Later scope changes
+
+Day 01 captures preserve their original state: the pilot group had Anna as its sole member. [Day 02](../day-02/README.md) extends that group to Piotr and Marek; [Day 03](../day-03/README.md) adds alias and distribution-recovery evidence. Current cumulative results are in the [test guide](../../tests/README.md).
+
 ## Scope and remaining limits
 
 - Service health records five suite advisories, not an all-services-healthy conclusion or proof that Anna reproduced an incident.

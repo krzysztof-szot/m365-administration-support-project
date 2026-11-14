@@ -2,9 +2,19 @@
 
 Aktualizacja: 14 listopada 2026 r.
 
-Etap 01 jest COMPLETE; etapy 02–14 pozostają PLANNED. Dostępne produkty to Business Standard (25 miejsc), Business Premium (25) i Business Premium with Copilot (1). W GitHub jest 31 screenów Day 01. Globalna tabela ma 4 PASS i 28 NOT_RUN: T01, T02, T03 oraz T16. T03 i T16 wykonano wcześniej, podczas Day 01, bez zamykania całych etapów 02 i 07.
+Etapy 01–03 są COMPLETE; etapy 04–14 pozostają PLANNED. Opublikowano 63 screeny: 31 w Day 01, 21 w Day 02 i 11 w Day 03. Globalna tabela ma 7 PASS i 25 NOT_RUN: T01, T02, T03, T04, T05, T06 oraz T16. T06 ma jeden wpis mimo testów w dwóch etapach. Trzy przypadki M365-001–003 są rozwiązane jako ćwiczenia laboratoryjne.
 
 Zweryfikowano pocztę z zewnętrznym Gmail, zapis i ponowne otwarcie dokumentów OneDrive/SharePoint, trwałość wiadomości Teams oraz odmowę panelu administracyjnego dla Anny. Politykę MFA oceniono w Report-only, włączono i uzyskano Success z istniejącym claimem MFA. Świeże zatwierdzenie push nie zostało uchwycone. Dodatkową rolę CA usunięto; właściciel potwierdził dalszy dostęp adm-lab oraz nowe logowania i aktywny Global Administrator dla obu kont awaryjnych.
+
+## Zakończone Day 02 i Day 03
+
+Utworzono Piotra i Marka; po kontrolowanym braku licencji przywrócono Piotrowi pocztę i sprawdzono wymianę wiadomości. Department i Job title zgłoszono jako uzupełnione; zgodnie z decyzją właściciela bez screenów 04a/04b. Grupę MFA rozszerzono do trzech osób, a wyniki polityki są Success. Nie uchwycono nowej metody zatwierdzenia ani pola Authentication requirement dla obu nowych użytkowników.
+
+Powstała prywatna grupa BFL-M365-Finance: właścicielka Anna, członkowie Anna i Piotr, link do witryny, bez Teams. Listę DL-M365-Finance sprawdzono funkcjonalnie; nadawcą był Marek spoza członkostwa. Po usunięciu Piotra bezpośrednia poczta nadal działała, a kopii z listy nie otrzymał przez 10 minut. Przywrócenie członkostwa odtworzyło dostarczanie do obu odbiorców.
+
+Alias m365.finance prowadzi do istniejącej skrzynki Anny. Pierwsza próba wewnętrzna pokazała w nagłówku adres podstawowy; dopiero para wysłane/odebrane z Gmaila potwierdziła jawnie adres aliasu. Surowe nagłówki pozostają prywatne. Rola Exchange Recipient Administrator na adm-lab pozostaje Direct/Active/Permanent do kolejnych zadań odbiorców i wymaga późniejszego przeglądu.
+
+Wszystkie trzy jednostki nauki wykonano 14 listopada 2026 r. Rozpiska godzin w [roadmapie](docs/roadmap.md) jest szacunkiem, a nie pomiarem czasu.
 
 ## Cel i sposób pracy
 
@@ -108,14 +118,14 @@ Szczegółowe zadania i warunki zakończenia: [etap 14](docs/stages/14-portfolio
 - Instrukcje użytkownika, w tym jeden niemiecki odpowiednik.
 - Zweryfikowany runbook cyklu życia i pięć samodzielnych zadań końcowych.
 
-To cele całego projektu. Etap 01 jest COMPLETE, a etapy 02–14 pozostają PLANNED. Publikowane wyniki muszą odpowiadać zapisanym obserwacjom i dowodom; przypisanie licencji lub utworzenie pliku nie kończy etapu.
+To cele całego projektu. Etapy 01–03 są COMPLETE, a etapy 04–14 pozostają PLANNED. Publikowane wyniki muszą odpowiadać zapisanym obserwacjom i dowodom; przypisanie licencji lub utworzenie pliku nie kończy etapu.
 
 W Day 01 wdrożono ograniczony pilot MFA przez Conditional Access w istniejącym tenancie. Windows 11, Chrome 157.0.8103.52 dla Anny i Edge 157.0.4341.46 dla administratorów zapisano na podstawie raportu właściciela. Service health pokazało pięć advisories dla Microsoft 365 suite; nie wnioskujemy z tego o zdrowiu wszystkich usług ani o odtworzonym incydencie. Licencje Premium umożliwiają rozszerzenia z Intune. Dodatkowy [pilot Copilot](docs/copilot-pilot-plan.md) obejmuje trzy sesje, około 5–7 godzin, zintegrowane z etapami 06, 08, 10 i 13; mamy jedno miejsce Copilot. Własna domena i udostępnienie zewnętrzne pozostają rozszerzeniami. PIM, pełne odtworzenie E5/Entra Suite, hybrydowy Exchange, Teams Phone i zaawansowane holdy są poza zakresem podstawowym.
 
 ## Start
 
-Przejrzyj [zakończony etap 01](docs/stages/01-tenant-and-roles.md) i [baseline](docs/01-environment-baseline.md), a następnie rozpocznij [etap 02](docs/stages/02-users-licenses-and-groups.md). Rzeczywiste dane logowania, domenę, identyfikatory, termin triala i szczegóły rozliczeń przechowuj prywatnie. Źródła techniczne i licencyjne: [Microsoft](docs/sources.md).
+Przejrzyj [wyniki](tests/README.md), [przypadki](tickets/README.md) i [baseline](docs/01-environment-baseline.md), a następnie rozpocznij [etap 04](docs/stages/04-delegation-calendars-and-rooms.md). Rzeczywiste dane logowania, domenę, identyfikatory, termin triala i szczegóły rozliczeń przechowuj prywatnie. Źródła techniczne i licencyjne: [Microsoft](docs/sources.md).
 
 ## Screeny podczas ćwiczeń
 
-Przy każdym istotnym kroku prowadzący wskazuje moment wykonania screena, widok i nazwę pliku. [Indeks Day 01](evidence/day-01/README.md) opisuje 31 rzeczywiście opublikowanych screenów i ograniczenia dowodowe. Nie ma zaległych screenów Day 01. Nazwy i moment wykonania dowodów Day 02 zostaną wskazane podczas odpowiednich ćwiczeń. Kodów QR rejestracji i sekretów uwierzytelniania nie publikujemy.
+Przy każdym istotnym kroku prowadzący wskazuje moment wykonania screena, widok i nazwę pliku. [Indeks dowodów](evidence/README.md) opisuje 63 opublikowane screeny. W obrazach Day 03 zanonimizowano wskazane identyfikatory, domenę oraz nazwisko zewnętrznego nadawcy; ograniczenia interpretacji opisano w indeksie. Nazwy i moment wykonania nowych dowodów będą wskazywane podczas kolejnych ćwiczeń. Kodów QR rejestracji i sekretów uwierzytelniania nie publikujemy.

@@ -1,37 +1,37 @@
-# Environment baseline
+# Environment baseline and current lab state
 
-Status: **DAY 01 BASELINE COMPLETE**, 14 November 2026. This project reuses an existing identity lab and adds a distinct M365 pilot.
+Current state after **Stages 01–03 COMPLETE**, executed **14 November 2026**. Stage/day labels identify learning units; the roadmap's target-day ranges are estimates.
 
-| Field | Recorded state and source |
+| Area | Recorded state and source |
 | --- | --- |
-| Products | Owner-supplied active subscription views: Business Standard 25 seats; Business Premium 25; Business Premium with Copilot 1 |
-| Billing decisions | Recurring billing off reported privately; billing records are not published |
-| Historical subscriptions | E5 and Entra Suite reported disabled/expired; old assignments and policies remain background state |
-| Ordinary pilot | M365 Anna Finance / m365.anna; Business Premium with Copilot and Poland usage location captured in 01 |
-| Service plans | Exchange, SharePoint, Teams, Apps, Entra P1 and Copilot reported enabled; expanded service plans not captured |
-| Administrator | Existing adm-lab; ordinary Premium assignment reported; historical broad role set remains |
-| Temporary use of CA role | Direct/Active/Permanent Conditional Access Administrator captured in 09b; manually removed in 21 |
-| Browser workload results | Exchange round trip; OneDrive/Word web and SharePoint create/save/reopen; Teams self-chat persistence |
-| User/admin boundary | Anna explicitly denied Admin Center before and after MFA; adm-lab access after cleanup reported and list shown in 22 |
-| Baseline Exchange sign-in | 07:15:27Z: Success, single-factor, no method events; visible CA policies Not applied/Disabled |
-| Pilot group | SG-M365-MFA-Pilot; Anna is sole captured direct member |
-| Authenticator | Enabled, All users, Any mode, registration Optional, no excluded groups; Anna's completed push method captured |
-| Pilot CA policy | CA-M365-001-Require-MFA-Pilot; pilot group; both emergency accounts excluded; All resources; Multifactor authentication strength |
-| Policy evaluation | 08:36:27Z Report-only: User action required; later saved On |
-| Enforced sign-in | 08:54:24Z: MFA requirement, claim reuse and pilot policy Success; no fresh push approval captured |
-| Existing collaboration site | Baltic Finance Lab > Documents > General; Public group, 28 members visible; reused rather than provisioned in this stage |
-| Service health | Microsoft 365 suite: five advisories. Separate Exchange/SharePoint/Teams service rows not present in the owner's available view |
-| OS | Windows 11, owner-reported; edition/build not recorded |
-| User browser | Chrome 157.0.8103.52, 64-bit, owner-reported |
-| Admin browser | Edge 157.0.4341.46, 64-bit, owner-reported |
-| Recovery validation | Owner reports fresh bg01/bg02 sign-ins and active Global Administrator for both; no screenshots or secrets published |
+| Products | Owner's active views: Standard 25 seats; Premium 25; Premium with Copilot 1. Recurring billing off reported privately |
+| Historical context | Existing Baltic Finance identity lab; E5/Suite disabled/expired according to owner; historical users, policies and assignments retained |
+| Anna | m365.anna; Business Premium with Copilot; Poland captured; browser workloads verified in Day 01 |
+| Piotr | m365.piotr; Poland; initially no product license, then ordinary Premium with Exchange Online Plan 1; mailbox and two-way mail verified |
+| Marek | m365.marek; ordinary Premium; internal DL test sender; Poland setup follows owner report |
+| Job information | Piotr Operations / Operations Specialist; Marek IT / IT Support Trainee, owner-reported without screenshots. Anna's Finance attribute remains a design value |
+| MFA method and scope | Authenticator enabled for All users / Any mode; completed Anna method captured in Day 01; Piotr/Marek registration owner-reported; pilot group now has all three |
+| CA policy | CA-M365-001-Require-MFA-Pilot remains On; All resources; Multifactor authentication strength; emergency accounts excluded |
+| CA observations | Day 01 Exchange MFA satisfied by prior claim; Day 02 policy Success for Piotr / My Signins and Marek / One Outlook Web. No fresh-approval inference |
+| Configuration role cleanup | Additional CA Administrator on adm-lab removed in Day 01 |
+| Exchange operator role | adm-lab Exchange Recipient Administrator: Direct, Active, tenant scope, Permanent; remains for upcoming recipient work and needs manual review/removal |
+| Historical admin context | User Administrator and other roles on reused adm-lab were background; not an overall least-privilege redesign. Some actions lack independent operator audit attribution |
+| Private collaboration group | BFL-M365-Finance; owner Anna; members Anna/Piotr; site link captured; Teams not added |
+| Distribution list | DL-M365-Finance; owner Anna; members restored to Anna/Piotr after Day 03 fault |
+| DL settings | Internal senders only; Specified senders empty; moderation off, owner-reported. Closed join/leave not confirmed |
+| Alias | Secondary m365.finance on Anna's mailbox; primary m365.anna retained; external sent/received pair verifies alias delivery |
+| Controlled recovery | Piotr excluded from DL: direct mail works; no DL copy reported for ten minutes; re-addition restores delivery to both members |
+| Reused collaboration site | Existing Baltic Finance Lab Public group / 28 members seen in Day 01; distinct from the new Private Finance group |
+| Service health | Day 01: five Microsoft 365 suite advisories; separate Exchange/SharePoint/Teams rows unavailable in owner's view. No all-services-healthy conclusion |
+| Clients | Owner reports Windows 11; Chrome 157.0.8103.52 for users; Edge 157.0.4341.46 for admins; both 64-bit. OS edition/build not recorded |
+| Recovery accounts | Owner reports fresh bg01/bg02 sign-ins and active Global Administrator in Day 01; no recovery secrets published |
 
-## Baseline conclusion and later work
+## Scope and evidence limits
 
-The Day 01 baseline exit checks are complete. License assignment and configuration are distinguished from functional tests; reported recovery/refresh actions are explicitly attributed.
+Three resolved lab cases cover licensing, alias delivery and distribution membership. The current global matrix is **7 PASS / 25 NOT_RUN**. Client versions, job attributes, recovery-account checks and bounded non-receipt include owner-reported data. Provisioning elapsed time and exact group propagation were not measured.
 
-The reused administrator's wider roles are background state, not a newly implemented least-privilege design. Removing the added CA role does not establish removal of all possible administrative access. The public team's membership and permission model will be examined later.
+The first internal alias message's private headers name the primary recipient. Only the subsequent external pair is used as alias-target delivery proof. No tenant-wide sending-from-alias change, transport trace or independently audited sequence of every portal operation is claimed.
 
-Desktop Office activation, deliberate Copilot exercises/output validation, explicit permission-role comparisons, private-channel isolation, synchronization and data recovery are not established by this baseline. Client versions are recorded as supplied, without a compatibility audit or OS build inventory.
+The Finance group's membership is configured, but direct private-site allowed/denied tests, Teams attachment/private channels, desktop activation, OneDrive sync/recovery, shared-mailbox delegation, room booking, PowerShell reports and deliberate Copilot exercises remain future work.
 
-[Stage 01 notes](stages/01-tenant-and-roles.md) · [31 evidence captions](../evidence/day-01/README.md) · [Results](../tests/day-01.md) · [Copilot pilot plan](copilot-pilot-plan.md)
+[Day 01](stages/01-tenant-and-roles.md) · [Day 02](stages/02-users-licenses-and-groups.md) · [Day 03](stages/03-exchange-recipients-and-mail.md) · [Current results](../tests/README.md) · [Evidence](../evidence/README.md)

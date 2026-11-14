@@ -1,25 +1,27 @@
 # Thirty-day learning roadmap
 
-Status: **Stage 01 COMPLETE; Stages 02–14 PLANNED.** Day 01 has 31 indexed captures covering browser workloads, the MFA rollout, administration boundaries and role cleanup. The global matrix has **4 PASS / 28 NOT_RUN**; T03 and T16 were exercised early. See the [result record](../tests/day-01.md).
+Status: **Stages 01–03 COMPLETE; Stages 04–14 PLANNED.** There are 63 indexed screenshots, three resolved lab cases and **7 PASS / 25 NOT_RUN**. See [Day 01](../tests/day-01.md), [Day 02](../tests/day-02.md) and [Day 03](../tests/day-03.md). T16 was exercised early; Stage 07 remains planned.
 
 The target workload is about 50–65 hours including documentation. The ranges below are estimates, not elapsed execution dates. Record the actual subscription expiry privately and shorten the schedule if necessary. Save evidence after each session rather than waiting until the end.
 
-| Stage | Target days | Topic | Execution |
-| --- | --- | --- | --- |
-| 01 | 1 | [Tenant baseline and administrative roles](stages/01-tenant-and-roles.md) | COMPLETE |
-| 02 | 2–3 | [Users, licenses and group types](stages/02-users-licenses-and-groups.md) | PLANNED |
-| 03 | 4–5 | [Exchange recipients, aliases and distribution](stages/03-exchange-recipients-and-mail.md) | PLANNED |
-| 04 | 6–7 | [Shared mailboxes, calendars and room booking](stages/04-delegation-calendars-and-rooms.md) | PLANNED |
-| 05 | 8–9 | [Mail-flow troubleshooting and recovery](stages/05-mail-flow-troubleshooting.md) | PLANNED |
-| 06 | 10–11 | [Outlook and Microsoft 365 Apps](stages/06-outlook-and-microsoft-365-apps.md) | PLANNED |
-| 07 | 12–13 | [Teams and connected SharePoint sites](stages/07-teams-and-connected-sites.md) | PLANNED |
-| 08 | 14–16 | [SharePoint structure, permissions and sharing](stages/08-sharepoint-and-sharing.md) | PLANNED |
-| 09 | 17–18 | [OneDrive synchronization and file recovery](stages/09-onedrive-sync-and-recovery.md) | PLANNED |
-| 10 | 19–20 | [Support operations and user knowledge](stages/10-support-operations-and-knowledge.md) | PLANNED |
-| 11 | 21–23 | [Read-only operational PowerShell reports](stages/11-powershell-reporting.md) | PLANNED |
-| 12 | 24–25 | [Employee onboarding, access change and offboarding](stages/12-employee-lifecycle.md) | PLANNED |
-| 13 | 26–27 | [Independent administration and troubleshooting assessment](stages/13-independent-capstone.md) | PLANNED |
-| 14 | 28–30 | [Portfolio review and lab closure](stages/14-portfolio-and-lab-closure.md) | PLANNED |
+| Stage | Target days | Topic | Execution | Active-work estimate |
+| --- | --- | --- | --- | --- |
+| 01 | 1 | [Tenant baseline and administrative roles](stages/01-tenant-and-roles.md) | COMPLETE | 3–4 h |
+| 02 | 2–3 | [Users, licenses and group types](stages/02-users-licenses-and-groups.md) | COMPLETE | 3–4 h |
+| 03 | 4–5 | [Exchange recipients, aliases and distribution](stages/03-exchange-recipients-and-mail.md) | COMPLETE | 3–4 h |
+| 04 | 6–7 | [Shared mailboxes, calendars and room booking](stages/04-delegation-calendars-and-rooms.md) | PLANNED | 4–5 h |
+| 05 | 8–9 | [Mail-flow troubleshooting and recovery](stages/05-mail-flow-troubleshooting.md) | PLANNED | 4–5 h |
+| 06 | 10–11 | [Outlook and Microsoft 365 Apps](stages/06-outlook-and-microsoft-365-apps.md) | PLANNED | 3–4 h |
+| 07 | 12–13 | [Teams and connected SharePoint sites](stages/07-teams-and-connected-sites.md) | PLANNED | 3–4 h |
+| 08 | 14–16 | [SharePoint structure, permissions and sharing](stages/08-sharepoint-and-sharing.md) | PLANNED | 5–6 h |
+| 09 | 17–18 | [OneDrive synchronization and file recovery](stages/09-onedrive-sync-and-recovery.md) | PLANNED | 3–4 h |
+| 10 | 19–20 | [Support operations and user knowledge](stages/10-support-operations-and-knowledge.md) | PLANNED | 3–4 h |
+| 11 | 21–23 | [Read-only operational PowerShell reports](stages/11-powershell-reporting.md) | PLANNED | 6–8 h |
+| 12 | 24–25 | [Employee onboarding, access change and offboarding](stages/12-employee-lifecycle.md) | PLANNED | 4–5 h |
+| 13 | 26–27 | [Independent administration and troubleshooting assessment](stages/13-independent-capstone.md) | PLANNED | 4–5 h |
+| 14 | 28–30 | [Portfolio review and lab closure](stages/14-portfolio-and-lab-closure.md) | PLANNED | 2–3 h |
+
+The hour ranges total 50–65 hours including learning, screenshots and documentation; they are estimates, not measured elapsed work. The Copilot extension adds 5–7 hours. Learning-unit labels do not establish calendar dates: Stages 01–03 were all executed on 14 November 2026.
 
 ## Learning method
 

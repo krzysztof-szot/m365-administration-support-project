@@ -1,12 +1,12 @@
 # Stage index
 
-Stage 01 is COMPLETE with 31 indexed screenshots. Stages 02–14 remain planned. The global matrix records 4 PASS / 28 NOT_RUN, including T03 and T16 exercised early in Day 01. Configuration, functional observations and owner-reported recovery results are distinguished in the [Day 01 record](../../tests/day-01.md).
+Stages 01–03 are COMPLETE, with 63 indexed screenshots and three resolved lab cases. Stages 04–14 remain PLANNED. The global matrix records **7 PASS / 25 NOT_RUN**. Evidence and reported results are separated in [Day 01](../../tests/day-01.md), [Day 02](../../tests/day-02.md) and [Day 03](../../tests/day-03.md).
 
 | Stage | Target days | Topic | Execution |
 | --- | --- | --- | --- |
 | 01 | 1 | [Tenant baseline and administrative roles](01-tenant-and-roles.md) | COMPLETE |
-| 02 | 2–3 | [Users, licenses and group types](02-users-licenses-and-groups.md) | PLANNED |
-| 03 | 4–5 | [Exchange recipients, aliases and distribution](03-exchange-recipients-and-mail.md) | PLANNED |
+| 02 | 2–3 | [Users, licenses and group types](02-users-licenses-and-groups.md) | COMPLETE |
+| 03 | 4–5 | [Exchange recipients, aliases and distribution](03-exchange-recipients-and-mail.md) | COMPLETE |
 | 04 | 6–7 | [Shared mailboxes, calendars and room booking](04-delegation-calendars-and-rooms.md) | PLANNED |
 | 05 | 8–9 | [Mail-flow troubleshooting and recovery](05-mail-flow-troubleshooting.md) | PLANNED |
 | 06 | 10–11 | [Outlook and Microsoft 365 Apps](06-outlook-and-microsoft-365-apps.md) | PLANNED |

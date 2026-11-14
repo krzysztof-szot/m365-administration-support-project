@@ -2,9 +2,9 @@ TestId,Stage,Check,Expected,Observed,Result,Evidence
 T01,01,Required services,Selected pilot can use enabled workloads,Exchange round trip; OneDrive and SharePoint contents retained after reopen; Teams message retained after refresh,PASS,tests/day-01.md
 T02,01,Ordinary-user administrative attempt,The intended administrative operation is denied,Anna receives an explicit Admin Center permission denial,PASS,evidence/day-01/04-pilot-admin-center-denied.png
 T03,02,Licensed pilot service access,Selected workload is usable after provisioning,Executed early in Stage 01: Anna sends mail to external Gmail and receives its reply,PASS,tests/day-01.md
-T04,02,Missing entitlement recovery,Empty test account recovers service access after the correct entitlement is assigned,Not recorded,NOT_RUN,None
-T05,03,Alias delivery,Marked message arrives in the intended mailbox,Not recorded,NOT_RUN,None
-T06,03,Distribution membership,Approved members receive the message and excluded control does not,Not recorded,NOT_RUN,None
+T04,02,Missing entitlement recovery,Empty test account recovers service access after the correct entitlement is assigned,Piotr's unlicensed Outlook failure is corrected by Premium with Exchange Online Plan 1; mailbox opens and bidirectional mail succeeds,PASS,tests/day-02.md
+T05,03,Alias delivery,Marked message arrives in the intended mailbox,Secondary m365.finance address targets Anna's mailbox; external Gmail sent details and matching received message verify delivery,PASS,tests/day-03.md
+T06,03,Distribution membership,Approved members receive the message and excluded control does not,Day 02: Anna and Piotr receive; Marek reports no copy in ten minutes. Day 03: removal omits Piotr; direct control works; re-addition restores delivery,PASS,tests/day-03.md
 T07,04,Full Access without Send As,Mailbox opening and sender authorization are distinguished by functional results,Not recorded,NOT_RUN,None
 T08,04,Authorized shared mailbox delegation,Delegate opens and sends with the intended permission,Not recorded,NOT_RUN,None
 T09,04,Excluded mailbox identity,Excluded identity cannot open the shared mailbox,Not recorded,NOT_RUN,None

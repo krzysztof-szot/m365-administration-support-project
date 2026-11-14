@@ -1,50 +1,51 @@
 # Stage 02 — Users, licenses and group types
 
-Status: PLANNED  
-Target days: 2–3  
-Execution date: not recorded
+Status: **COMPLETE**  
+Execution date: **14 November 2026**  
+Target days: 2–3 (planning estimate)  
+Evidence: **21 screenshots**
 
-## Learning objective
+## Objective and starting state
 
-Prepare pilot identities and choose an appropriate group type for each business requirement.
+Prepare ordinary users, distinguish identity authentication from workload entitlement, and choose suitable group types. Anna and her licensed Exchange test T03 carry forward from Day 01. The existing tenant contains older lab objects, so new identities use the m365 prefix.
 
-## Before starting
+## Users and service recovery
 
-Confirm the required service entitlement, task-appropriate role, affected synthetic identities and recovery path. Record the actual tenant/client context privately. Earlier stages provide the baseline; unresolved prerequisites remain BLOCKED rather than assumed successful.
+| Pilot | Login alias | Final product | Department / Job title |
+| --- | --- | --- | --- |
+| M365 Anna Finance | m365.anna | Business Premium with Copilot | Finance is the design department; actual profile attributes not captured here |
+| M365 Piotr Operations | m365.piotr | Business Premium | Operations / Operations Specialist, owner-reported |
+| M365 Marek IT | m365.marek | Business Premium | IT / IT Support Trainee, owner-reported |
 
-## Planned exercises
+Piotr initially has Poland usage location and no license. He can open My Account, while Outlook reports HTTP 500 with **OwaUserHasNoMailboxAndNoLicenseAssignedException** at **10:50:51.023Z**. This separates a working identity from missing Exchange entitlement.
 
-1. Reuse Anna Finance from completed Day 01 and create Piotr Operations and Marek IT as distinct synthetic users.
-2. Set usage locations and assign only the service entitlements required by the exercise.
-3. Compare security groups, Microsoft 365 groups and distribution lists.
-4. On an empty test account, investigate a deliberately missing service entitlement and restore it.
+Assigned ordinary Premium and verified Exchange Online Plan 1 enabled. Piotr's mailbox then opens; a message to Anna and her reply are captured at displayed 12:09/12:12. Provisioning elapsed time was not supplied. [M365-001](../../tickets/M365-001-pilot-license-recovery.md) is resolved and **T04 PASS**. Marek's Premium assignment is also captured; Anna keeps the single Copilot seat.
 
-## Training case
+## MFA scope and administrative role
 
-A newly created employee can sign in but cannot use an expected workload.
+Both new users registered Authenticator according to the owner and joined SG-M365-MFA-Pilot. The group now has three direct members. The existing CA policy returns Success for Piotr's **My Signins** event and Marek's **One Outlook Web** event. Those tabs do not show Authentication requirement or a fresh approval method.
 
-This is a planned lab scenario. No incident, root cause or repair outcome has been observed yet.
+For Exchange recipient work, adm-lab receives **Exchange Recipient Administrator**, Direct/Active/Permanent at tenant scope (15). It remains assigned for upcoming Exchange tasks and requires manual review/removal when that scope ends. The wider historical role set is not a new least-privilege redesign. The original group-view capture was viewed as bg01; not all setup actions have independent operator audit evidence.
 
-## Exit checks
+## Group types and actual configuration
 
-- [ ] The selected workload becomes usable after the entitlement is corrected.
-- [ ] Membership and ownership match the documented access matrix.
-- [ ] Provisioning delay is recorded separately from a configuration failure.
+| Type / resource | Recorded purpose and configuration |
+| --- | --- |
+| Security: SG-M365-MFA-Pilot | Defines the three users targeted by the existing MFA policy |
+| Microsoft 365: BFL-M365-Finance | Private; owner Anna; explicit members Anna/Piotr; alias bfl-m365-finance; site link captured; Teams not added |
+| Distribution: DL-M365-Finance | Owner Anna; members Anna/Piotr; alias dl-m365-finance; distributes messages to member mailboxes |
 
-## Carry-forward from Day 01
+DL delivery settings are owner-reported: internal senders only, no specified-sender restriction, moderation off. Marek sends to the DL at displayed 13:01. Anna/Piotr receive; Marek reports no Inbox/Junk copy after ten minutes. This exercises **T06 early**, without equating recipient membership with sender permission. Stage 03 adds removal/recovery.
 
-Anna's pilot license and Poland usage location are already recorded. T03 passes for licensed Exchange access through an external mail round trip; no need to recreate Anna or repeat that result as new Stage 02 execution. The missing-entitlement recovery and group-type exercises remain NOT_RUN.
+## Exit checks and final state
 
-## Execution record
+- [x] Correct entitlement restores the selected workload.
+- [x] Group owners and members match the recorded configuration.
+- [x] Provisioning delay is distinguished from configuration failure; elapsed time is recorded as unmeasured.
+- [x] Ordinary-user testing verifies mail behavior after the change.
 
-- Starting state and expected result: Day 01 carry-forward above; Stage 02 execution not yet started.
-- Actions and reasoning: not recorded.
-- Observations and propagation delays: not recorded.
-- Functional/negative/recovery results: T03 PASS from Day 01; T04 NOT_RUN.
-- Evidence: [Day 01 results](../../tests/day-01.md); no new Stage 02 captures.
-- Remaining resources, restoration and limitations: not recorded.
-- What I can explain without a click-by-click guide: not recorded.
+The owner waived job-profile screenshots; profile completion is reported. Closed DL join/leave was requested but not explicitly confirmed. No full SharePoint permission boundary, private channel, desktop activation or validated Copilot exercise is claimed.
 
-Use the [lab-note template](../LAB-NOTE-TEMPLATE.md), [test matrix](../../tests/test-matrix.csv) and [ticket workflow](../../tickets/README.md). Mark completion only after evidence supports the relevant exit checks.
+All three pilots, both new Finance groups and the extended MFA scope remain. Stage 07 will add Teams to the existing Microsoft 365 group rather than create another group.
 
-[Back to stage index](README.md)
+[Results](../../tests/day-02.md) · [21 evidence captions](../../evidence/day-02/README.md) · [Access matrix](../access-matrix.md) · [Next: Stage 03](03-exchange-recipients-and-mail.md)

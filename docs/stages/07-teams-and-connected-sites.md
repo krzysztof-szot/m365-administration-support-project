@@ -14,7 +14,7 @@ Confirm the required service entitlement, task-appropriate role, affected synthe
 
 ## Planned exercises
 
-1. Create the BFL-M365-Finance team with explicit ownership.
+1. Add Teams to the existing BFL-M365-Finance Microsoft 365 group from Day 02, retaining Anna as owner and Anna/Piotr as members.
 2. Create standard and private channels with different membership.
 3. Open the same file through Teams and its SharePoint location.
 4. Test a lab meeting, audio-device selection and screen sharing; record any single-device test limitations.
@@ -36,9 +36,13 @@ This is a planned lab scenario. No incident, root cause or repair outcome has be
 
 T16 was exercised early: Anna opened General files of the existing Baltic Finance Lab team through Teams, created a document in the parent site's Documents > General folder and reopened it successfully. See [20/20a and the result record](../../tests/day-01.md). This passes the baseline standard-channel folder-access check. It does not provision BFL-M365-Finance or establish its planned membership/private-channel boundary; repeat the relevant access check when those new resources are built.
 
+## Carry-forward from Day 02
+
+The Private BFL-M365-Finance group and its site link already exist. Owner: Anna; members: Anna and Piotr; Marek is not listed. Teams has not been added. Use that existing group when creating the Team; do not create a duplicate group. The existing Baltic Finance Lab team used for T16 is a different resource. See [Day 02 configuration](../../evidence/day-02/README.md).
+
 ## Execution record
 
-- Starting state and expected result: Day 01 carry-forward above; planned Stage 07 deployment has not started.
+- Starting state and expected result: Day 01 file baseline and Day 02 Private group carry-forward above; planned Stage 07 Teams deployment has not started.
 - Actions and reasoning: not recorded.
 - Observations and propagation delays: not recorded.
 - Functional/negative/recovery results: T16 PASS on the existing team from Day 01; T17 NOT_RUN; new Finance-resource checks remain planned.

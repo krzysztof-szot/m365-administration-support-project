@@ -1,13 +1,15 @@
 # Support cases
 
-Status: backlog prepared; no cases have been executed or resolved.
+Status: **3 of 15 lab cases RESOLVED; 12 PLANNED.** These are guided, synthetic service requests and controlled training conditions, not production incidents.
 
-Start from the [synthetic backlog](../samples/ticket-backlog.csv). Create a case document from [TICKET-TEMPLATE.md](TICKET-TEMPLATE.md) when work begins. A future example filename is `M365-004-shared-mailbox-send-as.md`; this example is not an existing resolved case.
+| Case | Type / stage | Verified outcome |
+| --- | --- | --- |
+| [M365-001 — Pilot license recovery](M365-001-pilot-license-recovery.md) | Service request / 02 | Piotr's working identity gains Exchange access after licensing; two-way mail verified |
+| [M365-002 — Finance alias delivery](M365-002-finance-alias-delivery.md) | Service request / 03 | Explicit external alias target delivers to Anna's existing mailbox |
+| [M365-003 — Distribution membership recovery](M365-003-distribution-membership-recovery.md) | Controlled incident / 03 | Direct mail control works; omitted DL member is re-added; delivery recovers |
 
-For each case, record the reported symptom, independently collected observations, competing hypotheses, supported cause, scoped change, recovery path and functional verification. Include impact/urgency reasoning and the final user message.
+The [backlog](../samples/ticket-backlog.csv) keeps the other 12 cases PLANNED. Use [TICKET-TEMPLATE.md](TICKET-TEMPLATE.md) for new work. Each record includes the request, scope, diagnostic decisions, supported cause, reversible action, verification and suggested closure wording. Closure wording in documents is not evidence of an externally sent support message.
 
-A service request is not automatically an incident. A deliberate training condition must be labeled as synthetic. Do not invent a real Microsoft outage, error code or root cause.
+An expected failure in a controlled exercise is not a real outage. Preserve observed errors and source attribution; do not invent error codes, formal SLA priorities or transport traces. Record windows for non-receipt and distinguish missing evidence from a failed functional check.
 
-Suggested statuses: PLANNED → IN_PROGRESS → RESOLVED, or BLOCKED with the actual dependency. Resolve only when the expected result has been checked. Failed and escalated cases keep their observed limitations.
-
-The repository also provides a [support-case issue form](../.github/ISSUE_TEMPLATE/support-case.yml). An issue tracks work; the final case document records verified learning and sanitized evidence.
+Suggested workflow: PLANNED → IN_PROGRESS → RESOLVED, or BLOCKED with the actual dependency. The [support-case issue form](../.github/ISSUE_TEMPLATE/support-case.yml) can track future work; these case documents contain the final lab record.

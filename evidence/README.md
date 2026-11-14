@@ -1,6 +1,18 @@
 # Evidence handling
 
-Thirty-one screenshots are published and captioned in [Day 01](day-01/README.md), which is COMPLETE. Results distinguish visible evidence from the owner's reported refresh/reopen and recovery checks. A filename alone does not establish a result.
+**63 owner-uploaded screenshots are indexed across three completed stages.** Configuration, captured functional results and owner-reported checks are labelled separately.
+
+| Stage | Screenshots | Results |
+| --- | --- | --- |
+| [Day 01](day-01/README.md) | 31 | Baseline workloads, MFA rollout and CA role cleanup |
+| [Day 02](day-02/README.md) | 21 | Licensing recovery, three-user MFA scope and group configuration |
+| [Day 03](day-03/README.md) | 11 | Explicit external alias delivery and DL membership recovery |
+
+Future evidence folders do not establish execution. Stages 04–14 remain planned.
+
+## Current publication review
+
+The reviewed Day 03 images mask SPO identifiers, the tenant domain and the external sender's display name while preserving the alias local part and test results. The [Day 03 index](day-03/README.md#publication-review) records the publication boundary. Documentation does not reproduce raw identifiers or headers; the owner's uploaded image bytes are retained.
 
 ## Capture checkpoints during guided work
 

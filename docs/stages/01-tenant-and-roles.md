@@ -89,8 +89,8 @@ The owner then confirmed a new adm-lab session could open Active users; [22](../
 
 Anna and the pilot group/policy remain in place; the MFA policy remains On. The test documents and self-chat message remain as synthetic baseline material. The added CA role has been removed.
 
-This is baseline completion, not full M365 project completion. Desktop Apps activation belongs to Stage 06; private-channel isolation to Stage 07; permission-role comparisons to Stage 08; OneDrive sync/recovery to Stage 09. No validated Copilot exercise, PowerShell report, support-case resolution or automated test run is claimed.
+This is baseline completion, not full M365 project completion. Desktop Apps activation belongs to Stage 06; private-channel isolation to Stage 07; permission-role comparisons to Stage 08; OneDrive sync/recovery to Stage 09. At Day 01 closure, no validated Copilot exercise, PowerShell report, support-case resolution or automated workload test was claimed. Later case resolutions are recorded in [the case index](../../tickets/README.md).
 
-Global matrix: **T01, T02, T03 and T16 PASS; 28 NOT_RUN**. T03 and T16 were exercised early during Day 01; their parent stages remain planned.
+Historical Day 01 matrix snapshot: **T01, T02, T03 and T16 PASS; 28 NOT_RUN**. T03/T16 were exercised early. Stage 02 has since completed; Stage 07 is still planned. See [current cumulative results](../../tests/README.md).
 
 [Detailed results](../../tests/day-01.md) · [31 evidence captions](../../evidence/day-01/README.md) · [Environment baseline](../01-environment-baseline.md) · [Next: Stage 02](02-users-licenses-and-groups.md)

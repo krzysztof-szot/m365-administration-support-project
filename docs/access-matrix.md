@@ -1,21 +1,34 @@
-# Planned access matrix
+# Access matrix — observed configuration and future targets
 
-Status: the dedicated collaboration access model below remains PLANNED. Completed Day 01 verifies Anna's mail, personal OneDrive, Teams self-chat, existing team-connected SharePoint writing and admin-portal denial. The scoped MFA pilot is enforced; the added CA role was removed.
+Current state after Stages 01–03. Configured membership is distinguished from effective-resource tests.
 
-The reused Baltic Finance Lab site is labelled Public group with 28 members. Anna's successful write there does not establish the planned Owner/Member/Visitor/Excluded boundaries. The new Finance team, private channel, knowledge site and delegation model below have not been deployed.
+## Observed configuration and functional results
 
-| Resource | Anna Finance | Piotr Operations | Marek IT |
+| Resource | Anna | Piotr | Marek | Evidence / limit |
+| --- | --- | --- | --- | --- |
+| Own user mailbox | Verified send/receive | Verified after license repair | Verified as internal sender | Days 01–03; not desktop activation |
+| Own OneDrive | Create/save/reopen verified | Not tested | Not tested | Day 01 only |
+| SG-M365-MFA-Pilot | Direct member | Direct member | Direct member | Day 02 09; policy results recorded separately |
+| BFL-M365-Finance Microsoft 365 group | Owner and member | Member | Not listed | Day 02 12–14; Private; site link exists; direct-site boundaries not tested |
+| DL-M365-Finance final state | Owner and member / receives | Member / receives after restoration | Not member / allowed internal sender | Day 02 16–20; Day 03 07–09; non-receipt controls are bounded owner reports |
+| m365.finance SMTP address | Routes to Anna's existing mailbox | Internal trial sender | No ownership or mailbox grant | External alias target verified in Day 03 03a/03b |
+| Microsoft 365 Admin Center | Explicitly denied | No admin role assigned in the exercise; denial not separately tested | Same | Anna denial is not generalized to every API or all users |
+
+Day 03 temporarily removed Piotr only from the DL. The Microsoft 365 group and MFA memberships were not the fault target. The DL was restored before closure.
+
+## Remaining permission targets
+
+| Planned resource / check | Anna | Piotr | Marek |
 | --- | --- | --- | --- |
-| Personal mailbox and OneDrive | Own data | Own data | Own data |
-| Finance team / standard files | Owner | Member for the relevant exercise | Excluded control |
-| Finance private channel | Owner/member | Excluded until the explicit membership test | Excluded control |
-| Helpdesk shared mailbox | Delegate according to the test | Separate Full Access / sender-permission exercise | Excluded control |
+| Teams attached to existing Finance group | Owner | Member | Excluded control |
+| Finance private channel | Owner/member | Excluded until explicit membership test | Excluded control |
+| Helpdesk shared mailbox | Delegate according to test | Separate Full Access / sender-permission exercise | Excluded control |
 | Knowledge site | Owner | Visitor/read | Member/edit |
 | Isolated Finance document | Authorized | Reader where explicitly granted | Excluded control |
 | Room calendar | Booking requester | Booking requester | Booking requester |
 
-Administrative identities are separate. Use a normal user session for access tests; an elevated administrator session is not the denied-user control.
+Create the Finance Team from the existing Private group in Stage 07. The older Public Baltic Finance Lab team/site is separate and must not be used as proof of this new group's permission boundary.
 
-Membership changes during an exercise must include a before/after matrix and propagation observations. Stage 08 may deliberately use an isolated document or group to compare direct grants, membership and links. Restore the intended final state afterwards.
+Administrative identities are separate. The CA configuration role was removed; the captured recipient-admin assignment remains active. Use ordinary user sessions for effective access checks and record other grants, propagation and restoration before explaining a denial or retained access.
 
-[Stage 01 observed state](stages/01-tenant-and-roles.md) · [Evidence](../evidence/day-01/README.md)
+[Baseline](01-environment-baseline.md) · [Day 02 evidence](../evidence/day-02/README.md) · [Day 03 evidence](../evidence/day-03/README.md)

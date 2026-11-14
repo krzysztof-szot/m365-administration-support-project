@@ -30,14 +30,14 @@ Stage status: **COMPLETE**. Execution date: **14 November 2026**. Evidence: **31
 
 ## Global matrix mapping
 
-The [32-check matrix](test-matrix.csv) records **4 PASS / 28 NOT_RUN**:
+At Day 01 closure, the [32-check matrix](test-matrix.csv) snapshot was **4 PASS / 28 NOT_RUN**:
 
 - **T01:** baseline functional access to Exchange, OneDrive/Word web, Teams web and SharePoint.
 - **T02:** ordinary-user administrative attempt denied.
 - **T03:** licensed pilot workload access, exercised early via the Exchange mail round trip.
 - **T16:** standard-channel parent-site folder access, exercised early through the existing Baltic Finance Lab team.
 
-T03 and T16 carry forward to Stages 02 and 07. Those stages remain PLANNED because their remaining tasks have not run. The detailed rows above are supporting checks, not extra global matrix entries.
+T03 and T16 carried forward to Stages 02 and 07. Stage 02 has since completed; Stage 07 remains planned. The [current matrix summary](README.md) includes later execution. The detailed rows above are supporting checks, not extra global entries.
 
 T19 remains NOT_RUN: Anna's baseline SharePoint write succeeded, but the planned explicit Member/Reader/Excluded permission comparison has not been performed. T23 remains NOT_RUN: viewing Service health alone does not complete the later support-triage exercise.
 
