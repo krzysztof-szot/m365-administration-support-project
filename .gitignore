@@ -1,0 +1,26 @@
+# Local identifiers and raw workload output
+local-output/
+local-config/
+config/local*.json
+raw-evidence/
+
+# Credentials and certificate/private-key material
+.env
+.env.*
+*.pfx
+*.p12
+*.key
+*.pem
+*.kdbx
+.msal*
+
+# Local mailbox, Office and diagnostic files
+*.pst
+*.ost
+~$*
+*.dmp
+
+# Operating system files
+Thumbs.db
+Desktop.ini
+.DS_Store

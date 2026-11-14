@@ -1,0 +1,32 @@
+name: Synthetic support case
+description: Record a lab service request or incident
+title: "[M365-NNN] "
+body:
+  - type: input
+    id: workload
+    attributes:
+      label: Workload and synthetic requester
+    validations:
+      required: true
+  - type: textarea
+    id: symptom
+    attributes:
+      label: Reported symptom and impact
+      description: Separate the user's report from independent observations.
+    validations:
+      required: true
+  - type: textarea
+    id: diagnosis
+    attributes:
+      label: Checks and diagnostic decisions
+      value: "Not investigated. Cause not established."
+  - type: textarea
+    id: change
+    attributes:
+      label: Scoped change and recovery path
+      description: Record the intended lab scope before introducing a training condition.
+  - type: textarea
+    id: verification
+    attributes:
+      label: User verification and closure
+      value: "NOT_RUN. No functional result or closure evidence yet."

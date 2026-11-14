@@ -1,0 +1,35 @@
+name: Lab stage
+description: Track one planned learning stage and its verification
+title: "[Stage NN] "
+body:
+  - type: input
+    id: stage
+    attributes:
+      label: Stage and objective
+      description: Link the stage document and state the intended learning outcome.
+    validations:
+      required: true
+  - type: textarea
+    id: prerequisites
+    attributes:
+      label: Prerequisites and scope
+      description: Use synthetic identities. State required entitlement and role without private tenant identifiers.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior and recovery
+      description: Define functional checks and the recovery path before changes.
+    validations:
+      required: true
+  - type: textarea
+    id: observations
+    attributes:
+      label: Observations and results
+      value: "NOT_RUN. No execution evidence yet."
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Sanitized evidence and remaining work
+      description: Link verified notes and checks. Never paste tokens or raw exports.

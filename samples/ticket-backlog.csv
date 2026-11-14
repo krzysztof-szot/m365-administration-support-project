@@ -1,0 +1,16 @@
+TicketId,Stage,Workload,Type,Summary,Status
+M365-001,02,Licensing,ServiceRequest,New pilot user needs the required service entitlement,PLANNED
+M365-002,03,ExchangeOnline,ServiceRequest,Finance alias must deliver to the intended mailbox,PLANNED
+M365-003,03,ExchangeOnline,Incident,New department member is missing from distribution delivery,PLANNED
+M365-004,04,ExchangeOnline,Incident,Delegate opens Helpdesk but cannot send as Helpdesk,PLANNED
+M365-005,04,ExchangeOnline,Incident,Room booking conflicts with an existing reservation,PLANNED
+M365-006,05,ExchangeOnline,Incident,Message to a nonexistent lab recipient is not delivered,PLANNED
+M365-007,05,ExchangeOnline,Incident,Scoped training rule rejects a marked message,PLANNED
+M365-008,06,Microsoft365Apps,Incident,Office client is signed in with the wrong lab identity,PLANNED
+M365-009,06,Outlook,Incident,Mailbox behavior differs between browser and desktop,PLANNED
+M365-010,07,Teams,Incident,Team member cannot access the private channel,PLANNED
+M365-011,08,SharePoint,ServiceRequest,Knowledge-site reader must not edit documents,PLANNED
+M365-012,08,SharePoint,Incident,User retains document access after one link is revoked,PLANNED
+M365-013,09,OneDrive,Incident,Paused sync leaves the local test file stale,PLANNED
+M365-014,09,OneDrive,ServiceRequest,Restore a previous version and a deleted synthetic file,PLANNED
+M365-015,12,Microsoft365,ServiceRequest,Offboard the employee and hand approved data to a custodian,PLANNED

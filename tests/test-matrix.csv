@@ -1,0 +1,33 @@
+TestId,Stage,Check,Expected,Observed,Result,Evidence
+T01,01,Required services,Selected pilot can use enabled workloads,Not recorded,NOT_RUN,None
+T02,01,Ordinary-user administrative attempt,The intended administrative operation is denied,Not recorded,NOT_RUN,None
+T03,02,Licensed pilot service access,Selected workload is usable after provisioning,Not recorded,NOT_RUN,None
+T04,02,Missing entitlement recovery,Empty test account recovers service access after the correct entitlement is assigned,Not recorded,NOT_RUN,None
+T05,03,Alias delivery,Marked message arrives in the intended mailbox,Not recorded,NOT_RUN,None
+T06,03,Distribution membership,Approved members receive the message and excluded control does not,Not recorded,NOT_RUN,None
+T07,04,Full Access without Send As,Mailbox opening and sender authorization are distinguished by functional results,Not recorded,NOT_RUN,None
+T08,04,Authorized shared mailbox delegation,Delegate opens and sends with the intended permission,Not recorded,NOT_RUN,None
+T09,04,Excluded mailbox identity,Excluded identity cannot open the shared mailbox,Not recorded,NOT_RUN,None
+T10,04,Calendar reader,Reader sees the event but cannot modify it,Not recorded,NOT_RUN,None
+T11,05,Invalid recipient,Actual failure evidence identifies the invalid recipient,Not recorded,NOT_RUN,None
+T12,05,Scoped training rule,Marked message to the selected recipient is rejected while an unmarked control is delivered,Not recorded,NOT_RUN,None
+T13,05,Mail-flow recovery,Delivery succeeds after disabling the training rule and allowing for propagation,Not recorded,NOT_RUN,None
+T14,06,Client identity and activation,Correct licensed identity is active in the recorded client,Not recorded,NOT_RUN,None
+T15,06,Browser and desktop comparison,Observed differences support a specific account or client diagnosis,Not recorded,NOT_RUN,None
+T16,07,Standard-channel files,Team member accesses the expected parent-site folder,Not recorded,NOT_RUN,None
+T17,07,Private-channel boundary,Authorized channel member succeeds and excluded team member is denied,Not recorded,NOT_RUN,None
+T18,08,SharePoint reader,Reader opens the document but cannot edit it,Not recorded,NOT_RUN,None
+T19,08,SharePoint member,Member can make and save the intended change,Not recorded,NOT_RUN,None
+T20,08,SharePoint excluded identity,Excluded identity is denied after other access paths are checked,Not recorded,NOT_RUN,None
+T21,09,Sync recovery,Changes appear in browser and client after sync resumes,Not recorded,NOT_RUN,None
+T22,09,Version and recycle-bin recovery,Restored content matches the synthetic baseline,Not recorded,NOT_RUN,None
+T23,10,Service health triage,Actual service state is distinguished from training scenarios,Not recorded,NOT_RUN,None
+T24,11,Report reconciliation,Selected rows match independent workload reads,Not recorded,NOT_RUN,None
+T25,11,Insufficient report permission,Useful error or incomplete status is returned without changing configuration,Not recorded,NOT_RUN,None
+T26,12,Leaver new sign-in,New sign-in is denied after blocking,Not recorded,NOT_RUN,None
+T27,12,Mailbox preservation,Approved delegate opens retained mail after verified conversion and licensing decisions,Not recorded,NOT_RUN,None
+T28,12,OneDrive handover,Custodian accesses designated data and preservation limits are recorded,Not recorded,NOT_RUN,None
+T29,04,Valid room reservation,Allowed reservation is processed according to recorded room settings,Not recorded,NOT_RUN,None
+T30,04,Conflicting room reservation,Overlapping request is handled according to recorded booking settings,Not recorded,NOT_RUN,None
+T31,08,Revoked sharing link,Access after revocation is explained by verified remaining grants or denial,Not recorded,NOT_RUN,None
+T32,13,Independent five-task assessment,Each task has a supported outcome and functional verification or justified escalation,Not recorded,NOT_RUN,None
