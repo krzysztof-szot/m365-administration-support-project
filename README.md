@@ -4,8 +4,8 @@
 
 <p align="center">
   <img alt="14 learning stages" src="https://img.shields.io/badge/LABS-14%20STAGES-6f42c1?style=for-the-badge">
-  <img alt="Project in progress; 3 of 14 stages complete" src="https://img.shields.io/badge/PROGRESS-3%20%2F%2014%20COMPLETE-0078D4?style=for-the-badge">
-  <img alt="Global matrix: 7 pass and 25 not run" src="https://img.shields.io/badge/CHECKS-7%20PASS%20%2F%2025%20NOT%20RUN-607078?style=for-the-badge">
+  <img alt="Project in progress; 4 of 14 stages complete" src="https://img.shields.io/badge/PROGRESS-4%20%2F%2014%20COMPLETE-0078D4?style=for-the-badge">
+  <img alt="Global matrix: 13 pass and 19 not run" src="https://img.shields.io/badge/CHECKS-13%20PASS%20%2F%2019%20NOT%20RUN-607078?style=for-the-badge">
 </p>
 
 <p align="center">
@@ -35,10 +35,10 @@ This repository complements the owner's Microsoft Entra, hybrid security and IAM
 
 ## Project Overview
 
-**Status: Stages 01–03 complete; Stages 04–14 planned.**  
-The lab now uses **Business Standard (25 seats)**, **Business Premium (25 seats)** and **Business Premium with Copilot (1 seat)** according to the owner's active subscription views. All three pilots are provisioned. Licensing recovery, a three-user MFA scope, Finance groups, alias delivery and controlled distribution recovery are documented. See the [current baseline](docs/01-environment-baseline.md) for the observed state and source limits.
+**Status: Stages 01–04 complete; Stages 05–14 planned.**  
+The lab now uses **Business Standard (25 seats)**, **Business Premium (25 seats)** and **Business Premium with Copilot (1 seat)** according to the owner's active subscription views. All three pilots are provisioned. Licensing recovery, a three-user MFA scope, Finance groups, alias delivery, distribution recovery, shared-mailbox delegation, calendar permissions and room booking are documented. See the [current baseline](docs/01-environment-baseline.md) for the observed state and source limits.
 
-**Recorded execution: 3 completed stages, 7 PASS / 25 NOT_RUN in the global matrix, 3 resolved lab cases, and 63 published screenshots.** The first three stages connect working services to scoped MFA, entitlement recovery, group ownership, explicit alias delivery and distribution membership repair. [Implementation index](docs/stages/README.md) · [Results](tests/README.md) · [Evidence](evidence/README.md)
+**Recorded execution: 4 completed stages, 13 PASS / 19 NOT_RUN in the global matrix, 5 resolved lab cases, and 90 published screenshots.** The four completed stages connect working services to scoped MFA, entitlement recovery, group ownership, alias/distribution delivery, delegated mail handling and calendar/resource behavior. [Implementation index](docs/stages/README.md) · [Results](tests/README.md) · [Evidence](evidence/README.md)
 
 The target roles are **Junior Microsoft 365 Administrator**, **Junior System Administrator** and **IT Support Specialist**.
 
@@ -56,7 +56,7 @@ Each stage is designed to include:
 | Architecture | Implementation | Validation | Evidence |
 |:---:|:---:|:---:|:---:|
 | [View design](#target-architecture) | [Browse stages](#implementation-progress) | [Open test matrix](tests/test-matrix.csv) | [Browse evidence](evidence/README.md) |
-| Target design and recorded baseline | Stages 01–03 complete; 11 stages planned | 7 PASS / 25 NOT_RUN | 63 screenshots across Days 01–03 |
+| Target design and recorded baseline | Stages 01–04 complete; 10 stages planned | 13 PASS / 19 NOT_RUN | 90 screenshots across Days 01–04 |
 
 ## Technologies and Concepts
 
@@ -85,11 +85,13 @@ The scoped Conditional Access MFA pilot now contains Anna, Piotr and Marek. Ordi
 | --- | --- |
 | Learning plan | 14 stage documents with objectives, exercises and exit checks |
 | Subscription | Standard 25, Premium 25 and Premium with Copilot 1 reported active; Anna's bundle assignment captured |
-| Synthetic inputs | Three provisioned synthetic pilots; 3 of 15 lab cases resolved |
-| Validation | 32 global checks: 7 PASS and 25 NOT_RUN; supporting observations recorded separately |
-| Operational documentation | Three completed case records; lab/lifecycle templates and a user-article plan |
+| Synthetic inputs | Three provisioned synthetic pilots; 5 of 15 lab cases resolved |
+| Validation | 32 global checks: 13 PASS and 19 NOT_RUN; supporting observations recorded separately |
+| Operational documentation | Five completed case records; lab/lifecycle templates and a user-article plan |
+| Delegation and calendars | Piotr Send As, Anna Send on behalf, excluded Marek denied; calendar editor tested and reader restored |
+| Room booking | Automatic policy verified through accepted, conflicting/declined and rescheduled/accepted requests |
 | PowerShell | Three report contracts defined; no executable scripts yet |
-| Implementation evidence | 63 screenshots: Day 01 baseline (31), Day 02 licensing/groups (21), Day 03 alias/recovery (11) |
+| Implementation evidence | 90 screenshots: Day 01 baseline (31), Day 02 licensing/groups (21), Day 03 alias/recovery (11), Day 04 delegation/calendar/room (27) |
 
 Captured configuration, functional results and owner-reported details are distinguished in the stage notes. Assigned services and a visible Copilot button do not establish full workload operation or validated AI output.
 
@@ -100,8 +102,10 @@ Captured configuration, functional results and owner-reported details are distin
 | [M365-001 — Pilot license recovery](tickets/M365-001-pilot-license-recovery.md) | Piotr can authenticate but Outlook has no entitlement; Premium/Exchange assignment restores mailbox access and two-way mail |
 | [M365-002 — Finance alias delivery](tickets/M365-002-finance-alias-delivery.md) | External mail explicitly addressed to the secondary address reaches Anna's existing mailbox |
 | [M365-003 — Distribution membership recovery](tickets/M365-003-distribution-membership-recovery.md) | Direct mail works during omitted DL membership; re-adding Piotr restores distribution while Anna continues receiving |
+| [M365-004 — Helpdesk sender-permission recovery](tickets/M365-004-helpdesk-sender-permission-recovery.md) | Reading works before sending; separate Send As restores the intended sender and reply flow |
+| [M365-005 — Room booking conflict](tickets/M365-005-room-booking-conflict-recovery.md) | The room explicitly declines an overlap; rescheduling the same request produces a fresh acceptance |
 
-These are three guided lab records from the [15-case backlog](samples/ticket-backlog.csv). The other twelve remain planned.
+These are five guided lab records from the [15-case backlog](samples/ticket-backlog.csv). The other ten remain planned.
 
 ## Planned Outcomes
 
@@ -117,11 +121,11 @@ These are three guided lab records from the [15-case backlog](samples/ticket-bac
 | Handle employee changes | Onboarding, department transfer and offboarding with verified access/data handling |
 | Work independently | Five final tasks with supported resolutions or justified escalation |
 
-These are project-wide targets. The first three stages establish a working baseline and three guided case resolutions; remaining objectives become demonstrated outcomes only after execution and recorded verification.
+These are project-wide targets. The first four stages establish a working baseline and five guided case resolutions; remaining objectives become demonstrated outcomes only after execution and recorded verification.
 
 ## Featured Implementation Evidence
 
-Selected lab captures connect the user experience to configuration and recovery. [All 63 captions and review notes](evidence/README.md) · [Case records](tickets/README.md)
+Selected lab captures connect the user experience to configuration and recovery. [All 90 captions and review notes](evidence/README.md) · [Case records](tickets/README.md)
 
 <table>
 <tr>
@@ -148,11 +152,23 @@ Selected lab captures connect the user experience to configuration and recovery.
   <sub>Anna continues receiving as the unchanged control</sub>
 </td>
 </tr>
+<tr>
+<td width="50%" align="center">
+  <a href="evidence/day-04/11-helpdesk-send-on-behalf-received-marek.png"><img src="evidence/day-04/11-helpdesk-send-on-behalf-received-marek.png" alt="Marek receives Anna's message explicitly sent on behalf of Helpdesk" width="100%"></a><br>
+  <strong>Sender Delegation Verified</strong><br>
+  <sub>Send on behalf compared with Piotr's Send As</sub>
+</td>
+<td width="50%" align="center">
+  <a href="evidence/day-04/22-room-booking-conflict-declined.png"><img src="evidence/day-04/22-room-booking-conflict-declined.png" alt="Room reply declines Marek's request and identifies Anna's conflicting reservation" width="100%"></a><br>
+  <strong>Room Conflict Explained</strong><br>
+  <sub>Explicit decline followed by acceptance after rescheduling</sub>
+</td>
+</tr>
 </table>
 
 ## Target Architecture
 
-The diagram combines **implemented baseline components and labelled future extensions**. All three pilots, the MFA scope, Finance group/site link, DL and alias exist. Teams attachment, private channels, Helpdesk, rooms and the knowledge site remain planned. The reused Baltic Finance Lab site is separate from the new Finance group. This is not a protocol trace.
+The diagram combines **implemented baseline components and labelled future extensions**. All three pilots, the MFA scope, Finance group/site link, DL, alias, Helpdesk and room exist. Shared-mailbox delegation, calendar read/edit/restoration and room booking are verified. Teams attachment, private channels and the knowledge site remain planned. The reused Baltic Finance Lab site is separate from the new Finance group. This is not a protocol trace.
 
 ```mermaid
 flowchart TB
@@ -168,8 +184,8 @@ flowchart TB
 
     subgraph MESSAGING["Email and calendars"]
         EXO["Exchange Online"]
-        MAIL["Pilot mailboxes verified<br/>Helpdesk — PLANNED"]
-        ROOM["Room mailbox and booking — PLANNED"]
+        MAIL["Pilot mailboxes and Helpdesk<br/>Read and sender permissions verified"]
+        ROOM["BFL-M365-Room-01<br/>Accept · Decline conflict · Reschedule"]
     end
 
     subgraph COLLABORATION["Collaboration and work files"]
@@ -223,7 +239,7 @@ flowchart TB
 
 ## Implementation Progress
 
-**3 of 14 stages completed. Stages 01–03 are COMPLETE; Stages 04–14 are PLANNED.**
+**4 of 14 stages completed. Stages 01–04 are COMPLETE; Stages 05–14 are PLANNED.**
 
 The schedule targets approximately **50–65 hours over a 30-day trial**, including documentation. Day ranges are estimates and must fit the actual subscription end date. Notes and evidence are saved throughout the project; the final days are a buffer.
 
@@ -234,7 +250,7 @@ The schedule targets approximately **50–65 hours over a 30-day trial**, includ
 | 01 | 1 | Tenant baseline and administrative roles | [Stage notes](docs/stages/01-tenant-and-roles.md) | COMPLETE |
 | 02 | 2–3 | Users, licenses and group types | [Stage notes](docs/stages/02-users-licenses-and-groups.md) | COMPLETE |
 | 03 | 4–5 | Exchange recipients, aliases and distribution | [Stage notes](docs/stages/03-exchange-recipients-and-mail.md) | COMPLETE |
-| 04 | 6–7 | Shared mailboxes, calendars and room booking | [Stage plan](docs/stages/04-delegation-calendars-and-rooms.md) | PLANNED |
+| 04 | 6–7 | Shared mailboxes, calendars and room booking | [Stage notes](docs/stages/04-delegation-calendars-and-rooms.md) | COMPLETE |
 | 05 | 8–9 | Mail-flow troubleshooting and recovery | [Stage plan](docs/stages/05-mail-flow-troubleshooting.md) | PLANNED |
 | 06 | 10–11 | Outlook and Microsoft 365 Apps | [Stage plan](docs/stages/06-outlook-and-microsoft-365-apps.md) | PLANNED |
 | 07 | 12–13 | Teams and connected SharePoint sites | [Stage plan](docs/stages/07-teams-and-connected-sites.md) | PLANNED |
@@ -250,7 +266,7 @@ The schedule targets approximately **50–65 hours over a 30-day trial**, includ
 
 ### Detailed Lab Notes
 
-Expand a stage to see its scope. Stages 01–03 are complete. T03 and T16 were first exercised in Day 01; T06 first ran in Day 02 and was extended in Day 03 without adding another global check. Stage 07's remaining deployment is planned.
+Expand a stage to see its scope. Stages 01–04 are complete. T03 and T16 were first exercised in Day 01; T06 first ran in Day 02 and was extended in Day 03 without adding another global check. Stage 07's remaining deployment is planned.
 
 <details>
 <summary><strong>Stage 01 — Tenant baseline and administrative roles</strong> · complete</summary>
@@ -311,18 +327,21 @@ Provision a distinct ordinary pilot, connect service configuration to actual use
 ---
 
 <details>
-<summary><strong>Stage 04 — Shared mailboxes, calendars and room booking</strong> · planned exercises</summary>
+<summary><strong>Stage 04 — Shared mailboxes, calendars and room booking</strong> · complete</summary>
 
-Distinguish mailbox access from sender permissions and understand calendar/resource behavior.
+- [x] Created Helpdesk and captured its direct sign-in block.
+- [x] Distinguished Piotr's Full Access from Send As; verified sender authorization and reply flow.
+- [x] Verified Anna's separate Send on behalf message and Marek's denied mailbox access.
+- [x] Compared calendar reader/editor behavior and restored Marek to read access.
+- [x] Created the room and captured automatic booking policy with explicit limits.
+- [x] Verified accepted booking, explicit conflict decline and acceptance after rescheduling.
+- [x] Recorded owner-confirmed room sign-in blocking and retained final reservations.
 
-- [ ] Create the BFL-M365-Helpdesk shared mailbox.
-- [ ] Exercise Full Access, Send As and Send on Behalf separately; record the Outlook edition used.
-- [ ] Compare calendar read and edit permissions.
-- [ ] Create one room mailbox and inspect booking behavior for overlapping reservations.
+**Final state:** Piotr retains Full Access/Send As, Anna Full Access/Send on behalf. Marek remains a calendar reader. Anna's room booking is 11:00–11:30; Marek's is 12:00–12:30 on 16 November 2026, Warsaw time.
 
-**Validation target:** Mailbox opening and sending are verified as separate operations. An excluded identity cannot open the shared mailbox. A calendar reader can read but cannot edit the test event. The room accepts an allowed request and handles a conflict according to its recorded settings.
+**Limits:** Selected identity, persistence and restoration checks are owner-reported. The initial sending error does not display From; exact propagation intervals and a PowerShell permission audit were not established.
 
-[Stage documentation](docs/stages/04-delegation-calendars-and-rooms.md) · [Test matrix](tests/test-matrix.csv) · [Evidence guide](evidence/README.md)
+[Implementation](docs/stages/04-delegation-calendars-and-rooms.md) · [Results](tests/day-04.md) · [27 screenshots](evidence/day-04/README.md) · [Case records](tickets/README.md)
 
 </details>
 
@@ -519,7 +538,7 @@ Publish accurate project evidence and close or deliberately retain the lab.
 | [English roadmap](docs/roadmap.md) and [Polish coaching plan](PROJECT-PLAN_PL.md) | Learning sequence, workload and completion criteria |
 | [Environment baseline](docs/01-environment-baseline.md) | Recorded subscriptions, client versions, verified baseline and limitations |
 | [Architecture](docs/architecture.md) and [access matrix](docs/access-matrix.md) | Planned objects, service relationships and permission boundaries |
-| [Stage index](docs/stages/README.md) and [lab-note template](docs/LAB-NOTE-TEMPLATE.md) | Three completed stages and eleven planned stages |
+| [Stage index](docs/stages/README.md) and [lab-note template](docs/LAB-NOTE-TEMPLATE.md) | Four completed stages and ten planned stages |
 | [Support workflow](tickets/README.md), [case template](tickets/TICKET-TEMPLATE.md) and [backlog](samples/ticket-backlog.csv) | Diagnostic reasoning, recovery and user verification |
 | [Functional validation guide](tests/README.md), [32-check matrix](tests/test-matrix.csv) and [Day 01 results](tests/day-01.md) | Global results, supporting observations and evidence links |
 | [PowerShell report plan](scripts/README.md) | Report scope, permission requirements and verification contracts |
@@ -560,11 +579,11 @@ Plan mailbox/file handover and check applicable preservation and licensing condi
 
 ## Evidence Boundaries
 
-This is an educational lab and technical portfolio. The organization and pilot identities are synthetic; the three resolved cases are guided lab exercises. External test correspondence is kept minimal and personal details require redaction.
+This is an educational lab and technical portfolio. The organization and pilot identities are synthetic; the five resolved cases are guided lab exercises. External test correspondence is kept minimal and personal details require redaction.
 
-Published evidence covers baseline workloads, the MFA rollout, licensing recovery, group configuration, explicit external alias delivery and a controlled distribution repair. Historical Day 01 captures retain their original scope; the current MFA group has three members.
+Published evidence covers baseline workloads, the MFA rollout, licensing recovery, group configuration, explicit external alias delivery, distribution repair, shared-mailbox delegation, calendar permission restoration and room conflict recovery. Historical Day 01 captures retain their original scope; the current MFA group has three members.
 
-The successful Day 01 MFA event reuses a claim. Day 02 shows policy Success for My Signins (Piotr) and One Outlook Web (Marek), not a captured fresh approval or Basic info requirement. Bounded non-receipt and selected profile/recovery checks are owner-reported. The first internal alias headers name the primary address; the external pair establishes the alias target. Publication review and interpretation boundaries are described in the [evidence guide](evidence/README.md#current-publication-review).
+The successful Day 01 MFA event reuses a claim. Day 02 shows policy Success for My Signins (Piotr) and One Outlook Web (Marek), not a captured fresh approval or Basic info requirement. Bounded non-receipt and selected profile/recovery checks are owner-reported. The first internal alias headers name the primary address; the external pair establishes the alias target. Day 04 combines captured permission/results with attributed owner reports for session controls, calendar persistence/restoration and room sign-in blocking. Publication review and interpretation boundaries are described in the [evidence guide](evidence/README.md#current-publication-review).
 
 No validated Copilot exercise, desktop activation, private-channel isolation, PowerShell execution, automated workload-test success or production incident resolution is claimed.
 
@@ -581,14 +600,14 @@ An owned custom domain with SPF/DKIM/DMARC and controlled external sharing are o
 | Path | Contents |
 | --- | --- |
 | [README.md](README.md) | Project overview, architecture, stage roadmap and current evidence status |
-| [docs/](docs/roadmap.md) | Three implementation records, eleven stage plans, baseline, access model and sources |
-| [tickets/](tickets/README.md) | Three resolved lab cases, workflow and case template |
-| [tests/](tests/README.md) | Thirty-two global checks, seven recorded passes and detailed Day 01–03 records |
-| [evidence/](evidence/README.md) | 63 indexed captures across Days 01–03, review notes and screenshot timing guidance |
+| [docs/](docs/roadmap.md) | Four implementation records, ten stage plans, baseline, access model and sources |
+| [tickets/](tickets/README.md) | Five resolved lab cases, workflow and case template |
+| [tests/](tests/README.md) | Thirty-two global checks, thirteen recorded passes and detailed Day 01–04 records |
+| [evidence/](evidence/README.md) | 90 indexed captures across Days 01–04, review notes and screenshot timing guidance |
 | [scripts/](scripts/README.md) | Planned read-only operational reports |
 | [runbooks/](runbooks/README.md) | Employee lifecycle procedure template |
 | [knowledge-base/](knowledge-base/README.md) | Planned user-facing articles |
-| [samples/](samples/README.md) | Three provisioned synthetic identities; 3 resolved and 12 planned lab cases |
+| [samples/](samples/README.md) | Three provisioned synthetic identities; 5 resolved and 10 planned lab cases |
 | [.github/ISSUE_TEMPLATE/](.github/ISSUE_TEMPLATE/lab-stage.yml) | Lab-stage and support-case issue forms |
 
 ## Related Projects
@@ -597,4 +616,4 @@ An owned custom domain with SPF/DKIM/DMARC and controlled external sharing are o
 - [Microsoft Hybrid Enterprise Security Project](https://github.com/krzysztof-szot/hybrid-enterprise-security-project)
 - [IAM PowerShell Automation Project](https://github.com/krzysztof-szot/iam-powershell-automation-project)
 
-Review the [completed cases](tickets/README.md) and [results](tests/README.md), then continue with [Stage 04 — shared mailboxes, calendars and rooms](docs/stages/04-delegation-calendars-and-rooms.md).
+Review the [completed cases](tickets/README.md) and [results](tests/README.md), then continue with [Stage 05 — mail-flow troubleshooting and recovery](docs/stages/05-mail-flow-troubleshooting.md).

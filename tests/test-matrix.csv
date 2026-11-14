@@ -5,10 +5,10 @@ T03,02,Licensed pilot service access,Selected workload is usable after provision
 T04,02,Missing entitlement recovery,Empty test account recovers service access after the correct entitlement is assigned,Piotr's unlicensed Outlook failure is corrected by Premium with Exchange Online Plan 1; mailbox opens and bidirectional mail succeeds,PASS,tests/day-02.md
 T05,03,Alias delivery,Marked message arrives in the intended mailbox,Secondary m365.finance address targets Anna's mailbox; external Gmail sent details and matching received message verify delivery,PASS,tests/day-03.md
 T06,03,Distribution membership,Approved members receive the message and excluded control does not,Day 02: Anna and Piotr receive; Marek reports no copy in ten minutes. Day 03: removal omits Piotr; direct control works; re-addition restores delivery,PASS,tests/day-03.md
-T07,04,Full Access without Send As,Mailbox opening and sender authorization are distinguished by functional results,Not recorded,NOT_RUN,None
-T08,04,Authorized shared mailbox delegation,Delegate opens and sends with the intended permission,Not recorded,NOT_RUN,None
-T09,04,Excluded mailbox identity,Excluded identity cannot open the shared mailbox,Not recorded,NOT_RUN,None
-T10,04,Calendar reader,Reader sees the event but cannot modify it,Not recorded,NOT_RUN,None
+T07,04,Full Access without Send As,Mailbox opening and sender authorization are distinguished by functional results,Piotr reads Helpdesk while Send As is empty; SEND-01 receives a permission error; From field not displayed in the denial capture,PASS,tests/day-04.md
+T08,04,Authorized shared mailbox delegation,Delegate opens and sends with the intended permission,Piotr Send As yields a Helpdesk sender and reply receipt; Anna separately sends on behalf of Helpdesk to Marek,PASS,tests/day-04.md
+T09,04,Excluded mailbox identity,Excluded identity cannot open the shared mailbox,Helpdesk opening returns AccessDeniedException; owner confirms Marek identity and working own Inbox,PASS,tests/day-04.md
+T10,04,Calendar reader,Reader sees the event but cannot modify it,Marek reads Anna's event without editing; editor change persists; reader restored and fresh-login editing denied per owner,PASS,tests/day-04.md
 T11,05,Invalid recipient,Actual failure evidence identifies the invalid recipient,Not recorded,NOT_RUN,None
 T12,05,Scoped training rule,Marked message to the selected recipient is rejected while an unmarked control is delivered,Not recorded,NOT_RUN,None
 T13,05,Mail-flow recovery,Delivery succeeds after disabling the training rule and allowing for propagation,Not recorded,NOT_RUN,None
@@ -27,7 +27,7 @@ T25,11,Insufficient report permission,Useful error or incomplete status is retur
 T26,12,Leaver new sign-in,New sign-in is denied after blocking,Not recorded,NOT_RUN,None
 T27,12,Mailbox preservation,Approved delegate opens retained mail after verified conversion and licensing decisions,Not recorded,NOT_RUN,None
 T28,12,OneDrive handover,Custodian accesses designated data and preservation limits are recorded,Not recorded,NOT_RUN,None
-T29,04,Valid room reservation,Allowed reservation is processed according to recorded room settings,Not recorded,NOT_RUN,None
-T30,04,Conflicting room reservation,Overlapping request is handled according to recorded booking settings,Not recorded,NOT_RUN,None
+T29,04,Valid room reservation,Allowed reservation is processed according to recorded room settings,Automatic room processing accepts Anna's corrected 16 November 11:00–11:30 reservation,PASS,tests/day-04.md
+T30,04,Conflicting room reservation,Overlapping request is handled according to recorded booking settings,Room declines Marek 11:15–11:45 due to Anna 11:00–11:30; same Marek request accepted after move to 12:00–12:30,PASS,tests/day-04.md
 T31,08,Revoked sharing link,Access after revocation is explained by verified remaining grants or denial,Not recorded,NOT_RUN,None
 T32,13,Independent five-task assessment,Each task has a supported outcome and functional verification or justified escalation,Not recorded,NOT_RUN,None

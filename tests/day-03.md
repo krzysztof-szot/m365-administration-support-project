@@ -13,7 +13,7 @@ Status: **COMPLETE**. Execution date: **14 November 2026**. Evidence: [11 screen
 | Membership repair | Normal member set restored | Anna/Piotr listed | VERIFIED; 07 |
 | Recovery and regression | Both intended recipients receive new test | Anna/Piotr receive DL-03 at displayed 14:09 | PASS; 08/09 plus owner report |
 
-T06 is extended here, not counted twice. The cumulative [32-check matrix](test-matrix.csv) now has **7 PASS / 25 NOT_RUN**, passing T01, T02, T03, T04, T05, T06 and T16.
+T06 is extended here, not counted twice. The historical snapshot at Day 03 closure has **7 PASS / 25 NOT_RUN**, passing T01, T02, T03, T04, T05, T06 and T16. See [current results](README.md) and [Day 04](day-04.md) for subsequent execution.
 
 ## Interpretation and remaining limits
 

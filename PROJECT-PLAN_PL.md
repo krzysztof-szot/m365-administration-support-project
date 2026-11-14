@@ -2,7 +2,7 @@
 
 Aktualizacja: 14 listopada 2026 r.
 
-Etapy 01–03 są COMPLETE; etapy 04–14 pozostają PLANNED. Opublikowano 63 screeny: 31 w Day 01, 21 w Day 02 i 11 w Day 03. Globalna tabela ma 7 PASS i 25 NOT_RUN: T01, T02, T03, T04, T05, T06 oraz T16. T06 ma jeden wpis mimo testów w dwóch etapach. Trzy przypadki M365-001–003 są rozwiązane jako ćwiczenia laboratoryjne.
+Etapy 01–04 są COMPLETE; etapy 05–14 pozostają PLANNED. Opublikowano 90 screenów: 31 w Day 01, 21 w Day 02, 11 w Day 03 i 27 w Day 04. Globalna tabela ma 13 PASS i 19 NOT_RUN. W Day 04 doszły T07–T10 oraz T29–T30; T06 nadal ma jeden wpis mimo testów w dwóch etapach. Pięć przypadków M365-001–005 jest rozwiązanych jako ćwiczenia laboratoryjne.
 
 Zweryfikowano pocztę z zewnętrznym Gmail, zapis i ponowne otwarcie dokumentów OneDrive/SharePoint, trwałość wiadomości Teams oraz odmowę panelu administracyjnego dla Anny. Politykę MFA oceniono w Report-only, włączono i uzyskano Success z istniejącym claimem MFA. Świeże zatwierdzenie push nie zostało uchwycone. Dodatkową rolę CA usunięto; właściciel potwierdził dalszy dostęp adm-lab oraz nowe logowania i aktywny Global Administrator dla obu kont awaryjnych.
 
@@ -14,7 +14,17 @@ Powstała prywatna grupa BFL-M365-Finance: właścicielka Anna, członkowie Anna
 
 Alias m365.finance prowadzi do istniejącej skrzynki Anny. Pierwsza próba wewnętrzna pokazała w nagłówku adres podstawowy; dopiero para wysłane/odebrane z Gmaila potwierdziła jawnie adres aliasu. Surowe nagłówki pozostają prywatne. Rola Exchange Recipient Administrator na adm-lab pozostaje Direct/Active/Permanent do kolejnych zadań odbiorców i wymaga późniejszego przeglądu.
 
-Wszystkie trzy jednostki nauki wykonano 14 listopada 2026 r. Rozpiska godzin w [roadmapie](docs/roadmap.md) jest szacunkiem, a nie pomiarem czasu.
+Wszystkie cztery jednostki nauki wykonano 14 listopada 2026 r. Rozpiska godzin w [roadmapie](docs/roadmap.md) jest szacunkiem, a nie pomiarem czasu.
+
+## Zakończony Day 04
+
+Helpdesk ma zablokowane bezpośrednie logowanie. Piotr odczytał skrzynkę, otrzymał odmowę wysyłania bez Send As, a po osobnym nadaniu tego uprawnienia wiadomość dotarła do Anny z nadawcą Helpdesk i odpowiedź wróciła do skrzynki. Anna osobno wysłała wiadomość w imieniu Helpdesk. Marek otrzymał odmowę otwarcia; właściciel potwierdził jego tożsamość i działający własny Inbox.
+
+Marek odczytał wydarzenie w kalendarzu Anny bez możliwości edycji. Tymczasowe Can edit pozwoliło zmienić opis; zapis widoczny u Anny potwierdzono tekstowo. Przywrócono Can view all details, a nowe logowanie nie przywróciło edycji.
+
+Sala BFL-M365-Room-01 ma automatyczne przyjmowanie/odrzucanie, okno 30 dni i limit 2 godzin. Na 16 listopada Anna ma zaakceptowane 11:00–11:30. Próba Marka 11:15–11:45 została odrzucona z jawnym wskazaniem kolizji; przesunięcie jego ROOM-02 na 12:00–12:30 zakończyło się akceptacją. Właściciel potwierdził blokadę logowania sali i zachowanie rezerwacji Anny.
+
+Finalne screeny pokazują poprawione godziny AM oraz właściwego organizatora. Nie wyliczamy czasu propagacji; diagnostykę PowerShell pominięto zgodnie z decyzją właściciela. Szczegóły i źródła poszczególnych obserwacji: [Day 04](docs/stages/04-delegation-calendars-and-rooms.md), [testy](tests/day-04.md) i [27 dowodów](evidence/day-04/README.md).
 
 ## Cel i sposób pracy
 
@@ -46,7 +56,7 @@ Szczegółowe zadania i warunki zakończenia: [etap 03](docs/stages/03-exchange-
 
 ### 04. Delegacje, kalendarze i sala — dzień 6–7
 
-Utwórz Helpdesk oraz skrzynkę sali. Oddzielnie sprawdź Full Access, Send As i Send on Behalf. Przetestuj czytelnika kalendarza i konflikt rezerwacji sali.
+Wykonane: Helpdesk i sala, oddzielne testy Full Access / Send As / Send on behalf, porównanie odczytu i edycji kalendarza z przywróceniem oraz konflikt rezerwacji rozwiązany zmianą terminu.
 
 Szczegółowe zadania i warunki zakończenia: [etap 04](docs/stages/04-delegation-calendars-and-rooms.md).
 
@@ -124,8 +134,8 @@ W Day 01 wdrożono ograniczony pilot MFA przez Conditional Access w istniejącym
 
 ## Start
 
-Przejrzyj [wyniki](tests/README.md), [przypadki](tickets/README.md) i [baseline](docs/01-environment-baseline.md), a następnie rozpocznij [etap 04](docs/stages/04-delegation-calendars-and-rooms.md). Rzeczywiste dane logowania, domenę, identyfikatory, termin triala i szczegóły rozliczeń przechowuj prywatnie. Źródła techniczne i licencyjne: [Microsoft](docs/sources.md).
+Przejrzyj [wyniki](tests/README.md), [przypadki](tickets/README.md) i [baseline](docs/01-environment-baseline.md), a następnie rozpocznij [etap 05](docs/stages/05-mail-flow-troubleshooting.md). Rzeczywiste dane logowania, domenę, identyfikatory, termin triala i szczegóły rozliczeń przechowuj prywatnie. Źródła techniczne i licencyjne: [Microsoft](docs/sources.md).
 
 ## Screeny podczas ćwiczeń
 
-Przy każdym istotnym kroku prowadzący wskazuje moment wykonania screena, widok i nazwę pliku. [Indeks dowodów](evidence/README.md) opisuje 63 opublikowane screeny. W obrazach Day 03 zanonimizowano wskazane identyfikatory, domenę oraz nazwisko zewnętrznego nadawcy; ograniczenia interpretacji opisano w indeksie. Nazwy i moment wykonania nowych dowodów będą wskazywane podczas kolejnych ćwiczeń. Kodów QR rejestracji i sekretów uwierzytelniania nie publikujemy.
+Przy każdym istotnym kroku prowadzący wskazuje moment wykonania screena, widok i nazwę pliku. [Indeks dowodów](evidence/README.md) opisuje 90 opublikowanych screenów. W obrazach Day 03 zanonimizowano wskazane identyfikatory, domenę oraz nazwisko zewnętrznego nadawcy; ograniczenia interpretacji opisano w indeksie. W Day 04 podmieniono 02 na wersję z zasłoniętą domeną, a zapisane wyniki odróżniają konfigurację, fakty widoczne na screenach i potwierdzenia właściciela. Nazwy i moment wykonania nowych dowodów będą wskazywane podczas kolejnych ćwiczeń. Kodów QR rejestracji i sekretów uwierzytelniania nie publikujemy.

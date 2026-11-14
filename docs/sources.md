@@ -44,3 +44,19 @@ These sources explain the procedures and concepts; actual outcomes come from the
 | Distribution membership | [Manage distribution lists](https://learn.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups) |
 | Additional SMTP addresses | [Mailbox email addresses](https://learn.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-user-mailboxes/add-or-remove-email-addresses) |
 | Header interpretation | [View message headers](https://support.microsoft.com/en-us/outlook/view-internet-message-headers-in-outlook) |
+
+## Day 04 implementation references
+
+Reviewed during the 14 November 2026 exercise. These sources explain the intended behavior; screenshots and attributed owner reports establish the lab results.
+
+| Area | Official source |
+| --- | --- |
+| Full Access, Send As and Send on behalf | [Manage permissions for recipients](https://learn.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-permissions-for-recipients) |
+| Mailbox permission propagation | [Give mailbox permissions](https://learn.microsoft.com/en-us/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user?view=o365-worldwide) |
+| Delegated web access | [Open and use a shared mailbox in Outlook](https://support.microsoft.com/en-us/outlook/sharing/open-and-use-a-shared-mailbox-in-outlook) |
+| Calendar reader/editor permissions | [Share your calendar in Outlook on the web](https://support.microsoft.com/en-us/outlook/share-your-calendar-in-outlook-on-the-web) |
+| Calendar timezone | [Manage time zone settings](https://support.microsoft.com/en-us/outlook/getstarted/manage-time-zone-settings-in-outlook) |
+| Room creation and booking policy | [Manage resource mailboxes](https://learn.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-resource-mailboxes) |
+| Resource booking and account block | [Room and equipment mailboxes](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/room-and-equipment-mailboxes?view=o365-worldwide) |
+
+The observed EAC exposed a Send on behalf control for Helpdesk; its actual captured panel and successful message are recorded. The exercise used that interface, not an invented PowerShell result. Advanced retention, archive and resource-device licensing scenarios were not tested.

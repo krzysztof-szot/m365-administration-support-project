@@ -1,18 +1,19 @@
 # Evidence handling
 
-**63 owner-uploaded screenshots are indexed across three completed stages.** Configuration, captured functional results and owner-reported checks are labelled separately.
+**90 owner-uploaded screenshots are indexed across four completed stages.** Configuration, captured functional results and owner-reported checks are labelled separately.
 
 | Stage | Screenshots | Results |
 | --- | --- | --- |
 | [Day 01](day-01/README.md) | 31 | Baseline workloads, MFA rollout and CA role cleanup |
 | [Day 02](day-02/README.md) | 21 | Licensing recovery, three-user MFA scope and group configuration |
 | [Day 03](day-03/README.md) | 11 | Explicit external alias delivery and DL membership recovery |
+| [Day 04](day-04/README.md) | 27 | Mailbox delegation, calendar reader/editor restoration and room conflict recovery |
 
-Future evidence folders do not establish execution. Stages 04–14 remain planned.
+Future evidence folders do not establish execution. Stages 05–14 remain planned.
 
 ## Current publication review
 
-The reviewed Day 03 images mask SPO identifiers, the tenant domain and the external sender's display name while preserving the alias local part and test results. The [Day 03 index](day-03/README.md#publication-review) records the publication boundary. Documentation does not reproduce raw identifiers or headers; the owner's uploaded image bytes are retained.
+The reviewed Day 03 images mask SPO identifiers, the tenant domain and the external sender's display name while preserving the alias local part and test results. The [Day 03 index](day-03/README.md#publication-review) records the publication boundary. Day 04 captures were also reviewed: the owner's revised 02 masks the lab domain, 06 supplies the Send As grant, 09 masks diagnostic identifiers including cv, and final 19/20 plus 23/24 show the corrected requests and actual room replies. See the [Day 04 limits](day-04/README.md#interpretation-boundaries). Documentation does not reproduce raw identifiers or headers; the owner's uploaded image bytes are retained.
 
 ## Capture checkpoints during guided work
 

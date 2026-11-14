@@ -2,8 +2,8 @@ TicketId,Stage,Workload,Type,Summary,Status
 M365-001,02,Licensing,ServiceRequest,New pilot user needs the required service entitlement,RESOLVED
 M365-002,03,ExchangeOnline,ServiceRequest,Finance alias must deliver to the intended mailbox,RESOLVED
 M365-003,03,ExchangeOnline,Incident,Controlled missing Finance distribution membership,RESOLVED
-M365-004,04,ExchangeOnline,Incident,Delegate opens Helpdesk but cannot send as Helpdesk,PLANNED
-M365-005,04,ExchangeOnline,Incident,Room booking conflicts with an existing reservation,PLANNED
+M365-004,04,ExchangeOnline,Incident,Delegate opens Helpdesk but cannot send as Helpdesk,RESOLVED
+M365-005,04,ExchangeOnline,Incident,Room booking conflicts with an existing reservation,RESOLVED
 M365-006,05,ExchangeOnline,Incident,Message to a nonexistent lab recipient is not delivered,PLANNED
 M365-007,05,ExchangeOnline,Incident,Scoped training rule rejects a marked message,PLANNED
 M365-008,06,Microsoft365Apps,Incident,Office client is signed in with the wrong lab identity,PLANNED

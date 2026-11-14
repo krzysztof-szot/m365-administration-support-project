@@ -52,6 +52,6 @@ The direct control shows Piotr's mailbox still receives mail. The supported caus
 
 Anna retains primary m365.anna plus secondary m365.finance. The DL is restored to Anna/Piotr members and Anna owner. The Private collaboration group remains separate and has no Teams attachment yet. The task-specific recipient-admin assignment remains active for subsequent work.
 
-These are guided, synthetic exercises. Mailbox delegation, shared mailbox behavior, room/calendar tests and transport-rule diagnostics belong to later stages. Day/stage labels denote learning units; all three completed stages have the actual execution date 14 November 2026.
+These are guided, synthetic exercises. This record is the Stage 03 closure snapshot. Subsequent mailbox delegation and room/calendar execution are recorded in [Stage 04](04-delegation-calendars-and-rooms.md); transport-rule diagnostics remain planned. Day/stage labels denote learning units; the first three stages were executed on 14 November 2026.
 
 [Results](../../tests/day-03.md) · [11 evidence captions](../../evidence/day-03/README.md) · [Next: Stage 04](04-delegation-calendars-and-rooms.md)
