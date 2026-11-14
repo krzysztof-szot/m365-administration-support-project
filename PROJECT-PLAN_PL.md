@@ -2,7 +2,7 @@
 
 Aktualizacja: 14 listopada 2026 r.
 
-Użytkownik potwierdził aktywny trial Microsoft 365 Business Standard na 30 dni. Nie zweryfikowano jeszcze planów usług, Teams, liczby miejsc, ról ani klientów. Żaden etap laboratoryjny ani test funkcjonalny nie został oznaczony jako wykonany.
+Etap 01 jest IN_PROGRESS. Dostępne produkty to Business Standard (25 miejsc), Business Premium (25) i Business Premium with Copilot (1). Opublikowano 9 zredagowanych screenów: licencja Anny, poczta z zewnętrznym Gmail, odmowa dostępu administracyjnego, logowanie single-factor i grupa MFA. Globalna tabela ma 2 PASS i 30 NOT_RUN. MFA nie zostało jeszcze wdrożone ani zweryfikowane po zmianie.
 
 ## Cel i sposób pracy
 
@@ -106,10 +106,14 @@ Szczegółowe zadania i warunki zakończenia: [etap 14](docs/stages/14-portfolio
 - Instrukcje użytkownika, w tym jeden niemiecki odpowiednik.
 - Zweryfikowany runbook cyklu życia i pięć samodzielnych zadań końcowych.
 
-To cele przyszłej pracy. Statusy to obecnie PLANNED i NOT_RUN. Nie publikuj osiągniętych efektów w CV przed wykonaniem i sprawdzeniem ćwiczeń.
+To cele projektu. Etap 01 pozostaje IN_PROGRESS, a etapy 02–14 są PLANNED. Publikowane wyniki muszą odpowiadać zapisanym obserwacjom i dowodom; przypisanie licencji lub utworzenie pliku nie kończy etapu.
 
-Własna domena z SPF/DKIM/DMARC oraz kontrolowane udostępnienie na własne zewnętrzne konto testowe to rozszerzenia po ukończeniu podstaw. Intune, PIM, wdrożenie Conditional Access, hybrydowy Exchange, Teams Phone i zaawansowane holdy nie są częścią zakresu podstawowego.
+W Day 01 przygotowujemy ograniczony pilot MFA przez Conditional Access w istniejącym tenancie. Licencje Premium umożliwiają rozszerzenia z Intune. Dodatkowy [pilot Copilot](docs/copilot-pilot-plan.md) obejmuje trzy sesje, około 5–7 godzin, zintegrowane z etapami 06, 08, 10 i 13; mamy jedno miejsce Copilot. Własna domena i udostępnienie zewnętrzne pozostają rozszerzeniami. PIM, pełne odtworzenie E5/Entra Suite, hybrydowy Exchange, Teams Phone i zaawansowane holdy są poza zakresem podstawowym.
 
 ## Start
 
 Przejdź do [etapu 01](docs/stages/01-tenant-and-roles.md) i [baseline](docs/01-environment-baseline.md). Rzeczywiste dane logowania, domenę, identyfikatory, termin triala i szczegóły rozliczeń przechowuj prywatnie. Źródła techniczne i licencyjne: [Microsoft](docs/sources.md).
+
+## Screeny podczas ćwiczeń
+
+Przy każdym istotnym kroku prowadzący wskazuje moment wykonania screena, widok i nazwę pliku. [Checklistę Day 01](evidence/day-01/README.md) uzupełniamy wyłącznie rzeczywiście zebranymi dowodami. Kolejny screen to 09a: szczegółowy tryb i zakres Microsoft Authenticator. Kodów QR rejestracji i sekretów uwierzytelniania nie publikujemy.

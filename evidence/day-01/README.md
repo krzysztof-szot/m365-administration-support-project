@@ -1,43 +1,48 @@
-# Day 01 evidence checklist
+# Day 01 evidence
 
-Status: capture plan prepared; no image files published in this directory.
+Status: **9 screenshots published; Stage 01 IN_PROGRESS.** The owner supplied these redacted screenshots for the lab. Their image bytes are preserved.
 
-This checklist identifies evidence checkpoints for Stage 01. Filenames below are planned names, not links to existing screenshots. Tests and publication status remain separate.
+## Published captures
 
-## Planned captures
+| File | Observed evidence and limits |
+| --- | --- |
+| [01-pilot-license-assignment.png](01-pilot-license-assignment.png) | Anna's Business Premium with Copilot assignment and Poland usage location. This is configuration evidence; Apps is collapsed. |
+| [02-pilot-mail-sent.png](02-pilot-mail-sent.png) | Anna's Sent Items shows the synthetic message addressed to a redacted external Gmail mailbox. Displayed time: 08:41 on 14 November 2026; client timezone was not captured. |
+| [03-pilot-mail-received.png](03-pilot-mail-received.png) | Anna's Inbox shows the corresponding Gmail reply at displayed time 08:44. Together with capture 02 and the operator report, this supports the external mail round trip. |
+| [04-pilot-admin-center-denied.png](04-pilot-admin-center-denied.png) | Microsoft 365 Admin Center explicitly denies the ordinary m365.anna account permission to view or manage the page. |
+| [05-signin-before-basic-info.png](05-signin-before-basic-info.png) | Interactive sign-in at 2026-11-14T07:15:27Z: One Outlook Web, Office 365 Exchange Online, Success and Single-factor authentication. |
+| [06-signin-before-authentication-details.png](06-signin-before-authentication-details.png) | Authentication Details for the same UTC sign-in states that no authentication events were triggered. No password/MFA sequence can be reconstructed from this record alone. |
+| [07-signin-before-conditional-access.png](07-signin-before-conditional-access.png) | Conditional Access tab for the same sign-in shows visible policies as Not applied or Disabled. The separate Report only tab was not captured. |
+| [08-mfa-pilot-group-members.png](08-mfa-pilot-group-members.png) | SG-M365-MFA-Pilot has one direct member: M365 Anna Finance. This establishes pilot membership, not an enforced MFA requirement. |
+| [09-authenticator-method-scope.png](09-authenticator-method-scope.png) | Authentication methods overview shows Microsoft Authenticator enabled for All users. Detailed authentication mode and effective exclusions are not visible. |
 
-| File | Capture moment and content | Publication |
-| --- | --- | --- |
-| `01-pilot-license-assignment.png` | After saving Anna's assignment: display name, selected Business Premium with Copilot and usage location; the previously supplied capture may be reused after review | NOT_PUBLISHED |
-| `02-pilot-mail-sent.png` | After a marked synthetic message is delivered to another lab user: the matching Sent Items message | NOT_PUBLISHED |
-| `03-pilot-mail-received.png` | After receiving a marked message from another lab user: the received message and synthetic sender/recipient | NOT_PUBLISHED |
-| `04-pilot-admin-center-denied.png` | While signed in as Anna: actual administrative portal denial | NOT_PUBLISHED |
-| `05-signin-before-basic-info.png` | Before MFA policy changes: matching successful Exchange sign-in with time, resource and authentication requirement | NOT_PUBLISHED |
-| `06-signin-before-authentication-details.png` | Authentication Details of that exact sign-in, including an empty-events message if present | NOT_PUBLISHED |
-| `07-signin-before-conditional-access.png` | Conditional Access results of that exact sign-in, with relevant policy names/results | NOT_PUBLISHED |
-| `08-mfa-pilot-group-members.png` | After creating the assigned security group SG-M365-MFA-Pilot: group name and Anna as the only intended pilot member | NOT_PUBLISHED |
-| `09-authenticator-method-scope.png` | Authentication methods policy: Authenticator enabled state and actual target scope/mode; mark whether this is a baseline or a later saved change | NOT_PUBLISHED |
-| `10-mfa-policy-report-only.png` | After saving the scoped MFA policy in Report-only: selected pilot group, target resources, grant requirement and state | NOT_PUBLISHED |
-| `11-report-only-signin-evaluation.png` | After a pilot test: the actual report-only policy evaluation and any limitations | NOT_PUBLISHED |
-| `12-mfa-policy-enabled.png` | Only after deliberate pilot enablement: saved policy scope and On state | NOT_PUBLISHED |
-| `13-pilot-registered-method.png` | After private enrollment: completed authentication method/type, with private details removed and no QR code | NOT_PUBLISHED |
-| `14-signin-after-authentication-details.png` | After a fresh pilot sign-in: actual MFA requirement/method/result; identify a reused MFA claim if that is what occurred | NOT_PUBLISHED |
-| `15-signin-after-conditional-access.png` | The same post-change sign-in: intended MFA policy applied with the observed result | NOT_PUBLISHED |
-| `16-pilot-admin-denied-after-mfa.png` | After successful MFA sign-in: ordinary Anna still cannot administer the tenant | NOT_PUBLISHED |
-| `17-service-health-baseline.png` | When inspecting Service health: the actual relevant service state without private incident/customer details | NOT_PUBLISHED |
+## Timing and interpretation
 
-## Interpretation and sequencing
+The sign-in captures 05–07 refer to the same interactive event at **2026-11-14T07:15:27Z**. The mail captures show displayed times 08:41 and 08:44 on 14 November 2026 without the client's timezone. Do not equate these times or claim that the screenshots show the initial password-change event.
 
-The operator has reported a successful Exchange sign-in with a Single-factor authentication requirement, no authentication events in the selected record and Conditional Access results of Not applied or Disabled. These are reported diagnostic observations, not a captured authentication sequence or proof about every tenant sign-in.
+The mail counterpart is an **external Gmail mailbox**, not a second Microsoft 365 pilot. The sender's Sent Items alone is not recipient-side delivery evidence; the corresponding Gmail reply and the owner's report support the round trip. Raw external addresses are redacted.
 
-Collect captures 05–07 before policy changes. The group, Authenticator scope, report-only evaluation, enabled policy and after-change results are later checkpoints; no such configuration or outcome is claimed yet.
+The selected Exchange event has a single-factor requirement and no visible applied CA policy. Its empty Authentication Details is retained as a limitation. It does not prove that MFA is disabled everywhere, that Anna has no registered methods, or what every authentication step was. The report-only evaluation and the exact reasons each existing policy did not apply have not been captured.
 
-Use Anna's actual sign-in/client context throughout. A registration prompt alone does not prove MFA enforcement. A reused claim is recorded as a reused claim rather than a newly observed challenge. An admin-portal denial verifies the ordinary-user boundary separately from authentication.
+Authenticator is enabled for All users in the overview. Mode, detailed exclusions, registration and enforced MFA remain to be checked. A Copilot summary button visible in Outlook is not evidence that Copilot was used or produced a validated result.
 
-Before a policy change, confirm the applicable role, pilot membership, available authentication methods and recovery path. Initial pilot membership is Anna only. Any later additions need appropriate licenses and verification.
+## Next capture checkpoints
 
-## Evidence index after collection
+No pending filename below represents an existing image.
 
-For each published capture, add the actual capture time, operator or test identity, action, observation and relevant result reference. Link image files only after they exist. Do not claim that pending filenames have already been captured.
+| Planned file | Capture moment |
+| --- | --- |
+| `09a-authenticator-mode-and-exclusions.png` | Open Microsoft Authenticator's detailed Enable and Target view; capture allowed mode and effective scope/exclusions before changing anything. |
+| `09b-ca-operator-role-assignment.png` | If a dedicated CA role is assigned for setup, record the operator and active role assignment without private identifiers; remove a temporary assignment when its work is finished. |
+| `10-mfa-policy-report-only.png` | After saving the policy: pilot group scope, target resources, MFA grant and Report-only state. Add 10a/10b detail captures if a single view cannot show the scope/control. |
+| `11-report-only-signin-evaluation.png` | The actual Report only tab for a matching post-creation pilot sign-in, including the policy's observed result. |
+| `12-mfa-policy-enabled.png` | Only after deliberate enablement: saved pilot policy in On state. |
+| `13-pilot-registered-method.png` | Completed method/type after private enrollment; never an enrollment QR code or authentication secret. |
+| `14-signin-after-authentication-details.png` | A matching fresh pilot sign-in with actual MFA requirement/method/result; explicitly identify a reused claim if present. |
+| `15-signin-after-conditional-access.png` | The same post-change sign-in with the intended MFA policy applied. |
+| `16-pilot-admin-denied-after-mfa.png` | After MFA verification, Anna remains unable to administer the tenant. |
+| `17-service-health-baseline.png` | Actual service health observation, excluding private customer/incident details. |
 
-[Stage 01](../../docs/stages/01-tenant-and-roles.md) · [Evidence rules](../README.md) · [Test matrix](../../tests/test-matrix.csv)
+The tutor announces each screenshot checkpoint when the relevant action is performed. Keep the tested identity, event time, target resource and result readable. Publish completed registration state only; keep passwords, QR enrollment codes, tokens, recovery material, private addresses, unnecessary tenant IDs and public IPs outside this repository.
+
+[Stage 01 notes](../../docs/stages/01-tenant-and-roles.md) · [Day 01 result record](../../tests/day-01.md) · [Global test matrix](../../tests/test-matrix.csv) · [Evidence rules](../README.md)

@@ -1,12 +1,12 @@
 # Thirty-day learning roadmap
 
-Status: PLANNED. The subscription is available according to the owner; workload entitlements and functional behavior are still unverified.
+Status: **Stage 01 IN_PROGRESS; Stages 02–14 PLANNED.** Nine Day 01 captures support initial Exchange/access tests and the pre-change MFA baseline. See the [result record](../tests/day-01.md).
 
 The target workload is about 50–65 hours including documentation. The ranges below are estimates, not elapsed execution dates. Record the actual subscription expiry privately and shorten the schedule if necessary. Save evidence after each session rather than waiting until the end.
 
 | Stage | Target days | Topic | Execution |
 | --- | --- | --- | --- |
-| 01 | 1 | [Tenant baseline and administrative roles](stages/01-tenant-and-roles.md) | PLANNED |
+| 01 | 1 | [Tenant baseline and administrative roles](stages/01-tenant-and-roles.md) | IN_PROGRESS |
 | 02 | 2–3 | [Users, licenses and group types](stages/02-users-licenses-and-groups.md) | PLANNED |
 | 03 | 4–5 | [Exchange recipients, aliases and distribution](stages/03-exchange-recipients-and-mail.md) | PLANNED |
 | 04 | 6–7 | [Shared mailboxes, calendars and room booking](stages/04-delegation-calendars-and-rooms.md) | PLANNED |
@@ -40,3 +40,7 @@ The target deliverables are 15 documented support cases, 32 executed functional 
 The independent assessment contains five tasks without a supplied repair sequence. The operator may use their own notes and official documentation. Results include justified escalation where appropriate.
 
 Optional extensions after the core: an owned custom domain with SPF/DKIM/DMARC, or controlled sharing with an owned external test identity. Entitlements and sharing policy must be checked before these exercises.
+
+## Copilot extension
+
+The one-seat [Copilot pilot](copilot-pilot-plan.md) adds three planned sessions within Stages 06, 08, 10 and 13. License assignment is captured; generated output and permission-sensitive retrieval are not yet tested. Ordinary Premium seats support the wider M365 pilot.

@@ -3,9 +3,9 @@
 <p align="center"><strong>Exchange Online · Teams · SharePoint · IT Support</strong></p>
 
 <p align="center">
-  <img alt="14 planned lab stages" src="https://img.shields.io/badge/LABS-14%20PLANNED-6f42c1?style=for-the-badge">
-  <img alt="Initial setup; workload execution pending" src="https://img.shields.io/badge/STATUS-INITIAL%20SETUP-0078D4?style=for-the-badge">
-  <img alt="32 functional checks not run" src="https://img.shields.io/badge/CHECKS-32%20NOT%20RUN-607078?style=for-the-badge">
+  <img alt="14 learning stages" src="https://img.shields.io/badge/LABS-14%20STAGES-6f42c1?style=for-the-badge">
+  <img alt="Stage 01 in progress" src="https://img.shields.io/badge/STATUS-IN%20PROGRESS-0078D4?style=for-the-badge">
+  <img alt="Global matrix: 2 pass and 30 not run" src="https://img.shields.io/badge/CHECKS-2%20PASS%20%2F%2030%20NOT%20RUN-607078?style=for-the-badge">
 </p>
 
 <p align="center">
@@ -34,10 +34,10 @@ This repository complements the owner's Microsoft Entra, hybrid security and IAM
 
 ## Project Overview
 
-**Status: initial setup — repository scaffold prepared; Stages 01–14 planned.**  
-The owner has reported an active **30-day Microsoft 365 Business Standard trial**. Enabled service plans, Teams entitlement, available pilot seats, administrative roles and client versions remain to be verified in the [environment baseline](docs/01-environment-baseline.md).
+**Status: Stage 01 in progress; Stages 02–14 planned.**  
+The lab now uses **Business Standard (25 seats)**, **Business Premium (25 seats)** and **Business Premium with Copilot (1 seat)** according to the owner's active subscription views. Anna's one-seat bundle assignment, mail test and denied admin access are captured. See the [current baseline](docs/01-environment-baseline.md) for source limits and pending checks.
 
-**Recorded execution: 0 completed stages, 0 functional checks run and no published implementation screenshots.** The repository contains learning plans, synthetic inputs and templates. Reports, resolved incidents and implementation evidence will be added after the exercises are performed.
+**Recorded execution: 0 completed stages, 2 PASS / 30 NOT_RUN in the global matrix, and 9 published screenshots.** Day 01 records an external Gmail mail round trip, an ordinary-user admin denial and a single-factor sign-in baseline. MFA enforcement remains pending. [Stage notes](docs/stages/01-tenant-and-roles.md) · [Results](tests/day-01.md) · [Evidence](evidence/day-01/README.md)
 
 The target roles are **Junior Microsoft 365 Administrator**, **Junior System Administrator** and **IT Support Specialist**.
 
@@ -54,8 +54,8 @@ Each stage is designed to include:
 
 | Architecture | Implementation | Validation | Evidence |
 |:---:|:---:|:---:|:---:|
-| [View design](#target-architecture) | [Browse stages](#implementation-progress) | [Open test matrix](tests/test-matrix.csv) | [Open evidence guide](evidence/README.md) |
-| Planned service relationships | 14 planned learning stages | 32 checks, all NOT_RUN | Captures pending execution |
+| [View design](#target-architecture) | [Browse stages](#implementation-progress) | [Open test matrix](tests/test-matrix.csv) | [Open Day 01 evidence](evidence/day-01/README.md) |
+| Target design and recorded baseline | Stage 01 in progress; 13 stages planned | 2 PASS / 30 NOT_RUN | 9 published Day 01 screenshots |
 
 ## Technologies and Concepts
 
@@ -74,7 +74,7 @@ Each stage is designed to include:
 | Reporting | Planned read-only PowerShell reports for licenses, mailbox delegation and group membership |
 | Employee lifecycle | Onboarding, department changes, offboarding and approved data handover |
 
-The actual subscription and enabled services will determine the executable scope. The core does not require Intune, PIM, Conditional Access implementation, Exchange hybrid deployment, Teams Phone, paid Copilot or advanced retention/holds.
+Day 01 adds a scoped Conditional Access MFA pilot in the existing tenant. Ordinary Premium seats support the M365 users; the one-seat [Copilot extension](docs/copilot-pilot-plan.md) is planned around Stages 06, 08, 10 and 13. Intune can be an extension. PIM, full E5/Entra Suite restoration, Exchange hybrid deployment, Teams Phone and advanced retention/holds remain outside the core.
 
 ---
 
@@ -83,14 +83,14 @@ The actual subscription and enabled services will determine the executable scope
 | Component | Current recorded state |
 | --- | --- |
 | Learning plan | 14 stage documents with objectives, exercises and exit checks |
-| Subscription | Business Standard trial reported active by the owner; baseline inspection pending |
-| Synthetic inputs | Three planned pilot identities and a backlog of 15 support cases |
-| Validation | 32 defined checks; every result is NOT_RUN |
+| Subscription | Standard 25, Premium 25 and Premium with Copilot 1 reported active; Anna's bundle assignment captured |
+| Synthetic inputs | Anna provisioned; Piotr and Marek planned; 15 planned support cases |
+| Validation | 32 global checks: 2 PASS and 30 NOT_RUN; supporting Day 01 observations recorded separately |
 | Operational documentation | Lab/ticket templates, lifecycle template and user-article plan |
 | PowerShell | Three report contracts defined; no executable scripts yet |
-| Implementation evidence | None collected or published |
+| Implementation evidence | Nine Day 01 screenshots: configuration, mail, denied administration and authentication baseline |
 
-A prepared template or checklist does not establish that the underlying tenant configuration exists. Live state will be recorded in the corresponding stage notes.
+Captured configuration, functional results and owner-reported details are distinguished in the stage notes. Assigned services and a visible Copilot button do not establish full workload operation or validated AI output.
 
 ## Planned Outcomes
 
@@ -110,15 +110,28 @@ These are learning targets. They will become demonstrated outcomes only after ex
 
 ## Featured Implementation Evidence
 
-**No implementation screenshots are available yet.**
+Selected, redacted Day 01 captures. These show the baseline and initial mail/access results; they do not show enforced MFA or functioning Copilot output.
 
-After the corresponding exercises are verified, this section will feature selected, sanitized evidence for mailbox delegation, mail-flow diagnosis, collaboration access and file recovery. Each capture will link to its stage note, result and evidence index.
+<table>
+<tr>
+<td width="50%" align="center">
+  <a href="evidence/day-01/03-pilot-mail-received.png"><img src="evidence/day-01/03-pilot-mail-received.png" alt="Anna's Inbox with a redacted external Gmail reply" width="100%"></a><br>
+  <strong>Exchange Online Mail Test</strong><br>
+  <sub><a href="tests/day-01.md">Results</a> · <a href="evidence/day-01/README.md">Evidence index</a></sub>
+</td>
+<td width="50%" align="center">
+  <a href="evidence/day-01/07-signin-before-conditional-access.png"><img src="evidence/day-01/07-signin-before-conditional-access.png" alt="Pre-change Exchange sign-in with visible CA results Not applied or Disabled" width="100%"></a><br>
+  <strong>Pre-change MFA Coverage Baseline</strong><br>
+  <sub><a href="docs/stages/01-tenant-and-roles.md">Stage 01 notes</a> · <a href="evidence/day-01/README.md">Evidence index</a></sub>
+</td>
+</tr>
+</table>
 
-[Evidence handling guide](evidence/README.md) · [Functional check matrix](tests/test-matrix.csv)
+[All nine screenshots](evidence/day-01/README.md) · [Remaining capture checkpoints](evidence/day-01/README.md#next-capture-checkpoints)
 
 ## Target Architecture
 
-The diagram shows **planned service relationships**, not a deployed topology or a network/protocol trace.
+The diagram is a **target design**. Stage 01 has captured Anna's mail/access baseline and a separate MFA security group; the remaining collaboration objects are planned. It is not a network/protocol trace.
 
 ```mermaid
 flowchart TB
@@ -173,7 +186,7 @@ flowchart TB
 <summary><strong>Architecture notes and planned lab scope</strong></summary>
 
 - The core uses a personal lab tenant and the default onmicrosoft.com domain. An owned custom domain is optional.
-- Three synthetic licensed pilot users and separate administrative identities are planned; their live provisioning has not been documented.
+- Anna is created and licensed; Piotr and Marek remain planned. SG-M365-MFA-Pilot has Anna as its sole captured member. Operator context and remaining role/recovery checks are recorded separately.
 - Standard channels use the parent team's SharePoint site. A private channel has its own site and membership boundary.
 - The independent knowledge site is separate from the Finance team's connected site.
 - User permission checks will use ordinary user sessions. An elevated administrator session is not the excluded-user control.
@@ -188,7 +201,7 @@ flowchart TB
 
 ## Implementation Progress
 
-**0 of 14 stages completed.** All learning stages remain **PLANNED**.
+**0 of 14 stages completed. Stage 01 is IN_PROGRESS; Stages 02–14 are PLANNED.**
 
 The schedule targets approximately **50–65 hours over a 30-day trial**, including documentation. Day ranges are estimates and must fit the actual subscription end date. Notes and evidence are saved throughout the project; the final days are a buffer.
 
@@ -196,7 +209,7 @@ The schedule targets approximately **50–65 hours over a 30-day trial**, includ
 
 | Stage | Target days | Lab | Documentation | Status |
 | --- | --- | --- | --- | --- |
-| 01 | 1 | Tenant baseline and administrative roles | [Stage plan](docs/stages/01-tenant-and-roles.md) | PLANNED |
+| 01 | 1 | Tenant baseline and administrative roles | [Stage plan](docs/stages/01-tenant-and-roles.md) | IN_PROGRESS |
 | 02 | 2–3 | Users, licenses and group types | [Stage plan](docs/stages/02-users-licenses-and-groups.md) | PLANNED |
 | 03 | 4–5 | Exchange recipients, aliases and distribution | [Stage plan](docs/stages/03-exchange-recipients-and-mail.md) | PLANNED |
 | 04 | 6–7 | Shared mailboxes, calendars and room booking | [Stage plan](docs/stages/04-delegation-calendars-and-rooms.md) | PLANNED |
@@ -215,21 +228,26 @@ The schedule targets approximately **50–65 hours over a 30-day trial**, includ
 
 ### Detailed Lab Notes
 
-Expand a stage to see its planned scope. Unchecked items are future work; no implementation or result is implied.
+Expand a stage to see its scope. Stage 01 includes captured checkpoints; unchecked items remain future work. Other stages remain planned.
 
 <details>
-<summary><strong>Stage 01 — Tenant baseline and administrative roles</strong> · planned exercises</summary>
+<summary><strong>Stage 01 — Tenant baseline and administrative roles</strong> · implementation in progress</summary>
 
-Establish a verified service baseline and separate administrative work from ordinary user activity.
+Record the existing tenant, license the distinct M365 pilot and connect configuration to actual mail, access and sign-in behavior.
 
-- [ ] Record the actual subscription, enabled service plans, available seats and trial end date privately.
-- [ ] Confirm Teams entitlement and desktop Apps availability instead of inferring them from the product name.
-- [ ] Separate administrative and pilot identities; configure MFA and private recovery access.
-- [ ] Select the role needed for each workload and inspect Service health.
+- [x] Captured Anna's Business Premium with Copilot assignment and Poland usage location.
+- [x] Sent a synthetic message to external Gmail and received the matching reply.
+- [x] Captured an explicit ordinary-user Microsoft 365 Admin Center denial.
+- [x] Captured the same interactive Exchange event across Basic info, empty Authentication Details and visible CA results.
+- [x] Created SG-M365-MFA-Pilot with Anna as its only direct member.
+- [x] Captured Authenticator enabled for All users in the overview.
+- [ ] Verify detailed Authenticator mode, exclusions and completed registration.
+- [ ] Record an appropriate CA operator, report-only evaluation and enforced pilot MFA.
+- [ ] Complete the remaining workload, service-health, client-version and recovery checks.
 
-**Validation target:** An authorized administrative task succeeds in the intended tenant. The same administrative operation is denied to an ordinary user. A licensed initial pilot user can open the required services after provisioning.
+**Current limit:** The selected baseline event required single-factor authentication. No applied MFA policy or post-change result has been captured.
 
-[Stage documentation](docs/stages/01-tenant-and-roles.md) · [Test matrix](tests/test-matrix.csv) · [Evidence guide](evidence/README.md)
+[Stage documentation](docs/stages/01-tenant-and-roles.md) · [Day 01 results](tests/day-01.md) · [Nine screenshots](evidence/day-01/README.md)
 
 </details>
 
@@ -482,12 +500,13 @@ Publish accurate project evidence and close or deliberately retain the lab.
 | [Architecture](docs/architecture.md) and [access matrix](docs/access-matrix.md) | Planned objects, service relationships and permission boundaries |
 | [Stage index](docs/stages/README.md) and [lab-note template](docs/LAB-NOTE-TEMPLATE.md) | Planned exercises and later implementation records |
 | [Support workflow](tickets/README.md), [case template](tickets/TICKET-TEMPLATE.md) and [backlog](samples/ticket-backlog.csv) | Diagnostic reasoning, recovery and user verification |
-| [Functional validation guide](tests/README.md) and [32-check matrix](tests/test-matrix.csv) | Expected behavior, results and evidence links |
+| [Functional validation guide](tests/README.md), [32-check matrix](tests/test-matrix.csv) and [Day 01 results](tests/day-01.md) | Global results, supporting observations and evidence links |
 | [PowerShell report plan](scripts/README.md) | Report scope, permission requirements and verification contracts |
 | [Lifecycle runbook template](runbooks/LIFECYCLE-TEMPLATE.md) | Onboarding, access changes, offboarding and data custody |
 | [Knowledge article plan](knowledge-base/README.md) | User instructions and a German-language companion |
 | [Synthetic users](samples/pilot-users.csv) and [sample guide](samples/README.md) | Fictional planning inputs without real tenant identifiers |
 | [Evidence guide](evidence/README.md) and [recording workflow](CONTRIBUTING.md) | Sanitization, status rules and coherent commits |
+| [Copilot pilot plan](docs/copilot-pilot-plan.md) | One-seat readiness, source checking and permission-sensitive use cases; not yet executed |
 | [Microsoft sources](docs/sources.md) | Official references for service behavior and licensing |
 
 ---
@@ -522,7 +541,7 @@ Plan mailbox/file handover and check applicable preservation and licensing condi
 
 This is an educational lab and technical portfolio. The organization, users and support cases are synthetic.
 
-At this stage, the repository demonstrates planning and documentation structure. No live Microsoft 365 test, resolved support incident, PowerShell execution, automated test success or production outcome is claimed.
+Published Day 01 evidence supports initial Exchange operation, an ordinary-user admin denial, a one-member MFA pilot group and the pre-change sign-in baseline. Empty Authentication Details is recorded as a limitation, not a reconstructed password/MFA sequence. Detailed Authenticator mode/exclusions and enforced MFA are pending. No completed support incident, Copilot output, PowerShell execution, automated test success or production outcome is claimed.
 
 Configuration evidence, functional results and any future offline script checks will be recorded separately. A blocked result remains blocked until the dependency is resolved; it is not converted into a pass.
 
@@ -539,8 +558,8 @@ An owned custom domain with SPF/DKIM/DMARC and controlled external sharing are o
 | [README.md](README.md) | Project overview, architecture, stage roadmap and current evidence status |
 | [docs/](docs/roadmap.md) | Fourteen stage plans, baseline, access model, architecture and sources |
 | [tickets/](tickets/README.md) | Support workflow and case template |
-| [tests/](tests/README.md) | Thirty-two planned functional checks and result conventions |
-| [evidence/](evidence/README.md) | Publication rules and future sanitized implementation captures |
+| [tests/](tests/README.md) | Thirty-two global checks, two recorded passes and detailed Day 01 observations |
+| [evidence/](evidence/README.md) | Nine Day 01 captures, review rules and explicit future screenshot checkpoints |
 | [scripts/](scripts/README.md) | Planned read-only operational reports |
 | [runbooks/](runbooks/README.md) | Employee lifecycle procedure template |
 | [knowledge-base/](knowledge-base/README.md) | Planned user-facing articles |

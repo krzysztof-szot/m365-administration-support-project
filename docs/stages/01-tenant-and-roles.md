@@ -1,46 +1,52 @@
 # Stage 01 — Tenant baseline and administrative roles
 
-Status: PLANNED  
+Status: **IN_PROGRESS**  
 Target days: 1  
-Execution date: not recorded
+Evidence event date: 14 November 2026  
+Published screenshots: 9
 
 ## Learning objective
 
-Establish a verified service baseline and separate administrative work from ordinary user activity.
+Establish the actual service baseline, separate administrative work from ordinary user activity and verify authentication/authorization through user behavior and sign-in records.
 
-## Before starting
+## Recorded environment
 
-Confirm the required service entitlement, task-appropriate role, affected synthetic identities and recovery path. Record the actual tenant/client context privately. Earlier stages provide the baseline; unresolved prerequisites remain BLOCKED rather than assumed successful.
+This project reuses the owner's existing Baltic Finance identity lab. Historical E5/Entra Suite assignments and CA policies are background configuration, not newly implemented M365 project results. The owner reported that E5 and Entra Suite are disabled/expired.
 
-## Planned exercises
+The owner supplied subscription screens showing Business Standard (25 seats), Business Premium (25 seats) and Business Premium with Copilot (1 seat) active. Subscription/billing details stay private. The owner reported disabling recurring billing and assigning ordinary Business Premium to the existing adm-lab identity.
 
-1. Record the actual subscription, enabled service plans, available seats and trial end date privately.
-2. Confirm Teams entitlement and desktop Apps availability instead of inferring them from the product name.
-3. Separate administrative and pilot identities; configure MFA and private recovery access.
-4. Select the role needed for each workload and inspect Service health.
+Anna was created as the distinct m365.anna pilot. The published [license capture](../../evidence/day-01/01-pilot-license-assignment.png) shows Business Premium with Copilot and Poland usage location. Service-plan availability was reported by the owner; Apps is collapsed in that image. Client versions and all workload behaviors are not yet recorded.
 
-## Training case
+## Implementation and observed behavior
 
-A normal user reports that an administrative operation is unavailable. Determine whether the denial is expected.
+1. Created/licensed the ordinary Anna pilot and performed the reported first sign-in/password change.
+2. Tested email with an **external Gmail mailbox**. Anna's Sent Items shows a synthetic message at displayed time 08:41, and her Inbox shows the corresponding Gmail reply at 08:44 on 14 November 2026. The client timezone was not captured.
+3. Confirmed a direct Microsoft 365 Admin Center denial for Anna.
+4. Inspected an interactive One Outlook Web / Office 365 Exchange Online event at **2026-11-14T07:15:27Z**. It succeeded with a Single-factor authentication requirement.
+5. Retained the empty Authentication Details message and visible CA results of Not applied/Disabled for that same record. These tabs do not reconstruct a complete password/MFA sequence; the separate Report only tab was not captured.
+6. Created SG-M365-MFA-Pilot with Anna as its one direct member.
+7. Inspected Authentication methods: Microsoft Authenticator is enabled for All users in the overview. Detailed mode, exclusions and Anna's registration status still need verification.
 
-This is a planned lab scenario. No incident, root cause or repair outcome has been observed yet.
+See the [result record](../../tests/day-01.md) and [nine screenshots](../../evidence/day-01/README.md).
+
+## Finding and next action
+
+The selected Exchange event did not require MFA and shows no applied policy in the captured Conditional Access tab. The exact scope/condition reason for each Not applied result has not been established. Enabling an authentication method and requiring MFA are separate controls.
+
+Next: capture the detailed Authenticator mode/scope, confirm a task-appropriate CA operator role, create a policy restricted to the licensed M365 pilot in Report-only, observe its evaluation, then deliberately enforce and verify MFA with a recovery path. These are planned actions, not completed results.
 
 ## Exit checks
 
-- [ ] An authorized administrative task succeeds in the intended tenant.
-- [ ] The same administrative operation is denied to an ordinary user.
-- [ ] A licensed initial pilot user can open the required services after provisioning.
+- [ ] An authorized administrative operation is recorded with the actual operator role/scope; the owner reported use of adm-lab but no dedicated operator-role capture is published.
+- [x] An ordinary pilot is denied Microsoft 365 Admin Center access.
+- [ ] The required workloads are functionally verified; Exchange works but other service checks remain.
+- [ ] Pilot MFA is enforced and verified through the matching user experience and logs.
+- [ ] Administrative recovery, relevant client versions and Service health are recorded.
 
-## Execution record
+## Evidence and recording rules
 
-- Starting state and expected result: not recorded.
-- Actions and reasoning: not recorded.
-- Observations and propagation delays: not recorded.
-- Functional/negative/recovery results: NOT_RUN.
-- Evidence: none.
-- Remaining resources, restoration and limitations: not recorded.
-- What I can explain without a click-by-click guide: not recorded.
+Every guided action has an explicit screenshot checkpoint and filename. See the [Day 01 checklist](../../evidence/day-01/README.md). Never capture enrollment QR codes, passwords or authentication secrets.
 
-Use the [lab-note template](../LAB-NOTE-TEMPLATE.md), [test matrix](../../tests/test-matrix.csv) and [ticket workflow](../../tickets/README.md). Mark completion only after evidence supports the relevant exit checks.
+Do not infer functioning Copilot from its visible Outlook button or working Office desktop activation from an assigned product. Keep the baseline and after-change evidence distinct.
 
-[Back to stage index](README.md)
+[Back to stage index](README.md) · [Environment baseline](../01-environment-baseline.md)

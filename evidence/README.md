@@ -1,6 +1,6 @@
 # Evidence handling
 
-No implementation screenshots have been published yet. A capture plan is not a completed test or evidence that a configuration exists.
+Nine reviewed screenshots are published in [Day 01](day-01/README.md). The remaining capture checkpoints are planned; a filename alone does not establish a result.
 
 ## Capture checkpoints during guided work
 

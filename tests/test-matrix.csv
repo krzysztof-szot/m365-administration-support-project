@@ -1,7 +1,7 @@
 TestId,Stage,Check,Expected,Observed,Result,Evidence
-T01,01,Required services,Selected pilot can use enabled workloads,Not recorded,NOT_RUN,None
-T02,01,Ordinary-user administrative attempt,The intended administrative operation is denied,Not recorded,NOT_RUN,None
-T03,02,Licensed pilot service access,Selected workload is usable after provisioning,Not recorded,NOT_RUN,None
+T01,01,Required services,Selected pilot can use enabled workloads,Exchange validated separately in T03; other workload functional checks pending,NOT_RUN,tests/day-01.md
+T02,01,Ordinary-user administrative attempt,The intended administrative operation is denied,Anna receives an explicit Admin Center permission denial,PASS,evidence/day-01/04-pilot-admin-center-denied.png
+T03,02,Licensed pilot service access,Selected workload is usable after provisioning,Executed early in Stage 01: Anna sends mail to external Gmail and receives its reply,PASS,tests/day-01.md
 T04,02,Missing entitlement recovery,Empty test account recovers service access after the correct entitlement is assigned,Not recorded,NOT_RUN,None
 T05,03,Alias delivery,Marked message arrives in the intended mailbox,Not recorded,NOT_RUN,None
 T06,03,Distribution membership,Approved members receive the message and excluded control does not,Not recorded,NOT_RUN,None
