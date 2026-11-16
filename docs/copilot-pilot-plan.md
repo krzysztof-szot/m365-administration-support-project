@@ -4,6 +4,8 @@ Status: **PLANNED — license assignment captured; functional Copilot use NOT_RU
 
 The active bundle provides one Copilot seat. Anna is the fixed pilot. Additional ordinary Business Premium seats do not create additional Copilot seats. Visible Copilot controls and Word summary panels in Day 01 are interface observations. No deliberate pilot exercise, source-checked output or permission-sensitive retrieval test has been recorded. The completed Word web tests verify document persistence.
 
+Stage 06 core desktop exercises are complete. No deliberate Copilot session or validated output was executed there; the optional session below remains PLANNED.
+
 ## Three planned sessions within the existing roadmap
 
 1. App readiness and source checking, alongside Stage 06: verify actual entitlement/client readiness and generate a summary or draft from synthetic material. Compare the output and citations with the source.

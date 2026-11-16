@@ -12,8 +12,8 @@ T10,04,Calendar reader,Reader sees the event but cannot modify it,Marek reads An
 T11,05,Invalid recipient,Actual failure evidence identifies the invalid recipient,NDR and Failed Trace agree on 550 5.1.10 RESOLVER.ADR.RecipientNotFound and SMTP address lookup failure,PASS,tests/day-05.md
 T12,05,Scoped training rule,Marked message to the selected recipient is rejected while an unmarked control is delivered,Marek to Piotr RULE-01 with marker fails with the configured rejection explanation; unmarked RULE-02 is Delivered and opened per owner,PASS,tests/day-05.md
 T13,05,Mail-flow recovery,Delivery succeeds after disabling the training rule and allowing for propagation,Rule saved Disabled; new marked RULE-03 is Delivered at 06:54 UTC; delivery established by Trace and propagation interval not measured,PASS,tests/day-05.md
-T14,06,Client identity and activation,Correct licensed identity is active in the recorded client,Not recorded,NOT_RUN,None
-T15,06,Browser and desktop comparison,Observed differences support a specific account or client diagnosis,Not recorded,NOT_RUN,None
+T14,06,Client identity and activation,Correct licensed identity is active in the recorded client,Marek Subscription Product confirmed; wrong Piotr active user distinguished from subscription still naming Marek; restored Marek with document and mail checks,PASS,tests/day-06.md
+T15,06,Browser and desktop comparison,Observed differences support a specific account or client diagnosis,Same Marek mailbox works in web while classic Outlook is Working Offline; reconnect delivers OFFLINE-01 and new SYNC-02 reaches web,PASS,tests/day-06.md
 T16,07,Standard-channel files,Team member accesses the expected parent-site folder,Executed early in Stage 01: Anna accesses Baltic Finance Lab Documents > General through Teams and creates/reopens the test document,PASS,tests/day-01.md
 T17,07,Private-channel boundary,Authorized channel member succeeds and excluded team member is denied,Not recorded,NOT_RUN,None
 T18,08,SharePoint reader,Reader opens the document but cannot edit it,Not recorded,NOT_RUN,None

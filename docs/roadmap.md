@@ -1,6 +1,6 @@
 # Thirty-day learning roadmap
 
-Status: **Stages 01–05 COMPLETE; Stages 06–14 PLANNED.** There are 104 indexed screenshots, seven resolved lab cases and **16 PASS / 16 NOT_RUN**. See [Day 01](../tests/day-01.md), [Day 02](../tests/day-02.md), [Day 03](../tests/day-03.md), [Day 04](../tests/day-04.md) and [Day 05](../tests/day-05.md). T16 was exercised early; Stage 07 remains planned.
+Status: **Stages 01–06 COMPLETE; Stages 07–14 PLANNED.** There are 113 indexed captures, nine resolved lab cases and **18 PASS / 14 NOT_RUN**. See [Day 01](../tests/day-01.md), [Day 02](../tests/day-02.md), [Day 03](../tests/day-03.md), [Day 04](../tests/day-04.md), [Day 05](../tests/day-05.md) and [Day 06](../tests/day-06.md). T16 was exercised early; Stage 07 remains planned.
 
 The target workload is about 50–65 hours including documentation. The ranges below are estimates, not elapsed execution dates. Record the actual subscription expiry privately and shorten the schedule if necessary. Save evidence after each session rather than waiting until the end.
 
@@ -11,7 +11,7 @@ The target workload is about 50–65 hours including documentation. The ranges b
 | 03 | 4–5 | [Exchange recipients, aliases and distribution](stages/03-exchange-recipients-and-mail.md) | COMPLETE | 3–4 h |
 | 04 | 6–7 | [Shared mailboxes, calendars and room booking](stages/04-delegation-calendars-and-rooms.md) | COMPLETE | 4–5 h |
 | 05 | 8–9 | [Mail-flow troubleshooting and recovery](stages/05-mail-flow-troubleshooting.md) | COMPLETE | 4–5 h |
-| 06 | 10–11 | [Outlook and Microsoft 365 Apps](stages/06-outlook-and-microsoft-365-apps.md) | PLANNED | 3–4 h |
+| 06 | 10–11 | [Outlook and Microsoft 365 Apps](stages/06-outlook-and-microsoft-365-apps.md) | COMPLETE | 3–4 h |
 | 07 | 12–13 | [Teams and connected SharePoint sites](stages/07-teams-and-connected-sites.md) | PLANNED | 3–4 h |
 | 08 | 14–16 | [SharePoint structure, permissions and sharing](stages/08-sharepoint-and-sharing.md) | PLANNED | 5–6 h |
 | 09 | 17–18 | [OneDrive synchronization and file recovery](stages/09-onedrive-sync-and-recovery.md) | PLANNED | 3–4 h |
@@ -21,7 +21,7 @@ The target workload is about 50–65 hours including documentation. The ranges b
 | 13 | 26–27 | [Independent administration and troubleshooting assessment](stages/13-independent-capstone.md) | PLANNED | 4–5 h |
 | 14 | 28–30 | [Portfolio review and lab closure](stages/14-portfolio-and-lab-closure.md) | PLANNED | 2–3 h |
 
-The hour ranges total 50–65 hours including learning, screenshots and documentation; they are estimates, not measured elapsed work. The Copilot extension adds 5–7 hours. Learning-unit labels do not establish calendar dates: Stages 01–04 were all executed on 14 November 2026; Stage 05 was executed on 16 November 2026. The owner reports Word installed, Outlook absent and Windows on VMware Workstation Pro available for the next stage; client/VM readiness and activation are not yet validated.
+The hour ranges total 50–65 hours including learning, screenshots and documentation; they are estimates, not measured elapsed work. The Copilot extension adds 5–7 hours. Learning-unit labels do not establish calendar dates: Stages 01–04 were all executed on 14 November 2026; Stages 05–06 were executed on 16 November 2026. Stage 06 used the dedicated BFL-WKS01 VM, activated Microsoft 365 Apps and classic Outlook, and verified identity/offline recovery plus existing calendar/Helpdesk delegation.
 
 ## Learning method
 
@@ -45,4 +45,4 @@ Optional extensions after the core: an owned custom domain with SPF/DKIM/DMARC, 
 
 ## Copilot extension
 
-The one-seat [Copilot pilot](copilot-pilot-plan.md) adds three planned sessions within Stages 06, 08, 10 and 13. License assignment is captured; generated output and permission-sensitive retrieval are not yet tested. Ordinary Premium seats support the wider M365 pilot.
+The one-seat [Copilot pilot](copilot-pilot-plan.md) adds three planned sessions within Stages 06, 08, 10 and 13. License assignment is captured; generated output and permission-sensitive retrieval are not yet tested. Ordinary Premium seats support the wider M365 pilot. Stage 06 core client completion does not mark the optional Copilot session complete; it remains unexecuted.

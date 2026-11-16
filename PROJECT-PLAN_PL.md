@@ -2,7 +2,7 @@
 
 Aktualizacja: 16 listopada 2026 r.
 
-Etapy 01–05 są COMPLETE; etapy 06–14 pozostają PLANNED. Opublikowano 104 screeny: Day 01 — 31, Day 02 — 21, Day 03 — 11, Day 04 — 27, Day 05 — 14. Globalna tabela ma 16 PASS i 16 NOT_RUN. W Day 05 doszły T11–T13; fazy kontrolne i odzyskanie nie tworzą dodatkowych numerów testów. Siedem przypadków M365-001–007 jest rozwiązanych jako ćwiczenia laboratoryjne.
+Etapy 01–06 są COMPLETE; etapy 07–14 pozostają PLANNED. Opublikowano 113 screenów: Day 01 — 31, Day 02 — 21, Day 03 — 11, Day 04 — 27, Day 05 — 14, Day 06 — 9. Globalna tabela ma 18 PASS i 14 NOT_RUN. W Day 05 doszły T11–T13, w Day 06 T14–T15; fazy kontrolne i odzyskanie nie tworzą dodatkowych numerów testów. Dziewięć przypadków M365-001–009 jest rozwiązanych jako ćwiczenia laboratoryjne.
 
 Zweryfikowano pocztę z zewnętrznym Gmail, zapis i ponowne otwarcie dokumentów OneDrive/SharePoint, trwałość wiadomości Teams oraz odmowę panelu administracyjnego dla Anny. Politykę MFA oceniono w Report-only, włączono i uzyskano Success z istniejącym claimem MFA. Świeże zatwierdzenie push nie zostało uchwycone. Dodatkową rolę CA usunięto; właściciel potwierdził dalszy dostęp adm-lab oraz nowe logowania i aktywny Global Administrator dla obu kont awaryjnych.
 
@@ -14,7 +14,7 @@ Powstała prywatna grupa BFL-M365-Finance: właścicielka Anna, członkowie Anna
 
 Alias m365.finance prowadzi do istniejącej skrzynki Anny. Pierwsza próba wewnętrzna pokazała w nagłówku adres podstawowy; dopiero para wysłane/odebrane z Gmaila potwierdziła jawnie adres aliasu. Surowe nagłówki pozostają prywatne. Rola Exchange Recipient Administrator na adm-lab pozostaje Direct/Active/Permanent do kolejnych zadań odbiorców i wymaga późniejszego przeglądu.
 
-Pierwsze cztery jednostki nauki wykonano 14 listopada 2026 r.; Stage 05 wykonano 16 listopada. Rozpiska godzin w [roadmapie](docs/roadmap.md) jest szacunkiem, a nie pomiarem czasu.
+Pierwsze cztery jednostki nauki wykonano 14 listopada 2026 r.; Etapy 05–06 wykonano 16 listopada. Rozpiska godzin w [roadmapie](docs/roadmap.md) jest szacunkiem, a nie pomiarem czasu.
 
 ## Zakończony Day 04
 
@@ -35,6 +35,18 @@ Reguła TR-M365-001-Lab-Block-Marek-To-Piotr wymaga nadawcy Marek AND odbiorcy P
 Trace działał jako adm-lab według potwierdzenia właściciela, natomiast regułę skonfigurowano jako bg01. Próba RG-M365-Lab-Transport-Rules zakończyła się błędem delegowania; skutecznego nadania uprawnienia i pełnego stanu ewentualnego częściowego obiektu nie potwierdzono. Diagnostykę PowerShell oraz dodatkowe screeny ról odłożono zgodnie z decyzją właściciela. Nie są warunkiem ponownego zaliczania zakończonych testów przepływu poczty.
 
 W publicznej wersji screena 11 domena jest zasłonięta także w How to Fix It. Szczegóły: [Stage 05](docs/stages/05-mail-flow-troubleshooting.md), [testy](tests/day-05.md) i [14 dowodów](evidence/day-05/README.md).
+
+## Zakończony Day 06
+
+Właściciel potwierdził przeznaczenie BFL-WKS01 wyłącznie do labu: Windows 11 Enterprise Evaluation build 26100, 4 GB RAM, VMware Workstation Pro. Początkowo w VM brakowało Worda i Internetu. Później łączność działała, a instalacja Apps zakończyła się powodzeniem; dokładnej przyczyny i sposobu naprawy sieci nie podano. Nie przypisujemy awarii wyłączonemu kontrolerowi domeny ani samemu DNS.
+
+Screen 01 pokazuje poprawnie zalogowanego Marka, ale Activation Required. Po prowadzonej procedurze odświeżenia licencji screen 02 pokazuje Subscription Product. Osobny kontrolowany test tożsamości w 04 ma Piotra w User Information i nadal subskrypcję dla Marka. To korekta aktywnego użytkownika, a nie uchwycona utrata aktywacji lub przełączenie licencji na Piotra.
+
+Work Offline w 05 wyjaśnia rozbieżność między przeglądarką a desktopem. Właściciel potwierdził około 60 sekund braku wiadomości w desktopie; 06 pokazuje tę samą OFFLINE-01 po powrocie online oraz Connected to Microsoft Exchange. Nowy SYNC-02 dotarł do web. Nie wyliczamy czasu synchronizacji z godzin wiadomości.
+
+W 07 kalendarz Anny ma Read-Only; historyczny opis Edited by Marek pochodzi z Day 04. W 08 Piotr odczytuje końcową odpowiedź w Helpdesk; pełny obieg i nadawcę Helpdesk właściciel potwierdził tekstowo. Końcowo przywrócono profil Marka i aktywny Word. Nie zgłoszono usunięcia dodatkowego profilu Piotra. Nowy Outlook, rejestracja/MDM i opcjonalne ćwiczenie Copilot nie były walidowane.
+
+Szczegóły: [Stage 06](docs/stages/06-outlook-and-microsoft-365-apps.md), [testy](tests/day-06.md) i [9 dowodów](evidence/day-06/README.md). Dodatkowy wycinek wersji Outlooka zapisano jako 09; potwierdzenia tekstowe zastępują zbędne kolejne screeny, z jawnym przypisaniem źródła.
 
 ## Cel i sposób pracy
 
@@ -80,7 +92,7 @@ Szczegółowe zadania i warunki zakończenia: [etap 05](docs/stages/05-mail-flow
 
 W osobnym profilu lub VM zbadaj aktywację aplikacji, niewłaściwą tożsamość oraz różnicę przeglądarka–klient. Udokumentuj wersję Outlooka. Ustal, czy problem dotyczy konta, licencji, usługi czy klienta.
 
-Stan zgłoszony 16 listopada: Word jest zainstalowany, Outlook nie; dostępny jest Windows na VMware Workstation Pro. Nie zweryfikowano jeszcze lokalizacji aplikacji, izolacji i wersji VM ani aktywacji. Stage 06 pozostaje PLANNED, a T14/T15 — NOT_RUN.
+Wykonano w labowej VM BFL-WKS01: instalację Apps, aktywację jako Marek, zapis/ponowne otwarcie/edycję lokalnego dokumentu i wymianę poczty web–desktop. Word i klasyczny Outlook: Version 2610, Build 20527.20196, Current Channel; Outlook 64-bit potwierdzony tekstowo. Przy zalogowanym Piotrze subskrypcja nadal wskazywała Marka; przywrócono właściwego użytkownika. Work Offline wyjaśnił brak nowej wiadomości w desktopie przy działającym web; po powrocie online ta sama wiadomość dotarła i nowa kontrola wysyłania zadziałała. Kalendarz Anny otwarto jako Read-Only, a Piotr sprawdził pełny obieg odpowiedzi Helpdesku. Końcowy profil Outlooka i aktywny Word Marka potwierdzono. **Stage 06 COMPLETE; T14/T15 PASS.**
 
 Szczegółowe zadania i warunki zakończenia: [etap 06](docs/stages/06-outlook-and-microsoft-365-apps.md).
 
@@ -140,14 +152,14 @@ Szczegółowe zadania i warunki zakończenia: [etap 14](docs/stages/14-portfolio
 - Instrukcje użytkownika, w tym jeden niemiecki odpowiednik.
 - Zweryfikowany runbook cyklu życia i pięć samodzielnych zadań końcowych.
 
-To cele całego projektu. Etapy 01–05 są COMPLETE, a etapy 06–14 pozostają PLANNED. Publikowane wyniki muszą odpowiadać zapisanym obserwacjom i dowodom; przypisanie licencji lub utworzenie pliku nie kończy etapu.
+To cele całego projektu. Etapy 01–06 są COMPLETE, a etapy 07–14 pozostają PLANNED. Publikowane wyniki muszą odpowiadać zapisanym obserwacjom i dowodom; przypisanie licencji lub utworzenie pliku nie kończy etapu.
 
 W Day 01 wdrożono ograniczony pilot MFA przez Conditional Access w istniejącym tenancie. Windows 11, Chrome 157.0.8103.52 dla Anny i Edge 157.0.4341.46 dla administratorów zapisano na podstawie raportu właściciela. Service health pokazało pięć advisories dla Microsoft 365 suite; nie wnioskujemy z tego o zdrowiu wszystkich usług ani o odtworzonym incydencie. Licencje Premium umożliwiają rozszerzenia z Intune. Dodatkowy [pilot Copilot](docs/copilot-pilot-plan.md) obejmuje trzy sesje, około 5–7 godzin, zintegrowane z etapami 06, 08, 10 i 13; mamy jedno miejsce Copilot. Własna domena i udostępnienie zewnętrzne pozostają rozszerzeniami. PIM, pełne odtworzenie E5/Entra Suite, hybrydowy Exchange, Teams Phone i zaawansowane holdy są poza zakresem podstawowym.
 
 ## Start
 
-Przejrzyj [wyniki](tests/README.md), [przypadki](tickets/README.md) i [baseline](docs/01-environment-baseline.md), a następnie rozpocznij [etap 06](docs/stages/06-outlook-and-microsoft-365-apps.md). Rzeczywiste dane logowania, domenę, identyfikatory, termin triala i szczegóły rozliczeń przechowuj prywatnie. Źródła techniczne i licencyjne: [Microsoft](docs/sources.md).
+Przejrzyj [wyniki](tests/README.md), [przypadki](tickets/README.md) i [baseline](docs/01-environment-baseline.md), a następnie rozpocznij [etap 07](docs/stages/07-teams-and-connected-sites.md). Rzeczywiste dane logowania, domenę, identyfikatory, termin triala i szczegóły rozliczeń przechowuj prywatnie. Źródła techniczne i licencyjne: [Microsoft](docs/sources.md).
 
 ## Screeny podczas ćwiczeń
 
-Przed istotnym punktem dowodowym prowadzący wskazuje moment wykonania screena, widok i nazwę pliku. Zgodnie z ustaleniem z Day 05 ograniczamy liczbę obrazów do potrzebnej konfiguracji i wyników; pomocnicze odczyty mogą być potwierdzone tekstowo z jawnym przypisaniem źródła. [Indeks dowodów](evidence/README.md) opisuje 104 opublikowane screeny. W obrazach Day 03 zanonimizowano wskazane identyfikatory, domenę oraz nazwisko zewnętrznego nadawcy; ograniczenia interpretacji opisano w indeksie. W Day 04 podmieniono 02 na wersję z zasłoniętą domeną, a zapisane wyniki odróżniają konfigurację, fakty widoczne na screenach i potwierdzenia właściciela. Nazwy i moment wykonania nowych dowodów będą wskazywane podczas kolejnych ćwiczeń. Kodów QR rejestracji i sekretów uwierzytelniania nie publikujemy.
+Przed istotnym punktem dowodowym prowadzący wskazuje moment wykonania screena, widok i nazwę pliku. Zgodnie z ustaleniem z Day 05 ograniczamy liczbę obrazów do potrzebnej konfiguracji i wyników; pomocnicze odczyty mogą być potwierdzone tekstowo z jawnym przypisaniem źródła. [Indeks dowodów](evidence/README.md) opisuje 113 opublikowanych obrazów. W obrazach Day 03 zanonimizowano wskazane identyfikatory, domenę oraz nazwisko zewnętrznego nadawcy; ograniczenia interpretacji opisano w indeksie. W Day 04 podmieniono 02 na wersję z zasłoniętą domeną, a zapisane wyniki odróżniają konfigurację, fakty widoczne na screenach i potwierdzenia właściciela. Nazwy i moment wykonania nowych dowodów będą wskazywane podczas kolejnych ćwiczeń. Kodów QR rejestracji i sekretów uwierzytelniania nie publikujemy.

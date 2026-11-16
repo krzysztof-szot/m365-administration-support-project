@@ -1,6 +1,6 @@
 # Environment baseline and current lab state
 
-Current state after **Stages 01–05 COMPLETE**. Stages 01–04 were executed **14 November 2026**; Stage 05 was executed **16 November 2026**. Stage/day labels identify learning units; the roadmap's target-day ranges are estimates.
+Current state after **Stages 01–06 COMPLETE**. Stages 01–04 were executed **14 November 2026**; Stages 05–06 were executed **16 November 2026**. Stage/day labels identify learning units; the roadmap's target-day ranges are estimates.
 
 | Area | Recorded state and source |
 | --- | --- |
@@ -31,16 +31,21 @@ Current state after **Stages 01–05 COMPLETE**. Stages 01–04 were executed **
 | Room closure | Sign-in blocked and Anna's retained 11:00–11:30 reservation explicitly owner-confirmed |
 | Reused collaboration site | Existing Baltic Finance Lab Public group / 28 members seen in Day 01; distinct from the new Private Finance group |
 | Service health | Day 01: five suite advisories; separate Exchange/SharePoint/Teams rows unavailable then. Day 05: Exchange two advisories concerning cross-tenant free/busy and contacts/Speed Dial; no broad delivery-outage inference |
-| Clients | Owner reports Windows 11; Chrome 157.0.8103.52 for users; Edge 157.0.4341.46 for admins; both 64-bit. OS edition/build not recorded |
-| Stage 06 intake | On 16 November owner reports Word installed, Outlook absent and Windows on VMware Workstation Pro available; location, VM isolation, client versions and activation not verified |
+| Original browser clients | Owner reports Windows 11; Chrome 157.0.8103.52 for users; Edge 157.0.4341.46 for admins; both 64-bit. Original browser host edition/build not recorded; Stage 06 VM recorded separately below |
+| Stage 06 workstation | BFL-WKS01 on VMware Workstation Pro; lab-only VM, Windows 11 Enterprise Evaluation build 26100 and 4 GB RAM per owner; initial connectivity later reported restored, exact cause/repair unverified |
+| Desktop clients | Apps installed inside VM; Microsoft 365 Apps for business active as Marek; Word and classic Outlook Version 2610 / Build 20527.20196 / Current Channel; Outlook 64-bit owner-confirmed; new Outlook installed but not tested |
+| Desktop identity and recovery | Piotr active Word user while subscription still names Marek; Marek restored and document/mail checks pass. Work Offline discrepancy corrected; same OFFLINE-01 and new SYNC-02 succeed |
+| Desktop delegated resources | Marek opens Anna CAL-01 as Read-Only; Piotr reads/replies in Helpdesk and completes return reply flow. Marek profile/active Word restored per owner; extra Piotr profile deletion not reported |
 | Recovery accounts | Owner reports fresh bg01/bg02 sign-ins and active Global Administrator in Day 01; no recovery secrets published |
 
 ## Scope and evidence limits
 
-Seven resolved lab cases cover licensing, alias delivery, distribution membership, Helpdesk sender permission, room booking conflict, expected unknown-recipient diagnosis and scoped rule recovery. The current global matrix is **16 PASS / 16 NOT_RUN**. Client versions, job attributes, recovery-account checks, bounded non-receipt, selected calendar/session controls and room-account blocking include owner-reported data. Provisioning elapsed time, exact group/delegation propagation and room processing latency were not measured.
+Nine resolved lab cases cover licensing, alias delivery, distribution membership, Helpdesk sender permission, room booking conflict, expected unknown-recipient diagnosis, scoped rule recovery, wrong active Office identity and offline-client synchronization. The current global matrix is **18 PASS / 14 NOT_RUN**. Client versions, job attributes, recovery-account checks, bounded non-receipt, selected calendar/session controls and room-account blocking include owner-reported data. Provisioning elapsed time, exact group/delegation propagation and room processing latency were not measured.
 
 The first internal alias message's private headers name the primary recipient. Only the subsequent external pair is used as alias-target delivery proof. No tenant-wide sending-from-alias change or Day 03 alias transport trace is claimed; Stage 05 separately provides Trace for baseline, invalid-recipient and rule tests. An independently audited sequence of every portal operation is not established.
 
-The Finance group's membership is configured, but direct private-site allowed/denied tests, Teams attachment/private channels, desktop activation, OneDrive sync/recovery, PowerShell reports and deliberate Copilot exercises remain future work. Day 04 covers shared-mailbox delegation and room/calendar behavior; it does not establish those later outcomes. Day 05 confirms transport delivery after rule disable; RULE-03 opening is not separately confirmed, exact rule-propagation time was not measured, and the custom-role-group delegation exception remains unresolved.
+Stage 06 verifies desktop activation and classic Outlook operation, not device registration/MDM enrollment or a Copilot exercise. Local Word save/reopen does not validate OneDrive synchronization.
 
-[Day 01](stages/01-tenant-and-roles.md) · [Day 02](stages/02-users-licenses-and-groups.md) · [Day 03](stages/03-exchange-recipients-and-mail.md) · [Day 04](stages/04-delegation-calendars-and-rooms.md) · [Day 05](stages/05-mail-flow-troubleshooting.md) · [Current results](../tests/README.md) · [Evidence](../evidence/README.md)
+The Finance group's membership is configured, but direct private-site allowed/denied tests, Teams attachment/private channels, OneDrive sync/recovery, PowerShell reports and deliberate Copilot exercises remain future work. Day 04 covers shared-mailbox delegation and room/calendar behavior; it does not establish those later outcomes. Day 05 confirms transport delivery after rule disable; RULE-03 opening is not separately confirmed, exact rule-propagation time was not measured, and the custom-role-group delegation exception remains unresolved.
+
+[Day 01](stages/01-tenant-and-roles.md) · [Day 02](stages/02-users-licenses-and-groups.md) · [Day 03](stages/03-exchange-recipients-and-mail.md) · [Day 04](stages/04-delegation-calendars-and-rooms.md) · [Day 05](stages/05-mail-flow-troubleshooting.md) · [Day 06](stages/06-outlook-and-microsoft-365-apps.md) · [Current results](../tests/README.md) · [Evidence](../evidence/README.md)

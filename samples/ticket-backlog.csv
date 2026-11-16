@@ -6,8 +6,8 @@ M365-004,04,ExchangeOnline,Incident,Delegate opens Helpdesk but cannot send as H
 M365-005,04,ExchangeOnline,Incident,Room booking conflicts with an existing reservation,RESOLVED
 M365-006,05,ExchangeOnline,Incident,Message to a nonexistent lab recipient is not delivered,RESOLVED
 M365-007,05,ExchangeOnline,Incident,Scoped training rule rejects a marked message,RESOLVED
-M365-008,06,Microsoft365Apps,Incident,Office client is signed in with the wrong lab identity,PLANNED
-M365-009,06,Outlook,Incident,Mailbox behavior differs between browser and desktop,PLANNED
+M365-008,06,Microsoft365Apps,Incident,Office client is signed in with the wrong lab identity,RESOLVED
+M365-009,06,Outlook,Incident,Mailbox behavior differs between browser and desktop,RESOLVED
 M365-010,07,Teams,Incident,Team member cannot access the private channel,PLANNED
 M365-011,08,SharePoint,ServiceRequest,Knowledge-site reader must not edit documents,PLANNED
 M365-012,08,SharePoint,Incident,User retains document access after one link is revoked,PLANNED

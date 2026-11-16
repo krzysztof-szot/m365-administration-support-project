@@ -1,6 +1,6 @@
 # Evidence handling
 
-**104 owner-uploaded screenshots are indexed across five completed stages.** Configuration, captured functional results and owner-reported checks are labelled separately.
+**113 owner-supplied captures are indexed across six completed stages.** Configuration, captured functional results and owner-reported checks are labelled separately.
 
 | Stage | Screenshots | Results |
 | --- | --- | --- |
@@ -9,12 +9,15 @@
 | [Day 03](day-03/README.md) | 11 | Explicit external alias delivery and DL membership recovery |
 | [Day 04](day-04/README.md) | 27 | Mailbox delegation, calendar reader/editor restoration and room conflict recovery |
 | [Day 05](day-05/README.md) | 14 | Service health, NDR/Trace diagnosis, scoped rejection/control and delivery after disabling the rule |
+| [Day 06](day-06/README.md) | 9 | Apps activation, Office identity mismatch, offline/online comparison, desktop delegation and client version |
 
-Future evidence folders do not establish execution. Stages 06–14 remain planned.
+Future evidence folders do not establish execution. Stages 07–14 remain planned.
 
 ## Current publication review
 
 The reviewed Day 03 images mask SPO identifiers, the tenant domain and the external sender's display name while preserving the alias local part and test results. The [Day 03 index](day-03/README.md#publication-review) records the publication boundary. Day 04 captures were also reviewed: the owner's revised 02 masks the lab domain, 06 supplies the Send As grant, 09 masks diagnostic identifiers including cv, and final 19/20 plus 23/24 show the corrected requests and actual room replies. See the [Day 04 limits](day-04/README.md#interpretation-boundaries). Documentation does not reproduce raw identifiers or headers; the owner's uploaded image bytes are retained. The 14 Day 05 images were opened and reviewed, including the owner's revised 11 with the How to Fix It domain masked. Captured UTC/status fields support T11–T13; actor attribution and RULE-02 opening are owner-reported, and RULE-03 recovery is based on Trace. The [Day 05 index](day-05/README.md#interpretation-boundaries) records the unresolved role-delegation exception and deliberately omitted auxiliary captures.
+
+Day 06 preserves the eight owner-supplied numbered PNGs plus the additional version crop as 09-outlook-version.png. The [Day 06 index](day-06/README.md) distinguishes captured product/account information, offline state, received messages and Read-Only calendar behavior from owner-reported timing, controls and final restoration. The product in the wrong-user capture still names Marek; no Piotr activation outage is invented.
 
 ## Capture checkpoints during guided work
 

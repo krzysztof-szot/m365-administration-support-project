@@ -80,3 +80,24 @@ Reviewed during the **16 November 2026** exercise and documentation review. The 
 | Account role inspection | [List Microsoft Entra role assignments](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/view-assignments) |
 
 PowerShell connection and role-group read commands were proposed for diagnosis but deferred by the owner. They are not recorded as executed procedures or Stage 11 report validation.
+
+
+## Day 06 implementation references
+
+Reviewed during the **16 November 2026** exercise. These primary sources explain the supported procedures; actual client results and limits come from the captures and owner reports.
+
+| Area | Official source |
+| --- | --- |
+| Desktop installation | [Install Microsoft 365 applications](https://learn.microsoft.com/en-us/microsoft-365/admin/setup/install-applications?view=o365-worldwide) |
+| Product license refresh | [Update License button in Microsoft 365 apps](https://support.microsoft.com/en-us/microsoft-365-activation-licensing/update-license-button-in-microsoft-365-apps) |
+| Office accounts and same-tenant sign-in | [About accounts in Office](https://support.microsoft.com/en-us/accounts-billing/subscriptions/about-accounts-in-office) |
+| Sign-out and application restart | [Sign out of Office](https://support.microsoft.com/en-us/accounts-billing/subscriptions/sign-out-of-office) |
+| App-only work account sign-in | [Add your work or school account to a Windows device](https://support.microsoft.com/en-us/windows/security/identity-signin/add-your-work-or-school-account-to-a-windows-device) |
+| Mailbox configuration | [Add an email account to Outlook for Windows](https://support.microsoft.com/en-us/outlook/getstarted/add-an-email-account-to-outlook-for-windows) |
+| Client offline/online state | [How to work offline in Outlook for Windows](https://support.microsoft.com/en-us/outlook/getstarted/how-to-work-offline-in-outlook-for-windows) |
+| Separate Outlook profile | [Create a profile in classic Outlook for Windows](https://support.microsoft.com/en-us/outlook/create-an-outlook-profile) |
+| Delegated mailbox and sender selection | [Open and use a shared mailbox in Outlook](https://support.microsoft.com/en-us/outlook/sharing/open-and-use-a-shared-mailbox-in-outlook) |
+| Shared calendar opening | [Open another person's Exchange Calendar](https://support.microsoft.com/en-us/outlook/open-another-person-s-exchange-calendar) |
+| Version, build and architecture | [What version of Outlook do I have?](https://support.microsoft.com/en-us/outlook/getstarted/what-version-of-outlook-do-i-have) |
+
+App-only sign-in was the instructed option when offered; it is not proof of the VM's complete existing device-registration or management state. The initial connectivity cause, activation-cache mechanism and exact synchronization latency were not established. No Microsoft outage, licensing purchase or automatic permission change is inferred from the documentation.

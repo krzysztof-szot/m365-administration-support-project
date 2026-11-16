@@ -12,6 +12,10 @@ Understand team/channel membership and the location of collaboration data.
 
 Confirm the required service entitlement, task-appropriate role, affected synthetic identities and recovery path. Record the actual tenant/client context privately. Earlier stages provide the baseline; unresolved prerequisites remain BLOCKED rather than assumed successful.
 
+## Carry-forward from Stage 06
+
+BFL-WKS01 now has active Microsoft 365 Apps and classic Outlook for Marek; desktop identity/offline recovery and existing calendar/Helpdesk access were verified on 16 November. This does not provision Teams or validate private-channel files. The optional Copilot exercise remains unexecuted. [Stage 06 record](06-outlook-and-microsoft-365-apps.md).
+
 ## Planned exercises
 
 1. Add Teams to the existing BFL-M365-Finance Microsoft 365 group from Day 02, retaining Anna as owner and Anna/Piotr as members.
