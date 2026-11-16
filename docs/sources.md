@@ -60,3 +60,23 @@ Reviewed during the 14 November 2026 exercise. These sources explain the intende
 | Resource booking and account block | [Room and equipment mailboxes](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/room-and-equipment-mailboxes?view=o365-worldwide) |
 
 The observed EAC exposed a Send on behalf control for Helpdesk; its actual captured panel and successful message are recorded. The exercise used that interface, not an invented PowerShell result. Advanced retention, archive and resource-device licensing scenarios were not tested.
+
+## Day 05 implementation references
+
+Reviewed during the **16 November 2026** exercise and documentation review. The sources explain service behavior and permission models; they do not independently verify the tenant, operator identity, effective delegating assignments or elapsed propagation.
+
+| Area | Official source |
+| --- | --- |
+| Current service advisories | [Check Microsoft 365 service health](https://learn.microsoft.com/en-us/microsoft-365/enterprise/view-service-health?view=o365-worldwide) |
+| Trace filters, statuses, events and time context | [Message Trace in Exchange Online](https://learn.microsoft.com/en-us/exchange/monitoring/trace-an-email-message/message-trace-modern-eac) |
+| NDR contents and error interpretation | [Email nondelivery reports and SMTP errors](https://learn.microsoft.com/en-us/troubleshoot/exchange/email-delivery/ndr/non-delivery-reports-in-exchange-online) |
+| Captured invalid-recipient response | [Fix NDR error 550 5.1.10](https://learn.microsoft.com/en-us/troubleshoot/exchange/email-delivery/ndr/fix-error-code-550-5-1-10-in-exchange-online) |
+| Rule creation, saved state and enable/disable | [Manage mail-flow rules](https://learn.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules) |
+| AND logic and enabled-state distinction | [Mail-flow rule components and processing](https://learn.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) |
+| Sender, recipient and subject scope | [Conditions and exceptions](https://learn.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions) |
+| Rejection explanation and configured code | [Mail-flow rule actions](https://learn.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions) |
+| Exchange roles and Entra mapping | [Permissions in Exchange Online](https://learn.microsoft.com/en-us/exchange/permissions-exo/permissions-exo) |
+| Custom role groups and delegating assignments | [Manage role groups](https://learn.microsoft.com/en-us/exchange/permissions-exo/role-groups) |
+| Account role inspection | [List Microsoft Entra role assignments](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/view-assignments) |
+
+PowerShell connection and role-group read commands were proposed for diagnosis but deferred by the owner. They are not recorded as executed procedures or Stage 11 report validation.

@@ -1,6 +1,6 @@
 # Environment baseline and current lab state
 
-Current state after **Stages 01–04 COMPLETE**, executed **14 November 2026**. Stage/day labels identify learning units; the roadmap's target-day ranges are estimates.
+Current state after **Stages 01–05 COMPLETE**. Stages 01–04 were executed **14 November 2026**; Stage 05 was executed **16 November 2026**. Stage/day labels identify learning units; the roadmap's target-day ranges are estimates.
 
 | Area | Recorded state and source |
 | --- | --- |
@@ -14,8 +14,11 @@ Current state after **Stages 01–04 COMPLETE**, executed **14 November 2026**. 
 | CA policy | CA-M365-001-Require-MFA-Pilot remains On; All resources; Multifactor authentication strength; emergency accounts excluded |
 | CA observations | Day 01 Exchange MFA satisfied by prior claim; Day 02 policy Success for Piotr / My Signins and Marek / One Outlook Web. No fresh-approval inference |
 | Configuration role cleanup | Additional CA Administrator on adm-lab removed in Day 01 |
-| Exchange operator role | adm-lab Exchange Recipient Administrator: last captured Direct/Active, tenant scope, Permanent; retained for Exchange lab work. No removal reported in Day 04; review the task role for Stage 05 |
+| Exchange operator role | adm-lab Exchange Recipient Administrator: last captured Direct/Active, tenant scope, Permanent; retained for Exchange lab work. No removal reported through Day 05. Trace worked as adm-lab per owner; rule creation control was absent |
 | Historical admin context | User Administrator and other roles on reused adm-lab were background; not an overall least-privilege redesign. Some actions lack independent operator audit attribution |
+| Stage 05 rule operator | Rule configuration and disable operations attributed to bg01 by owner; current Global Administrator and selected Role Management/Transport Rules in Organization Management owner-confirmed |
+| Stage 05 delegation exception | RG-M365-Lab-Transport-Rules creation/grant not verified after a delegating-role-assignment error; effective assignments and possible partial state not audited; Exchange PowerShell deferred |
+| Transport rule retained | TR-M365-001-Lab-Block-Marek-To-Piotr: final Disabled / mode Enforce; Marek AND Piotr AND subject [LAB-BLOCK]; rejection/control/recovery verified |
 | Private collaboration group | BFL-M365-Finance; owner Anna; members Anna/Piotr; site link captured; Teams not added |
 | Distribution list | DL-M365-Finance; owner Anna; members restored to Anna/Piotr after Day 03 fault |
 | DL settings | Internal senders only; Specified senders empty; moderation off, owner-reported. Closed join/leave not confirmed |
@@ -27,16 +30,17 @@ Current state after **Stages 01–04 COMPLETE**, executed **14 November 2026**. 
 | Room outcomes | 16 November 2026, Warsaw: Anna 11:00–11:30 accepted; Marek 11:15–11:45 declined with conflict reason; same Marek request 12:00–12:30 accepted |
 | Room closure | Sign-in blocked and Anna's retained 11:00–11:30 reservation explicitly owner-confirmed |
 | Reused collaboration site | Existing Baltic Finance Lab Public group / 28 members seen in Day 01; distinct from the new Private Finance group |
-| Service health | Day 01: five Microsoft 365 suite advisories; separate Exchange/SharePoint/Teams rows unavailable in owner's view. No all-services-healthy conclusion |
+| Service health | Day 01: five suite advisories; separate Exchange/SharePoint/Teams rows unavailable then. Day 05: Exchange two advisories concerning cross-tenant free/busy and contacts/Speed Dial; no broad delivery-outage inference |
 | Clients | Owner reports Windows 11; Chrome 157.0.8103.52 for users; Edge 157.0.4341.46 for admins; both 64-bit. OS edition/build not recorded |
+| Stage 06 intake | On 16 November owner reports Word installed, Outlook absent and Windows on VMware Workstation Pro available; location, VM isolation, client versions and activation not verified |
 | Recovery accounts | Owner reports fresh bg01/bg02 sign-ins and active Global Administrator in Day 01; no recovery secrets published |
 
 ## Scope and evidence limits
 
-Five resolved lab cases cover licensing, alias delivery, distribution membership, Helpdesk sender permission and room booking conflict. The current global matrix is **13 PASS / 19 NOT_RUN**. Client versions, job attributes, recovery-account checks, bounded non-receipt, selected calendar/session controls and room-account blocking include owner-reported data. Provisioning elapsed time, exact group/delegation propagation and room processing latency were not measured.
+Seven resolved lab cases cover licensing, alias delivery, distribution membership, Helpdesk sender permission, room booking conflict, expected unknown-recipient diagnosis and scoped rule recovery. The current global matrix is **16 PASS / 16 NOT_RUN**. Client versions, job attributes, recovery-account checks, bounded non-receipt, selected calendar/session controls and room-account blocking include owner-reported data. Provisioning elapsed time, exact group/delegation propagation and room processing latency were not measured.
 
-The first internal alias message's private headers name the primary recipient. Only the subsequent external pair is used as alias-target delivery proof. No tenant-wide sending-from-alias change, transport trace or independently audited sequence of every portal operation is claimed.
+The first internal alias message's private headers name the primary recipient. Only the subsequent external pair is used as alias-target delivery proof. No tenant-wide sending-from-alias change or Day 03 alias transport trace is claimed; Stage 05 separately provides Trace for baseline, invalid-recipient and rule tests. An independently audited sequence of every portal operation is not established.
 
-The Finance group's membership is configured, but direct private-site allowed/denied tests, Teams attachment/private channels, desktop activation, OneDrive sync/recovery, PowerShell reports and deliberate Copilot exercises remain future work. Day 04 covers shared-mailbox delegation and room/calendar behavior; it does not establish those later outcomes.
+The Finance group's membership is configured, but direct private-site allowed/denied tests, Teams attachment/private channels, desktop activation, OneDrive sync/recovery, PowerShell reports and deliberate Copilot exercises remain future work. Day 04 covers shared-mailbox delegation and room/calendar behavior; it does not establish those later outcomes. Day 05 confirms transport delivery after rule disable; RULE-03 opening is not separately confirmed, exact rule-propagation time was not measured, and the custom-role-group delegation exception remains unresolved.
 
-[Day 01](stages/01-tenant-and-roles.md) · [Day 02](stages/02-users-licenses-and-groups.md) · [Day 03](stages/03-exchange-recipients-and-mail.md) · [Day 04](stages/04-delegation-calendars-and-rooms.md) · [Current results](../tests/README.md) · [Evidence](../evidence/README.md)
+[Day 01](stages/01-tenant-and-roles.md) · [Day 02](stages/02-users-licenses-and-groups.md) · [Day 03](stages/03-exchange-recipients-and-mail.md) · [Day 04](stages/04-delegation-calendars-and-rooms.md) · [Day 05](stages/05-mail-flow-troubleshooting.md) · [Current results](../tests/README.md) · [Evidence](../evidence/README.md)

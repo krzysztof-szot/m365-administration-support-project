@@ -12,6 +12,12 @@ Separate account, license, service and desktop-client problems.
 
 Confirm the required service entitlement, task-appropriate role, affected synthetic identities and recovery path. Record the actual tenant/client context privately. Earlier stages provide the baseline; unresolved prerequisites remain BLOCKED rather than assumed successful.
 
+## Readiness intake — 16 November 2026
+
+The owner reports **Word installed**, **Outlook not installed**, and access to **Windows on VMware Workstation Pro**. These are intake statements, not completed client checks. It has not yet been established which applications are inside the VM, whether the VM is isolated for the lab, its Windows edition/build, Office product/version or activation identity.
+
+Stage 06 remains **PLANNED**; T14 and T15 are **NOT_RUN**. Verify the VM/client state before installation or account changes.
+
 ## Planned exercises
 
 1. Use a dedicated lab Windows profile or VM and record client versions.
@@ -33,7 +39,7 @@ This is a planned lab scenario. No incident, root cause or repair outcome has be
 
 ## Execution record
 
-- Starting state and expected result: not recorded.
+- Starting state: owner-reported Word/Outlook/VM intake above; VM/client configuration and expected functional results not yet verified.
 - Actions and reasoning: not recorded.
 - Observations and propagation delays: not recorded.
 - Functional/negative/recovery results: NOT_RUN.

@@ -13,7 +13,7 @@ Status: **COMPLETE**. Execution date: **14 November 2026**. Evidence: [27 screen
 | T29 — Valid reservation | Room processes an allowed request under recorded settings | Anna's corrected 11:00–11:30 request receives Accepted | **PASS**; 17/18/18a/19/20 |
 | T30 — Conflicting reservation | Room processes an overlap under recorded settings | Marek's 11:15–11:45 request is declined with Anna's 11:00–11:30 named as conflict | **PASS**; 21/22 |
 
-The cumulative [32-check matrix](test-matrix.csv) is **13 PASS / 19 NOT_RUN**. Newly passed: T07, T08, T09, T10, T29, T30. Calendar editing, permission restoration, reply flow and booking recovery are supporting phases, not extra matrix rows.
+At Day 04 closure, the cumulative [32-check matrix](test-matrix.csv) was **13 PASS / 19 NOT_RUN**. Newly passed: T07, T08, T09, T10, T29, T30. Calendar editing, permission restoration, reply flow and booking recovery are supporting phases, not extra matrix rows.
 
 ## Supporting verification and restoration
 
@@ -38,6 +38,6 @@ The calendar description shown after editing replaces the initial baseline text.
 
 Tracking in a pre-send edit can retain the earlier response: 23 still shows Declined, while 24 establishes the new Accepted result. Early PM/AM and wrong-organizer drafts were corrected; final published 19/20 and 23/24 establish the accepted requests.
 
-No mail-flow rule, Message Trace, desktop activation, script execution or validated Copilot exercise was performed. Stages 05–14 remain planned.
+No mail-flow rule, Message Trace, desktop activation, script execution or validated Copilot exercise was performed in Day 04. At that closure, Stages 05–14 remained planned. Subsequent mail-flow execution is recorded separately in [Day 05](day-05.md).
 
 [Implementation](../docs/stages/04-delegation-calendars-and-rooms.md) · [Evidence](../evidence/day-04/README.md) · [Delegation case](../tickets/M365-004-helpdesk-sender-permission-recovery.md) · [Room case](../tickets/M365-005-room-booking-conflict-recovery.md)

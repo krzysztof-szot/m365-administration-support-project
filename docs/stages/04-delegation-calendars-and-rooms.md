@@ -92,7 +92,7 @@ Helpdesk retains Piotr's Full Access/Send As and Anna's Full Access/Send on beha
 
 ## Interpretation and learning
 
-The six Stage 04 matrix rows are PASS; the cumulative matrix is **13 PASS / 19 NOT_RUN**. Owner reports supply session identity, selected persistence/restoration checks and the room account block. They are not replaced by invented screenshots or audit logs.
+The six Stage 04 matrix rows are PASS; at Stage 04 closure the cumulative matrix was **13 PASS / 19 NOT_RUN**. Owner reports supply session identity, selected persistence/restoration checks and the room account block. They are not replaced by invented screenshots or audit logs.
 
 The missing From field in the initial denial screenshot limits exact reconstruction of that attempt; the mailbox context, empty Send As list, subsequent grant and successful received message support the exercised permission distinction. No fresh PowerShell audit, desktop Outlook test, Message Trace or deliberate Copilot output validation is claimed.
 
