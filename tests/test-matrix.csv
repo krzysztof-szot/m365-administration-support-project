@@ -14,8 +14,8 @@ T12,05,Scoped training rule,Marked message to the selected recipient is rejected
 T13,05,Mail-flow recovery,Delivery succeeds after disabling the training rule and allowing for propagation,Rule saved Disabled; new marked RULE-03 is Delivered at 06:54 UTC; delivery established by Trace and propagation interval not measured,PASS,tests/day-05.md
 T14,06,Client identity and activation,Correct licensed identity is active in the recorded client,Marek Subscription Product confirmed; wrong Piotr active user distinguished from subscription still naming Marek; restored Marek with document and mail checks,PASS,tests/day-06.md
 T15,06,Browser and desktop comparison,Observed differences support a specific account or client diagnosis,Same Marek mailbox works in web while classic Outlook is Working Offline; reconnect delivers OFFLINE-01 and new SYNC-02 reaches web,PASS,tests/day-06.md
-T16,07,Standard-channel files,Team member accesses the expected parent-site folder,Executed early in Stage 01: Anna accesses Baltic Finance Lab Documents > General through Teams and creates/reopens the test document,PASS,tests/day-01.md
-T17,07,Private-channel boundary,Authorized channel member succeeds and excluded team member is denied,Not recorded,NOT_RUN,None
+T16,07,Standard-channel files,Team member accesses the expected parent-site folder,First PASS in Day 01; Day 07 Finance-Operations recheck: Piotr opens through Teams and SharePoint and saves an edit that Anna sees after reopening,PASS,tests/day-07.md
+T17,07,Private-channel boundary,Authorized channel member succeeds and excluded team member is denied,Anna opens PRIVATE-01; excluded Piotr denied with working standard control; channel addition grants access and removal restores fresh-session denial while standard access remains,PASS,tests/day-07.md
 T18,08,SharePoint reader,Reader opens the document but cannot edit it,Not recorded,NOT_RUN,None
 T19,08,SharePoint member,Member can make and save the intended change,Not recorded,NOT_RUN,None
 T20,08,SharePoint excluded identity,Excluded identity is denied after other access paths are checked,Not recorded,NOT_RUN,None

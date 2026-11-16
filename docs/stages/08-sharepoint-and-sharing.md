@@ -12,6 +12,10 @@ Build a usable knowledge site and reason about all relevant access paths.
 
 Confirm the required service entitlement, task-appropriate role, affected synthetic identities and recovery path. Record the actual tenant/client context privately. Earlier stages provide the baseline; unresolved prerequisites remain BLOCKED rather than assumed successful.
 
+## Carry-forward from Stage 07
+
+The Finance Team and its standard/private SharePoint sites are now verified. Anna remains the only Finance-Confidential member after Piotr's temporary grant/removal; Piotr retains the parent-team and standard-file access. Those channel sites are separate from the planned independent BFL-M365-Knowledge site and do not complete its reader/editor, inheritance or sharing-link tests. Continue managing private-channel membership through Teams. [Stage 07](07-teams-and-connected-sites.md).
+
 ## Planned exercises
 
 1. Create the independent BFL-M365-Knowledge site, a document library and simple metadata.

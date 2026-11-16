@@ -101,3 +101,22 @@ Reviewed during the **16 November 2026** exercise. These primary sources explain
 | Version, build and architecture | [What version of Outlook do I have?](https://support.microsoft.com/en-us/outlook/getstarted/what-version-of-outlook-do-i-have) |
 
 App-only sign-in was the instructed option when offered; it is not proof of the VM's complete existing device-registration or management state. The initial connectivity cause, activation-cache mechanism and exact synchronization latency were not established. No Microsoft outage, licensing purchase or automatic permission change is inferred from the documentation.
+
+
+## Day 07 implementation references
+
+Reviewed during the **16 November 2026** guided exercise. These official sources describe the model and procedures; the captures and attributed owner reports supply the actual lab outcomes.
+
+| Area | Official source |
+| --- | --- |
+| Existing-group Team creation | [Create a team from an existing team or group](https://support.microsoft.com/en-us/teams/teams-channels/create-a-team-from-an-existing-team-or-group-in-microsoft-teams) |
+| Channel creation/type | [Create a standard, private, or shared channel](https://support.microsoft.com/en-us/teams/teams-channels/create-a-standard-private-or-shared-channel-in-microsoft-teams) |
+| Channel files and Shared/In library | [Share files in Microsoft Teams](https://support.microsoft.com/en-us/teams/files/share-files-in-microsoft-teams) |
+| Private membership and channel site | [Private channels in Microsoft Teams](https://learn.microsoft.com/en-us/microsoftteams/private-channels) |
+| Navigation and ownership boundary | [Manage integrated Teams/SharePoint settings and permissions](https://learn.microsoft.com/en-us/sharepoint/manage-teams-sharepoint-experiences) |
+| Link without a new permission grant | [Sharing files, folders, and list items](https://support.microsoft.com/en-us/sharepoint/libraries/sharing-files-folders-and-list-items) |
+| Instant channel meeting | [Start an instant meeting](https://support.microsoft.com/en-us/teams/meetings/start-an-instant-meeting-in-microsoft-teams) |
+| Meeting audio selection | [Manage audio settings](https://support.microsoft.com/en-us/teams/meetings/manage-audio-settings-in-microsoft-teams-meetings) |
+| Browser presentation | [Present content in Teams meetings](https://support.microsoft.com/en-us/teams/meetings/present-content-in-microsoft-teams-meetings) |
+
+The record does not infer exact membership-propagation latency, audit unseen direct grants or treat a still image as audio-quality proof. It uses the observed channel libraries without assuming that every new private channel must expose a particular folder layout. A visible Word summary panel is not validation of the optional Copilot extension.

@@ -1,6 +1,6 @@
 # Access matrix — observed configuration and future targets
 
-Current state after Stages 01–06. Configured membership is distinguished from effective-resource tests.
+Current state after Stages 01–07. Configured membership is distinguished from effective-resource tests.
 
 ## Observed configuration and functional results
 
@@ -9,12 +9,15 @@ Current state after Stages 01–06. Configured membership is distinguished from 
 | Own user mailbox | Verified send/receive | Verified after license repair | Verified as internal sender | Days 01–06; Marek desktop/web mail and Apps activation separately verified in Day 06 |
 | Own OneDrive | Create/save/reopen verified | Not tested | Not tested | Day 01 only |
 | SG-M365-MFA-Pilot | Direct member | Direct member | Direct member | Day 02 09; policy results recorded separately |
-| BFL-M365-Finance Microsoft 365 group | Owner and member | Member | Not listed | Day 02 12–14; Private; site link exists; direct-site boundaries not tested |
+| BFL-M365-Finance Microsoft 365 group | Owner and member | Member | Not listed | Day 02 12–14 configuration; Day 07 adds Teams and verifies the standard/private file boundary; From a group and privacy owner-confirmed |
 | DL-M365-Finance final state | Owner and member / receives | Member / receives after restoration | Not member / allowed internal sender | Day 02 16–20; Day 03 07–09; non-receipt controls are bounded owner reports |
 | m365.finance SMTP address | Routes to Anna's existing mailbox | Internal trial sender | No ownership or mailbox grant | External alias target verified in Day 03 03a/03b |
 | Helpdesk opening / Full Access | Granted; used for on-behalf exercise | Granted; opening and reading verified | Denied; own Inbox control owner-confirmed | Day 04 03/04/09/10a; Day 06 08 and owner confirmations recheck Piotr in classic Outlook; Marek denial not repeated |
 | Helpdesk sending | Send on behalf verified | Send As and reply flow verified | No sender grant made in exercise | Day 04 06–08/10/11; Day 06 Helpdesk reply round trip as Piotr; sender receipt also owner-confirmed |
 | Anna Calendar | Owner | No new grant tested | Reader, temporarily editor, then reader restored | Day 04 12–16; Day 06 07 Read-Only in classic Outlook plus owner-confirmed denial; earlier save/restoration owner-confirmed |
+| Finance Team | Owner | Member | Not listed | Day 07 01; From a group and Private owner-confirmed; no new Marek direct-file denial test |
+| Finance-Operations standard file | Creator; sees Piotr saved change | Opens/edits/saves through Teams and SharePoint | Not tested | Day 07 02 plus owner controls; extends T16 |
+| Finance-Confidential private file | Sole retained channel Owner; opens file | Initially denied; temporary Member access verified; removed and denied again in fresh session | Not a channel member; direct access not tested | Day 07 03–05 plus final owner confirmations; T17 PASS |
 | Room bookings | ROOM-01 11:00–11:30 accepted | Not tested | ROOM-02 overlap declined, 12:00–12:30 accepted | 16 November Warsaw time; Day 04 19–24; room account block owner-confirmed |
 | Scoped mail-flow exercise | Not functionally tested in this rule | Marked mail rejected; unmarked control delivered; marked delivery recovers after disable | Sender from own mailbox; same message phases correlated in Trace | Day 05 10–14; rule final Disabled; RULE-02 opening owner-confirmed; RULE-03 delivery from Trace |
 | Microsoft 365 Admin Center | Explicitly denied | No admin role assigned in the exercise; denial not separately tested | Same | Anna denial is not generalized to every API or all users |
@@ -39,13 +42,11 @@ Marek is the restored Word and classic Outlook baseline. The controlled Word cap
 
 | Planned resource / check | Anna | Piotr | Marek |
 | --- | --- | --- | --- |
-| Teams attached to existing Finance group | Owner | Member | Excluded control |
-| Finance private channel | Owner/member | Excluded until explicit membership test | Excluded control |
 | Knowledge site | Owner | Visitor/read | Member/edit |
 | Isolated Finance document | Authorized | Reader where explicitly granted | Excluded control |
 
-Create the Finance Team from the existing Private group in Stage 07. The older Public Baltic Finance Lab team/site is separate and must not be used as proof of this new group's permission boundary.
+Stage 07 attached Teams to the existing Private Finance group in the owner-confirmed workflow. Finance-Operations uses the parent site; Finance-Confidential has its own site, with membership managed in Teams. Piotr's temporary private membership was removed and the final fresh-session denial is owner-confirmed. The older Public Baltic Finance Lab team/site is a separate resource.
 
 Administrative identities are separate. The CA configuration role was removed; the recorded recipient-admin assignment remains the retained Exchange lab setup; no removal was reported through Day 05. Stage 05 used bg01 for rule operations and did not establish a repaired least-privilege delegation. Use ordinary user sessions for effective access checks and record other grants, propagation and restoration before explaining a denial or retained access.
 
-[Baseline](01-environment-baseline.md) · [Day 02 evidence](../evidence/day-02/README.md) · [Day 03 evidence](../evidence/day-03/README.md) · [Day 04 evidence](../evidence/day-04/README.md) · [Day 05 evidence](../evidence/day-05/README.md) · [Day 06 evidence](../evidence/day-06/README.md)
+[Baseline](01-environment-baseline.md) · [Day 02 evidence](../evidence/day-02/README.md) · [Day 03 evidence](../evidence/day-03/README.md) · [Day 04 evidence](../evidence/day-04/README.md) · [Day 05 evidence](../evidence/day-05/README.md) · [Day 06 evidence](../evidence/day-06/README.md) · [Day 07 evidence](../evidence/day-07/README.md)

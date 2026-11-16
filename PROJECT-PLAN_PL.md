@@ -2,7 +2,7 @@
 
 Aktualizacja: 16 listopada 2026 r.
 
-Etapy 01–06 są COMPLETE; etapy 07–14 pozostają PLANNED. Opublikowano 113 screenów: Day 01 — 31, Day 02 — 21, Day 03 — 11, Day 04 — 27, Day 05 — 14, Day 06 — 9. Globalna tabela ma 18 PASS i 14 NOT_RUN. W Day 05 doszły T11–T13, w Day 06 T14–T15; fazy kontrolne i odzyskanie nie tworzą dodatkowych numerów testów. Dziewięć przypadków M365-001–009 jest rozwiązanych jako ćwiczenia laboratoryjne.
+Etapy 01–07 są COMPLETE; etapy 08–14 pozostają PLANNED. Opublikowano 119 obrazów: Day 01 — 31, Day 02 — 21, Day 03 — 11, Day 04 — 27, Day 05 — 14, Day 06 — 9, Day 07 — 6. Globalna tabela ma 19 PASS i 13 NOT_RUN. W Day 05 doszły T11–T13, w Day 06 T14–T15, w Day 07 T17; T16 rozszerzono bez podwójnego liczenia; fazy kontrolne i odzyskanie nie tworzą dodatkowych numerów testów. Dziesięć przypadków M365-001–010 jest rozwiązanych jako ćwiczenia laboratoryjne.
 
 Zweryfikowano pocztę z zewnętrznym Gmail, zapis i ponowne otwarcie dokumentów OneDrive/SharePoint, trwałość wiadomości Teams oraz odmowę panelu administracyjnego dla Anny. Politykę MFA oceniono w Report-only, włączono i uzyskano Success z istniejącym claimem MFA. Świeże zatwierdzenie push nie zostało uchwycone. Dodatkową rolę CA usunięto; właściciel potwierdził dalszy dostęp adm-lab oraz nowe logowania i aktywny Global Administrator dla obu kont awaryjnych.
 
@@ -14,7 +14,7 @@ Powstała prywatna grupa BFL-M365-Finance: właścicielka Anna, członkowie Anna
 
 Alias m365.finance prowadzi do istniejącej skrzynki Anny. Pierwsza próba wewnętrzna pokazała w nagłówku adres podstawowy; dopiero para wysłane/odebrane z Gmaila potwierdziła jawnie adres aliasu. Surowe nagłówki pozostają prywatne. Rola Exchange Recipient Administrator na adm-lab pozostaje Direct/Active/Permanent do kolejnych zadań odbiorców i wymaga późniejszego przeglądu.
 
-Pierwsze cztery jednostki nauki wykonano 14 listopada 2026 r.; Etapy 05–06 wykonano 16 listopada. Rozpiska godzin w [roadmapie](docs/roadmap.md) jest szacunkiem, a nie pomiarem czasu.
+Pierwsze cztery jednostki nauki wykonano 14 listopada 2026 r.; Etapy 05–07 wykonano 16 listopada. Rozpiska godzin w [roadmapie](docs/roadmap.md) jest szacunkiem, a nie pomiarem czasu.
 
 ## Zakończony Day 04
 
@@ -47,6 +47,18 @@ Work Offline w 05 wyjaśnia rozbieżność między przeglądarką a desktopem. W
 W 07 kalendarz Anny ma Read-Only; historyczny opis Edited by Marek pochodzi z Day 04. W 08 Piotr odczytuje końcową odpowiedź w Helpdesk; pełny obieg i nadawcę Helpdesk właściciel potwierdził tekstowo. Końcowo przywrócono profil Marka i aktywny Word. Nie zgłoszono usunięcia dodatkowego profilu Piotra. Nowy Outlook, rejestracja/MDM i opcjonalne ćwiczenie Copilot nie były walidowane.
 
 Szczegóły: [Stage 06](docs/stages/06-outlook-and-microsoft-365-apps.md), [testy](tests/day-06.md) i [9 dowodów](evidence/day-06/README.md). Dodatkowy wycinek wersji Outlooka zapisano jako 09; potwierdzenia tekstowe zastępują zbędne kolejne screeny, z jawnym przypisaniem źródła.
+
+## Zakończony Day 07
+
+Właściciel potwierdził From a group i Private dla BFL-M365-Finance. Screen 01 pokazuje Annę jako Owner i Piotra jako Member; Marek nie jest wymieniony. Dokument STANDARD-01 zawiera dopisaną linię Piotra; jego zapis, odczyt przez SharePoint i widoczność zmiany po ponownym otwarciu u Anny potwierdzono tekstowo.
+
+Kanał Finance-Confidential początkowo ma tylko Annę. Piotr nadal otwiera plik standardowy, ale nie widzi kanału prywatnego, a bezpośredni link zwraca You need access. Dodanie go jako członka kanału w Teams daje dostęp; późniejsze usunięcie przywraca odmowę w świeżej sesji bez odebrania członkostwa zespołu. Końcowy stan Anna-only i ponowną odmowę zgłoszono tekstowo. Nie deklarujemy stałego dostępu Piotra ani zmierzonego czasu propagacji.
+
+Witryna zespołu: /sites/bfl-m365-finance. Kanał prywatny: /sites/BFL-M365-Finance-Finance-Confidential. To dwie osobne witryny, a nie tylko różne adresy dokumentów. Nie zastępuje to testów niezależnej witryny wiedzy ze Stage 08.
+
+Anna uczestniczyła w spotkaniu na komputerze, Piotr na telefonie w aplikacji Teams. JPG 06 pokazuje odbierany dokument; dźwięk w obu kierunkach, zmianę widoku, zatrzymanie prezentacji i zakończenie spotkania potwierdził właściciel. Nie był to test ograniczony do jednego urządzenia; nie mierzono parametrów jakości połączenia. Widoczny panel podsumowania Worda nie stanowi walidacji Copilot.
+
+Poprawiony screen 04 zasłania nazwę tenanta również w Source; publikujemy tę wersję. Zachowano pięć PNG i jeden JPG bez konwersji. Szczegóły: [Stage 07](docs/stages/07-teams-and-connected-sites.md), [testy](tests/day-07.md), [6 dowodów](evidence/day-07/README.md) i [M365-010](tickets/M365-010-private-channel-membership-recovery.md).
 
 ## Cel i sposób pracy
 
@@ -98,7 +110,7 @@ Szczegółowe zadania i warunki zakończenia: [etap 06](docs/stages/06-outlook-a
 
 ### 07. Teams i SharePoint — dzień 12–13
 
-Zbuduj zespół Finance z kanałem standardowym i prywatnym. Sprawdź członkostwo oraz bezpośredni dostęp do plików. Odszukaj witrynę główną i witrynę kanału prywatnego. Przećwicz spotkanie, urządzenia audio i udostępnianie ekranu.
+Wykonano: Teams dodano do istniejącej prywatnej grupy BFL-M365-Finance, Anna Owner, Piotr Member. Finance-Operations: Piotr otwiera i zapisuje plik, a Anna widzi zmianę po ponownym otwarciu. Finance-Confidential: odmowa dla Piotra, dostęp po dodaniu do kanału, ponowna odmowa w świeżej sesji po usunięciu przy zachowaniu dostępu standardowego. Końcowo kanał prywatny ma tylko Annę. Potwierdzono osobne witryny SharePoint oraz spotkanie komputer/telefon z dźwiękiem w obu kierunkach i udostępnianiem. **Stage 07 COMPLETE; T16 pozostaje PASS, T17 nowy PASS.**
 
 Szczegółowe zadania i warunki zakończenia: [etap 07](docs/stages/07-teams-and-connected-sites.md).
 
@@ -152,14 +164,14 @@ Szczegółowe zadania i warunki zakończenia: [etap 14](docs/stages/14-portfolio
 - Instrukcje użytkownika, w tym jeden niemiecki odpowiednik.
 - Zweryfikowany runbook cyklu życia i pięć samodzielnych zadań końcowych.
 
-To cele całego projektu. Etapy 01–06 są COMPLETE, a etapy 07–14 pozostają PLANNED. Publikowane wyniki muszą odpowiadać zapisanym obserwacjom i dowodom; przypisanie licencji lub utworzenie pliku nie kończy etapu.
+To cele całego projektu. Etapy 01–07 są COMPLETE, a etapy 08–14 pozostają PLANNED. Publikowane wyniki muszą odpowiadać zapisanym obserwacjom i dowodom; przypisanie licencji lub utworzenie pliku nie kończy etapu.
 
 W Day 01 wdrożono ograniczony pilot MFA przez Conditional Access w istniejącym tenancie. Windows 11, Chrome 157.0.8103.52 dla Anny i Edge 157.0.4341.46 dla administratorów zapisano na podstawie raportu właściciela. Service health pokazało pięć advisories dla Microsoft 365 suite; nie wnioskujemy z tego o zdrowiu wszystkich usług ani o odtworzonym incydencie. Licencje Premium umożliwiają rozszerzenia z Intune. Dodatkowy [pilot Copilot](docs/copilot-pilot-plan.md) obejmuje trzy sesje, około 5–7 godzin, zintegrowane z etapami 06, 08, 10 i 13; mamy jedno miejsce Copilot. Własna domena i udostępnienie zewnętrzne pozostają rozszerzeniami. PIM, pełne odtworzenie E5/Entra Suite, hybrydowy Exchange, Teams Phone i zaawansowane holdy są poza zakresem podstawowym.
 
 ## Start
 
-Przejrzyj [wyniki](tests/README.md), [przypadki](tickets/README.md) i [baseline](docs/01-environment-baseline.md), a następnie rozpocznij [etap 07](docs/stages/07-teams-and-connected-sites.md). Rzeczywiste dane logowania, domenę, identyfikatory, termin triala i szczegóły rozliczeń przechowuj prywatnie. Źródła techniczne i licencyjne: [Microsoft](docs/sources.md).
+Przejrzyj [wyniki](tests/README.md), [przypadki](tickets/README.md) i [baseline](docs/01-environment-baseline.md), a następnie rozpocznij [etap 08](docs/stages/08-sharepoint-and-sharing.md). Rzeczywiste dane logowania, domenę, identyfikatory, termin triala i szczegóły rozliczeń przechowuj prywatnie. Źródła techniczne i licencyjne: [Microsoft](docs/sources.md).
 
 ## Screeny podczas ćwiczeń
 
-Przed istotnym punktem dowodowym prowadzący wskazuje moment wykonania screena, widok i nazwę pliku. Zgodnie z ustaleniem z Day 05 ograniczamy liczbę obrazów do potrzebnej konfiguracji i wyników; pomocnicze odczyty mogą być potwierdzone tekstowo z jawnym przypisaniem źródła. [Indeks dowodów](evidence/README.md) opisuje 113 opublikowanych obrazów. W obrazach Day 03 zanonimizowano wskazane identyfikatory, domenę oraz nazwisko zewnętrznego nadawcy; ograniczenia interpretacji opisano w indeksie. W Day 04 podmieniono 02 na wersję z zasłoniętą domeną, a zapisane wyniki odróżniają konfigurację, fakty widoczne na screenach i potwierdzenia właściciela. Nazwy i moment wykonania nowych dowodów będą wskazywane podczas kolejnych ćwiczeń. Kodów QR rejestracji i sekretów uwierzytelniania nie publikujemy.
+Przed istotnym punktem dowodowym prowadzący wskazuje moment wykonania screena, widok i nazwę pliku. Zgodnie z ustaleniem z Day 05 ograniczamy liczbę obrazów do potrzebnej konfiguracji i wyników; pomocnicze odczyty mogą być potwierdzone tekstowo z jawnym przypisaniem źródła. [Indeks dowodów](evidence/README.md) opisuje 119 opublikowanych obrazów. W obrazach Day 03 zanonimizowano wskazane identyfikatory, domenę oraz nazwisko zewnętrznego nadawcy; ograniczenia interpretacji opisano w indeksie. W Day 04 podmieniono 02 na wersję z zasłoniętą domeną, a zapisane wyniki odróżniają konfigurację, fakty widoczne na screenach i potwierdzenia właściciela. Nazwy i moment wykonania nowych dowodów będą wskazywane podczas kolejnych ćwiczeń. Kodów QR rejestracji i sekretów uwierzytelniania nie publikujemy.

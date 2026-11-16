@@ -4,8 +4,8 @@
 
 <p align="center">
   <img alt="14 learning stages" src="https://img.shields.io/badge/LABS-14%20STAGES-6f42c1?style=for-the-badge">
-  <img alt="Project in progress; 6 of 14 stages complete" src="https://img.shields.io/badge/PROGRESS-6%20%2F%2014%20COMPLETE-0078D4?style=for-the-badge">
-  <img alt="Global matrix: 18 pass and 14 not run" src="https://img.shields.io/badge/CHECKS-18%20PASS%20%2F%2014%20NOT%20RUN-607078?style=for-the-badge">
+  <img alt="Project in progress; 7 of 14 stages complete" src="https://img.shields.io/badge/PROGRESS-7%20%2F%2014%20COMPLETE-0078D4?style=for-the-badge">
+  <img alt="Global matrix: 19 pass and 13 not run" src="https://img.shields.io/badge/CHECKS-19%20PASS%20%2F%2013%20NOT%20RUN-607078?style=for-the-badge">
 </p>
 
 <p align="center">
@@ -35,10 +35,10 @@ This repository complements the owner's Microsoft Entra, hybrid security and IAM
 
 ## Project Overview
 
-**Status: Stages 01–06 complete; Stages 07–14 planned.**\
+**Status: Stages 01–07 complete; Stages 08–14 planned.**\
 The lab now uses **Business Standard (25 seats)**, **Business Premium (25 seats)** and **Business Premium with Copilot (1 seat)** according to the owner's active subscription views. All three pilots are provisioned. Licensing recovery, a three-user MFA scope, Finance groups, alias delivery, distribution recovery, shared-mailbox delegation, calendar permissions, room booking and mail-flow diagnosis/recovery are documented. See the [current baseline](docs/01-environment-baseline.md) for the observed state and source limits.
 
-**Recorded execution: 6 completed stages, 18 PASS / 14 NOT_RUN in the global matrix, 9 resolved lab cases, and 113 published captures.** The completed stages connect working services to scoped MFA, entitlement recovery, group ownership, delegated mail/calendar behavior and evidence-supported mail-flow diagnosis, desktop identity correction and offline synchronization recovery. [Implementation index](docs/stages/README.md) · [Results](tests/README.md) · [Evidence](evidence/README.md)
+**Recorded execution: 7 completed stages, 19 PASS / 13 NOT_RUN in the global matrix, 10 resolved lab cases, and 119 published captures.** The completed stages connect working services to scoped MFA, entitlement recovery, group ownership, delegated mail/calendar behavior and evidence-supported mail-flow diagnosis, desktop identity correction, offline synchronization recovery and private-channel authorization/restoration. [Implementation index](docs/stages/README.md) · [Results](tests/README.md) · [Evidence](evidence/README.md)
 
 The target roles are **Junior Microsoft 365 Administrator**, **Junior System Administrator** and **IT Support Specialist**.
 
@@ -56,7 +56,7 @@ Each stage is designed to include:
 | Architecture | Implementation | Validation | Evidence |
 |:---:|:---:|:---:|:---:|
 | [View design](#target-architecture) | [Browse stages](#implementation-progress) | [Open test matrix](tests/test-matrix.csv) | [Browse evidence](evidence/README.md) |
-| Target design and recorded baseline | Stages 01–06 complete; 8 stages planned | 18 PASS / 14 NOT_RUN | 113 captures across Days 01–06 |
+| Target design and recorded baseline | Stages 01–07 complete; 7 stages planned | 19 PASS / 13 NOT_RUN | 119 captures across Days 01–07 |
 
 ## Technologies and Concepts
 
@@ -85,15 +85,16 @@ The scoped Conditional Access MFA pilot now contains Anna, Piotr and Marek. Ordi
 | --- | --- |
 | Learning plan | 14 stage documents with objectives, exercises and exit checks |
 | Subscription | Standard 25, Premium 25 and Premium with Copilot 1 reported active; Anna's bundle assignment captured |
-| Synthetic inputs | Three provisioned synthetic pilots; 9 of 15 lab cases resolved |
-| Validation | 32 global checks: 18 PASS and 14 NOT_RUN; supporting observations recorded separately |
-| Operational documentation | Nine completed case records; lab/lifecycle templates and a user-article plan |
+| Synthetic inputs | Three provisioned synthetic pilots; 10 of 15 lab cases resolved |
+| Validation | 32 global checks: 19 PASS and 13 NOT_RUN; supporting observations recorded separately |
+| Operational documentation | Ten completed case records; lab/lifecycle templates and a user-article plan |
 | Delegation and calendars | Piotr Send As, Anna Send on behalf, excluded Marek denied; calendar editor tested and reader restored |
 | Room booking | Automatic policy verified through accepted, conflicting/declined and rescheduled/accepted requests |
 | Mail-flow diagnosis and recovery | Unknown-recipient NDR correlated with Trace; marked rejection, unmarked delivery and delivery after rule disable verified |
 | Desktop clients | BFL-WKS01: Apps activation, correct identity restored, offline synchronization recovered and calendar/Helpdesk access verified |
+| Finance collaboration | Existing-group Team, standard/private SharePoint sites, temporary private membership and computer/phone meeting verified |
 | PowerShell | Three report contracts defined; no executable scripts yet |
-| Implementation evidence | 113 captures: Day 01 baseline (31), Day 02 licensing/groups (21), Day 03 alias/recovery (11), Day 04 delegation/calendar/room (27), Day 05 mail flow (14), Day 06 desktop clients (9) |
+| Implementation evidence | 119 captures: Day 01 baseline (31), Day 02 licensing/groups (21), Day 03 alias/recovery (11), Day 04 delegation/calendar/room (27), Day 05 mail flow (14), Day 06 desktop clients (9), Day 07 Teams/sites/meeting (6) |
 
 Captured configuration, functional results and owner-reported details are distinguished in the stage notes. Assigned services and a visible Copilot button do not establish full workload operation or validated AI output.
 
@@ -110,8 +111,9 @@ Captured configuration, functional results and owner-reported details are distin
 | [M365-007 — Scoped rule recovery](tickets/M365-007-scoped-rule-recovery.md) | Marked mail fails while the unmarked control delivers; disabling the rule restores new marked-message delivery |
 | [M365-008 — Office identity recovery](tickets/M365-008-office-identity-recovery.md) | Piotr is the active Word user while the subscription still names Marek; intended user and functional checks restored |
 | [M365-009 — Outlook offline recovery](tickets/M365-009-outlook-offline-recovery.md) | Same mailbox works in web; reconnecting classic Outlook delivers the affected message and a new outbound control succeeds |
+| [M365-010 — Private-channel membership](tickets/M365-010-private-channel-membership-recovery.md) | Excluded team member denied; temporary channel membership grants access; removal restores private denial with standard access retained |
 
-These are nine guided lab records from the [15-case backlog](samples/ticket-backlog.csv). The other six remain planned. The separate role-delegation exception remains unresolved in the Stage 05 notes.
+These are ten guided lab records from the [15-case backlog](samples/ticket-backlog.csv). The other five remain planned. The separate role-delegation exception remains unresolved in the Stage 05 notes.
 
 ## Planned Outcomes
 
@@ -127,11 +129,11 @@ These are nine guided lab records from the [15-case backlog](samples/ticket-back
 | Handle employee changes | Onboarding, department transfer and offboarding with verified access/data handling |
 | Work independently | Five final tasks with supported resolutions or justified escalation |
 
-These are project-wide targets. The first six stages establish a working baseline and nine guided case resolutions; remaining objectives become demonstrated outcomes only after execution and recorded verification.
+These are project-wide targets. The first seven stages establish a working baseline and ten guided case resolutions; remaining objectives become demonstrated outcomes only after execution and recorded verification.
 
 ## Featured Implementation Evidence
 
-Selected lab captures connect the user experience to configuration and recovery. [All 113 captions and review notes](evidence/README.md) · [Case records](tickets/README.md)
+Selected lab captures connect the user experience to configuration and recovery. [All 119 captions and review notes](evidence/README.md) · [Case records](tickets/README.md)
 
 <table>
 <tr>
@@ -194,11 +196,23 @@ Selected lab captures connect the user experience to configuration and recovery.
   <sub><a href="tickets/M365-009-outlook-offline-recovery.md">Same-message recovery and a new outbound control</a></sub>
 </td>
 </tr>
+<tr>
+<td width="50%" align="center">
+  <a href="evidence/day-07/04-private-file-access-denied-piotr.png"><img src="evidence/day-07/04-private-file-access-denied-piotr.png" alt="Excluded Finance team member receives a private-channel file access denial" width="100%"></a><br>
+  <strong>Private-Channel Boundary Verified</strong><br>
+  <sub><a href="tickets/M365-010-private-channel-membership-recovery.md">Temporary membership grants access; removal restores denial</a></sub>
+</td>
+<td width="50%" align="center">
+  <a href="evidence/day-07/06-meeting-screen-share-piotr.jpg"><img src="evidence/day-07/06-meeting-screen-share-piotr.jpg" alt="Piotr's phone receives Anna's presentation of the standard-channel document" width="100%"></a><br>
+  <strong>Screen Sharing Received on a Phone</strong><br>
+  <sub>Two-way audio and meeting closure confirmed by the owner</sub>
+</td>
+</tr>
 </table>
 
 ## Target Architecture
 
-The diagram combines **implemented baseline components and labelled future extensions**. All three pilots, the MFA scope, Finance group/site link, DL, alias, Helpdesk and room exist. Shared-mailbox delegation, calendar read/edit/restoration, room booking and mail-flow rejection/control/recovery are verified. The scoped exercise transport rule is retained Disabled. Teams attachment, private channels and the knowledge site remain planned. The reused Baltic Finance Lab site is separate from the new Finance group. This is not a protocol trace.
+The diagram combines **implemented baseline components and labelled future extensions**. All three pilots, the MFA scope, Finance group/site link, DL, alias, Helpdesk and room exist. Shared-mailbox delegation, calendar read/edit/restoration, room booking and mail-flow rejection/control/recovery are verified. The scoped exercise transport rule is retained Disabled. Teams and its private-channel boundary are verified; the independent knowledge site remains planned. The reused Baltic Finance Lab site is separate from the new Finance group. This is not a protocol trace.
 
 ```mermaid
 flowchart TB
@@ -220,9 +234,9 @@ flowchart TB
     end
 
     subgraph COLLABORATION["Collaboration and work files"]
-        TEAM["Finance Teams attachment — PLANNED"]
-        PARENT["Finance SharePoint site<br/>Link captured; direct tests pending"]
-        PRIVATE["Private channel — PLANNED<br/>Separate SharePoint site"]
+        TEAM["BFL-M365-Finance Team<br/>Anna Owner · Piotr Member"]
+        PARENT["Finance parent SharePoint site<br/>Standard-file access verified"]
+        PRIVATE["Finance-Confidential<br/>Separate site; final Anna only"]
         KNOWLEDGE["Independent knowledge site — PLANNED"]
         ONEDRIVE["Personal work files<br/>OneDrive"]
     end
@@ -237,11 +251,11 @@ flowchart TB
     PILOTS --> ENTRA
     CLIENT --> PILOTS
     PILOTS --> EXO
-    PILOTS --> TEAM
+    PILOTS -->|Anna and Piotr| TEAM
     PILOTS --> KNOWLEDGE
     PILOTS --> ONEDRIVE
     ENTRA --- GROUP
-    GROUP -.-> TEAM
+    GROUP --> TEAM
     GROUP --> PARENT
     EXO --> MAIL
     EXO --> ROOM
@@ -272,7 +286,7 @@ flowchart TB
 
 ## Implementation Progress
 
-**6 of 14 stages completed. Stages 01–06 are COMPLETE; Stages 07–14 are PLANNED.**
+**7 of 14 stages completed. Stages 01–07 are COMPLETE; Stages 08–14 are PLANNED.**
 
 The schedule targets approximately **50–65 hours over a 30-day trial**, including documentation. Day ranges are estimates and must fit the actual subscription end date. Notes and evidence are saved throughout the project; the final days are a buffer.
 
@@ -286,7 +300,7 @@ The schedule targets approximately **50–65 hours over a 30-day trial**, includ
 | 04 | 6–7 | Shared mailboxes, calendars and room booking | [Stage notes](docs/stages/04-delegation-calendars-and-rooms.md) | COMPLETE |
 | 05 | 8–9 | Mail-flow troubleshooting and recovery | [Stage notes](docs/stages/05-mail-flow-troubleshooting.md) | COMPLETE |
 | 06 | 10–11 | Outlook and Microsoft 365 Apps | [Stage notes](docs/stages/06-outlook-and-microsoft-365-apps.md) | COMPLETE |
-| 07 | 12–13 | Teams and connected SharePoint sites | [Stage plan](docs/stages/07-teams-and-connected-sites.md) | PLANNED |
+| 07 | 12–13 | Teams and connected SharePoint sites | [Stage notes](docs/stages/07-teams-and-connected-sites.md) | COMPLETE |
 | 08 | 14–16 | SharePoint structure, permissions and sharing | [Stage plan](docs/stages/08-sharepoint-and-sharing.md) | PLANNED |
 | 09 | 17–18 | OneDrive synchronization and file recovery | [Stage plan](docs/stages/09-onedrive-sync-and-recovery.md) | PLANNED |
 | 10 | 19–20 | Support operations and user knowledge | [Stage plan](docs/stages/10-support-operations-and-knowledge.md) | PLANNED |
@@ -299,7 +313,7 @@ The schedule targets approximately **50–65 hours over a 30-day trial**, includ
 
 ### Detailed Lab Notes
 
-Expand a stage to see its scope. Stages 01–06 are complete. T03 and T16 were first exercised in Day 01; T06 first ran in Day 02 and was extended in Day 03 without adding another global check. Stage 07's remaining deployment is planned.
+Expand a stage to see its scope. Stages 01–07 are complete. T03 and T16 were first exercised in Day 01; T06 first ran in Day 02 and was extended in Day 03 without adding another global check. Stage 07 extends T16 on the new Finance Team and adds the private-channel boundary check T17.
 
 <details>
 <summary><strong>Stage 01 — Tenant baseline and administrative roles</strong> · complete</summary>
@@ -421,18 +435,20 @@ Provision a distinct ordinary pilot, connect service configuration to actual use
 ---
 
 <details>
-<summary><strong>Stage 07 — Teams and connected SharePoint sites</strong> · planned exercises</summary>
+<summary><strong>Stage 07 — Teams and connected SharePoint sites</strong> · complete</summary>
 
-Understand team/channel membership and the location of collaboration data.
+- [x] Added Teams to the existing Private Finance group in the owner-confirmed From a group workflow.
+- [x] Retained Anna as Owner, Piotr as Member and Marek outside the membership list.
+- [x] Rechecked T16 on Finance-Operations: Piotr edits/saves, opens via SharePoint and Anna sees the change after reopening.
+- [x] Verified private-channel denial with a working standard-file control, temporary membership access and fresh denial after removal.
+- [x] Identified separate parent and private-channel SharePoint site roots.
+- [x] Tested a computer/phone meeting: received presentation captured; two-way audio, dynamic view change and meeting closure owner-confirmed.
 
-- [ ] Attach Teams to the existing Private BFL-M365-Finance group from Day 02, retaining documented ownership/membership.
-- [ ] Create standard and private channels with different membership.
-- [ ] Open the same file through Teams and its SharePoint location.
-- [ ] Test a lab meeting, audio-device selection and screen sharing; record any single-device test limitations.
+**Final state:** Finance-Confidential retains Anna only. Piotr remains a team member with standard-channel access. T16 retains its earlier PASS; T17 is newly PASS.
 
-**Validation target:** A team member can open the standard-channel file. An authorized private-channel member can open its file. A team member excluded from the private channel is denied at the direct file URL. The parent site and separate private-channel site are identified correctly.
+**Limits:** Final membership restoration, selected file/session controls, site comparison and audio include owner reports. Exact propagation and call-quality metrics were not measured. The phone capture remains JPG; the visible summary interface is not a validated Copilot exercise.
 
-[Stage documentation](docs/stages/07-teams-and-connected-sites.md) · [Test matrix](tests/test-matrix.csv) · [Evidence guide](evidence/README.md)
+[Implementation](docs/stages/07-teams-and-connected-sites.md) · [Results](tests/day-07.md) · [6 captures](evidence/day-07/README.md) · [Membership case](tickets/M365-010-private-channel-membership-recovery.md)
 
 </details>
 
@@ -575,7 +591,7 @@ Publish accurate project evidence and close or deliberately retain the lab.
 | [English roadmap](docs/roadmap.md) and [Polish coaching plan](PROJECT-PLAN_PL.md) | Learning sequence, workload and completion criteria |
 | [Environment baseline](docs/01-environment-baseline.md) | Recorded subscriptions, client versions, verified baseline and limitations |
 | [Architecture](docs/architecture.md) and [access matrix](docs/access-matrix.md) | Planned objects, service relationships and permission boundaries |
-| [Stage index](docs/stages/README.md) and [lab-note template](docs/LAB-NOTE-TEMPLATE.md) | Six completed stages and eight planned stages |
+| [Stage index](docs/stages/README.md) and [lab-note template](docs/LAB-NOTE-TEMPLATE.md) | Seven completed stages and seven planned stages |
 | [Support workflow](tickets/README.md), [case template](tickets/TICKET-TEMPLATE.md) and [backlog](samples/ticket-backlog.csv) | Diagnostic reasoning, recovery and user verification |
 | [Functional validation guide](tests/README.md), [32-check matrix](tests/test-matrix.csv) and [Day 01 results](tests/day-01.md) | Global results, supporting observations and evidence links |
 | [PowerShell report plan](scripts/README.md) | Report scope, permission requirements and verification contracts |
@@ -616,15 +632,15 @@ Plan mailbox/file handover and check applicable preservation and licensing condi
 
 ## Evidence Boundaries
 
-This is an educational lab and technical portfolio. The organization and pilot identities are synthetic; the nine resolved cases are guided lab exercises. External test correspondence is kept minimal and personal details require redaction.
+This is an educational lab and technical portfolio. The organization and pilot identities are synthetic; the ten resolved cases are guided lab exercises. External test correspondence is kept minimal and personal details require redaction.
 
 Published evidence covers baseline workloads, the MFA rollout, licensing recovery, group configuration, explicit external alias delivery, distribution repair, shared-mailbox delegation, calendar permission restoration, room conflict recovery, NDR/Trace-based mail-flow diagnosis, desktop Apps activation and client identity/offline recovery. Historical Day 01 captures retain their original scope; the current MFA group has three members.
 
 The successful Day 01 MFA event reuses a claim. Day 02 shows policy Success for My Signins (Piotr) and One Outlook Web (Marek), not a captured fresh approval or Basic info requirement. Bounded non-receipt and selected profile/recovery checks are owner-reported. The first internal alias headers name the primary address; the external pair establishes the alias target. Day 04 combines captured permission/results with attributed owner reports for session controls, calendar persistence/restoration and room sign-in blocking. Day 05 distinguishes rule configuration from actual rejection/delivery; RULE-02 opening and operator identities are owner-reported, while RULE-03 recovery uses Trace. Publication review and interpretation boundaries are described in the [evidence guide](evidence/README.md#current-publication-review).
 
-Day 06 distinguishes the active Word user from the subscription account, captured offline/reconnected state from owner-reported timing, and local document persistence from OneDrive synchronization. New Outlook and device registration/enrollment were not validated.
+Day 06 distinguishes the active Word user from the subscription account, captured offline/reconnected state from owner-reported timing, and local document persistence from OneDrive synchronization. New Outlook and device registration/enrollment were not validated. Day 07 verifies the private-channel boundary and temporary membership restoration; its two-way audio and final state include owner confirmations, while the phone image shows received presentation.
 
-No validated Copilot exercise, private-channel isolation, PowerShell execution, automated workload-test success or production incident resolution is claimed.
+No validated Copilot exercise, PowerShell execution, automated workload-test success or production incident resolution is claimed.
 
 Configuration evidence, functional results and any future offline script checks will be recorded separately. A blocked result remains blocked until the dependency is resolved; it is not converted into a pass.
 
@@ -640,13 +656,13 @@ An owned custom domain with SPF/DKIM/DMARC and controlled external sharing are o
 | --- | --- |
 | [README.md](README.md) | Project overview, architecture, stage roadmap and current evidence status |
 | [docs/](docs/roadmap.md) | Five implementation records, nine stage plans, baseline, access model and sources |
-| [tickets/](tickets/README.md) | Nine resolved lab cases, workflow and case template |
-| [tests/](tests/README.md) | Thirty-two global checks, eighteen recorded passes and detailed Day 01–06 records |
-| [evidence/](evidence/README.md) | 113 indexed captures across Days 01–06, review notes and screenshot timing guidance |
+| [tickets/](tickets/README.md) | Ten resolved lab cases, workflow and case template |
+| [tests/](tests/README.md) | Thirty-two global checks, nineteen recorded passes and detailed Day 01–07 records |
+| [evidence/](evidence/README.md) | 119 indexed captures across Days 01–07, review notes and screenshot timing guidance |
 | [scripts/](scripts/README.md) | Planned read-only operational reports |
 | [runbooks/](runbooks/README.md) | Employee lifecycle procedure template |
 | [knowledge-base/](knowledge-base/README.md) | Planned user-facing articles |
-| [samples/](samples/README.md) | Three provisioned synthetic identities; 9 resolved and 6 planned lab cases |
+| [samples/](samples/README.md) | Three provisioned synthetic identities; 10 resolved and 5 planned lab cases |
 | [.github/ISSUE_TEMPLATE/](.github/ISSUE_TEMPLATE/lab-stage.yml) | Lab-stage and support-case issue forms |
 
 ## Related Projects
@@ -655,4 +671,4 @@ An owned custom domain with SPF/DKIM/DMARC and controlled external sharing are o
 - [Microsoft Hybrid Enterprise Security Project](https://github.com/krzysztof-szot/hybrid-enterprise-security-project)
 - [IAM PowerShell Automation Project](https://github.com/krzysztof-szot/iam-powershell-automation-project)
 
-Review the [completed cases](tickets/README.md) and [results](tests/README.md), then continue with [Stage 07 — Teams and connected SharePoint sites](docs/stages/07-teams-and-connected-sites.md).
+Review the [completed cases](tickets/README.md) and [results](tests/README.md), then continue with [Stage 08 — SharePoint structure, permissions and sharing](docs/stages/08-sharepoint-and-sharing.md).

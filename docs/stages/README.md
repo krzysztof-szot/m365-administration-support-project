@@ -1,6 +1,6 @@
 # Stage index
 
-Stages 01–06 are COMPLETE, with 113 indexed captures and nine resolved lab cases. Stages 07–14 remain PLANNED. The global matrix records **18 PASS / 14 NOT_RUN**. Evidence and reported results are separated in [Day 01](../../tests/day-01.md), [Day 02](../../tests/day-02.md), [Day 03](../../tests/day-03.md), [Day 04](../../tests/day-04.md), [Day 05](../../tests/day-05.md) and [Day 06](../../tests/day-06.md).
+Stages 01–07 are COMPLETE, with 119 indexed captures and ten resolved lab cases. Stages 08–14 remain PLANNED. The global matrix records **19 PASS / 13 NOT_RUN**. Evidence and reported results are separated in [Day 01](../../tests/day-01.md), [Day 02](../../tests/day-02.md), [Day 03](../../tests/day-03.md), [Day 04](../../tests/day-04.md), [Day 05](../../tests/day-05.md), [Day 06](../../tests/day-06.md) and [Day 07](../../tests/day-07.md).
 
 | Stage | Target days | Topic | Execution |
 | --- | --- | --- | --- |
@@ -10,7 +10,7 @@ Stages 01–06 are COMPLETE, with 113 indexed captures and nine resolved lab cas
 | 04 | 6–7 | [Shared mailboxes, calendars and room booking](04-delegation-calendars-and-rooms.md) | COMPLETE |
 | 05 | 8–9 | [Mail-flow troubleshooting and recovery](05-mail-flow-troubleshooting.md) | COMPLETE |
 | 06 | 10–11 | [Outlook and Microsoft 365 Apps](06-outlook-and-microsoft-365-apps.md) | COMPLETE |
-| 07 | 12–13 | [Teams and connected SharePoint sites](07-teams-and-connected-sites.md) | PLANNED |
+| 07 | 12–13 | [Teams and connected SharePoint sites](07-teams-and-connected-sites.md) | COMPLETE |
 | 08 | 14–16 | [SharePoint structure, permissions and sharing](08-sharepoint-and-sharing.md) | PLANNED |
 | 09 | 17–18 | [OneDrive synchronization and file recovery](09-onedrive-sync-and-recovery.md) | PLANNED |
 | 10 | 19–20 | [Support operations and user knowledge](10-support-operations-and-knowledge.md) | PLANNED |
