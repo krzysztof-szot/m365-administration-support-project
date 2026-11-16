@@ -1,6 +1,6 @@
 # Environment baseline and current lab state
 
-Current state after **Stages 01–07 COMPLETE**. Stages 01–04 were executed **14 November 2026**; Stages 05–07 were executed **16 November 2026**. Stage/day labels identify learning units; the roadmap's target-day ranges are estimates.
+Current state after **Stages 01–08 COMPLETE**. Stages 01–04 were executed **14 November 2026**; Stages 05–08 were executed **16 November 2026**. Stage/day labels identify learning units; the roadmap's target-day ranges are estimates.
 
 | Area | Recorded state and source |
 | --- | --- |
@@ -22,6 +22,10 @@ Current state after **Stages 01–07 COMPLETE**. Stages 01–04 were executed **
 | Private collaboration group and Team | BFL-M365-Finance; From a group and Private confirmed in Stage 07; Anna Owner, Piotr Member, Marek not listed; parent site /sites/bfl-m365-finance |
 | Standard-channel files | Finance-Operations; Piotr opens/edits/saves STANDARD-01 through Teams and SharePoint; Anna sees saved change after reopening |
 | Private-channel boundary | Finance-Confidential at /sites/BFL-M365-Finance-Finance-Confidential; initial Piotr denial, temporary membership access, removal and fresh denial with working standard control; final Anna only, owner-confirmed |
+| Knowledge communication site | /sites/BFL-M365-Knowledge; Anna Full Control, Marek Edit, Piotr Read; independent of Finance; Day 08 01/02 |
+| Knowledge document | Original LAB-D08-KB-01.docx with Mail/Draft; Marek save and Anna reopen owner-confirmed; Piotr Viewing/edit unavailable in 04; T18/T19 PASS |
+| Knowledge link and folder boundary | Specific people/Piotr/Can view owner-confirmed; selected link removed and old URL invalid while library access remains; folder Visitors grant temporarily removed, Piotr denied with controls, inheritance/TXT access restored; T20 PASS |
+| DOCX lock and cleanup | Original recovers after Anna closes Word/waits per owner; exact release interval/service mechanism not measured; helpers KB-02 and LOCK-CONTROL removed per owner |
 | Meeting | Anna computer / Piotr phone with Teams app; received screen share captured; two-way audio, view change and meeting closure owner-confirmed |
 | Distribution list | DL-M365-Finance; owner Anna; members restored to Anna/Piotr after Day 03 fault |
 | DL settings | Internal senders only; Specified senders empty; moderation off, owner-reported. Closed join/leave not confirmed |
@@ -43,12 +47,12 @@ Current state after **Stages 01–07 COMPLETE**. Stages 01–04 were executed **
 
 ## Scope and evidence limits
 
-Ten resolved lab cases cover licensing, alias delivery, distribution membership, Helpdesk sender permission, room booking conflict, expected unknown-recipient diagnosis, scoped rule recovery, wrong active Office identity, offline-client synchronization and private-channel authorization/restoration. The current global matrix is **19 PASS / 13 NOT_RUN**. Client versions, job attributes, recovery-account checks, bounded non-receipt, selected calendar/session controls and room-account blocking include owner-reported data. Provisioning elapsed time, exact group/delegation propagation and room processing latency were not measured.
+Twelve resolved lab cases cover licensing, alias delivery, distribution membership, Helpdesk sender permission, room booking conflict, expected unknown-recipient diagnosis, scoped rule recovery, wrong active Office identity, offline-client synchronization, private-channel authorization/restoration, knowledge reader/editor roles and retained access after link revocation. The current global matrix is **22 PASS / 10 NOT_RUN**. Client versions, job attributes, recovery-account checks, bounded non-receipt, selected calendar/session controls and room-account blocking include owner-reported data. Provisioning elapsed time, exact group/delegation propagation and room processing latency were not measured.
 
 The first internal alias message's private headers name the primary recipient. Only the subsequent external pair is used as alias-target delivery proof. No tenant-wide sending-from-alias change or Day 03 alias transport trace is claimed; Stage 05 separately provides Trace for baseline, invalid-recipient and rule tests. An independently audited sequence of every portal operation is not established.
 
 Stage 06 verifies desktop activation and classic Outlook operation, not device registration/MDM enrollment or a Copilot exercise. Local Word save/reopen does not validate OneDrive synchronization.
 
-Stage 07 adds actual Finance Team and private-channel access tests, separate SharePoint site roots and a computer/phone meeting. Independent knowledge-site roles, sharing/inheritance, OneDrive sync/recovery, PowerShell reports and deliberate Copilot exercises remain future work. Day 04 covers shared-mailbox delegation and room/calendar behavior; it does not establish those later outcomes. Day 05 confirms transport delivery after rule disable; RULE-03 opening is not separately confirmed, exact rule-propagation time was not measured, and the custom-role-group delegation exception remains unresolved.
+Stage 07 adds actual Finance Team and private-channel access tests, separate SharePoint site roots and a computer/phone meeting. Stage 08 verifies the independent knowledge site, roles, sharing-link revocation and an isolated folder boundary restored at closure. OneDrive sync/recovery, PowerShell reports and deliberate Copilot exercises remain future work. The original DOCX lock recovery follows closure/waiting according to the owner; no precise release time is claimed. Day 04 covers shared-mailbox delegation and room/calendar behavior; it does not establish those later outcomes. Day 05 confirms transport delivery after rule disable; RULE-03 opening is not separately confirmed, exact rule-propagation time was not measured, and the custom-role-group delegation exception remains unresolved.
 
-[Day 01](stages/01-tenant-and-roles.md) · [Day 02](stages/02-users-licenses-and-groups.md) · [Day 03](stages/03-exchange-recipients-and-mail.md) · [Day 04](stages/04-delegation-calendars-and-rooms.md) · [Day 05](stages/05-mail-flow-troubleshooting.md) · [Day 06](stages/06-outlook-and-microsoft-365-apps.md) · [Day 07](stages/07-teams-and-connected-sites.md) · [Current results](../tests/README.md) · [Evidence](../evidence/README.md)
+[Day 01](stages/01-tenant-and-roles.md) · [Day 02](stages/02-users-licenses-and-groups.md) · [Day 03](stages/03-exchange-recipients-and-mail.md) · [Day 04](stages/04-delegation-calendars-and-rooms.md) · [Day 05](stages/05-mail-flow-troubleshooting.md) · [Day 06](stages/06-outlook-and-microsoft-365-apps.md) · [Day 07](stages/07-teams-and-connected-sites.md) · [Day 08](stages/08-sharepoint-and-sharing.md) · [Current results](../tests/README.md) · [Evidence](../evidence/README.md)

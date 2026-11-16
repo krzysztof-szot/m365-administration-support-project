@@ -1,6 +1,6 @@
 # Lab architecture — implemented baseline and target extensions
 
-**Stages 01–07 COMPLETE.** Three pilots, the MFA scope, the Private Finance Microsoft 365 group, a distribution list, Anna's Finance alias, Helpdesk and the room mailbox are implemented. Delegated mail, calendar permission restoration, room conflict/recovery and NDR/Trace-based mail-flow rejection/control/recovery are verified. The scoped exercise rule remains Disabled. BFL-WKS01 now has active Microsoft 365 Apps and classic Outlook, with identity and offline-mode recovery plus desktop delegation verified. Finance now has standard/private channels, separate parent/channel sites and verified temporary private membership plus a cross-device meeting. The diagram combines observed components and explicitly planned extensions; it is not a protocol trace.
+**Stages 01–08 COMPLETE.** Three pilots, the MFA scope, the Private Finance Microsoft 365 group, a distribution list, Anna's Finance alias, Helpdesk and the room mailbox are implemented. Delegated mail, calendar permission restoration, room conflict/recovery and NDR/Trace-based mail-flow rejection/control/recovery are verified. The scoped exercise rule remains Disabled. BFL-WKS01 now has active Microsoft 365 Apps and classic Outlook, with identity and offline-mode recovery plus desktop delegation verified. Finance now has standard/private channels, separate parent/channel sites and verified temporary private membership plus a cross-device meeting. The independent knowledge site now has verified read/edit roles, metadata, link revocation and an isolated folder denial/restoration. The diagram combines observed components and explicitly planned extensions; it is not a protocol trace.
 
 ```mermaid
 flowchart TB
@@ -26,7 +26,9 @@ flowchart TB
     Exchange --> Room["BFL-M365-Room-01<br/>Accept → Decline conflict → Accept rescheduled"]
     Exchange --> Rule["Scoped transport rule<br/>Marek AND Piotr AND subject marker<br/>Final state: Disabled"]
     Exchange --- Trace["Message Trace verified<br/>Invalid recipient · Rule rejection · Recovery"]
-    Users -.-> Knowledge["Independent knowledge site — PLANNED"]
+    Users --> Knowledge["BFL-M365-Knowledge<br/>Independent communication site<br/>Anna owner; Marek editor; Piotr reader"]
+    Knowledge --> Library["Knowledge / original KB-01<br/>Mail metadata; read/edit verified"]
+    Library --> Restricted["LAB-D08-Restricted / TXT<br/>Visitors grant removal tested<br/>Final inheritance restored"]
     Reports["Read-only reports — PLANNED"] -.-> Portal
 ```
 
@@ -48,6 +50,6 @@ flowchart TB
 
 The first internal alias test shows a primary recipient in private headers; the external pair establishes actual alias addressing and delivery. The membership fault is repaired and the DL is left restored. The recipient-admin assignment is Active/Permanent, not automatically expiring. Stage 05 Trace access as adm-lab is owner-confirmed; rule work used bg01. Attempted Transport Rules delegation remains unresolved, with no successful custom-group grant or complete RBAC audit claimed.
 
-Independent knowledge-site roles/sharing, OneDrive synchronization/recovery, scripts and validated Copilot use remain planned. The Finance private-channel boundary is verified; it is separate from Stage 08's knowledge-site role and inheritance tests. Stage 06 local Word persistence is not OneDrive synchronization; new Outlook and device registration/enrollment were not validated. The reused Windows VM does not establish an Exchange hybrid deployment. Selected calendar/session restoration checks and the room account block are owner-reported; no exact delegation propagation time is claimed. Rule-change times likewise were not recorded; message timestamps are not converted into a propagation measurement. RULE-02 opening is owner-reported and RULE-03 recovery is established by Trace. The core uses the default lab domain; an owned custom domain is optional.
+The independent knowledge-site core is verified; OneDrive synchronization/recovery, scripts and validated Copilot use remain planned. The Finance private-channel boundary is verified; it is separate from the completed Stage 08 knowledge-site role and inheritance tests. Link removal does not reset inheritance or prove removal of all access; KB-01's final item ACL was not separately audited. The restricted folder is restored, and the owner's DOCX-lock explanation is closure plus waiting with no measured release time. Stage 06 local Word persistence is not OneDrive synchronization; new Outlook and device registration/enrollment were not validated. The reused Windows VM does not establish an Exchange hybrid deployment. Selected calendar/session restoration checks and the room account block are owner-reported; no exact delegation propagation time is claimed. Rule-change times likewise were not recorded; message timestamps are not converted into a propagation measurement. RULE-02 opening is owner-reported and RULE-03 recovery is established by Trace. The core uses the default lab domain; an owned custom domain is optional.
 
 [Access matrix](access-matrix.md) · [Baseline](01-environment-baseline.md) · [Roadmap](roadmap.md) · [Evidence](../evidence/README.md)

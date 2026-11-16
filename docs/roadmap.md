@@ -1,6 +1,6 @@
 # Thirty-day learning roadmap
 
-Status: **Stages 01–07 COMPLETE; Stages 08–14 PLANNED.** There are 119 indexed captures, ten resolved lab cases and **19 PASS / 13 NOT_RUN**. See [Day 01](../tests/day-01.md), [Day 02](../tests/day-02.md), [Day 03](../tests/day-03.md), [Day 04](../tests/day-04.md), [Day 05](../tests/day-05.md), [Day 06](../tests/day-06.md) and [Day 07](../tests/day-07.md). T16 was first passed early and rechecked on the new Finance Team; T17 is newly passed.
+Status: **Stages 01–08 COMPLETE; Stages 09–14 PLANNED.** There are 126 indexed captures, twelve resolved lab cases and **22 PASS / 10 NOT_RUN**. See [Day 01](../tests/day-01.md), [Day 02](../tests/day-02.md), [Day 03](../tests/day-03.md), [Day 04](../tests/day-04.md), [Day 05](../tests/day-05.md), [Day 06](../tests/day-06.md), [Day 07](../tests/day-07.md) and [Day 08](../tests/day-08.md). T16 was first passed early and rechecked on the new Finance Team; T17 is newly passed. Stage 08 adds T18–T20 on the independent knowledge site, with a revoked-link/library-access comparison and an isolated folder restriction/restoration.
 
 The target workload is about 50–65 hours including documentation. The ranges below are estimates, not elapsed execution dates. Record the actual subscription expiry privately and shorten the schedule if necessary. Save evidence after each session rather than waiting until the end.
 
@@ -13,7 +13,7 @@ The target workload is about 50–65 hours including documentation. The ranges b
 | 05 | 8–9 | [Mail-flow troubleshooting and recovery](stages/05-mail-flow-troubleshooting.md) | COMPLETE | 4–5 h |
 | 06 | 10–11 | [Outlook and Microsoft 365 Apps](stages/06-outlook-and-microsoft-365-apps.md) | COMPLETE | 3–4 h |
 | 07 | 12–13 | [Teams and connected SharePoint sites](stages/07-teams-and-connected-sites.md) | COMPLETE | 3–4 h |
-| 08 | 14–16 | [SharePoint structure, permissions and sharing](stages/08-sharepoint-and-sharing.md) | PLANNED | 5–6 h |
+| 08 | 14–16 | [SharePoint structure, permissions and sharing](stages/08-sharepoint-and-sharing.md) | COMPLETE | 5–6 h |
 | 09 | 17–18 | [OneDrive synchronization and file recovery](stages/09-onedrive-sync-and-recovery.md) | PLANNED | 3–4 h |
 | 10 | 19–20 | [Support operations and user knowledge](stages/10-support-operations-and-knowledge.md) | PLANNED | 3–4 h |
 | 11 | 21–23 | [Read-only operational PowerShell reports](stages/11-powershell-reporting.md) | PLANNED | 6–8 h |
@@ -21,7 +21,7 @@ The target workload is about 50–65 hours including documentation. The ranges b
 | 13 | 26–27 | [Independent administration and troubleshooting assessment](stages/13-independent-capstone.md) | PLANNED | 4–5 h |
 | 14 | 28–30 | [Portfolio review and lab closure](stages/14-portfolio-and-lab-closure.md) | PLANNED | 2–3 h |
 
-The hour ranges total 50–65 hours including learning, screenshots and documentation; they are estimates, not measured elapsed work. The Copilot extension adds 5–7 hours. Learning-unit labels do not establish calendar dates: Stages 01–04 were all executed on 14 November 2026; Stages 05–07 were executed on 16 November 2026. Stage 06 used the dedicated BFL-WKS01 VM, activated Microsoft 365 Apps and classic Outlook, and verified identity/offline recovery plus existing calendar/Helpdesk delegation. Stage 07 attached Teams to Finance, verified standard/private file boundaries and temporary channel membership, and tested a computer/phone meeting with audio and screen sharing.
+The hour ranges total 50–65 hours including learning, screenshots and documentation; they are estimates, not measured elapsed work. The Copilot extension adds 5–7 hours. Learning-unit labels do not establish calendar dates: Stages 01–04 were all executed on 14 November 2026; Stages 05–08 were executed on 16 November 2026. Stage 06 used the dedicated BFL-WKS01 VM, activated Microsoft 365 Apps and classic Outlook, and verified identity/offline recovery plus existing calendar/Helpdesk delegation. Stage 07 attached Teams to Finance, verified standard/private file boundaries and temporary channel membership, and tested a computer/phone meeting with audio and screen sharing. Stage 08 verifies the independent knowledge site, reader/editor roles, metadata, link revocation and restored folder inheritance; its original DOCX lock recovery includes the owner's closure/waiting explanation.
 
 ## Learning method
 

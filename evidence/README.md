@@ -1,6 +1,6 @@
 # Evidence handling
 
-**119 owner-supplied captures are indexed across seven completed stages.** Configuration, captured functional results and owner-reported checks are labelled separately.
+**126 owner-supplied captures are indexed across eight completed stages.** Configuration, captured functional results and owner-reported checks are labelled separately.
 
 | Stage | Screenshots | Results |
 | --- | --- | --- |
@@ -11,8 +11,9 @@
 | [Day 05](day-05/README.md) | 14 | Service health, NDR/Trace diagnosis, scoped rejection/control and delivery after disabling the rule |
 | [Day 06](day-06/README.md) | 9 | Apps activation, Office identity mismatch, offline/online comparison, desktop delegation and client version |
 | [Day 07](day-07/README.md) | 6 | Finance Team, standard/private files, membership grant/removal and a phone receiving shared content; five PNGs and one JPG |
+| [Day 08](day-08/README.md) | 7 | Independent knowledge site, roles, Mail/Draft metadata, reader content, link opening, folder denial and inherited group baseline |
 
-Future evidence folders do not establish execution. Stages 08–14 remain planned.
+Future evidence folders do not establish execution. Stages 09–14 remain planned.
 
 ## Current publication review
 
@@ -21,6 +22,8 @@ The reviewed Day 03 images mask SPO identifiers, the tenant domain and the exter
 Day 06 preserves the eight owner-supplied numbered PNGs plus the additional version crop as 09-outlook-version.png. The [Day 06 index](day-06/README.md) distinguishes captured product/account information, offline state, received messages and Read-Only calendar behavior from owner-reported timing, controls and final restoration. The product in the wrong-user capture still names Marek; no Piotr activation outage is invented.
 
 Day 07 uses the owner's corrected 04 with the tenant name masked in both the hostname and Source. The [Day 07 index](day-07/README.md) separates initial channel membership, denied access, temporary authorized access and owner-reported final removal. Its phone meeting capture remains JPG; audio and closure are attributed to the owner, and distinct site roots are recorded without private hostnames.
+
+Day 08 preserves six numbered owner images and the additional folder-inheritance clipboard capture as seven PNGs. The [Day 08 index](day-08/README.md) identifies 05 as link opening rather than a settings capture, attributes revocation/restoration and expected permission-check changes to the owner, and retains the owner-uploaded filenames even where 05 describes opening rather than settings. The unredacted lock troubleshooting frame is not published; its sanitized observation is described in the stage record.
 
 ## Capture checkpoints during guided work
 

@@ -12,6 +12,10 @@ Diagnose synchronization and validate recovery by comparing actual file contents
 
 Confirm the required service entitlement, task-appropriate role, affected synthetic identities and recovery path. Record the actual tenant/client context privately. Earlier stages provide the baseline; unresolved prerequisites remain BLOCKED rather than assumed successful.
 
+## Carry-forward from Stage 08
+
+The independent Knowledge site, reader/editor roles, revoked-link comparison and isolated folder restoration are verified. Original KB-01 and the restored test folder remain; diagnostic helpers were removed per owner. A web document save, a closed editor lock and a restored SharePoint permission are not OneDrive client synchronization, version-content recovery or recycle-bin recovery. Keep this stage PLANNED until those separate checks run. [Stage 08](08-sharepoint-and-sharing.md).
+
 ## Planned exercises
 
 1. Set up synchronization of a lab-only test folder and examine Files On-Demand.

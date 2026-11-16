@@ -120,3 +120,21 @@ Reviewed during the **16 November 2026** guided exercise. These official sources
 | Browser presentation | [Present content in Teams meetings](https://support.microsoft.com/en-us/teams/meetings/present-content-in-microsoft-teams-meetings) |
 
 The record does not infer exact membership-propagation latency, audit unseen direct grants or treat a still image as audio-quality proof. It uses the observed channel libraries without assuming that every new private channel must expose a particular folder layout. A visible Word summary panel is not validation of the optional Copilot extension.
+
+
+## Day 08 implementation references
+
+Reviewed during the **16 November 2026** exercise. Official behavior references are separate from the actual captures and owner confirmations.
+
+| Area | Official source |
+| --- | --- |
+| Independent communication site | [Create a communication site](https://support.microsoft.com/en-us/sharepoint/sites-in-sharepoint/create-a-communication-site-in-sharepoint) |
+| Role assignments | [Share a site](https://support.microsoft.com/en-us/sharepoint/sharepoint-sharing-and-permissions/share-a-site) and [Understanding permission levels](https://learn.microsoft.com/en-us/sharepoint/understanding-permission-levels) |
+| Metadata | [View and edit file information](https://support.microsoft.com/en-us/sharepoint/libraries/view-and-edit-information-about-a-file-folder-or-link-in-a-document-library) |
+| Read/download/upload diagnostics | [Download files](https://support.microsoft.com/en-us/onedrive/download-files-and-folders-from-onedrive-or-sharepoint) and [Upload to a library](https://support.microsoft.com/en-us/sharepoint/documents-and-library/upload-files-and-folders-to-a-library) |
+| Check-out distinction | [Check out or check in files](https://support.microsoft.com/en-us/sharepoint/libraries/check-out-or-check-in-files-in-a-document-library) |
+| Link audience and access sources | [Share SharePoint files or folders](https://support.microsoft.com/en-us/sharepoint/sharepoint-sharing-and-permissions/share-sharepoint-files-or-folders) and [Manage sharing and permissions](https://support.microsoft.com/en-us/onedrive/sharepoint/manage-sharing-and-permissions-in-onedrive-and-sharepoint) |
+| Unique permissions and restoration | [Customize permissions](https://support.microsoft.com/en-us/sharepoint/lists/sharepoint-sharing-and-permissions/customize-permissions-for-a-sharepoint-list-or-library) and [Manage permission scopes](https://learn.microsoft.com/en-us/sharepoint/manage-permission-scope) |
+| Editor-lock background | [WOPI concepts and lock expiry](https://learn.microsoft.com/en-us/microsoft-365/cloud-storage-partner-program/rest/concepts#lock) |
+
+The WOPI reference describes a protocol mechanism; its generic expiry rule is not proof of this tenant's exact lock type or a measured SharePoint recovery interval. The owner attributes the original file's recovery to time after closing Word. Link removal and restoring inheritance are distinct operations; inherited entries can be copied to an item's unique scope when it is shared. A visible Copilot button is not a validated Copilot session.

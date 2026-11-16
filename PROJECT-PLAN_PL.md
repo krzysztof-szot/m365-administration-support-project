@@ -2,7 +2,7 @@
 
 Aktualizacja: 16 listopada 2026 r.
 
-Etapy 01–07 są COMPLETE; etapy 08–14 pozostają PLANNED. Opublikowano 119 obrazów: Day 01 — 31, Day 02 — 21, Day 03 — 11, Day 04 — 27, Day 05 — 14, Day 06 — 9, Day 07 — 6. Globalna tabela ma 19 PASS i 13 NOT_RUN. W Day 05 doszły T11–T13, w Day 06 T14–T15, w Day 07 T17; T16 rozszerzono bez podwójnego liczenia; fazy kontrolne i odzyskanie nie tworzą dodatkowych numerów testów. Dziesięć przypadków M365-001–010 jest rozwiązanych jako ćwiczenia laboratoryjne.
+Etapy 01–08 są COMPLETE; etapy 09–14 pozostają PLANNED. Opublikowano 126 obrazów: Day 01 — 31, Day 02 — 21, Day 03 — 11, Day 04 — 27, Day 05 — 14, Day 06 — 9, Day 07 — 6, Day 08 — 7. Globalna tabela ma 22 PASS i 10 NOT_RUN. W Day 05 doszły T11–T13, w Day 06 T14–T15, w Day 07 T17, w Day 08 T18–T20; T16 rozszerzono bez podwójnego liczenia; fazy kontrolne i odzyskanie nie tworzą dodatkowych numerów testów. Dwanaście przypadków M365-001–012 jest rozwiązanych jako ćwiczenia laboratoryjne.
 
 Zweryfikowano pocztę z zewnętrznym Gmail, zapis i ponowne otwarcie dokumentów OneDrive/SharePoint, trwałość wiadomości Teams oraz odmowę panelu administracyjnego dla Anny. Politykę MFA oceniono w Report-only, włączono i uzyskano Success z istniejącym claimem MFA. Świeże zatwierdzenie push nie zostało uchwycone. Dodatkową rolę CA usunięto; właściciel potwierdził dalszy dostęp adm-lab oraz nowe logowania i aktywny Global Administrator dla obu kont awaryjnych.
 
@@ -14,7 +14,7 @@ Powstała prywatna grupa BFL-M365-Finance: właścicielka Anna, członkowie Anna
 
 Alias m365.finance prowadzi do istniejącej skrzynki Anny. Pierwsza próba wewnętrzna pokazała w nagłówku adres podstawowy; dopiero para wysłane/odebrane z Gmaila potwierdziła jawnie adres aliasu. Surowe nagłówki pozostają prywatne. Rola Exchange Recipient Administrator na adm-lab pozostaje Direct/Active/Permanent do kolejnych zadań odbiorców i wymaga późniejszego przeglądu.
 
-Pierwsze cztery jednostki nauki wykonano 14 listopada 2026 r.; Etapy 05–07 wykonano 16 listopada. Rozpiska godzin w [roadmapie](docs/roadmap.md) jest szacunkiem, a nie pomiarem czasu.
+Pierwsze cztery jednostki nauki wykonano 14 listopada 2026 r.; Etapy 05–08 wykonano 16 listopada. Rozpiska godzin w [roadmapie](docs/roadmap.md) jest szacunkiem, a nie pomiarem czasu.
 
 ## Zakończony Day 04
 
@@ -59,6 +59,18 @@ Witryna zespołu: /sites/bfl-m365-finance. Kanał prywatny: /sites/BFL-M365-Fina
 Anna uczestniczyła w spotkaniu na komputerze, Piotr na telefonie w aplikacji Teams. JPG 06 pokazuje odbierany dokument; dźwięk w obu kierunkach, zmianę widoku, zatrzymanie prezentacji i zakończenie spotkania potwierdził właściciel. Nie był to test ograniczony do jednego urządzenia; nie mierzono parametrów jakości połączenia. Widoczny panel podsumowania Worda nie stanowi walidacji Copilot.
 
 Poprawiony screen 04 zasłania nazwę tenanta również w Source; publikujemy tę wersję. Zachowano pięć PNG i jeden JPG bez konwersji. Szczegóły: [Stage 07](docs/stages/07-teams-and-connected-sites.md), [testy](tests/day-07.md), [6 dowodów](evidence/day-07/README.md) i [M365-010](tickets/M365-010-private-channel-membership-recovery.md).
+
+## Zakończony Day 08
+
+Anna utworzyła niezależną witrynę komunikacyjną /sites/BFL-M365-Knowledge. Screeny 01/02 pokazują stan początkowy i role Anna Full Control, Marek Edit, Piotr Read. Knowledge zawiera oryginalny LAB-D08-KB-01.docx z Category Mail i Status Draft. Marek zapisał zmianę, Anna zobaczyła ją po ponownym otwarciu, a Piotr odczytał dokument bez możliwości edycji; część funkcjonalną potwierdził właściciel, a screen 04 pokazuje Viewing i dopisaną linię.
+
+Oryginał wcześniej zgłaszał blokadę współdzielonego użycia przez Annę. Zapis pojedynczych metadanych, świeża sesja i Check out nie pomogły. TXT kontrolny oraz przesłana kopia KB-02 przyjmowały metadane. Następnie zaczął działać ten sam oryginał bez podmiany; właściciel wyjaśnił to odczekaniem po zamknięciu pliku przez Annę. Dokładnego momentu zwolnienia blokady ani jej mechanizmu nie zmierzono. Nie przypisujemy naprawy kopii ani nieudanemu Check out. Oba pliki pomocnicze zostały usunięte według potwierdzenia właściciela.
+
+Ustawienia Specific people/Piotr/Can view, usunięcie linku i komunikat This link has been removed potwierdzono tekstowo. Screen 05 pokazuje otwarcie dokumentu przez link, nie okno jego ustawień. Piotr nadal otwierał KB-01 przez bibliotekę. Nie deklarujemy, że usunięcie linku przywróciło dziedziczenie dokumentu: końcowej flagi dziedziczenia i pełnej ACL KB-01 nie uchwycono osobno.
+
+Folder LAB-D08-Restricted początkowo dziedziczył Knowledge: Owners Full Control, Members Edit, Visitors Read — dodatkowy wycinek jako 07. Oczekiwane wyniki Check Permissions przed/po zmianie potwierdzono bez literalnego wydruku. Po przerwaniu dziedziczenia i usunięciu przypisania Visitors Piotr otrzymał odmowę w 06, Marek nadal otwierał TXT, a Piotr główny KB-01. Przywrócenie dziedziczenia odtworzyło dostęp Piotra do tego samego TXT. Końcowo folder jest przywrócony, nie pozostawiony jako trwałe wykluczenie. Opcjonalny Copilot i synchronizacja OneDrive nadal nie są wykonane.
+
+Szczegóły: [Stage 08](docs/stages/08-sharepoint-and-sharing.md), [wyniki](tests/day-08.md), [7 dowodów](evidence/day-08/README.md), [M365-011](tickets/M365-011-knowledge-reader-access.md) i [M365-012](tickets/M365-012-revoked-link-retained-access.md).
 
 ## Cel i sposób pracy
 
@@ -116,7 +128,7 @@ Szczegółowe zadania i warunki zakończenia: [etap 07](docs/stages/07-teams-and
 
 ### 08. SharePoint i udostępnianie — dzień 14–16
 
-Zbuduj witrynę wiedzy, bibliotekę i proste metadane. Sprawdź Owners, Members i Visitors, dziedziczenie na wydzielonym zasobie oraz linki Specific people. Wyjaśnij dostęp pozostający po usunięciu pojedynczego linku.
+Wykonano: niezależną witrynę komunikacyjną BFL-M365-Knowledge, bibliotekę Knowledge i Mail/Draft na oryginalnym KB-01. Anna Full Control, Marek Edit, Piotr Read; zapis Marka widoczny po ponownym otwarciu u Anny, Piotr bez edycji. Link Specific people/Piotr/Can view usunięto: stary URL zwraca This link has been removed, ale biblioteka nadal pozwala na odczyt. Na osobnym folderze usunięto tymczasowo przypisanie Visitors, uzyskano odmowę dla Piotra z kontrolami i przywrócono dziedziczenie oraz dostęp do TXT. **Stage 08 COMPLETE; T18–T20 PASS.**
 
 Szczegółowe zadania i warunki zakończenia: [etap 08](docs/stages/08-sharepoint-and-sharing.md).
 
@@ -164,13 +176,13 @@ Szczegółowe zadania i warunki zakończenia: [etap 14](docs/stages/14-portfolio
 - Instrukcje użytkownika, w tym jeden niemiecki odpowiednik.
 - Zweryfikowany runbook cyklu życia i pięć samodzielnych zadań końcowych.
 
-To cele całego projektu. Etapy 01–07 są COMPLETE, a etapy 08–14 pozostają PLANNED. Publikowane wyniki muszą odpowiadać zapisanym obserwacjom i dowodom; przypisanie licencji lub utworzenie pliku nie kończy etapu.
+To cele całego projektu. Etapy 01–08 są COMPLETE, a etapy 09–14 pozostają PLANNED. Publikowane wyniki muszą odpowiadać zapisanym obserwacjom i dowodom; przypisanie licencji lub utworzenie pliku nie kończy etapu.
 
 W Day 01 wdrożono ograniczony pilot MFA przez Conditional Access w istniejącym tenancie. Windows 11, Chrome 157.0.8103.52 dla Anny i Edge 157.0.4341.46 dla administratorów zapisano na podstawie raportu właściciela. Service health pokazało pięć advisories dla Microsoft 365 suite; nie wnioskujemy z tego o zdrowiu wszystkich usług ani o odtworzonym incydencie. Licencje Premium umożliwiają rozszerzenia z Intune. Dodatkowy [pilot Copilot](docs/copilot-pilot-plan.md) obejmuje trzy sesje, około 5–7 godzin, zintegrowane z etapami 06, 08, 10 i 13; mamy jedno miejsce Copilot. Własna domena i udostępnienie zewnętrzne pozostają rozszerzeniami. PIM, pełne odtworzenie E5/Entra Suite, hybrydowy Exchange, Teams Phone i zaawansowane holdy są poza zakresem podstawowym.
 
 ## Start
 
-Przejrzyj [wyniki](tests/README.md), [przypadki](tickets/README.md) i [baseline](docs/01-environment-baseline.md), a następnie rozpocznij [etap 08](docs/stages/08-sharepoint-and-sharing.md). Rzeczywiste dane logowania, domenę, identyfikatory, termin triala i szczegóły rozliczeń przechowuj prywatnie. Źródła techniczne i licencyjne: [Microsoft](docs/sources.md).
+Przejrzyj [wyniki](tests/README.md), [przypadki](tickets/README.md) i [baseline](docs/01-environment-baseline.md), a następnie rozpocznij [etap 09](docs/stages/09-onedrive-sync-and-recovery.md). Rzeczywiste dane logowania, domenę, identyfikatory, termin triala i szczegóły rozliczeń przechowuj prywatnie. Źródła techniczne i licencyjne: [Microsoft](docs/sources.md).
 
 ## Screeny podczas ćwiczeń
 

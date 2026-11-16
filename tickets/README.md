@@ -1,6 +1,6 @@
 # Support cases
 
-Status: **10 of 15 lab cases RESOLVED; 5 PLANNED.** These are guided, synthetic service requests and controlled training conditions, not production incidents.
+Status: **12 of 15 lab cases RESOLVED; 3 PLANNED.** These are guided, synthetic service requests and controlled training conditions, not production incidents.
 
 | Case | Type / stage | Verified outcome |
 | --- | --- | --- |
@@ -14,8 +14,10 @@ Status: **10 of 15 lab cases RESOLVED; 5 PLANNED.** These are guided, synthetic 
 | [M365-008 — Office identity recovery](M365-008-office-identity-recovery.md) | Controlled client identity / 06 | Piotr active user distinguished from subscription still naming Marek; intended identity and functional checks restored |
 | [M365-009 — Outlook offline recovery](M365-009-outlook-offline-recovery.md) | Controlled synchronization / 06 | Same mailbox works in web; disabling Work Offline delivers the affected message and new outbound control succeeds |
 | [M365-010 — Private-channel membership](M365-010-private-channel-membership-recovery.md) | Controlled authorization/restoration / 07 | Parent-team member denied, temporary channel membership grants access, removal restores private denial while standard access remains |
+| [M365-011 — Knowledge reader](M365-011-knowledge-reader-access.md) | Service request / 08 | Piotr reads but cannot edit original KB-01; Marek saves and Anna sees the change |
+| [M365-012 — Revoked link and retained access](M365-012-revoked-link-retained-access.md) | Controlled access diagnosis / 08 | Old URL reports removed; authorized library access remains; isolated folder denial/restoration verified |
 
-The [backlog](../samples/ticket-backlog.csv) keeps the other 5 cases PLANNED. Use [TICKET-TEMPLATE.md](TICKET-TEMPLATE.md) for new work. Each record includes the request, scope, diagnostic decisions, supported cause, reversible action, verification and suggested closure wording. Closure wording in documents is not evidence of an externally sent support message. The Stage 05 custom-role-group delegation error remains an unresolved administrative exception; it is not counted as a repaired permission incident.
+The [backlog](../samples/ticket-backlog.csv) keeps the other 3 cases PLANNED. Use [TICKET-TEMPLATE.md](TICKET-TEMPLATE.md) for new work. Each record includes the request, scope, diagnostic decisions, supported cause, reversible action, verification and suggested closure wording. Closure wording in documents is not evidence of an externally sent support message. The Stage 05 custom-role-group delegation error remains an unresolved administrative exception; it is not counted as a repaired permission incident.
 
 An expected failure in a controlled exercise is not a real outage. Preserve observed errors and source attribution; do not invent error codes, formal SLA priorities or transport traces. Record windows for non-receipt and distinguish missing evidence from a failed functional check.
 
