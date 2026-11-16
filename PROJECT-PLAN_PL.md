@@ -2,7 +2,7 @@
 
 Aktualizacja: 16 listopada 2026 r.
 
-Etapy 01–08 są COMPLETE; etapy 09–14 pozostają PLANNED. Opublikowano 126 obrazów: Day 01 — 31, Day 02 — 21, Day 03 — 11, Day 04 — 27, Day 05 — 14, Day 06 — 9, Day 07 — 6, Day 08 — 7. Globalna tabela ma 22 PASS i 10 NOT_RUN. W Day 05 doszły T11–T13, w Day 06 T14–T15, w Day 07 T17, w Day 08 T18–T20; T16 rozszerzono bez podwójnego liczenia; fazy kontrolne i odzyskanie nie tworzą dodatkowych numerów testów. Dwanaście przypadków M365-001–012 jest rozwiązanych jako ćwiczenia laboratoryjne.
+Etapy 01–09 są COMPLETE; etapy 10–14 pozostają PLANNED. Opublikowano 133 obrazy: Day 01 — 31, Day 02 — 21, Day 03 — 11, Day 04 — 27, Day 05 — 14, Day 06 — 9, Day 07 — 6, Day 08 — 7, Day 09 — 7. Globalna tabela ma 24 PASS i 8 NOT_RUN. W Day 05 doszły T11–T13, w Day 06 T14–T15, w Day 07 T17, w Day 08 T18–T20, w Day 09 T21–T22; T16 rozszerzono bez podwójnego liczenia; fazy kontrolne i odzyskanie nie tworzą dodatkowych numerów testów. Czternaście przypadków M365-001–014 jest rozwiązanych jako ćwiczenia laboratoryjne.
 
 Zweryfikowano pocztę z zewnętrznym Gmail, zapis i ponowne otwarcie dokumentów OneDrive/SharePoint, trwałość wiadomości Teams oraz odmowę panelu administracyjnego dla Anny. Politykę MFA oceniono w Report-only, włączono i uzyskano Success z istniejącym claimem MFA. Świeże zatwierdzenie push nie zostało uchwycone. Dodatkową rolę CA usunięto; właściciel potwierdził dalszy dostęp adm-lab oraz nowe logowania i aktywny Global Administrator dla obu kont awaryjnych.
 
@@ -14,7 +14,7 @@ Powstała prywatna grupa BFL-M365-Finance: właścicielka Anna, członkowie Anna
 
 Alias m365.finance prowadzi do istniejącej skrzynki Anny. Pierwsza próba wewnętrzna pokazała w nagłówku adres podstawowy; dopiero para wysłane/odebrane z Gmaila potwierdziła jawnie adres aliasu. Surowe nagłówki pozostają prywatne. Rola Exchange Recipient Administrator na adm-lab pozostaje Direct/Active/Permanent do kolejnych zadań odbiorców i wymaga późniejszego przeglądu.
 
-Pierwsze cztery jednostki nauki wykonano 14 listopada 2026 r.; Etapy 05–08 wykonano 16 listopada. Rozpiska godzin w [roadmapie](docs/roadmap.md) jest szacunkiem, a nie pomiarem czasu.
+Pierwsze cztery jednostki nauki wykonano 14 listopada 2026 r.; Etapy 05–09 wykonano 16 listopada. Rozpiska godzin w [roadmapie](docs/roadmap.md) jest szacunkiem, a nie pomiarem czasu.
 
 ## Zakończony Day 04
 
@@ -68,9 +68,21 @@ Oryginał wcześniej zgłaszał blokadę współdzielonego użycia przez Annę. 
 
 Ustawienia Specific people/Piotr/Can view, usunięcie linku i komunikat This link has been removed potwierdzono tekstowo. Screen 05 pokazuje otwarcie dokumentu przez link, nie okno jego ustawień. Piotr nadal otwierał KB-01 przez bibliotekę. Nie deklarujemy, że usunięcie linku przywróciło dziedziczenie dokumentu: końcowej flagi dziedziczenia i pełnej ACL KB-01 nie uchwycono osobno.
 
-Folder LAB-D08-Restricted początkowo dziedziczył Knowledge: Owners Full Control, Members Edit, Visitors Read — dodatkowy wycinek jako 07. Oczekiwane wyniki Check Permissions przed/po zmianie potwierdzono bez literalnego wydruku. Po przerwaniu dziedziczenia i usunięciu przypisania Visitors Piotr otrzymał odmowę w 06, Marek nadal otwierał TXT, a Piotr główny KB-01. Przywrócenie dziedziczenia odtworzyło dostęp Piotra do tego samego TXT. Końcowo folder jest przywrócony, nie pozostawiony jako trwałe wykluczenie. Opcjonalny Copilot i synchronizacja OneDrive nadal nie są wykonane.
+Folder LAB-D08-Restricted początkowo dziedziczył Knowledge: Owners Full Control, Members Edit, Visitors Read — dodatkowy wycinek jako 07. Oczekiwane wyniki Check Permissions przed/po zmianie potwierdzono bez literalnego wydruku. Po przerwaniu dziedziczenia i usunięciu przypisania Visitors Piotr otrzymał odmowę w 06, Marek nadal otwierał TXT, a Piotr główny KB-01. Przywrócenie dziedziczenia odtworzyło dostęp Piotra do tego samego TXT. Końcowo folder jest przywrócony, nie pozostawiony jako trwałe wykluczenie. Na koniec Day 08 opcjonalny Copilot i synchronizacja OneDrive nie były jeszcze wykonane; klient OneDrive jest testowany osobno w Day 09.
 
 Szczegóły: [Stage 08](docs/stages/08-sharepoint-and-sharing.md), [wyniki](tests/day-08.md), [7 dowodów](evidence/day-08/README.md), [M365-011](tickets/M365-011-knowledge-reader-access.md) i [M365-012](tickets/M365-012-revoked-link-retained-access.md).
+
+## Zakończony Day 09
+
+W BFL-WKS01 działa klient służbowego OneDrive Marka, wersja 26.204.1019.0007, 64-bit według właściciela. Folder M365-Lab-D09 i syntetyczny TXT posłużyły do testów: lokalny V1 widoczny w web, Free up space, ponowne pobranie i Always keep. Screen 01 pokazuje końcową dostępność oraz Backed up and synced.
+
+Podczas pauzy przesłano roboczy V2 z Pobranych do chmury przez Replace. Właściciel potwierdził V1 w rzeczywistym folderze OneDrive; poprawiony 02 pokazuje V2 w web, V1 lokalnie i Paused. Trzecia linia lokalna ma już tekst V2, więc screen nie dowodzi pełnej zgodności z pierwotnym wzorcem. Po Resume i świeżym otwarciu oryginału potwierdzono lokalny V2 oraz zdrowy klient, zgodnie z 03. Nie zmierzono dokładnego opóźnienia.
+
+Historia w 04 zawiera 1.0 i 2.0. Restore 1.0 przywrócił wszystkie trzy pierwotne linie V1 w web i lokalnie — 05. Usunięcie wyłącznie pliku testowego przeniosło go do kosza i usunęło kopię lokalną według właściciela; Restore z kosza przywrócił pełną bazę w obu widokach — 06/07. Końcowo klient jest wznowiony i zdrowy, oryginał ma V1, a osobna robocza kopia V2 pozostała w Pobranych poza OneDrive. Nie zakładamy zachowania wcześniejszego przypięcia Always keep po odtworzeniu.
+
+Synchronizacja przenosi również usunięcia; historia i kosz to sprawdzone mechanizmy odzyskiwania w tym zakresie, nie dowód niezależnego backupu. Porównano przestrzeń użytkownika z istniejącą wspólną biblioteką Knowledge, bez dodawania synchronizacji SharePoint ani testu przekazania danych odchodzącego pracownika.
+
+Szczegóły: [Stage 09](docs/stages/09-onedrive-sync-and-recovery.md), [wyniki](tests/day-09.md), [7 dowodów](evidence/day-09/README.md), [M365-013](tickets/M365-013-onedrive-paused-sync-recovery.md) i [M365-014](tickets/M365-014-onedrive-file-recovery.md). Stage 10 pozostaje PLANNED.
 
 ## Cel i sposób pracy
 
@@ -134,7 +146,7 @@ Szczegółowe zadania i warunki zakończenia: [etap 08](docs/stages/08-sharepoin
 
 ### 09. OneDrive i odzyskiwanie — dzień 17–18
 
-Poznaj Files On-Demand, wstrzymaną synchronizację, historię wersji i kosz. Przywróć syntetyczny plik oraz porównaj rzeczywistą treść z wersją wzorcową w przeglądarce i kliencie.
+Wykonano: Files On-Demand, kontrolowaną pauzę i Resume, przywrócenie wersji 1.0 oraz usuniętego pliku z kosza OneDrive. Pełna treść pierwotnego V1 jest zgodna w web i lokalnie po obu odzyskaniach. **Stage 09 COMPLETE; T21/T22 PASS.**
 
 Szczegółowe zadania i warunki zakończenia: [etap 09](docs/stages/09-onedrive-sync-and-recovery.md).
 
@@ -176,13 +188,13 @@ Szczegółowe zadania i warunki zakończenia: [etap 14](docs/stages/14-portfolio
 - Instrukcje użytkownika, w tym jeden niemiecki odpowiednik.
 - Zweryfikowany runbook cyklu życia i pięć samodzielnych zadań końcowych.
 
-To cele całego projektu. Etapy 01–08 są COMPLETE, a etapy 09–14 pozostają PLANNED. Publikowane wyniki muszą odpowiadać zapisanym obserwacjom i dowodom; przypisanie licencji lub utworzenie pliku nie kończy etapu.
+To cele całego projektu. Etapy 01–09 są COMPLETE, a etapy 10–14 pozostają PLANNED. Publikowane wyniki muszą odpowiadać zapisanym obserwacjom i dowodom; przypisanie licencji lub utworzenie pliku nie kończy etapu.
 
 W Day 01 wdrożono ograniczony pilot MFA przez Conditional Access w istniejącym tenancie. Windows 11, Chrome 157.0.8103.52 dla Anny i Edge 157.0.4341.46 dla administratorów zapisano na podstawie raportu właściciela. Service health pokazało pięć advisories dla Microsoft 365 suite; nie wnioskujemy z tego o zdrowiu wszystkich usług ani o odtworzonym incydencie. Licencje Premium umożliwiają rozszerzenia z Intune. Dodatkowy [pilot Copilot](docs/copilot-pilot-plan.md) obejmuje trzy sesje, około 5–7 godzin, zintegrowane z etapami 06, 08, 10 i 13; mamy jedno miejsce Copilot. Własna domena i udostępnienie zewnętrzne pozostają rozszerzeniami. PIM, pełne odtworzenie E5/Entra Suite, hybrydowy Exchange, Teams Phone i zaawansowane holdy są poza zakresem podstawowym.
 
 ## Start
 
-Przejrzyj [wyniki](tests/README.md), [przypadki](tickets/README.md) i [baseline](docs/01-environment-baseline.md), a następnie rozpocznij [etap 09](docs/stages/09-onedrive-sync-and-recovery.md). Rzeczywiste dane logowania, domenę, identyfikatory, termin triala i szczegóły rozliczeń przechowuj prywatnie. Źródła techniczne i licencyjne: [Microsoft](docs/sources.md).
+Przejrzyj [wyniki](tests/README.md), [przypadki](tickets/README.md) i [baseline](docs/01-environment-baseline.md), a następnie rozpocznij [etap 10](docs/stages/10-support-operations-and-knowledge.md). Rzeczywiste dane logowania, domenę, identyfikatory, termin triala i szczegóły rozliczeń przechowuj prywatnie. Źródła techniczne i licencyjne: [Microsoft](docs/sources.md).
 
 ## Screeny podczas ćwiczeń
 

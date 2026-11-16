@@ -138,3 +138,20 @@ Reviewed during the **16 November 2026** exercise. Official behavior references 
 | Editor-lock background | [WOPI concepts and lock expiry](https://learn.microsoft.com/en-us/microsoft-365/cloud-storage-partner-program/rest/concepts#lock) |
 
 The WOPI reference describes a protocol mechanism; its generic expiry rule is not proof of this tenant's exact lock type or a measured SharePoint recovery interval. The owner attributes the original file's recovery to time after closing Word. Link removal and restoring inheritance are distinct operations; inherited entries can be copied to an item's unique scope when it is shared. A visible Copilot button is not a validated Copilot session.
+
+## Day 09 implementation references
+
+Reviewed during the **16 November 2026** exercise. These official behavior references are separate from the owner's captures and functional confirmations.
+
+| Area | Official source |
+| --- | --- |
+| Work sync client and propagation | [Sync your computer's files and folders with OneDrive](https://support.microsoft.com/en-us/onedrive/sync-your-computer-s-files-and-folders-with-onedrive?ad=US&rs=en-US&ui=en-US) |
+| Client context and settings | [Access OneDrive settings](https://support.microsoft.com/en-us/onedrive/how-to-access-onedrive-settings) |
+| Availability states | [Files On-Demand for Windows](https://support.microsoft.com/en-gb/onedrive/save-disk-space-with-onedrive-files-on-demand-for-windows?ad=gb&rs=en-gb&ui=en-us) and [OneDrive icons](https://support.microsoft.com/en-us/onedrive/what-do-the-onedrive-icons-mean) |
+| Controlled pause and Resume | [Pause and resume OneDrive sync](https://support.microsoft.com/en-us/onedrive/how-to-pause-and-resume-onedrive-sync) |
+| Browser replacement | [Upload problems and Replace](https://support.microsoft.com/en-us/onedrive/fix-problems-uploading-files-on-the-onedrive-website) |
+| Earlier contents | [Restore a previous version](https://support.microsoft.com/en-gb/onedrive/restore-a-previous-version-of-a-file-stored-in-onedrive) |
+| Deleted item | [Restore your OneDrive files](https://support.microsoft.com/en-us/onedrive/restore-your-onedrive-files) |
+| User workspace and shared sites | [Organize documents and sites in Microsoft 365](https://support.microsoft.com/en-us/onedrive/sharepoint/organize-documents-and-sites-in-microsoft-365) |
+
+No generic retention period is asserted as this tenant's configured policy. The exercise verifies text recovery of one synthetic item, not independent backup coverage or a measured recovery SLA.

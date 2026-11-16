@@ -1,6 +1,6 @@
 # Functional check matrix
 
-Current status after Stages 01–08: **32 global checks: 22 PASS, 10 NOT_RUN.** Stages 09–14 remain PLANNED.
+Current status after Stages 01–09: **32 global checks: 24 PASS, 8 NOT_RUN.** Stages 10–14 remain PLANNED.
 
 | Check | First execution and evidence |
 | --- | --- |
@@ -26,8 +26,10 @@ Current status after Stages 01–08: **32 global checks: 22 PASS, 10 NOT_RUN.** 
 | T18 — knowledge reader | Day 08: Piotr reads original KB-01 while editing is unavailable |
 | T19 — knowledge editor | Day 08: Marek saves an edit and Anna sees it after reopening |
 | T20 — isolated folder boundary | Day 08: Visitors folder grant removed, Piotr denied with positive controls, inheritance and TXT access restored |
+| T21 — OneDrive sync recovery | Day 09: paused local label V1 / cloud V2; Resume and actual local reopening verify V2 |
+| T22 — file recovery | Day 09: history and recycle-bin restores each return full original V1 in web/local views |
 
-See [test-matrix.csv](test-matrix.csv) and detailed records for [Day 01](day-01.md), [Day 02](day-02.md), [Day 03](day-03.md), [Day 04](day-04.md), [Day 05](day-05.md), [Day 06](day-06.md), [Day 07](day-07.md) and [Day 08](day-08.md). T06 remains one matrix entry despite multiple phases. Other supporting observations do not increase the 32-check count.
+See [test-matrix.csv](test-matrix.csv) and detailed records for [Day 01](day-01.md), [Day 02](day-02.md), [Day 03](day-03.md), [Day 04](day-04.md), [Day 05](day-05.md), [Day 06](day-06.md), [Day 07](day-07.md), [Day 08](day-08.md) and [Day 09](day-09.md). T06 remains one matrix entry despite multiple phases. Other supporting observations do not increase the 32-check count.
 
 Allowed results:
 
@@ -38,9 +40,11 @@ Allowed results:
 
 Saved settings, direct observations and owner-reported results are labelled separately. Non-receipt checks have stated observation windows; mailbox availability does not establish desktop activation. Existing MFA claims do not prove fresh push approval. The initial internal alias attempt was inconclusive for its exact target, so the external pair establishes T05. Day 04 additionally attributes selected session, persistence and restoration checks to the owner; pre-send Tracking statuses are distinguished from actual room replies. Day 05 distinguishes captured SMTP lookup diagnostics, configured rule code, actual rejection text and Trace recovery. The unresolved role-delegation exception is recorded separately from passed mail-flow checks. Day 07 extends T16 without adding a PASS count and adds T17; final private-membership restoration, site-root comparison and two-way audio include owner reports. The mobile image proves received presentation, not audio or call-quality metrics. Day 06 separates Piotr as the active Word user from the subscription still naming Marek; its approximately 60-second non-receipt and selected recovery controls are owner-confirmed.
 
-T18–T20 are now PASS. T23 support triage and other later checks remain NOT_RUN despite related baseline observations. Stage completion follows all relevant exit checks, not a directory's existence.
+T18–T22 are now PASS. T23 support triage and other later checks remain NOT_RUN despite related baseline observations. Stage completion follows all relevant exit checks, not a directory's existence.
 
 These are manual workload results. No Pester or CI workload tests were run. Documentation link/count checks are separate from live service verification.
 
 
 Day 08 combines role/content/denial captures with owner-reported link revocation, effective-permission changes and inheritance restoration. The old link is explicitly invalid while library access remains. The DOCX lock recovered after closure/waiting according to the owner; no exact release time or successful forced-unlock command is asserted.
+
+Day 09 uses the owner-selected corrected 02 for the paused label mismatch; its third line is not the original baseline. Full original contents are visible after both recoveries in 05/07. Actual file location, fresh reopening, delete propagation and final client health include explicit owner confirmations; no exact sync latency or independent backup test is inferred.

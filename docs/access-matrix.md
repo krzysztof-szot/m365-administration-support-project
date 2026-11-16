@@ -1,13 +1,13 @@
 # Access matrix — observed configuration and future targets
 
-Current state after Stages 01–08. Configured membership is distinguished from effective-resource tests.
+Current state after Stages 01–09. Configured membership is distinguished from effective-resource tests.
 
 ## Observed configuration and functional results
 
 | Resource | Anna | Piotr | Marek | Evidence / limit |
 | --- | --- | --- | --- | --- |
 | Own user mailbox | Verified send/receive | Verified after license repair | Verified as internal sender | Days 01–06; Marek desktop/web mail and Apps activation separately verified in Day 06 |
-| Own OneDrive | Create/save/reopen verified | Not tested | Not tested | Day 01 only |
+| Own work OneDrive | Create/save/reopen verified | Not tested | Local/web sync, Files On-Demand and history/recycle-bin recovery verified | Anna Day 01; Marek Day 09; no new cross-user permission test |
 | SG-M365-MFA-Pilot | Direct member | Direct member | Direct member | Day 02 09; policy results recorded separately |
 | BFL-M365-Finance Microsoft 365 group | Owner and member | Member | Not listed | Day 02 12–14 configuration; Day 07 adds Teams and verifies the standard/private file boundary; From a group and privacy owner-confirmed |
 | DL-M365-Finance final state | Owner and member / receives | Member / receives after restoration | Not member / allowed internal sender | Day 02 16–20; Day 03 07–09; non-receipt controls are bounded owner reports |
@@ -56,3 +56,9 @@ Stage 07 attached Teams to the existing Private Finance group in the owner-confi
 Administrative identities are separate. The CA configuration role was removed; the recorded recipient-admin assignment remains the retained Exchange lab setup; no removal was reported through Day 05. Stage 05 used bg01 for rule operations and did not establish a repaired least-privilege delegation. Use ordinary user sessions for effective access checks and record other grants, propagation and restoration before explaining a denial or retained access.
 
 [Baseline](01-environment-baseline.md) · [Day 02 evidence](../evidence/day-02/README.md) · [Day 03 evidence](../evidence/day-03/README.md) · [Day 04 evidence](../evidence/day-04/README.md) · [Day 05 evidence](../evidence/day-05/README.md) · [Day 06 evidence](../evidence/day-06/README.md) · [Day 07 evidence](../evidence/day-07/README.md) · [Day 08 evidence](../evidence/day-08/README.md)
+
+## Stage 09 storage context
+
+Marek's user workspace is synchronized to BFL-WKS01, with the original M365-Lab-D09 TXT restored to full V1 and the client healthy. The separate V2 helper remains in VM Downloads outside OneDrive. Existing Knowledge library roles remain the Stage 08 baseline; comparison does not imply that library was synchronized or that Piotr was tested against Marek's OneDrive. Leaver handover remains untested.
+
+[Day 09 evidence](../evidence/day-09/README.md) · [Day 09 results](../tests/day-09.md)

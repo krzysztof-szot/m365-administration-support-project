@@ -12,6 +12,10 @@ Produce useful incident records, user communication and escalation material.
 
 Confirm the required service entitlement, task-appropriate role, affected synthetic identities and recovery path. Record the actual tenant/client context privately. Earlier stages provide the baseline; unresolved prerequisites remain BLOCKED rather than assumed successful.
 
+## Carry-forward from Stage 09
+
+Nine guided stages and fourteen case records are complete. Marek's OneDrive client is resumed; the original lab TXT is restored to full V1, while a separate V2 helper remains in VM Downloads. These results can inform support material, but do not complete this stage's current Service health/Message center review, three user articles, second-line escalation or T23. No earlier healthy service observation should be presented as a new outage.
+
 ## Planned exercises
 
 1. Maintain tickets throughout the project and review impact, urgency and escalation criteria here.

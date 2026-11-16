@@ -11,6 +11,6 @@ M365-009,06,Outlook,Incident,Mailbox behavior differs between browser and deskto
 M365-010,07,Teams,Incident,Team member cannot access the private channel,RESOLVED
 M365-011,08,SharePoint,ServiceRequest,Knowledge-site reader must not edit documents,RESOLVED
 M365-012,08,SharePoint,Incident,User retains document access after one link is revoked,RESOLVED
-M365-013,09,OneDrive,Incident,Paused sync leaves the local test file stale,PLANNED
-M365-014,09,OneDrive,ServiceRequest,Restore a previous version and a deleted synthetic file,PLANNED
+M365-013,09,OneDrive,Incident,Paused sync leaves the local test file stale,RESOLVED
+M365-014,09,OneDrive,ServiceRequest,Restore a previous version and a deleted synthetic file,RESOLVED
 M365-015,12,Microsoft365,ServiceRequest,Offboard the employee and hand approved data to a custodian,PLANNED

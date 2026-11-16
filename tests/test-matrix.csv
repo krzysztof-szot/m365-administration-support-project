@@ -19,8 +19,8 @@ T17,07,Private-channel boundary,Authorized channel member succeeds and excluded 
 T18,08,SharePoint reader,Reader opens the document but cannot edit it,Piotr opens original KB-01 with the saved Marek line; Viewing/disabled controls captured and editing unavailable owner-confirmed,PASS,tests/day-08.md
 T19,08,SharePoint member,Member can make and save the intended change,"Marek saves the intended KB-01 edit; Anna sees it after reopening, owner-confirmed; saved line visible in reader capture",PASS,tests/day-08.md
 T20,08,SharePoint excluded identity,Excluded identity is denied after other access paths are checked,Folder Visitors grant temporarily removed after stopping inheritance; Piotr denied with working Marek TXT and Piotr KB-01 controls; expected effective-access checks and restored inheritance/TXT access owner-confirmed,PASS,tests/day-08.md
-T21,09,Sync recovery,Changes appear in browser and client after sync resumes,Not recorded,NOT_RUN,None
-T22,09,Version and recycle-bin recovery,Restored content matches the synthetic baseline,Not recorded,NOT_RUN,None
+T21,09,Sync recovery,Changes appear in browser and client after sync resumes,Paused client: web V2 and actual OneDrive-folder V1 label; Resume and fresh reopening show local V2 with healthy sync; corrected capture has mixed third line and is not full-baseline proof,PASS,tests/day-09.md
+T22,09,Version and recycle-bin recovery,Restored content matches the synthetic baseline,History 1.0 restore and OneDrive recycle-bin restore each return full original three-line V1 in web and local; deletion propagation and final health owner-confirmed,PASS,tests/day-09.md
 T23,10,Service health triage,Actual service state is distinguished from training scenarios,Not recorded,NOT_RUN,None
 T24,11,Report reconciliation,Selected rows match independent workload reads,Not recorded,NOT_RUN,None
 T25,11,Insufficient report permission,Useful error or incomplete status is returned without changing configuration,Not recorded,NOT_RUN,None
