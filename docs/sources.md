@@ -155,3 +155,19 @@ Reviewed during the **16 November 2026** exercise. These official behavior refer
 | User workspace and shared sites | [Organize documents and sites in Microsoft 365](https://support.microsoft.com/en-us/onedrive/sharepoint/organize-documents-and-sites-in-microsoft-365) |
 
 No generic retention period is asserted as this tenant's configured policy. The exercise verifies text recovery of one synthetic item, not independent backup coverage or a measured recovery SLA.
+
+## Day 10 implementation references
+
+Reviewed **17 November 2026**. Tenant status and Message center post contents come from the owner's captures and attributed reports, not from a public status-page inference.
+
+| Area | Official reference |
+| --- | --- |
+| Current service review | [Check Microsoft 365 service health](https://learn.microsoft.com/en-us/microsoft-365/enterprise/view-service-health?view=o365-worldwide) |
+| Change review | [Microsoft 365 Message center](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/message-center?view=o365-worldwide) |
+| User procedures | Microsoft support links are included in each [knowledge article](../knowledge-base/README.md) |
+| Version entry menu | [View version history](https://support.microsoft.com/en-us/sharepoint/data-and-lists/view-the-version-history-of-an-item-or-file-in-a-list-or-library) |
+| RBAC expectations | [Exchange Online permissions and role mapping](https://learn.microsoft.com/en-us/exchange/permissions-exo/permissions-exo) |
+| Role-group context | [Manage role groups](https://learn.microsoft.com/en-us/exchange/permissions-exo/role-groups) |
+| Proposed assignment read | [Get ManagementRoleAssignment](https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/get-managementroleassignment?view=exchange-ps) |
+
+The documented Global Administrator mapping and regular/delegating-assignment distinction guide a proposed second-line read; they do not establish this session's effective assignments, scopes or root cause. No diagnostic command ran for Stage 10. Microsoft's future rollout and repair forecasts remain forecasts.

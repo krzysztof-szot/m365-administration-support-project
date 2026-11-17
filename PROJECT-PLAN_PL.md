@@ -1,8 +1,8 @@
 # Plan projektu Microsoft 365 Administration & Support
 
-Aktualizacja: 16 listopada 2026 r.
+Aktualizacja: 17 listopada 2026 r.
 
-Etapy 01–09 są COMPLETE; etapy 10–14 pozostają PLANNED. Opublikowano 133 obrazy: Day 01 — 31, Day 02 — 21, Day 03 — 11, Day 04 — 27, Day 05 — 14, Day 06 — 9, Day 07 — 6, Day 08 — 7, Day 09 — 7. Globalna tabela ma 24 PASS i 8 NOT_RUN. W Day 05 doszły T11–T13, w Day 06 T14–T15, w Day 07 T17, w Day 08 T18–T20, w Day 09 T21–T22; T16 rozszerzono bez podwójnego liczenia; fazy kontrolne i odzyskanie nie tworzą dodatkowych numerów testów. Czternaście przypadków M365-001–014 jest rozwiązanych jako ćwiczenia laboratoryjne.
+Etapy 01–10 są COMPLETE; etapy 11–14 pozostają PLANNED. Opublikowano 137 obrazów: Day 01 — 31, Day 02 — 21, Day 03 — 11, Day 04 — 27, Day 05 — 14, Day 06 — 9, Day 07 — 6, Day 08 — 7, Day 09 — 7, Day 10 — 4. Globalna tabela ma 26 PASS i 6 NOT_RUN. W Day 05 doszły T11–T13, w Day 06 T14–T15, w Day 07 T17, w Day 08 T18–T20, w Day 09 T21–T22, w Day 10 T23 i T31; T16 rozszerzono bez podwójnego liczenia; fazy kontrolne i odzyskanie nie tworzą dodatkowych numerów testów. Czternaście przypadków M365-001–014 jest rozwiązanych jako ćwiczenia laboratoryjne.
 
 Zweryfikowano pocztę z zewnętrznym Gmail, zapis i ponowne otwarcie dokumentów OneDrive/SharePoint, trwałość wiadomości Teams oraz odmowę panelu administracyjnego dla Anny. Politykę MFA oceniono w Report-only, włączono i uzyskano Success z istniejącym claimem MFA. Świeże zatwierdzenie push nie zostało uchwycone. Dodatkową rolę CA usunięto; właściciel potwierdził dalszy dostęp adm-lab oraz nowe logowania i aktywny Global Administrator dla obu kont awaryjnych.
 
@@ -82,7 +82,21 @@ Historia w 04 zawiera 1.0 i 2.0. Restore 1.0 przywrócił wszystkie trzy pierwot
 
 Synchronizacja przenosi również usunięcia; historia i kosz to sprawdzone mechanizmy odzyskiwania w tym zakresie, nie dowód niezależnego backupu. Porównano przestrzeń użytkownika z istniejącą wspólną biblioteką Knowledge, bez dodawania synchronizacji SharePoint ani testu przekazania danych odchodzącego pracownika.
 
-Szczegóły: [Stage 09](docs/stages/09-onedrive-sync-and-recovery.md), [wyniki](tests/day-09.md), [7 dowodów](evidence/day-09/README.md), [M365-013](tickets/M365-013-onedrive-paused-sync-recovery.md) i [M365-014](tickets/M365-014-onedrive-file-recovery.md). Stage 10 pozostaje PLANNED.
+Szczegóły: [Stage 09](docs/stages/09-onedrive-sync-and-recovery.md), [wyniki](tests/day-09.md), [7 dowodów](evidence/day-09/README.md), [M365-013](tickets/M365-013-onedrive-paused-sync-recovery.md) i [M365-014](tickets/M365-014-onedrive-file-recovery.md). Na koniec Day 09 Stage 10 pozostawał PLANNED.
+
+## Zakończony Day 10
+
+17 listopada adm-lab odczytał Service health o 05:40 czasu Polski. OneDrive i SharePoint miały Healthy; Exchange/Teams advisory, a Microsoft 365 suite pięć advisories. MO1489432 dotyczy kontaktów i Speed Dial; status Service degradation i plan zakończenia poprawki 20 listopada pochodzą z relacji właściciela. Występowania objawu w labie nie sprawdzono.
+
+MC1545696 zapowiada adnotacje chronionych PDF bez usuwania etykiet. Panel pokazuje połowę–koniec stycznia 2027, szczegółowy rollout koniec stycznia; brak osobnego Act by i obowiązku włączenia funkcji. Nie wykonano testu przyszłej funkcji ani poszerzenia praw.
+
+W Knowledge są cztery instrukcje DOCX, widoczne w 03. Piotr czyta bez edycji. Helpdesk przeszedł obieg z Markiem. Stary link po usunięciu zwrócił This link has been removed, a dokument nadal otwierał się przez bibliotekę. T31 zachowuje przypisanie do Stage 08, lecz jawny PASS zapisano przy tym powtórzeniu w Stage 10; liczba identyfikatorów testów nie wzrosła.
+
+Osobny M365-Lab-D10/LAB-D10-KB-RECOVERY-01.txt wrócił do pełnego V1 przez historię według EN i przez kosz według DE. Wersja EN wymagała doprecyzowania w czacie; końcowe wyniki były poprawne, a DE wykonano bez problemu. 04 pokazuje pełną treść lokalną i obecność pliku w web, nie podgląd treści w chmurze. Pełne V1 web i zdrowy klient są potwierdzone tekstowo. Nie opisujemy tego jako samodzielnego assessmentu.
+
+Przygotowano wspomagany przegląd zgłoszeń i pakiet eskalacji błędu delegacji Exchange. Brak wysłanego zgłoszenia, wykonanej diagnostyki PowerShell i naprawy RBAC. Backlog pozostaje 14 rozwiązanych / 1 planowany; przyszłe przekazanie danych pracownika nadal nie jest wykonane.
+
+Szczegóły: [Stage 10](docs/stages/10-support-operations-and-knowledge.md), [wyniki](tests/day-10.md), [4 dowody](evidence/day-10/README.md), [instrukcje](knowledge-base/README.md), [przegląd zgłoszeń](tickets/stage-10-case-review.md) i [pakiet eskalacji](tickets/escalations/exchange-role-delegation.md).
 
 ## Cel i sposób pracy
 
@@ -152,7 +166,7 @@ Szczegółowe zadania i warunki zakończenia: [etap 09](docs/stages/09-onedrive-
 
 ### 10. Support i instrukcje — dzień 19–20
 
-Zgłoszenia prowadź od początku projektu. Tutaj uporządkuj wpływ, pilność, eskalację, Service health i Message center. Przygotuj trzy instrukcje użytkownika, w tym niemiecki odpowiednik jednej z nich.
+Wykonano przegląd Service health i Message center, trzy instrukcje EN i niemiecki odpowiednik, odczyt Piotra bez edycji oraz odtworzenie wybranych procedur. Przygotowano przegląd wpływu/pilności i pakiet do drugiej linii dla nierozwiązanego RBAC. **Stage 10 COMPLETE; T23/T31 PASS.** Pakiet nie został wysłany, a problem delegacji nie jest oznaczony jako naprawiony.
 
 Szczegółowe zadania i warunki zakończenia: [etap 10](docs/stages/10-support-operations-and-knowledge.md).
 
@@ -188,13 +202,13 @@ Szczegółowe zadania i warunki zakończenia: [etap 14](docs/stages/14-portfolio
 - Instrukcje użytkownika, w tym jeden niemiecki odpowiednik.
 - Zweryfikowany runbook cyklu życia i pięć samodzielnych zadań końcowych.
 
-To cele całego projektu. Etapy 01–09 są COMPLETE, a etapy 10–14 pozostają PLANNED. Publikowane wyniki muszą odpowiadać zapisanym obserwacjom i dowodom; przypisanie licencji lub utworzenie pliku nie kończy etapu.
+To cele całego projektu. Etapy 01–10 są COMPLETE, a etapy 11–14 pozostają PLANNED. Publikowane wyniki muszą odpowiadać zapisanym obserwacjom i dowodom; przypisanie licencji lub utworzenie pliku nie kończy etapu.
 
 W Day 01 wdrożono ograniczony pilot MFA przez Conditional Access w istniejącym tenancie. Windows 11, Chrome 157.0.8103.52 dla Anny i Edge 157.0.4341.46 dla administratorów zapisano na podstawie raportu właściciela. Service health pokazało pięć advisories dla Microsoft 365 suite; nie wnioskujemy z tego o zdrowiu wszystkich usług ani o odtworzonym incydencie. Licencje Premium umożliwiają rozszerzenia z Intune. Dodatkowy [pilot Copilot](docs/copilot-pilot-plan.md) obejmuje trzy sesje, około 5–7 godzin, zintegrowane z etapami 06, 08, 10 i 13; mamy jedno miejsce Copilot. Własna domena i udostępnienie zewnętrzne pozostają rozszerzeniami. PIM, pełne odtworzenie E5/Entra Suite, hybrydowy Exchange, Teams Phone i zaawansowane holdy są poza zakresem podstawowym.
 
 ## Start
 
-Przejrzyj [wyniki](tests/README.md), [przypadki](tickets/README.md) i [baseline](docs/01-environment-baseline.md), a następnie rozpocznij [etap 10](docs/stages/10-support-operations-and-knowledge.md). Rzeczywiste dane logowania, domenę, identyfikatory, termin triala i szczegóły rozliczeń przechowuj prywatnie. Źródła techniczne i licencyjne: [Microsoft](docs/sources.md).
+Przejrzyj [wyniki](tests/README.md), [przypadki](tickets/README.md) i [baseline](docs/01-environment-baseline.md), a następnie rozpocznij [etap 11](docs/stages/11-powershell-reporting.md). Rzeczywiste dane logowania, domenę, identyfikatory, termin triala i szczegóły rozliczeń przechowuj prywatnie. Źródła techniczne i licencyjne: [Microsoft](docs/sources.md).
 
 ## Screeny podczas ćwiczeń
 

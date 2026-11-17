@@ -12,6 +12,12 @@ Report selected license, delegation and membership state and reconcile it with i
 
 Confirm the required service entitlement, task-appropriate role, affected synthetic identities and recovery path. Record the actual tenant/client context privately. Earlier stages provide the baseline; unresolved prerequisites remain BLOCKED rather than assumed successful.
 
+## Carry-forward from Stage 10
+
+Ten stages are complete, with 26 PASS / 6 NOT_RUN and 14 resolved / 1 planned backlog cases. Current service/change review, user articles and a second-line package are documented. The Exchange RBAC exception remains unresolved and its PowerShell diagnosis deferred. Neither the package nor the proposed command names establish an executed report.
+
+Confirm fresh module/authentication context and read permissions for each report contract. T24/T25 remain NOT_RUN. Independent assessment and lifecycle handover are also still planned.
+
 ## Planned exercises
 
 1. Implement the three scoped reports listed in scripts/README.md only after manual exercises.

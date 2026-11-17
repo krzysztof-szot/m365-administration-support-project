@@ -1,6 +1,6 @@
 # Access matrix — observed configuration and future targets
 
-Current state after Stages 01–09. Configured membership is distinguished from effective-resource tests.
+Current state after Stages 01–10. Configured membership is distinguished from effective-resource tests.
 
 ## Observed configuration and functional results
 
@@ -18,6 +18,7 @@ Current state after Stages 01–09. Configured membership is distinguished from 
 | Finance Team | Owner | Member | Not listed | Day 07 01; From a group and Private owner-confirmed; no new Marek direct-file denial test |
 | Finance-Operations standard file | Creator; sees Piotr saved change | Opens/edits/saves through Teams and SharePoint | Not tested | Day 07 02 plus owner controls; extends T16 |
 | Finance-Confidential private file | Sole retained channel Owner; opens file | Initially denied; temporary Member access verified; removed and denied again in fresh session | Not a channel member; direct access not tested | Day 07 03–05 plus final owner confirmations; T17 PASS |
+| Knowledge articles | Uploaded; Anna attribution in Modified By | All four read without editing, owner-confirmed | EN/DE recovery branches on own work OneDrive, owner-confirmed | Day 10 03/04 plus reported controls; existing site roles retained |
 | Knowledge site and KB-01 | Full Control; creator; sees reopened edit | Read; content opens, editing unavailable | Edit; saved change verified by Anna | Day 08 02–04 and owner confirmations; T18/T19 PASS |
 | KB-01 sharing link | Created and revoked controlled link | Old URL explicitly removed; library navigation still works | No additional link test | Day 08 05 shows opening only; audience and revocation owner-confirmed; final item inheritance/ACL not separately captured |
 | LAB-D08-Restricted / TXT | Owner control retained | Opens before; denied during restriction; opens after restoration | Opens during restriction | Day 08 06/07 plus expected effective-access checks and restoration owner-confirmed; T20 PASS; final folder inherits Knowledge |
@@ -62,3 +63,9 @@ Administrative identities are separate. The CA configuration role was removed; t
 Marek's user workspace is synchronized to BFL-WKS01, with the original M365-Lab-D09 TXT restored to full V1 and the client healthy. The separate V2 helper remains in VM Downloads outside OneDrive. Existing Knowledge library roles remain the Stage 08 baseline; comparison does not imply that library was synchronized or that Piotr was tested against Marek's OneDrive. Leaver handover remains untested.
 
 [Day 09 evidence](../evidence/day-09/README.md) · [Day 09 results](../tests/day-09.md)
+
+## Stage 10 reader and retained access checks
+
+Four articles are available in Knowledge. Piotr reads them without editing, with German glyphs confirmed. The sharing procedure explicitly reproduces old-URL removal and retained KB-01 library access; it does not claim a new complete item ACL audit or reset of inheritance. No broader access grant was made for the future PDF announcement. D10 recovery affects Marek's separate synthetic OneDrive file, not a new SharePoint sync relationship or leaver handover.
+
+[Day 10 results](../tests/day-10.md) · [Articles](../knowledge-base/README.md)

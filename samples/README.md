@@ -8,3 +8,5 @@ Display names and product assignments are supported by the Day 01/02 evidence. P
 These are curated samples, not raw Graph/Exchange exports or workplace data. No real domain, tenant identifier, password or billing information is included.
 
 M365-013 verifies resumed OneDrive synchronization; M365-014 verifies full-content previous-version and deleted-file restoration. The synchronized original ends at V1; the Downloads V2 helper is retained outside OneDrive. M365-015 offboarding remains planned.
+
+Stage 10 adds a case-impact/urgency review, a prepared escalation package and user-tested knowledge procedures. It does not add a backlog ID or resolve M365-015; that offboarding case remains planned. The Exchange RBAC exception is still unresolved.

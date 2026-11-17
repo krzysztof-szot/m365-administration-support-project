@@ -24,3 +24,9 @@ The [backlog](../samples/ticket-backlog.csv) keeps the remaining case PLANNED. U
 An expected failure in a controlled exercise is not a real outage. Preserve observed errors and source attribution; do not invent error codes, formal SLA priorities or transport traces. Record windows for non-receipt and distinguish missing evidence from a failed functional check.
 
 Suggested workflow: PLANNED → IN_PROGRESS → RESOLVED, or BLOCKED with the actual dependency. The [support-case issue form](../.github/ISSUE_TEMPLATE/support-case.yml) can track future work; these case documents contain the final lab record.
+
+## Stage 10 operational review
+
+The [case review](stage-10-case-review.md) compares observed impact, unknown business urgency, workarounds and conditional escalation criteria. The [second-line package](escalations/exchange-role-delegation.md) preserves the unresolved Stage 05 delegation error, evidence limits and proposed read checks. Both are prepared with assistant support; no support message was sent or fresh RBAC investigation executed. The 14 resolved / 1 planned backlog is unchanged.
+
+The [knowledge articles](../knowledge-base/README.md) have attributed user reproduction. Those tests recheck existing capabilities and do not create extra incident IDs.

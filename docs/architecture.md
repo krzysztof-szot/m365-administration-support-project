@@ -1,6 +1,6 @@
 # Lab architecture — implemented baseline and target extensions
 
-**Stages 01–09 COMPLETE.** Three pilots, the MFA scope, the Private Finance Microsoft 365 group, a distribution list, Anna's Finance alias, Helpdesk and the room mailbox are implemented. Delegated mail, calendar permission restoration, room conflict/recovery and NDR/Trace-based mail-flow rejection/control/recovery are verified. The scoped exercise rule remains Disabled. BFL-WKS01 now has active Microsoft 365 Apps and classic Outlook, with identity and offline-mode recovery plus desktop delegation verified. Finance now has standard/private channels, separate parent/channel sites and verified temporary private membership plus a cross-device meeting. The independent knowledge site now has verified read/edit roles, metadata, link revocation and an isolated folder denial/restoration. The diagram combines observed components and explicitly planned extensions; it is not a protocol trace.
+**Stages 01–10 COMPLETE.** Three pilots, the MFA scope, the Private Finance Microsoft 365 group, a distribution list, Anna's Finance alias, Helpdesk and the room mailbox are implemented. Delegated mail, calendar permission restoration, room conflict/recovery and NDR/Trace-based mail-flow rejection/control/recovery are verified. The scoped exercise rule remains Disabled. BFL-WKS01 now has active Microsoft 365 Apps and classic Outlook, with identity and offline-mode recovery plus desktop delegation verified. Finance now has standard/private channels, separate parent/channel sites and verified temporary private membership plus a cross-device meeting. The independent knowledge site now has verified read/edit roles, metadata, link revocation and an isolated folder denial/restoration. The diagram combines observed components and explicitly planned extensions; it is not a protocol trace.
 
 ```mermaid
 flowchart TB
@@ -29,7 +29,7 @@ flowchart TB
     Exchange --> Rule["Scoped transport rule<br/>Marek AND Piotr AND subject marker<br/>Final state: Disabled"]
     Exchange --- Trace["Message Trace verified<br/>Invalid recipient · Rule rejection · Recovery"]
     Users --> Knowledge["BFL-M365-Knowledge<br/>Independent communication site<br/>Anna owner; Marek editor; Piotr reader"]
-    Knowledge --> Library["Knowledge / original KB-01<br/>Mail metadata; read/edit verified"]
+    Knowledge --> Library["Knowledge / KB-01 and four articles<br/>Read/edit and selected procedures verified"]
     Library --> Restricted["LAB-D08-Restricted / TXT<br/>Visitors grant removal tested<br/>Final inheritance restored"]
     Reports["Read-only reports — PLANNED"] -.-> Portal
 ```
@@ -57,3 +57,5 @@ The independent knowledge-site core is verified; Marek's OneDrive synchronizatio
 [Access matrix](access-matrix.md) · [Baseline](01-environment-baseline.md) · [Roadmap](roadmap.md) · [Evidence](../evidence/README.md)
 
 Stage 09 contrasts the user OneDrive workspace with the existing shared Knowledge library. It does not add SharePoint client sync, a backup service or a leaver handover. The work client is resumed; full V1 remains in the original lab folder, with a separate V2 helper retained in VM Downloads. General Backed up and synced status does not independently establish Desktop/Documents/Pictures backup scope.
+
+Stage 10 uses the existing Knowledge library for four user instructions and Marek's separate M365-Lab-D10 file for version/recycle-bin reproduction. A current Service health advisory and a future Message center notice are reviewed separately from lab symptoms. The prepared RBAC escalation package is documentation for an unresolved exception, not a new service integration, executed diagnostic report or external support submission.

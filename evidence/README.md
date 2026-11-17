@@ -1,6 +1,6 @@
 # Evidence handling
 
-**133 owner-supplied captures are indexed across nine completed stages.** Configuration, captured functional results and owner-reported checks are labelled separately.
+**137 owner-supplied captures are indexed across ten completed stages.** Configuration, captured functional results and owner-reported checks are labelled separately.
 
 | Stage | Screenshots | Results |
 | --- | --- | --- |
@@ -13,8 +13,9 @@
 | [Day 07](day-07/README.md) | 6 | Finance Team, standard/private files, membership grant/removal and a phone receiving shared content; five PNGs and one JPG |
 | [Day 08](day-08/README.md) | 7 | Independent knowledge site, roles, Mail/Draft metadata, reader content, link opening, folder denial and inherited group baseline |
 | [Day 09](day-09/README.md) | 7 | Work OneDrive baseline, paused/resumed labels, history and full-content version/deleted-file recovery |
+| [Day 10](day-10/README.md) | 4 | Current Service health, future change notice, four Knowledge articles and local-content/cloud-presence recovery evidence |
 
-Future evidence folders do not establish execution. Stages 10–14 remain planned.
+Future evidence folders do not establish execution. Stages 11–14 remain planned.
 
 ## Current publication review
 
@@ -27,6 +28,8 @@ Day 07 uses the owner's corrected 04 with the tenant name masked in both the hos
 Day 08 preserves six numbered owner images and the additional folder-inheritance clipboard capture as seven PNGs. The [Day 08 index](day-08/README.md) identifies 05 as link opening rather than a settings capture, attributes revocation/restoration and expected permission-check changes to the owner, and retains the owner-uploaded filenames even where 05 describes opening rather than settings. The unredacted lock troubleshooting frame is not published; its sanitized observation is described in the stage record.
 
 Day 09 preserves seven selected PNGs, including the owner's corrected 02. Its local third line differs from the original baseline, so full recovery uses 05/07 and explicit owner confirmations. The [Day 09 index](day-09/README.md) separates labels, complete text, status icons and reported controls; it does not infer latency, final pin retention, payload length or independent backup.
+
+Day 10 preserves four owner PNGs. The [Day 10 index](day-10/README.md) distinguishes current status from reported lab impact, broad/detailed future rollout windows, library publication from reader tests, and local contents from owner-confirmed cloud contents. Article outcomes and the removed-link error include explicit text confirmations; no additional screenshots of every click were required.
 
 ## Capture checkpoints during guided work
 
