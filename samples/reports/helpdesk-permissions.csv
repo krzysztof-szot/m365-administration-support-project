@@ -1,0 +1,8 @@
+Provenance,Actor,Mailbox,Permission,SourceIndex,Principal,SourceAccessRights,AccessControlType,IsInherited,ReadStatus
+LIVE_REDACTED,adm-lab,bfl-m365-helpdesk,FullAccess,1,NT AUTHORITY\SELF,FullAccess;ReadPermission,Allow,False,READ
+LIVE_REDACTED,adm-lab,bfl-m365-helpdesk,FullAccess,2,NT AUTHORITY\SELF,FullAccess;ExternalAccount;ReadPermission,Allow,False,READ
+LIVE_REDACTED,adm-lab,bfl-m365-helpdesk,FullAccess,3,m365.anna,FullAccess,Allow,False,READ
+LIVE_REDACTED,adm-lab,bfl-m365-helpdesk,FullAccess,4,m365.piotr,FullAccess,Allow,False,READ
+LIVE_REDACTED,adm-lab,bfl-m365-helpdesk,SendAs,1,NT AUTHORITY\SELF,SendAs,Allow,False,READ
+LIVE_REDACTED,adm-lab,bfl-m365-helpdesk,SendAs,2,m365.piotr,SendAs,Allow,False,READ
+LIVE_REDACTED,adm-lab,bfl-m365-helpdesk,SendOnBehalf,1,m365.anna,GrantSendOnBehalfTo,Grant,NOT_APPLICABLE,READ

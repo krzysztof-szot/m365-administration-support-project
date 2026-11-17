@@ -2,7 +2,7 @@
 
 Aktualizacja: 17 listopada 2026 r.
 
-Etapy 01–10 są COMPLETE; etapy 11–14 pozostają PLANNED. Opublikowano 137 obrazów: Day 01 — 31, Day 02 — 21, Day 03 — 11, Day 04 — 27, Day 05 — 14, Day 06 — 9, Day 07 — 6, Day 08 — 7, Day 09 — 7, Day 10 — 4. Globalna tabela ma 26 PASS i 6 NOT_RUN. W Day 05 doszły T11–T13, w Day 06 T14–T15, w Day 07 T17, w Day 08 T18–T20, w Day 09 T21–T22, w Day 10 T23 i T31; T16 rozszerzono bez podwójnego liczenia; fazy kontrolne i odzyskanie nie tworzą dodatkowych numerów testów. Czternaście przypadków M365-001–014 jest rozwiązanych jako ćwiczenia laboratoryjne.
+Etapy 01–11 są COMPLETE; etapy 12–14 pozostają PLANNED. Opublikowano 137 obrazów: Day 01 — 31, Day 02 — 21, Day 03 — 11, Day 04 — 27, Day 05 — 14, Day 06 — 9, Day 07 — 6, Day 08 — 7, Day 09 — 7, Day 10 — 4. Globalna tabela ma 28 PASS i 4 NOT_RUN; 25 testów offline kodu liczymy osobno. W Day 05 doszły T11–T13, w Day 06 T14–T15, w Day 07 T17, w Day 08 T18–T20, w Day 09 T21–T22, w Day 10 T23 i T31; T16 rozszerzono bez podwójnego liczenia; fazy kontrolne i odzyskanie nie tworzą dodatkowych numerów testów. Czternaście przypadków M365-001–014 jest rozwiązanych jako ćwiczenia laboratoryjne.
 
 Zweryfikowano pocztę z zewnętrznym Gmail, zapis i ponowne otwarcie dokumentów OneDrive/SharePoint, trwałość wiadomości Teams oraz odmowę panelu administracyjnego dla Anny. Politykę MFA oceniono w Report-only, włączono i uzyskano Success z istniejącym claimem MFA. Świeże zatwierdzenie push nie zostało uchwycone. Dodatkową rolę CA usunięto; właściciel potwierdził dalszy dostęp adm-lab oraz nowe logowania i aktywny Global Administrator dla obu kont awaryjnych.
 
@@ -172,7 +172,7 @@ Szczegółowe zadania i warunki zakończenia: [etap 10](docs/stages/10-support-o
 
 ### 11. Raporty PowerShell — dzień 21–23
 
-Zbuduj trzy małe raporty tylko do odczytu: licencje, delegacje skrzynek i członkostwo grup. Określ uprawnienia, filtr do labu i obsługę błędów. Porównaj wiersze z portalem; surowe CSV zapisuj lokalnie.
+Wykonano trzy raporty tylko do odczytu na laptopie: licencje Marka (62 wiersze SPB), Finance (cztery wiersze) i Helpdesk (siedem wpisów). Wybrane wartości porównano ze świeżym portalem. Kontrola mieszana zachowała 124 wiersze i błąd osobnego identyfikatora, PARTIAL/2. W tej samej sesji Marek odczytał własną skrzynkę, ale Helpdesk pozostawał niewidoczny; po przywróceniu adm-lab pełny odczyt wrócił. T24/T25 PASS w zakresie uzgodnienia danych i obsługi błędu widoczności. Nie potwierdzono konkretnej brakującej roli ani HTTP 403; dodatkowy błąd ACL ujawnił wewnętrzne 401. Ścisła kontrola ACCESS_DENIED pozostaje niepotwierdzona. Kontekst Graph zawiera także ReadWrite; nie jest demonstracją najmniejszych uprawnień. Kod ma 25 zaliczonych izolowanych testów offline na środowisku asystenta 7.6.9, oddzielonych od rzeczywistych odczytów użytkownika 7.7.0. Surowe eksporty pozostają prywatne; opublikowano wybrane zanonimizowane dane. Błąd RBAC z etapu 05 pozostaje nierozwiązany.
 
 Szczegółowe zadania i warunki zakończenia: [etap 11](docs/stages/11-powershell-reporting.md).
 
@@ -202,14 +202,14 @@ Szczegółowe zadania i warunki zakończenia: [etap 14](docs/stages/14-portfolio
 - Instrukcje użytkownika, w tym jeden niemiecki odpowiednik.
 - Zweryfikowany runbook cyklu życia i pięć samodzielnych zadań końcowych.
 
-To cele całego projektu. Etapy 01–10 są COMPLETE, a etapy 11–14 pozostają PLANNED. Publikowane wyniki muszą odpowiadać zapisanym obserwacjom i dowodom; przypisanie licencji lub utworzenie pliku nie kończy etapu.
+To cele całego projektu. Etapy 01–11 są COMPLETE, a etapy 12–14 pozostają PLANNED. Publikowane wyniki muszą odpowiadać zapisanym obserwacjom i dowodom; przypisanie licencji lub utworzenie pliku nie kończy etapu.
 
 W Day 01 wdrożono ograniczony pilot MFA przez Conditional Access w istniejącym tenancie. Windows 11, Chrome 157.0.8103.52 dla Anny i Edge 157.0.4341.46 dla administratorów zapisano na podstawie raportu właściciela. Service health pokazało pięć advisories dla Microsoft 365 suite; nie wnioskujemy z tego o zdrowiu wszystkich usług ani o odtworzonym incydencie. Licencje Premium umożliwiają rozszerzenia z Intune. Dodatkowy [pilot Copilot](docs/copilot-pilot-plan.md) obejmuje trzy sesje, około 5–7 godzin, zintegrowane z etapami 06, 08, 10 i 13; mamy jedno miejsce Copilot. Własna domena i udostępnienie zewnętrzne pozostają rozszerzeniami. PIM, pełne odtworzenie E5/Entra Suite, hybrydowy Exchange, Teams Phone i zaawansowane holdy są poza zakresem podstawowym.
 
 ## Start
 
-Przejrzyj [wyniki](tests/README.md), [przypadki](tickets/README.md) i [baseline](docs/01-environment-baseline.md), a następnie rozpocznij [etap 11](docs/stages/11-powershell-reporting.md). Rzeczywiste dane logowania, domenę, identyfikatory, termin triala i szczegóły rozliczeń przechowuj prywatnie. Źródła techniczne i licencyjne: [Microsoft](docs/sources.md).
+Przejrzyj [wyniki](tests/README.md), [przypadki](tickets/README.md) i [baseline](docs/01-environment-baseline.md), a następnie rozpocznij [etap 12](docs/stages/12-employee-lifecycle.md). Rzeczywiste dane logowania, domenę, identyfikatory, termin triala i szczegóły rozliczeń przechowuj prywatnie. Źródła techniczne i licencyjne: [Microsoft](docs/sources.md).
 
 ## Screeny podczas ćwiczeń
 
-Przed istotnym punktem dowodowym prowadzący wskazuje moment wykonania screena, widok i nazwę pliku. Zgodnie z ustaleniem z Day 05 ograniczamy liczbę obrazów do potrzebnej konfiguracji i wyników; pomocnicze odczyty mogą być potwierdzone tekstowo z jawnym przypisaniem źródła. [Indeks dowodów](evidence/README.md) opisuje 119 opublikowanych obrazów. W obrazach Day 03 zanonimizowano wskazane identyfikatory, domenę oraz nazwisko zewnętrznego nadawcy; ograniczenia interpretacji opisano w indeksie. W Day 04 podmieniono 02 na wersję z zasłoniętą domeną, a zapisane wyniki odróżniają konfigurację, fakty widoczne na screenach i potwierdzenia właściciela. Nazwy i moment wykonania nowych dowodów będą wskazywane podczas kolejnych ćwiczeń. Kodów QR rejestracji i sekretów uwierzytelniania nie publikujemy.
+Przed istotnym punktem dowodowym prowadzący wskazuje moment wykonania screena, widok i nazwę pliku. Zgodnie z ustaleniem z Day 05 ograniczamy liczbę obrazów do potrzebnej konfiguracji i wyników; pomocnicze odczyty mogą być potwierdzone tekstowo z jawnym przypisaniem źródła. [Indeks dowodów](evidence/README.md) opisuje 137 opublikowanych obrazów; Stage 11 ma dowody tekstowe i eksporty bez nowych screenów. W obrazach Day 03 zanonimizowano wskazane identyfikatory, domenę oraz nazwisko zewnętrznego nadawcy; ograniczenia interpretacji opisano w indeksie. W Day 04 podmieniono 02 na wersję z zasłoniętą domeną, a zapisane wyniki odróżniają konfigurację, fakty widoczne na screenach i potwierdzenia właściciela. Nazwy i moment wykonania nowych dowodów będą wskazywane podczas kolejnych ćwiczeń. Kodów QR rejestracji i sekretów uwierzytelniania nie publikujemy.

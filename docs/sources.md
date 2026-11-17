@@ -171,3 +171,26 @@ Reviewed **17 November 2026**. Tenant status and Message center post contents co
 | Proposed assignment read | [Get ManagementRoleAssignment](https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/get-managementroleassignment?view=exchange-ps) |
 
 The documented Global Administrator mapping and regular/delegating-assignment distinction guide a proposed second-line read; they do not establish this session's effective assignments, scopes or root cause. No diagnostic command ran for Stage 10. Microsoft's future rollout and repair forecasts remain forecasts.
+
+
+## Day 11 implementation references
+
+Reviewed 17 November 2026. Official behavior and permission references are separate from owner-run exports and portal confirmations.
+
+| Area | Official source |
+| --- | --- |
+| Graph submodules/runtime | [SDK installation](https://learn.microsoft.com/en-us/powershell/microsoftgraph/installation) |
+| Delegated authentication/context | [Authentication commands](https://learn.microsoft.com/en-us/powershell/microsoftgraph/authentication-commands) |
+| Returned consented scopes | [Resources and scopes](https://learn.microsoft.com/en-us/entra/msal/javascript/browser/resources-and-scopes) |
+| License API and roles | [List licenseDetails](https://learn.microsoft.com/en-us/graph/api/user-list-licensedetails?view=graph-rest-1.0) |
+| SPB product mapping | [Product/service-plan reference](https://learn.microsoft.com/en-us/entra/identity/users/licensing-service-plan-reference) |
+| Human group relations | [Owners](https://learn.microsoft.com/en-us/graph/api/group-list-owners?view=graph-rest-1.0) and [direct members](https://learn.microsoft.com/en-us/graph/api/group-list-members?view=graph-rest-1.0) |
+| Exchange runtime | [EXO module requirements](https://learn.microsoft.com/en-us/powershell/exchange/exchange-online-powershell-v2) |
+| Exchange connection/RBAC | [Connect](https://learn.microsoft.com/en-us/powershell/exchange/connect-to-exchange-online-powershell) and [permissions](https://learn.microsoft.com/en-us/exchange/permissions-exo/permissions-exo) |
+| ACL data | [Mailbox permission](https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/get-exomailboxpermission) and [recipient permission](https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/get-exorecipientpermission) |
+| Named delegation | [Manage recipient permissions](https://learn.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-permissions-for-recipients) |
+| Connection metadata | [Get ConnectionInformation](https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/get-connectioninformation) |
+| Expected tenant ID | [Find tenant ID](https://learn.microsoft.com/en-us/entra/fundamentals/how-to-find-tenant) |
+| Persistent setup consent | [Grant admin consent](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/grant-admin-consent) |
+
+Actual scopes must be inspected; requesting fewer scopes is not proof that previously consented scopes disappeared. Generic permission tables do not establish the exact roles assigned to a specific user. The observed Helpdesk visibility contrast and supplemental nested 401 are not relabelled a captured 403. A generic delegation UI statement is not substituted for the owner's actual fresh portal view.

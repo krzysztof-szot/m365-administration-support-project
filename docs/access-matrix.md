@@ -1,6 +1,6 @@
 # Access matrix — observed configuration and future targets
 
-Current state after Stages 01–10. Configured membership is distinguished from effective-resource tests.
+Current state after Stages 01–11. Configured membership is distinguished from effective-resource tests.
 
 ## Observed configuration and functional results
 
@@ -69,3 +69,12 @@ Marek's user workspace is synchronized to BFL-WKS01, with the original M365-Lab-
 Four articles are available in Knowledge. Piotr reads them without editing, with German glyphs confirmed. The sharing procedure explicitly reproduces old-URL removal and retained KB-01 library access; it does not claim a new complete item ACL audit or reset of inheritance. No broader access grant was made for the future PDF announcement. D10 recovery affects Marek's separate synthetic OneDrive file, not a new SharePoint sync relationship or leaver handover.
 
 [Day 10 results](../tests/day-10.md) · [Articles](../knowledge-base/README.md)
+
+
+## Stage 11 report authorization and coverage
+
+adm-lab successfully exports selected license, group and Helpdesk state. Graph context is delegated/Process but includes six ReadWrite scopes; the source's read-only commands do not establish least-privilege grants. No complete Entra/Exchange role audit was performed.
+
+Marek's license read of Piotr succeeds. In Exchange, a same-session Get-Mailbox read of Marek's own mailbox succeeds, while Helpdesk lookup reports not found; restoring adm-lab returns seven configured entries. This establishes account-dependent visibility and correct failure status, not deletion, an explicit 403, effective mailbox opening rights or a particular RBAC assignment. A separate supplemental ACL call exposes nested HTTP 401 whose exact cause is unconfirmed. Existing named delegation remains Anna Full Access/SOB, Piotr Full Access/Send As; no report grants Marek access.
+
+[Day 11 details](../tests/day-11.md) · [Redacted samples](../samples/reports/README.md)

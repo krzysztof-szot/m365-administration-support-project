@@ -1,6 +1,6 @@
 # Stage index
 
-Stages 01–10 are COMPLETE, with 137 indexed captures and fourteen resolved lab cases. Stages 11–14 remain PLANNED. The global matrix records **26 PASS / 6 NOT_RUN**. Evidence and reported results are separated in [Day 01](../../tests/day-01.md), [Day 02](../../tests/day-02.md), [Day 03](../../tests/day-03.md), [Day 04](../../tests/day-04.md), [Day 05](../../tests/day-05.md), [Day 06](../../tests/day-06.md), [Day 07](../../tests/day-07.md), [Day 08](../../tests/day-08.md), [Day 09](../../tests/day-09.md) and [Day 10](../../tests/day-10.md).
+Stages 01–11 are COMPLETE, with 137 indexed captures and fourteen resolved lab cases. Stages 12–14 remain PLANNED. The global matrix records **28 PASS / 4 NOT_RUN**. Evidence and reported results are separated in [Day 01](../../tests/day-01.md), [Day 02](../../tests/day-02.md), [Day 03](../../tests/day-03.md), [Day 04](../../tests/day-04.md), [Day 05](../../tests/day-05.md), [Day 06](../../tests/day-06.md), [Day 07](../../tests/day-07.md), [Day 08](../../tests/day-08.md), [Day 09](../../tests/day-09.md), [Day 10](../../tests/day-10.md) and [Day 11](../../tests/day-11.md).
 
 | Stage | Target days | Topic | Execution |
 | --- | --- | --- | --- |
@@ -14,7 +14,7 @@ Stages 01–10 are COMPLETE, with 137 indexed captures and fourteen resolved lab
 | 08 | 14–16 | [SharePoint structure, permissions and sharing](08-sharepoint-and-sharing.md) | COMPLETE |
 | 09 | 17–18 | [OneDrive synchronization and file recovery](09-onedrive-sync-and-recovery.md) | COMPLETE |
 | 10 | 19–20 | [Support operations and user knowledge](10-support-operations-and-knowledge.md) | COMPLETE |
-| 11 | 21–23 | [Read-only operational PowerShell reports](11-powershell-reporting.md) | PLANNED |
+| 11 | 21–23 | [Read-only operational PowerShell reports](11-powershell-reporting.md) | COMPLETE |
 | 12 | 24–25 | [Employee onboarding, access change and offboarding](12-employee-lifecycle.md) | PLANNED |
 | 13 | 26–27 | [Independent administration and troubleshooting assessment](13-independent-capstone.md) | PLANNED |
 | 14 | 28–30 | [Portfolio review and lab closure](14-portfolio-and-lab-closure.md) | PLANNED |

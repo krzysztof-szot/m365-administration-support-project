@@ -1,0 +1,8 @@
+Provenance,Scenario,Actor,Outcome,ExitCode,DataRows,StartedUtc
+LIVE_REDACTED,licenses-baseline,adm-lab,COMPLETE,0,62,2026-11-17T09:55:01.1323899Z
+LIVE_REDACTED,finance-baseline,adm-lab,COMPLETE,0,4,2026-11-17T09:55:02.0424264Z
+LIVE_REDACTED,helpdesk-baseline,adm-lab,COMPLETE,0,7,2026-11-17T09:59:36.4458151Z
+LIVE_REDACTED,licenses-mixed-target,adm-lab,PARTIAL,2,124,2026-11-17T10:16:56.3834570Z
+LIVE_REDACTED_CONTROL,marek-own-mailbox-positive,m365.marek,READ_SUCCEEDED,NotApplicable,1,
+LIVE_REDACTED,helpdesk-marek-visibility,m365.marek,FAILED,1,0,2026-11-17T10:44:47.7330696Z
+LIVE_REDACTED,helpdesk-admin-recovery,adm-lab,COMPLETE,0,7,2026-11-17T10:46:36.4300323Z

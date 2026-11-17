@@ -1,6 +1,6 @@
 # Thirty-day learning roadmap
 
-Status: **Stages 01–10 COMPLETE; Stages 11–14 PLANNED.** There are 137 indexed captures, fourteen resolved lab cases and **26 PASS / 6 NOT_RUN**. See [Day 01](../tests/day-01.md), [Day 02](../tests/day-02.md), [Day 03](../tests/day-03.md), [Day 04](../tests/day-04.md), [Day 05](../tests/day-05.md), [Day 06](../tests/day-06.md), [Day 07](../tests/day-07.md), [Day 08](../tests/day-08.md), [Day 09](../tests/day-09.md) and [Day 10](../tests/day-10.md). T16 was first passed early and rechecked on the new Finance Team; T17 is newly passed. Stage 08 adds T18–T20 on the independent knowledge site, with a revoked-link/library-access comparison and an isolated folder restriction/restoration.
+Status: **Stages 01–11 COMPLETE; Stages 12–14 PLANNED.** There are 137 indexed captures, fourteen resolved lab cases and **28 PASS / 4 NOT_RUN**. See [Day 01](../tests/day-01.md), [Day 02](../tests/day-02.md), [Day 03](../tests/day-03.md), [Day 04](../tests/day-04.md), [Day 05](../tests/day-05.md), [Day 06](../tests/day-06.md), [Day 07](../tests/day-07.md), [Day 08](../tests/day-08.md), [Day 09](../tests/day-09.md), [Day 10](../tests/day-10.md) and [Day 11](../tests/day-11.md). T16 was first passed early and rechecked on the new Finance Team; T17 is newly passed. Stage 08 adds T18–T20 on the independent knowledge site, with a revoked-link/library-access comparison and an isolated folder restriction/restoration.
 
 The target workload is about 50–65 hours including documentation. The ranges below are estimates, not elapsed execution dates. Record the actual subscription expiry privately and shorten the schedule if necessary. Save evidence after each session rather than waiting until the end.
 
@@ -16,7 +16,7 @@ The target workload is about 50–65 hours including documentation. The ranges b
 | 08 | 14–16 | [SharePoint structure, permissions and sharing](stages/08-sharepoint-and-sharing.md) | COMPLETE | 5–6 h |
 | 09 | 17–18 | [OneDrive synchronization and file recovery](stages/09-onedrive-sync-and-recovery.md) | COMPLETE | 3–4 h |
 | 10 | 19–20 | [Support operations and user knowledge](stages/10-support-operations-and-knowledge.md) | COMPLETE | 3–4 h |
-| 11 | 21–23 | [Read-only operational PowerShell reports](stages/11-powershell-reporting.md) | PLANNED | 6–8 h |
+| 11 | 21–23 | [Read-only operational PowerShell reports](stages/11-powershell-reporting.md) | COMPLETE | 6–8 h |
 | 12 | 24–25 | [Employee onboarding, access change and offboarding](stages/12-employee-lifecycle.md) | PLANNED | 4–5 h |
 | 13 | 26–27 | [Independent administration and troubleshooting assessment](stages/13-independent-capstone.md) | PLANNED | 4–5 h |
 | 14 | 28–30 | [Portfolio review and lab closure](stages/14-portfolio-and-lab-closure.md) | PLANNED | 2–3 h |
@@ -50,3 +50,8 @@ The one-seat [Copilot pilot](copilot-pilot-plan.md) adds three planned sessions 
 Stage 09 adds T21/T22 and M365-013/014: work OneDrive pause/resume, Files On-Demand, version-content restore and deleted-file restore. The original file ends at full V1 with healthy sync; the Downloads V2 helper is retained outside OneDrive. At Stage 09 closure, Stage 10 remained planned.
 
 Stage 10 was executed on 17 November 2026: current service/change review, three English procedures plus a German companion, selected reader reproductions, case triage review and a prepared second-line package. It adds T23 and records the directly repeated T31 result. Article reproductions are not counted as new backlog incidents; the RBAC exception remains unresolved and the package was not sent.
+
+
+## Stage 11 execution
+
+Executed on 17 November 2026 on the physical laptop: three read-only reports, selected fresh portal reconciliation, 124-row partial mixed-target control, same-session own/Helpdesk visibility contrast and successful operator recovery. T24/T25 add two matrix passes; 25 synthetic offline cases remain separate. No live 403 or full role diagnosis is asserted. The broad Graph session and persistent consent setup are disclosed; the Stage 05 RBAC exception remains unresolved.

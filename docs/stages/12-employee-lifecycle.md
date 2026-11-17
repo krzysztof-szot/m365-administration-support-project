@@ -12,6 +12,12 @@ Execute an end-to-end employee lifecycle using a verified runbook.
 
 Confirm the required service entitlement, task-appropriate role, affected synthetic identities and recovery path. Record the actual tenant/client context privately. Earlier stages provide the baseline; unresolved prerequisites remain BLOCKED rather than assumed successful.
 
+## Carry-forward from Stage 11
+
+Eleven stages are complete; the global matrix has 28 PASS / 4 NOT_RUN, with 25 offline report cases counted separately. The three reports provide selected current product, Finance and Helpdesk baselines. The operator was restored to adm-lab. Broad Graph scopes and the unconfirmed exact cause of the Exchange visibility/401 findings remain limitations; the Stage 05 RBAC exception remains unresolved.
+
+No lifecycle changes have been made. Piotr is still a provisioned pilot, Helpdesk delegation remains as recorded, and knowledge-site reader access remains. Before any lifecycle mutation, write the concrete source/target access and data-custody plan, verify the intended operator and current workloads, and preserve a recovery path. A report read is not an offboarding or handover result.
+
 ## Planned exercises
 
 1. Onboard Piotr with a license, mail, intended collaboration access and a user test.

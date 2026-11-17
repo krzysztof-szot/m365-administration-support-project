@@ -1,0 +1,9 @@
+{
+  "Description": "SHA256 of production source files verified against the selected live exports. No raw exports or tenant identifiers included.",
+  "Files": {
+    "scripts/M365Lab.Reporting.psm1": "1AD483698BCE7C39DB2445C6C553417554D1E12E35046986EDCB60DDF51E7A8B",
+    "scripts/Get-M365LabLicenseReport.ps1": "21B00FCE7C52015A1040008D6C63814195D80DB551D661160FB9D10D0DD2267E",
+    "scripts/Get-M365LabGroupReport.ps1": "6A386E46E2BE7A28A1927EE506E78FD3BB7D0FD4A49CAA2B0659309171372CA7",
+    "scripts/Get-M365LabMailboxPermissionReport.ps1": "12C868A27DA2E282ACBA319FA183DC7BD18CEB4B03952C52A2DC8083F9FB8A9B"
+  }
+}

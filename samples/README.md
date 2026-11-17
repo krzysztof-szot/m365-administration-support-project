@@ -10,3 +10,8 @@ These are curated samples, not raw Graph/Exchange exports or workplace data. No 
 M365-013 verifies resumed OneDrive synchronization; M365-014 verifies full-content previous-version and deleted-file restoration. The synchronized original ends at V1; the Downloads V2 helper is retained outside OneDrive. M365-015 offboarding remains planned.
 
 Stage 10 adds a case-impact/urgency review, a prepared escalation package and user-tested knowledge procedures. It does not add a backlog ID or resolve M365-015; that offboarding case remains planned. The Exchange RBAC exception is still unresolved.
+
+
+## Stage 11 report extracts
+
+[reports/](reports/README.md) contains reviewed live observations with domains, object identifiers and host paths removed: 11 selected license-plan rows, four Finance group/person rows, seven Helpdesk ACL/delegation rows, selected run outcomes and source SHA256 values. These are distinct from simulated offline fixtures and are not raw exports. A failed visibility lookup is not called a deleted mailbox or a captured 403. No backlog case is added.
