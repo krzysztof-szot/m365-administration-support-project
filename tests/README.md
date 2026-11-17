@@ -1,6 +1,6 @@
 # Functional check matrix
 
-Current status after Stages 01–11: **32 global checks: 28 PASS, 4 NOT_RUN.** Stages 12–14 remain PLANNED.
+Current status after Stages 01–12: **32 global checks: 31 PASS, 1 NOT_RUN.** Stages 13–14 remain PLANNED.
 
 | Check | First execution and evidence |
 | --- | --- |
@@ -31,9 +31,12 @@ Current status after Stages 01–11: **32 global checks: 28 PASS, 4 NOT_RUN.** S
 | T23 — service triage | Day 10: current advisory, untested lab impact, future change notice and controlled training are distinguished |
 | T24 — report reconciliation | Day 11: three COMPLETE exports and selected independent portal agreement |
 | T25 — non-readable report target | Day 11: same-session own-mailbox positive / Helpdesk failed lookup / admin recovery; explicit failure handling, not a captured 403 |
+| T26 — leaver new sign-in | Day 12: saved block plus fresh denied login; old-session effect separately owner-reported |
+| T27 — mailbox preservation | Day 12: verified SharedMailbox, corrected Anna grant, inspected licensing facts, unassignment and preserved-mail reading |
+| T28 — OneDrive handover | Day 12: separate Anna copy with all V1 lines reopened after block/unassignment, preservation limits recorded |
 | T31 — revoked link and remaining access | Assigned to Stage 08; explicitly consolidated PASS after Stage 10 repeats the removed old URL and retained library access |
 
-See [test-matrix.csv](test-matrix.csv) and detailed records for [Day 01](day-01.md), [Day 02](day-02.md), [Day 03](day-03.md), [Day 04](day-04.md), [Day 05](day-05.md), [Day 06](day-06.md), [Day 07](day-07.md), [Day 08](day-08.md), [Day 09](day-09.md), [Day 10](day-10.md) and [Day 11](day-11.md). T06 remains one matrix entry despite multiple phases. Other supporting observations do not increase the 32-check count.
+See [test-matrix.csv](test-matrix.csv) and detailed records for [Day 01](day-01.md), [Day 02](day-02.md), [Day 03](day-03.md), [Day 04](day-04.md), [Day 05](day-05.md), [Day 06](day-06.md), [Day 07](day-07.md), [Day 08](day-08.md), [Day 09](day-09.md), [Day 10](day-10.md) [Day 11](day-11.md) and [Day 12](day-12.md). T06 remains one matrix entry despite multiple phases. Other supporting observations do not increase the 32-check count.
 
 Allowed results:
 
@@ -44,7 +47,7 @@ Allowed results:
 
 Saved settings, direct observations and owner-reported results are labelled separately. Non-receipt checks have stated observation windows; mailbox availability does not establish desktop activation. Existing MFA claims do not prove fresh push approval. The initial internal alias attempt was inconclusive for its exact target, so the external pair establishes T05. Day 04 additionally attributes selected session, persistence and restoration checks to the owner; pre-send Tracking statuses are distinguished from actual room replies. Day 05 distinguishes captured SMTP lookup diagnostics, configured rule code, actual rejection text and Trace recovery. The unresolved role-delegation exception is recorded separately from passed mail-flow checks. Day 07 extends T16 without adding a PASS count and adds T17; final private-membership restoration, site-root comparison and two-way audio include owner reports. The mobile image proves received presentation, not audio or call-quality metrics. Day 06 separates Piotr as the active Word user from the subscription still naming Marek; its approximately 60-second non-receipt and selected recovery controls are owner-confirmed.
 
-T18–T25 and T31 are now PASS. T26–T28 and T32 remain NOT_RUN. Stage completion follows all relevant exit checks, not a directory's existence.
+T18–T28 and T31 are now PASS. Only T32 remains NOT_RUN. Stage completion follows all relevant exit checks, not a directory's existence.
 
 These include manual workload checks and owner-run read-only report exports. Stage 11 also has 25 isolated offline fixture cases on assistant PowerShell 7.6.9, counted separately from the 32 IDs. No Pester or workload CI is claimed. Documentation link/count checks remain separate.
 
@@ -59,3 +62,7 @@ Day 10 records T23 and the repeated T31 result without changing the 32 IDs or re
 ## Day 11 evidence boundary
 
 T24 compares selected product/group/named-delegate values; it does not independently reconcile all 62 provisioning statuses or every system ACL. T25 meets useful-error/incomplete-status handling through a verified own-mailbox/Helpdesk visibility contrast and successful admin recovery. The stricter live ACCESS_DENIED predicate remains unconfirmed; supplementary nested 401 is not called 403 or a proven missing role. Marek's license read of Piotr succeeded and is explicitly not denial evidence. Actual Graph ReadWrite scopes are disclosed. See [Day 11](day-11.md), [scripts](../scripts/README.md) and [reviewed extracts](../samples/reports/README.md).
+
+## Day 12 evidence boundary
+
+[Day 12](day-12.md) adds T26–T28 without extra IDs. Captured blocked/unlicensed UI and mailbox type, selected read-only diagnostics and owner-attributed mail/copy/control reopens are distinguished. Knowledge membership removal is reported, but the attempted Check Permissions query returns a sharing-policy message rather than effective levels; no complete item-grant purge is asserted. The selected Anna copy is not a whole-OneDrive migration or indefinite preservation of the unlicensed source. Stage 11 source/tests and historical samples remain unchanged.

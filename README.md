@@ -4,8 +4,8 @@
 
 <p align="center">
   <img alt="14 learning stages" src="https://img.shields.io/badge/LABS-14%20STAGES-6f42c1?style=for-the-badge">
-  <img alt="Project in progress; 11 of 14 stages complete" src="https://img.shields.io/badge/PROGRESS-11%20%2F%2014%20COMPLETE-0078D4?style=for-the-badge">
-  <img alt="Global matrix: 28 pass and 4 not run" src="https://img.shields.io/badge/CHECKS-28%20PASS%20%2F%204%20NOT%20RUN-607078?style=for-the-badge">
+  <img alt="Project in progress; 12 of 14 stages complete" src="https://img.shields.io/badge/PROGRESS-12%20%2F%2014%20COMPLETE-0078D4?style=for-the-badge">
+  <img alt="Global matrix: 31 pass and 1 not run" src="https://img.shields.io/badge/CHECKS-31%20PASS%20%2F%201%20NOT%20RUN-607078?style=for-the-badge">
 </p>
 
 <p align="center">
@@ -35,10 +35,12 @@ This repository complements the owner's Microsoft Entra, hybrid security and IAM
 
 ## Project Overview
 
-**Status: Stages 01–11 complete; Stages 12–14 planned.**\
-The lab now uses **Business Standard (25 seats)**, **Business Premium (25 seats)** and **Business Premium with Copilot (1 seat)** according to the owner's active subscription views. All three pilots are provisioned. Licensing recovery, a three-user MFA scope, Finance groups, alias delivery, distribution recovery, shared-mailbox delegation, calendar permissions, room booking and mail-flow diagnosis/recovery are documented. See the [current baseline](docs/01-environment-baseline.md) for the observed state and source limits.
+**Status: Stages 01–12 complete; Stages 13–14 planned.**\
+The lab now uses **Business Standard (25 seats)**, **Business Premium (25 seats)** and **Business Premium with Copilot (1 seat)** according to the owner's active subscription views. Three pilot accounts exist; Piotr now remains blocked/unlicensed as a retained shared-mailbox anchor. Licensing recovery, a three-user MFA scope, Finance groups, alias delivery, distribution recovery, shared-mailbox delegation, calendar permissions, room booking and mail-flow diagnosis/recovery are documented. See the [current baseline](docs/01-environment-baseline.md) for the observed state and source limits.
 
-**Recorded execution: 11 completed stages, 28 PASS / 4 NOT_RUN in the global matrix, 14 resolved lab cases, and 137 published captures.** The completed stages connect working services to scoped MFA, entitlement recovery, group ownership, delegated mail/calendar behavior and evidence-supported mail-flow diagnosis, desktop identity correction, offline synchronization recovery, private-channel authorization/restoration and knowledge-site access diagnosis, OneDrive pause/resume and content-verified version/deleted-file recovery, followed by current service/change review and user knowledge validation. [Implementation index](docs/stages/README.md) · [Results](tests/README.md) · [Evidence](evidence/README.md)
+**Recorded execution: 12 completed stages, 31 PASS / 1 NOT_RUN in the global matrix, 15 resolved lab cases, and 146 published captures.** The completed stages connect working services to scoped MFA, entitlement recovery, group ownership, delegated mail/calendar behavior and evidence-supported mail-flow diagnosis, desktop identity correction, offline synchronization recovery, private-channel authorization/restoration and knowledge-site access diagnosis, OneDrive pause/resume and content-verified version/deleted-file recovery, followed by current service/change review and user knowledge validation. [Implementation index](docs/stages/README.md) · [Results](tests/README.md) · [Evidence](evidence/README.md)
+
+The completed stages now also include guided employee movement, blocked sign-in, retained-mail custody and approved file handover after product unassignment.
 
 The target roles are **Junior Microsoft 365 Administrator**, **Junior System Administrator** and **IT Support Specialist**.
 
@@ -56,7 +58,7 @@ Each stage is designed to include:
 | Architecture | Implementation | Validation | Evidence |
 |:---:|:---:|:---:|:---:|
 | [View design](#target-architecture) | [Browse stages](#implementation-progress) | [Open test matrix](tests/test-matrix.csv) | [Browse evidence](evidence/README.md) |
-| Target design and recorded baseline | Stages 01–11 complete; 3 stages planned | 28 PASS / 4 NOT_RUN | 137 captures across Days 01–10 |
+| Target design and recorded baseline | Stages 01–12 complete; 2 stages planned | 31 PASS / 1 NOT_RUN | 146 captures across Days 01–10 and Day 12 |
 
 ## Technologies and Concepts
 
@@ -75,7 +77,7 @@ Each stage is designed to include:
 | Reporting | Implemented read-only PowerShell reports for licenses, mailbox delegation and human group membership |
 | Employee lifecycle | Onboarding, department changes, offboarding and approved data handover |
 
-The scoped Conditional Access MFA pilot now contains Anna, Piotr and Marek. Ordinary Premium seats support the M365 users; the one-seat [Copilot extension](docs/copilot-pilot-plan.md) is planned around Stages 06, 08, 10 and 13. Intune can be an extension. PIM, full E5/Entra Suite restoration, Exchange hybrid deployment, Teams Phone and advanced retention/holds remain outside the core.
+The scoped Conditional Access MFA pilot now contains Anna, Piotr and Marek. Anna/Marek retain their product assignments; Piotr's Premium assignment was removed in Stage 12; the one-seat [Copilot extension](docs/copilot-pilot-plan.md) is planned around Stages 06, 08, 10 and 13. Intune can be an extension. PIM, full E5/Entra Suite restoration, Exchange hybrid deployment, Teams Phone and advanced retention/holds remain outside the core.
 
 ---
 
@@ -85,10 +87,10 @@ The scoped Conditional Access MFA pilot now contains Anna, Piotr and Marek. Ordi
 | --- | --- |
 | Learning plan | 14 stage documents with objectives, exercises and exit checks |
 | Subscription | Standard 25, Premium 25 and Premium with Copilot 1 reported active; Anna's bundle assignment captured |
-| Synthetic inputs | Three provisioned synthetic pilots; 14 of 15 lab cases resolved |
-| Validation | 32 global checks: 28 PASS and 4 NOT_RUN; supporting observations recorded separately |
-| Operational documentation | Fourteen completed case records, user-tested articles and a prepared escalation package; lifecycle templates retained |
-| Delegation and calendars | Piotr Send As, Anna Send on behalf, excluded Marek denied; calendar editor tested and reader restored |
+| Synthetic inputs | Three retained synthetic accounts; all 15 lab cases resolved |
+| Validation | 32 global checks: 31 PASS and 1 NOT_RUN; supporting observations recorded separately |
+| Operational documentation | Fifteen completed case records, a verified lifecycle runbook, user-tested articles and a prepared escalation package |
+| Delegation and calendars | Earlier sender tests verified; Stage 12 removes Piotr Helpdesk grants while Anna retains access; calendar reader restored |
 | Room booking | Automatic policy verified through accepted, conflicting/declined and rescheduled/accepted requests |
 | Mail-flow diagnosis and recovery | Unknown-recipient NDR correlated with Trace; marked rejection, unmarked delivery and delivery after rule disable verified |
 | Desktop clients | BFL-WKS01: Apps activation, correct identity restored, offline synchronization recovered and calendar/Helpdesk access verified |
@@ -96,8 +98,9 @@ The scoped Conditional Access MFA pilot now contains Anna, Piotr and Marek. Ordi
 | Knowledge site | Independent communication site, Mail/Draft metadata, reader/editor roles, revoked-link access comparison and restored folder boundary verified |
 | OneDrive | Marek's work client, Files On-Demand, resumed sync, full V1 restored through history and recycle bin |
 | Support operations | Current service/change review, three English procedures and German companion; case review and second-line package prepared |
+| Employee lifecycle | Existing-user readiness, IT move, scoped removals, blocked sign-in, retained mailbox and approved file custody verified |
 | PowerShell | Three implemented reports; selected portal reconciliation, explicit partial/failure output and 25 isolated offline cases |
-| Implementation evidence | 137 captures: Day 01 baseline (31), Day 02 licensing/groups (21), Day 03 alias/recovery (11), Day 04 delegation/calendar/room (27), Day 05 mail flow (14), Day 06 desktop clients (9), Day 07 Teams/sites/meeting (6), Day 08 SharePoint/access (7), Day 09 OneDrive/recovery (7), Day 10 support/knowledge (4) |
+| Implementation evidence | 146 captures: Day 01 baseline (31), Day 02 licensing/groups (21), Day 03 alias/recovery (11), Day 04 delegation/calendar/room (27), Day 05 mail flow (14), Day 06 desktop clients (9), Day 07 Teams/sites/meeting (6), Day 08 SharePoint/access (7), Day 09 OneDrive/recovery (7), Day 10 support/knowledge (4), Day 12 lifecycle (9) |
 
 Captured configuration, functional results and owner-reported details are distinguished in the stage notes. Assigned services and a visible Copilot button do not establish full workload operation or validated AI output.
 
@@ -119,8 +122,9 @@ Captured configuration, functional results and owner-reported details are distin
 | [M365-012 — Revoked link and retained access](tickets/M365-012-revoked-link-retained-access.md) | Old link explicitly removed; library access retained; isolated folder denial and restoration verified |
 | [M365-013 — Paused OneDrive sync](tickets/M365-013-onedrive-paused-sync-recovery.md) | Cloud V2 / local V1 label discrepancy; Resume and fresh local reopening verify V2 |
 | [M365-014 — OneDrive content recovery](tickets/M365-014-onedrive-file-recovery.md) | Earlier-version and recycle-bin restores return full original V1 in web and local views |
+| [M365-015 — Employee offboarding](tickets/M365-015-employee-offboarding.md) | Mover controls, blocked sign-in, corrected mailbox custody, license removal and selected V1 handover verified |
 
-These are fourteen guided lab records from the [15-case backlog](samples/ticket-backlog.csv). The remaining case is planned. The separate role-delegation exception remains unresolved in the Stage 05 notes.
+These are fifteen guided lab records from the [15-case backlog](samples/ticket-backlog.csv). The separate role-delegation exception remains unresolved in the Stage 05 notes.
 
 ## Planned Outcomes
 
@@ -136,11 +140,11 @@ These are fourteen guided lab records from the [15-case backlog](samples/ticket-
 | Handle employee changes | Onboarding, department transfer and offboarding with verified access/data handling |
 | Work independently | Five final tasks with supported resolutions or justified escalation |
 
-These are project-wide targets. The first ten stages establish a working baseline and fourteen guided case resolutions; remaining objectives become demonstrated outcomes only after execution and recorded verification.
+These are project-wide targets. The first twelve stages establish the working baseline, fifteen guided case resolutions and verified lifecycle custody. The independent assessment and portfolio closure remain planned.
 
 ## Featured Implementation Evidence
 
-Selected lab captures connect the user experience to configuration and recovery. [All 137 captions and review notes](evidence/README.md) · [Case records](tickets/README.md)
+Selected lab captures connect the user experience to configuration and recovery. [All 146 captions and review notes](evidence/README.md) · [Case records](tickets/README.md)
 
 <table>
 <tr>
@@ -256,14 +260,14 @@ flowchart TB
     end
 
     subgraph COLLABORATION["Collaboration and work files"]
-        TEAM["BFL-M365-Finance Team<br/>Anna Owner · Piotr Member"]
+        TEAM["BFL-M365-Finance Team<br/>Anna retained · Piotr removed"]
         PARENT["Finance parent SharePoint site<br/>Standard-file access verified"]
         PRIVATE["Finance-Confidential<br/>Separate site; final Anna only"]
         KNOWLEDGE["BFL-M365-Knowledge<br/>Reader/editor roles verified<br/>Folder inheritance restored"]
         ONEDRIVE["Work OneDrive<br/>Marek sync and file recovery verified"]
     end
 
-    REPORTS["Planned read-only PowerShell reports<br/>Licenses · Delegation · Membership"]
+    REPORTS["Three implemented read-only reports<br/>Licenses · Delegation · Membership"]
 
     ADMIN --> CENTERS
     CENTERS --> ENTRA
@@ -273,7 +277,7 @@ flowchart TB
     PILOTS --> ENTRA
     CLIENT --> PILOTS
     PILOTS --> EXO
-    PILOTS -->|Anna and Piotr| TEAM
+    PILOTS -->|Anna retained| TEAM
     PILOTS --> KNOWLEDGE
     PILOTS --> ONEDRIVE
     ENTRA --- GROUP
@@ -292,7 +296,7 @@ flowchart TB
 <summary><strong>Architecture notes and planned lab scope</strong></summary>
 
 - The core uses a personal lab tenant and the default onmicrosoft.com domain. An owned custom domain is optional.
-- All three pilots are provisioned. SG-M365-MFA-Pilot contains Anna, Piotr and Marek. The CA setup role was removed; Exchange Recipient Administrator remains the recorded recipient-work assignment on adm-lab.
+- Three pilot accounts exist; Piotr now remains blocked/unlicensed as a retained shared-mailbox anchor. SG-M365-MFA-Pilot contains Anna, Piotr and Marek. The CA setup role was removed; Exchange Recipient Administrator remains the recorded recipient-work assignment on adm-lab.
 - Stage 05 Trace access was owner-confirmed as adm-lab; rule work used bg01. The attempted custom Transport Rules delegation remains unresolved and is not claimed as a successful least-privilege grant.
 - Standard channels use the parent team's SharePoint site. A private channel has its own site and membership boundary.
 - The independent knowledge site is separate from the Finance team's connected site. Marek's work OneDrive is his user workspace; its client recovery does not establish SharePoint-library sync or independent backup.
@@ -308,7 +312,7 @@ flowchart TB
 
 ## Implementation Progress
 
-**11 of 14 stages completed. Stages 01–11 are COMPLETE; Stages 12–14 are PLANNED.**
+**12 of 14 stages completed. Stages 01–12 are COMPLETE; Stages 13–14 are PLANNED.**
 
 The schedule targets approximately **50–65 hours over a 30-day trial**, including documentation. Day ranges are estimates and must fit the actual subscription end date. Notes and evidence are saved throughout the project; the final days are a buffer.
 
@@ -327,7 +331,7 @@ The schedule targets approximately **50–65 hours over a 30-day trial**, includ
 | 09 | 17–18 | OneDrive synchronization and file recovery | [Stage notes](docs/stages/09-onedrive-sync-and-recovery.md) | COMPLETE |
 | 10 | 19–20 | Support operations and user knowledge | [Stage notes](docs/stages/10-support-operations-and-knowledge.md) | COMPLETE |
 | 11 | 21–23 | Read-only operational PowerShell reports | [Stage notes](docs/stages/11-powershell-reporting.md) | COMPLETE |
-| 12 | 24–25 | Employee onboarding, access change and offboarding | [Stage plan](docs/stages/12-employee-lifecycle.md) | PLANNED |
+| 12 | 24–25 | Employee onboarding, access change and offboarding | [Stage notes](docs/stages/12-employee-lifecycle.md) | COMPLETE |
 | 13 | 26–27 | Independent administration and troubleshooting assessment | [Stage plan](docs/stages/13-independent-capstone.md) | PLANNED |
 | 14 | 28–30 | Portfolio review and lab closure | [Stage plan](docs/stages/14-portfolio-and-lab-closure.md) | PLANNED |
 
@@ -335,7 +339,7 @@ The schedule targets approximately **50–65 hours over a 30-day trial**, includ
 
 ### Detailed Lab Notes
 
-Expand a stage to see its scope. Stages 01–11 are complete. T03 and T16 were first exercised in Day 01; T06 first ran in Day 02 and was extended in Day 03 without adding another global check. Stage 07 extends T16 on the new Finance Team and adds the private-channel boundary check T17. Stage 11 adds T24/T25; its 25 offline code cases are counted separately.
+Expand a stage to see its scope. Stages 01–12 are complete. T03 and T16 were first exercised in Day 01; T06 first ran in Day 02 and was extended in Day 03 without adding another global check. Stage 07 extends T16 on the new Finance Team and adds the private-channel boundary check T17. Stage 11 adds T24/T25; its 25 offline code cases are counted separately.
 
 <details>
 <summary><strong>Stage 01 — Tenant baseline and administrative roles</strong> · complete</summary>
@@ -554,20 +558,20 @@ Implemented three selected-target reports and reconciled product, group and name
 ---
 
 <details>
-<summary><strong>Stage 12 — Employee onboarding, access change and offboarding</strong> · planned exercises</summary>
+<summary><strong>Stage 12 — Employee onboarding, access change and offboarding</strong> · complete</summary>
 
-Execute an end-to-end employee lifecycle using a verified runbook.
+Revalidated existing Piotr services, moved Operations → IT, then blocked sign-in and retained approved data under Anna's custody.
 
-- [ ] Onboard Piotr with a license, mail, intended collaboration access and a user test.
-- [ ] Move the synthetic employee to a different department and verify both removed and added access.
-- [ ] Plan data custody before removing service entitlements.
-- [ ] Block new sign-in, take appropriate session actions and remove intended memberships.
-- [ ] If preserving mail as a shared mailbox, verify conversion before any license removal; keep its blocked anchoring account and check applicable license limits.
-- [ ] Document OneDrive handover and actual preservation limits.
+- [x] New IT edit/save plus owner reopen; old Finance site denial with working controls and bounded DL/direct-mail comparison.
+- [x] Selected OneDrive TXT copied into Anna's own My files; all three V1 lines checked after block and license removal.
+- [x] Saved sign-in block and fresh denied login; old-session effect recorded separately.
+- [x] Existing mailbox converted to SharedMailbox; wrong Anna delegate corrected, actual intended FullAccess read and retained baseline mail opened.
+- [x] Size/archive/hold observations reviewed; Premium removed, blocked account retained; Anna custody and active-owner controls still work.
+- [x] IT, Helpdesk and Knowledge Visitors removals reported; inconclusive Knowledge permission query preserved.
 
-**Validation target:** The onboarding checklist produces usable services. Access after the department change matches the target matrix. A new leaver sign-in is denied; existing-session behavior is reported separately. An approved custodian opens the designated retained mailbox and files.
+**T26–T28 PASS; M365-015 RESOLVED.** Piotr remains a blocked/unlicensed mailbox anchor; this is one approved file copy, not a whole-drive migration or complete effective-access purge. The source OneDrive follows unlicensed-account policy.
 
-[Stage documentation](docs/stages/12-employee-lifecycle.md) · [Test matrix](tests/test-matrix.csv) · [Evidence guide](evidence/README.md)
+[Implementation](docs/stages/12-employee-lifecycle.md) · [Results](tests/day-12.md) · [9 captures](evidence/day-12/README.md) · [Verified runbook](runbooks/employee-lifecycle.md) · [Case](tickets/M365-015-employee-offboarding.md)
 
 </details>
 
@@ -687,14 +691,14 @@ An owned custom domain with SPF/DKIM/DMARC and controlled external sharing are o
 | Path | Contents |
 | --- | --- |
 | [README.md](README.md) | Project overview, architecture, stage roadmap and current evidence status |
-| [docs/](docs/roadmap.md) | Eleven implementation records, three stage plans, baseline, access model and sources |
-| [tickets/](tickets/README.md) | Fourteen resolved lab cases, workflow and case template |
-| [tests/](tests/README.md) | Thirty-two global checks, twenty-eight recorded passes and detailed Day 01–11 records; 25 offline cases counted separately |
-| [evidence/](evidence/README.md) | 137 indexed captures across Days 01–10, review notes and screenshot timing guidance |
+| [docs/](docs/roadmap.md) | Twelve implementation records, two stage plans, baseline, access model and sources |
+| [tickets/](tickets/README.md) | Fifteen resolved lab cases, workflow and case template |
+| [tests/](tests/README.md) | Thirty-two global checks, thirty-one recorded passes and detailed Day 01–12 records; 25 offline cases counted separately |
+| [evidence/](evidence/README.md) | 146 indexed captures across Days 01–10 and Day 12, review notes and screenshot timing guidance |
 | [scripts/](scripts/README.md) | Three read-only reports and common export/context library |
-| [runbooks/](runbooks/README.md) | Employee lifecycle procedure template |
+| [runbooks/](runbooks/README.md) | Verified employee lifecycle procedure and reusable template |
 | [knowledge-base/](knowledge-base/README.md) | Three English user procedures and a German companion with attributed reproduction |
-| [samples/](samples/README.md) | Three provisioned synthetic identities; 14 resolved and 1 planned lab cases |
+| [samples/](samples/README.md) | Three retained synthetic identities; 15 resolved lab cases |
 | [.github/ISSUE_TEMPLATE/](.github/ISSUE_TEMPLATE/lab-stage.yml) | Lab-stage and support-case issue forms |
 
 ## Related Projects
@@ -703,4 +707,4 @@ An owned custom domain with SPF/DKIM/DMARC and controlled external sharing are o
 - [Microsoft Hybrid Enterprise Security Project](https://github.com/krzysztof-szot/hybrid-enterprise-security-project)
 - [IAM PowerShell Automation Project](https://github.com/krzysztof-szot/iam-powershell-automation-project)
 
-Review the [completed cases](tickets/README.md) and [results](tests/README.md), then continue with [Stage 12 — Employee lifecycle](docs/stages/12-employee-lifecycle.md).
+Review the [completed cases](tickets/README.md) and [results](tests/README.md), then continue with [Stage 13 — Independent capstone](docs/stages/13-independent-capstone.md).

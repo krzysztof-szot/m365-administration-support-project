@@ -1,4 +1,4 @@
 UserKey,DisplayName,Department,Purpose,Status,LoginAlias,JobTitle,License,ProfileEvidence
 anna.finance,M365 Anna Finance,Finance,Finance group ownership and collaboration permissions,PROVISIONED,m365.anna,,Microsoft 365 Business Premium with Copilot,Department is a design value; current attribute not captured
-piotr.operations,M365 Piotr Operations,Operations,Group membership and later lifecycle exercises,PROVISIONED,m365.piotr,Operations Specialist,Microsoft 365 Business Premium,Department and job title owner-reported
+piotr.operations,M365 Piotr Operations,IT,Retained blocked identity anchoring the shared mailbox after guided mover and offboarding,SIGN_IN_BLOCKED_SHARED_MAILBOX,m365.piotr,IT Support Specialist,None - product licenses removed in Stage 12,Department IT owner-confirmed; new title captured Day12 02; blocked and Licenses (0) captured Day12 09; exact immediate old title not freshly recorded
 marek.it,M365 Marek IT,IT,Ordinary-user control and internal test sender,PROVISIONED,m365.marek,IT Support Trainee,Microsoft 365 Business Premium,Department and job title owner-reported

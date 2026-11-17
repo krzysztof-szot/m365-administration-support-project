@@ -1,6 +1,6 @@
 # Evidence handling
 
-**137 owner-supplied captures are indexed across Days 01–10; Stage 11 adds reviewed console/export evidence.** Configuration, captured functional results and owner-reported checks are labelled separately.
+**146 owner-supplied captures are indexed across Days 01–10 and Day 12; Stage 11 adds reviewed console/export evidence.** Configuration, captured functional results and owner-reported checks are labelled separately.
 
 | Stage | Screenshots | Results |
 | --- | --- | --- |
@@ -14,8 +14,9 @@
 | [Day 08](day-08/README.md) | 7 | Independent knowledge site, roles, Mail/Draft metadata, reader content, link opening, folder denial and inherited group baseline |
 | [Day 09](day-09/README.md) | 7 | Work OneDrive baseline, paused/resumed labels, history and full-content version/deleted-file recovery |
 | [Day 10](day-10/README.md) | 4 | Current Service health, future change notice, four Knowledge articles and local-content/cloud-presence recovery evidence |
+| [Day 12](day-12/README.md) | 9 | Lifecycle baseline, mover access, handover, blocked sign-in, shared mailbox, retained mail and product unassignment |
 
-Stage 11 uses [console/export evidence](day-11/README.md) and reviewed redacted samples, with no new screenshots. Future evidence folders do not establish execution. Stages 12–14 remain planned.
+Stage 11 uses [console/export evidence](day-11/README.md) and reviewed redacted samples, with no new screenshots. Future evidence folders do not establish execution. Stages 13–14 remain planned.
 
 ## Current publication review
 
@@ -59,3 +60,7 @@ Do not fabricate logs, NDR codes or passing checks. Record a healthy service as 
 ## Day 11 console and export review
 
 Three owner-run COMPLETE report exports were checked locally, including source/output hashes and selected fresh portal confirmations. Mixed-target partial output and same-session own/Helpdesk visibility plus operator recovery are recorded in [Day 11](../tests/day-11.md). A failed lookup and supplemental nested 401 are not labelled as an explicit 403. Public samples remove raw tenant/UPN/GUID/connection identifiers and host paths. The 25 isolated offline code checks use synthetic fixtures and remain separate from live evidence. All 137 prior image blobs are retained.
+
+## Day 12 lifecycle publication review
+
+Nine new original PNGs preserve source bytes; all previous 137 images are unchanged. [Day 12 captions](day-12/README.md) distinguish visible configuration/content from owner-attributed actors, session effects, final reopens and bounded controls. Raw OWA error identifiers and raw tenant exports stay private. The Knowledge query's policy message is textual/inconclusive, not a captured effective denial. Selected redacted API facts and final manual confirmations are labelled separately. Total images: 146 (145 PNG plus one JPG).

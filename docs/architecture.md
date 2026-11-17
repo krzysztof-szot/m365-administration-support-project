@@ -1,19 +1,20 @@
 # Lab architecture — implemented baseline and target extensions
 
-**Stages 01–11 COMPLETE.** Three pilots, the MFA scope, the Private Finance Microsoft 365 group, a distribution list, Anna's Finance alias, Helpdesk and the room mailbox are implemented. Delegated mail, calendar permission restoration, room conflict/recovery and NDR/Trace-based mail-flow rejection/control/recovery are verified. The scoped exercise rule remains Disabled. BFL-WKS01 now has active Microsoft 365 Apps and classic Outlook, with identity and offline-mode recovery plus desktop delegation verified. Finance now has standard/private channels, separate parent/channel sites and verified temporary private membership plus a cross-device meeting. The independent knowledge site now has verified read/edit roles, metadata, link revocation and an isolated folder denial/restoration. The diagram combines observed components and explicitly planned extensions; it is not a protocol trace.
+**Stages 01–12 COMPLETE.** Three pilots, the MFA scope, the Private Finance Microsoft 365 group, a distribution list, Anna's Finance alias, Helpdesk and the room mailbox are implemented. Delegated mail, calendar permission restoration, room conflict/recovery and NDR/Trace-based mail-flow rejection/control/recovery are verified. The scoped exercise rule remains Disabled. BFL-WKS01 now has active Microsoft 365 Apps and classic Outlook, with identity and offline-mode recovery plus desktop delegation verified. Finance now has standard/private channels, separate parent/channel sites and verified temporary private membership plus a cross-device meeting. The independent knowledge site now has verified read/edit roles, metadata, link revocation and an isolated folder denial/restoration. The diagram combines observed components and explicitly planned extensions; it is not a protocol trace.
 
 ```mermaid
 flowchart TB
     Admin["Administrative identities<br/>CA setup role removed; recipient role active"] --> Portal["Microsoft 365 admin centers"]
-    Users["Provisioned pilots<br/>Anna · Piotr · Marek"] --> Exchange["Exchange Online<br/>User mail verified"]
+    Users["Active pilots Anna / Marek<br/>Piotr retained blocked anchor"] --> Exchange["Exchange Online<br/>User mail verified"]
     FinanceAlias["Secondary m365.finance address"] --> Anna["Anna's existing mailbox"]
-    DL["DL-M365-Finance<br/>Owner Anna; members Anna and Piotr"] --> Anna
-    DL --> Piotr["Piotr's mailbox<br/>License and membership recovery verified"]
+    DL["DL-M365-Finance<br/>Anna retained; Piotr removed"] --> Anna
+    Piotr["Piotr SharedMailbox<br/>Blocked anchor; no product license"]
+    Anna -->|verified custody| Piotr
     Group["BFL-M365-Finance<br/>Created Private Microsoft 365 group"] --> Parent["Finance parent SharePoint site<br/>Standard file access verified"]
-    Group --> Team["BFL-M365-Finance Team<br/>Anna Owner; Piotr Member"]
+    Group --> Team["BFL-M365-Finance Team<br/>Anna retained; Piotr removed"]
     Team --- Parent
     Team --> Private["Finance-Confidential / own site<br/>Final Anna only<br/>Piotr grant/removal verified"]
-    Users -->|Anna and Piotr| Group
+    Users -->|Anna retained| Group
     Users --> MFA["SG-M365-MFA-Pilot<br/>Three direct members"]
     ReportingLaptop["Physical laptop / PowerShell 7.7.0<br/>Three selected read-only reports"] -->|read APIs| Exchange
     ReportingLaptop -->|Graph read APIs| Group
@@ -25,16 +26,16 @@ flowchart TB
     Users --> OneDrive["Work OneDrive<br/>Anna web; Marek sync and recovery verified"]
     Desktop -->|Marek lab folder| OneDrive
     OneDrive --> Recovery["M365-Lab-D09 / SYNC-01<br/>History and recycle-bin restore<br/>Final full V1; client resumed"]
-    Exchange --> Helpdesk["BFL-M365-Helpdesk<br/>Piotr: Full Access / Send As<br/>Anna: Full Access / Send on behalf"]
+    Exchange --> Helpdesk["BFL-M365-Helpdesk<br/>Piotr grants removed<br/>Anna: Full Access / Send on behalf"]
     Marek["Marek<br/>Own Inbox works"] -. "opening denied" .-> Helpdesk
     Exchange --> Calendar["Anna Calendar<br/>Marek: reader → editor → reader"]
     Exchange --> Room["BFL-M365-Room-01<br/>Accept → Decline conflict → Accept rescheduled"]
     Exchange --> Rule["Scoped transport rule<br/>Marek AND Piotr AND subject marker<br/>Final state: Disabled"]
     Exchange --- Trace["Message Trace verified<br/>Invalid recipient · Rule rejection · Recovery"]
-    Users --> Knowledge["BFL-M365-Knowledge<br/>Independent communication site<br/>Anna owner; Marek editor; Piotr reader"]
+    Users --> Knowledge["BFL-M365-Knowledge<br/>Independent communication site<br/>Anna owner; Marek editor<br/>Piotr Visitors removed; query inconclusive"]
     Knowledge --> Library["Knowledge / KB-01 and four articles<br/>Read/edit and selected procedures verified"]
     Library --> Restricted["LAB-D08-Restricted / TXT<br/>Visitors grant removal tested<br/>Final inheritance restored"]
-    Reports["Read-only reports — PLANNED"] -.-> Portal
+    Reports["Three implemented read-only reports"] -.-> Portal
 ```
 
 ## Resource distinctions
@@ -67,3 +68,7 @@ Stage 10 uses the existing Knowledge library for four user instructions and Mare
 ## Stage 11 execution boundary
 
 The reporting laptop is separate from BFL-WKS01, which remains the earlier Office/OneDrive client environment. Three reports produce local CSV/JSON; only reviewed extracts are published. Actual Graph scopes include write grants, but report APIs are reads and do not alter the workload nodes. Authentication consent setup persists independently of Process context. An account-dependent Helpdesk lookup failure and successful admin recovery verify failure handling; neither explicit 403 nor a repaired Stage 05 role delegation is inferred. [Results](../tests/day-11.md) · [Scripts](../scripts/README.md).
+
+## Stage 12 current custody and access
+
+The diagram now reflects scoped final Piotr removals; earlier functional descriptions retain their stage dates. New Private BFL-M365-IT retains Marek Owner after Piotr's successful mover edit and later removal. Piotr is a blocked/unlicensed shared-mailbox anchor, with correct Anna FullAccess and retained-mail reading verified. Anna has a separate approved V1 copy in her own licensed OneDrive. The source follows unlicensed-account rules, not indefinite archival assurance. Knowledge membership removal is reported but the effective-permission query is inconclusive. This is not a tenant-wide ACL/role inventory or a whole-drive migration. [Actual lifecycle record](stages/12-employee-lifecycle.md) · [Runbook](../runbooks/employee-lifecycle.md).

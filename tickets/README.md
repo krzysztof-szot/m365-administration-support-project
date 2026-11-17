@@ -1,6 +1,6 @@
 # Support cases
 
-Status: **14 of 15 lab cases RESOLVED; 1 PLANNED.** These are guided, synthetic service requests and controlled training conditions, not production incidents.
+Status: **15 of 15 lab cases RESOLVED.** These are guided, synthetic service requests and controlled training conditions, not production incidents.
 
 | Case | Type / stage | Verified outcome |
 | --- | --- | --- |
@@ -18,8 +18,9 @@ Status: **14 of 15 lab cases RESOLVED; 1 PLANNED.** These are guided, synthetic 
 | [M365-012 — Revoked link and retained access](M365-012-revoked-link-retained-access.md) | Controlled access diagnosis / 08 | Old URL reports removed; authorized library access remains; isolated folder denial/restoration verified |
 | [M365-013 — Paused OneDrive sync](M365-013-onedrive-paused-sync-recovery.md) | Controlled synchronization / 09 | Resume and fresh synchronized-file reopening restore matching V2 |
 | [M365-014 — OneDrive content recovery](M365-014-onedrive-file-recovery.md) | Recovery request / 09 | History and recycle-bin restores each return full original V1 in web/local views |
+| [M365-015 — Employee offboarding](M365-015-employee-offboarding.md) | Guided service request / 12 | Mover controls, denied new sign-in, corrected mailbox custody, license removal and selected V1 handover verified |
 
-The [backlog](../samples/ticket-backlog.csv) keeps the remaining case PLANNED. Use [TICKET-TEMPLATE.md](TICKET-TEMPLATE.md) for new work. Each record includes the request, scope, diagnostic decisions, supported cause, reversible action, verification and suggested closure wording. Closure wording in documents is not evidence of an externally sent support message. The Stage 05 custom-role-group delegation error remains an unresolved administrative exception; it is not counted as a repaired permission incident.
+The [backlog](../samples/ticket-backlog.csv) now contains fifteen resolved guided lab cases. Use [TICKET-TEMPLATE.md](TICKET-TEMPLATE.md) for new work. Each record includes the request, scope, diagnostic decisions, supported cause, reversible action, verification and suggested closure wording. Closure wording in documents is not evidence of an externally sent support message. The Stage 05 custom-role-group delegation error remains an unresolved administrative exception; it is not counted as a repaired permission incident.
 
 An expected failure in a controlled exercise is not a real outage. Preserve observed errors and source attribution; do not invent error codes, formal SLA priorities or transport traces. Record windows for non-receipt and distinguish missing evidence from a failed functional check.
 
@@ -30,3 +31,7 @@ Suggested workflow: PLANNED → IN_PROGRESS → RESOLVED, or BLOCKED with the ac
 The [case review](stage-10-case-review.md) compares observed impact, unknown business urgency, workarounds and conditional escalation criteria. The [second-line package](escalations/exchange-role-delegation.md) preserves the unresolved Stage 05 delegation error, evidence limits and proposed read checks. Both are prepared with assistant support; no support message was sent or fresh RBAC investigation executed. The 14 resolved / 1 planned backlog is unchanged.
 
 The [knowledge articles](../knowledge-base/README.md) have attributed user reproduction. Those tests recheck existing capabilities and do not create extra incident IDs.
+
+## Stage 12 lifecycle closure
+
+[M365-015](M365-015-employee-offboarding.md) closes the scoped guided move/offboarding with T26–T28. Its wrong-Anna diagnostic/recovery is part of the request, not a sixteenth incident. The final Knowledge query is inconclusive and retained as a limitation. Historical Stage 10/11 case counters below their dates remain historical; the separate Stage 05 RBAC exception is still unresolved.

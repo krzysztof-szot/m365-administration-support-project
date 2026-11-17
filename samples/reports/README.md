@@ -13,3 +13,7 @@ These files derive from real lab exports executed by the owner on 17 November 20
 These simplified columns are not the production CSV schema. Raw rows.csv, components.csv and metadata.json remain private under ignored local-output. A COMPLETE source run does not make the selected license sample a complete entitlement audit. The group row count includes one non-person properties row. Full Access/Send As/SOB counts do not represent effective group-expanded access or a new sending test. The own-mailbox positive control is a standalone Get-Mailbox observation, not an exported report: its exit code is NotApplicable and its unrecorded exact start time is blank.
 
 Marek's initial license read of Piotr succeeded and is not permission-denial evidence. The shared-mailbox visibility failure is described with its actual message in [Day 11](../../tests/day-11.md); a hidden object is not declared deleted, and an explicit API 403 is not claimed.
+
+## Historical snapshot after Stage 12
+
+These exports remain the original Stage 11 observations. Stage 12 subsequently removes Piotr from Finance/DL/IT and Helpdesk/Knowledge reader scope, converts his mailbox and removes product licensing after custody checks. Do not use this unchanged historical Finance/Helpdesk extract as current authorization state. See [current access](../../docs/access-matrix.md) and [separate lifecycle observations](../lifecycle-mailbox-observations.csv).

@@ -1,7 +1,8 @@
 # Operational runbooks
 
-Status: procedure template only; no verified lifecycle procedure yet.
+Status: one verified guided lifecycle procedure, executed 17 November 2026.
 
-Start from [LIFECYCLE-TEMPLATE.md](LIFECYCLE-TEMPLATE.md) during Stage 12. Record the actual role, workload context, propagation and verification. Include access added and removed, data custody, recovery paths and remaining resources.
+- [Employee lifecycle](employee-lifecycle.md): existing-user readiness, Operations → IT mover, block/session controls, corrected mailbox custody, license decision and selected OneDrive handover. Actual source attribution, remaining resources, recovery plan and inconclusive Knowledge permission inspection are included.
+- [Lifecycle template](LIFECYCLE-TEMPLATE.md): reusable planning scaffold; the template itself is not execution evidence.
 
-A runbook describes an observed reproducible procedure. This scaffold provides the questions and checklist; it does not claim the procedure has already worked in the tenant.
+[Stage 12](../docs/stages/12-employee-lifecycle.md) · [Acceptance record](../tests/day-12.md) · [M365-015](../tickets/M365-015-employee-offboarding.md)

@@ -1,6 +1,10 @@
 # Environment baseline and current lab state
 
-Current state after **Stages 01–11 COMPLETE**. Stages 01–04 were executed **14 November 2026**; Stages 05–09 were executed **16 November 2026**. Stages 10–11 were executed **17 November 2026**. Stage/day labels identify learning units; the roadmap's target-day ranges are estimates.
+Current state after **Stages 01–12 COMPLETE**. Stages 01–04 were executed **14 November 2026**; Stages 05–09 were executed **16 November 2026**. Stages 10–12 were executed **17 November 2026**. Stage/day labels identify learning units; the roadmap's target-day ranges are estimates.
+
+**Current lifecycle override:** Piotr is blocked/unlicensed with a retained shared mailbox; Anna holds the verified mail/file custody. See the [superseding final state](#stage-12-superseding-lifecycle-state) and [current access table](access-matrix.md#final-lifecycle-state--17-november-2026).
+
+## Historical baseline and earlier workload observations
 
 | Area | Recorded state and source |
 | --- | --- |
@@ -52,7 +56,7 @@ Current state after **Stages 01–11 COMPLETE**. Stages 01–04 were executed **
 
 ## Scope and evidence limits
 
-Fourteen resolved lab cases cover licensing, alias delivery, distribution membership, Helpdesk sender permission, room booking conflict, expected unknown-recipient diagnosis, scoped rule recovery, wrong active Office identity, offline-client synchronization, private-channel authorization/restoration, knowledge reader/editor roles, retained access after link revocation, paused OneDrive sync and version/deleted-file recovery. The current global matrix is **28 PASS / 4 NOT_RUN**. Client versions, job attributes, recovery-account checks, bounded non-receipt, selected calendar/session controls and room-account blocking include owner-reported data. Provisioning elapsed time, exact group/delegation propagation and room processing latency were not measured.
+Fourteen historical resolved lab cases cover licensing, alias delivery, distribution membership, Helpdesk sender permission, room booking conflict, expected unknown-recipient diagnosis, scoped rule recovery, wrong active Office identity, offline-client synchronization, private-channel authorization/restoration, knowledge reader/editor roles, retained access after link revocation, paused OneDrive sync and version/deleted-file recovery. The current global matrix is **31 PASS / 1 NOT_RUN**. Client versions, job attributes, recovery-account checks, bounded non-receipt, selected calendar/session controls and room-account blocking include owner-reported data. Provisioning elapsed time, exact group/delegation propagation and room processing latency were not measured.
 
 The first internal alias message's private headers name the primary recipient. Only the subsequent external pair is used as alias-target delivery proof. No tenant-wide sending-from-alias change or Day 03 alias transport trace is claimed; Stage 05 separately provides Trace for baseline, invalid-recipient and rule tests. An independently audited sequence of every portal operation is not established.
 
@@ -74,3 +78,13 @@ Physical laptop exports use PowerShell 7.7.0 Core / 64-bit / RemoteSigned, Graph
 Marek returns one SPB product / 62 plan rows: 59 Success, one PendingActivation, two PendingInput. Finance returns Private, Anna owner and Anna/Piotr direct human members. Helpdesk returns seven configured ACL/delegation rows, including two SELF FullAccess entries with different source rights. Named portal values agree per owner. These are selected reports, not complete effective-access audits.
 
 The same-session Marek own-mailbox control succeeds while Helpdesk lookup fails; adm-lab recovery reads all seven entries. Supplemental ACL failure exposes inner 401; explicit 403 and exact roles are unconfirmed. Actual Graph contexts include six ReadWrite scopes, so no least-privilege session claim is made. Persistent consent setup is distinct from report reads. Private config/raw exports remain local; no licenses, roles or grants were changed by the report/control calls. Stage 05 RBAC repair remains deferred and unresolved. [Day 11 results](../tests/day-11.md) · [Report usage](../scripts/README.md).
+
+## Stage 12 superseding lifecycle state
+
+This section supersedes the earlier Piotr license/membership/delegation snapshot above; those rows preserve historical exercises. The project now has 12 complete stages, fifteen resolved cases and 31 PASS / 1 NOT_RUN (T32 only).
+
+Piotr exists with sign-in blocked, no product license, Department IT and Job title IT Support Specialist. His unchanged display name still says Operations. Finance Team/backing group and DL retain Anna only; new Private IT retains Marek Owner after Piotr removal. Piotr's Helpdesk FullAccess/SendAs and Knowledge Visitors membership were removed per owner. Anna still opens Helpdesk; Marek still opens the IT document. MFA group scope remains deliberately retained. Knowledge effective levels were not obtained: its attempted query returned a sharing-policy message.
+
+Piotr's actual SharedMailbox and correct Anna FullAccess were verified before unassignment through selected Exchange reads. The wrong legacy Anna grant was removed. Pre-unassignment mailbox size is 2,357,435 bytes, archive None and inspected hold fields clear; the owner then removed Business Premium and verified saved Licenses (0)/block, retained-mail reading and Anna's separate full V1 OneDrive copy. These final manual results do not imply a post-unassignment API export or whole-drive migration. Source Piotr OneDrive is now unlicensed and follows current policy/unknown tenant-specific retention settings. Keep the account anchoring the mailbox; no rollback or account deletion occurred.
+
+[Stage 12](stages/12-employee-lifecycle.md) · [Current access](access-matrix.md) · [Results](../tests/day-12.md) · [Nine captures](../evidence/day-12/README.md)

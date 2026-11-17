@@ -1,8 +1,23 @@
 # Access matrix — observed configuration and future targets
 
-Current state after Stages 01–11. Configured membership is distinguished from effective-resource tests.
+Current state after Stages 01–12. The final lifecycle table supersedes the explicitly historical tables below. Configured membership is distinguished from effective-resource tests.
 
-## Observed configuration and functional results
+## Final lifecycle state — 17 November 2026
+
+| Resource | Anna | Piotr | Marek | Evidence / boundary |
+| --- | --- | --- | --- | --- |
+| Piotr account / product | Custodian via own account | Blocked; Licenses (0); SharedMailbox anchor retained | Active control | Day12 06/07/09; fresh denied login and final persistence owner-confirmed |
+| Finance group/Team and DL | Retained Owner/member | Removed | Unchanged | Owner final lists; Piotr old Finance site denied during active mover, direct/DL bounded controls |
+| BFL-M365-IT / LAB-D12-IT-01 | No new grant | Mover edit verified, then membership removed | Owner; final document opens | Day12 02/03; removal/reopen controls owner-confirmed |
+| Helpdesk | Existing FullAccess / Send on behalf retained; final opening works | FullAccess and SendAs removed | No new grant | Owner final confirmations; Stage11 samples remain historical |
+| Knowledge | Existing owner | Visitors removal confirmed; effective-level query inconclusive | Existing editor | Policy message instead of levels; no complete child/direct-grant audit |
+| Piotr retained mailbox | Intended FullAccess verified; retained mail opens after license removal | Direct sign-in blocked | No new grant | Post-repair selected ACL; wrong legacy Anna removed; final functional reading owner-confirmed |
+| Handover TXT | Own separate My files copy; complete V1 after block/unassignment | Source drive now unlicensed | No new grant | One approved copy; no whole-drive migration/history/backup claim |
+| SG-M365-MFA-Pilot | Retained | Membership deliberately retained as security scope | Retained | Not a resource grant or proof of new licensed CA execution for blocked Piotr |
+
+[Stage 12 reasoning and limits](stages/12-employee-lifecycle.md) · [Tests](../tests/day-12.md)
+
+## Historical configuration and functional results through Stage 11
 
 | Resource | Anna | Piotr | Marek | Evidence / limit |
 | --- | --- | --- | --- | --- |
@@ -40,7 +55,7 @@ The custom group's name would not limit transport-rule administration to the pil
 
 ## Stage 08 effective-access boundary
 
-The independent Knowledge site retains Anna Full Control, Marek Edit and Piotr Read. Removing the selected link invalidated its URL but did not remove Piotr's other authorized library access. KB-01's post-sharing inheritance state was not separately captured; copied group grants may remain on a uniquely secured item. The isolated folder inherited Knowledge's three groups before its temporary Visitors-grant removal and ends restored. Check Permissions before/after was reported as expected rather than captured verbatim.
+At Stage 08 closure the independent Knowledge site retained Anna Full Control, Marek Edit and Piotr Read. Removing the selected link invalidated its URL but did not remove Piotr's other authorized library access. KB-01's post-sharing inheritance state was not separately captured; copied group grants may remain on a uniquely secured item. The isolated folder inherited Knowledge's three groups before its temporary Visitors-grant removal and ends restored. Check Permissions before/after was reported as expected rather than captured verbatim.
 
 ## Stage 06 client identity boundary
 
@@ -60,7 +75,7 @@ Administrative identities are separate. The CA configuration role was removed; t
 
 ## Stage 09 storage context
 
-Marek's user workspace is synchronized to BFL-WKS01, with the original M365-Lab-D09 TXT restored to full V1 and the client healthy. The separate V2 helper remains in VM Downloads outside OneDrive. Existing Knowledge library roles remain the Stage 08 baseline; comparison does not imply that library was synchronized or that Piotr was tested against Marek's OneDrive. Leaver handover remains untested.
+Marek's user workspace is synchronized to BFL-WKS01, with the original M365-Lab-D09 TXT restored to full V1 and the client healthy. The separate V2 helper remains in VM Downloads outside OneDrive. Existing Knowledge library roles remain the Stage 08 baseline; comparison does not imply that library was synchronized or that Piotr was tested against Marek's OneDrive. At Stage 09 closure leaver handover remained untested; Stage 12 results supersede that snapshot.
 
 [Day 09 evidence](../evidence/day-09/README.md) · [Day 09 results](../tests/day-09.md)
 
@@ -75,6 +90,6 @@ Four articles are available in Knowledge. Piotr reads them without editing, with
 
 adm-lab successfully exports selected license, group and Helpdesk state. Graph context is delegated/Process but includes six ReadWrite scopes; the source's read-only commands do not establish least-privilege grants. No complete Entra/Exchange role audit was performed.
 
-Marek's license read of Piotr succeeds. In Exchange, a same-session Get-Mailbox read of Marek's own mailbox succeeds, while Helpdesk lookup reports not found; restoring adm-lab returns seven configured entries. This establishes account-dependent visibility and correct failure status, not deletion, an explicit 403, effective mailbox opening rights or a particular RBAC assignment. A separate supplemental ACL call exposes nested HTTP 401 whose exact cause is unconfirmed. Existing named delegation remains Anna Full Access/SOB, Piotr Full Access/Send As; no report grants Marek access.
+Marek's license read of Piotr succeeds. In Exchange, a same-session Get-Mailbox read of Marek's own mailbox succeeds, while Helpdesk lookup reports not found; restoring adm-lab returns seven configured entries. This establishes account-dependent visibility and correct failure status, not deletion, an explicit 403, effective mailbox opening rights or a particular RBAC assignment. A separate supplemental ACL call exposes nested HTTP 401 whose exact cause is unconfirmed. At Stage 11, named delegation was Anna Full Access/SOB, Piotr Full Access/Send As; no report granted Marek access.
 
 [Day 11 details](../tests/day-11.md) · [Redacted samples](../samples/reports/README.md)
