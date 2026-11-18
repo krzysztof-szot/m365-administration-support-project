@@ -1,6 +1,6 @@
 # Stage index
 
-Stages 01–13 COMPLETE; Stage 14 IN_PROGRESS. There are 153 indexed captures and fifteen resolved lab cases. The global matrix records **32 PASS / 0 NOT_RUN**. Evidence and reported results are separated in [Day 01](../../tests/day-01.md), [Day 02](../../tests/day-02.md), [Day 03](../../tests/day-03.md), [Day 04](../../tests/day-04.md), [Day 05](../../tests/day-05.md), [Day 06](../../tests/day-06.md), [Day 07](../../tests/day-07.md), [Day 08](../../tests/day-08.md), [Day 09](../../tests/day-09.md), [Day 10](../../tests/day-10.md), [Day 11](../../tests/day-11.md) and [Day 12](../../tests/day-12.md).
+Stages 01–14 COMPLETE. There are 153 indexed captures and fifteen resolved lab cases. The global matrix records **32 PASS / 0 NOT_RUN**. Evidence and reported results are separated in [Day 01](../../tests/day-01.md), [Day 02](../../tests/day-02.md), [Day 03](../../tests/day-03.md), [Day 04](../../tests/day-04.md), [Day 05](../../tests/day-05.md), [Day 06](../../tests/day-06.md), [Day 07](../../tests/day-07.md), [Day 08](../../tests/day-08.md), [Day 09](../../tests/day-09.md), [Day 10](../../tests/day-10.md), [Day 11](../../tests/day-11.md) and [Day 12](../../tests/day-12.md).
 
 | Stage | Target days | Topic | Execution |
 | --- | --- | --- | --- |
@@ -17,10 +17,10 @@ Stages 01–13 COMPLETE; Stage 14 IN_PROGRESS. There are 153 indexed captures an
 | 11 | 21–23 | [Read-only operational PowerShell reports](11-powershell-reporting.md) | COMPLETE |
 | 12 | 24–25 | [Employee onboarding, access change and offboarding](12-employee-lifecycle.md) | COMPLETE |
 | 13 | 26–27 | [Cross-workload practical validation](13-independent-capstone.md) | COMPLETE |
-| 14 | 28–30 | [Portfolio review and lab closure](14-portfolio-and-lab-closure.md) | IN_PROGRESS |
+| 14 | 28–30 | [Portfolio review and lab closure](14-portfolio-and-lab-closure.md) | COMPLETE |
 
 Use the [lab-note template](../LAB-NOTE-TEMPLATE.md) when recording actual implementation. Update the relevant [functional checks](../../tests/test-matrix.csv) and [support case](../../tickets/TICKET-TEMPLATE.md) after observed results are available. Keep this index and the [main roadmap](../roadmap.md) aligned.
 
 ## Final review scope
 
-Stage 13 is COMPLETE for its revised five-task practical scope, adopted 18 November 2026. The owner used supplied procedures. T32 is PASS against the revised practical criterion; the original independent-assessment requirement was replaced and was not independently assessed. Stage 14 is IN_PROGRESS, with resource retention selected and public-only preservation/audit recorded. [Day 13 results](../../tests/day-13.md) · [Closure](../lab-closure.md).
+Stage 13 is COMPLETE for its revised five-task practical scope, adopted 18 November 2026. The owner used supplied procedures. T32 is PASS against the revised practical criterion; the original independent-assessment requirement was replaced and was not independently assessed. Stage 14 is COMPLETE, with resource retention selected and public-only preservation/audit recorded. [Day 13 results](../../tests/day-13.md) · [Closure](../lab-closure.md).

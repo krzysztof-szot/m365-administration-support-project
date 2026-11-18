@@ -1,6 +1,6 @@
 # Functional check matrix
 
-Current matrix: **32 global checks: 32 PASS, 0 NOT_RUN.** Stage 13 is COMPLETE for its revised practical-validation scope; Stage 14 is IN_PROGRESS. T32 PASS refers to the five verified practical tasks under the criterion adopted 18 November 2026; independent execution was not assessed.
+Current matrix: **32 global checks: 32 PASS, 0 NOT_RUN.** Stage 13 is COMPLETE for its revised practical-validation scope; Stage 14 is COMPLETE. T32 PASS refers to the five verified practical tasks under the criterion adopted 18 November 2026; independent execution was not assessed.
 
 | Check | First execution and evidence |
 | --- | --- |

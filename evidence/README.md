@@ -17,7 +17,7 @@
 | [Day 12](day-12/README.md) | 9 | Lifecycle baseline, mover access, handover, blocked sign-in, shared mailbox, retained mail and product unassignment |
 | [Day 13](day-13/README.md) | 7 | Practical mail/client/file/offline/report validation; original independence not assessed |
 
-Stage 11 uses [console/export evidence](day-11/README.md) and reviewed redacted samples, with no new screenshots. Future evidence folders do not establish execution. Stage 13 is COMPLETE for practical validation; its original independent follow-up remains NOT_RUN; Stage 14 is IN_PROGRESS.
+Stage 11 uses [console/export evidence](day-11/README.md) and reviewed redacted samples, with no new screenshots. Future evidence folders do not establish execution. Stage 13 is COMPLETE with T32 PASS for the revised practical criterion; independent execution was not assessed. Stage 14 is COMPLETE for the portfolio review and retained-lab decision.
 
 ## Current publication review
 

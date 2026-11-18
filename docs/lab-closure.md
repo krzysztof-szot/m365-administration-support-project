@@ -1,6 +1,6 @@
 # Retained lab state and portfolio closure
 
-Status: IN_PROGRESS  
+Status: COMPLETE  
 Review date: 18 November 2026, Europe/Warsaw  
 Owner decision: retain existing resources.
 
@@ -29,7 +29,7 @@ The source Piotr OneDrive is unlicensed. Its lifecycle follows current Microsoft
 
 ## Subscription review
 
-Fresh subscription term dates and recurring-billing settings have been requested privately and remain unconfirmed. An older check is not substituted for this closing review.
+Subscription status, term dates and recurring-billing settings were reviewed privately on 18 November 2026, using the owner-supplied product view and subsequent owner confirmations. The closing review is complete. Exact dates, renewal settings, billing-account details and identifiers remain outside this public repository. No billing change was requested or performed.
 
 Turning recurring billing off is distinct from immediate cancellation. No billing setting was changed by this review. Resource retention and future subscription management are separate decisions. [Microsoft recurring-billing documentation](https://learn.microsoft.com/en-us/microsoft-365/commerce/subscriptions/renew-your-subscription?view=o365-worldwide).
 

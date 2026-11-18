@@ -1,6 +1,6 @@
 # Environment baseline and current lab state
 
-Current state after **Stages 01–13 COMPLETE**. Stages 01–04 were executed **14 November 2026**; Stages 05–09 were executed **16 November 2026**. Stages 10–12 were executed **17 November 2026**; Stage 13 practical validation was executed **18 November 2026**. Stage/day labels identify learning units; the roadmap's target-day ranges are estimates.
+Current state after **Stages 01–14 COMPLETE**. Stages 01–04 were executed **14 November 2026**; Stages 05–09 were executed **16 November 2026**. Stages 10–12 were executed **17 November 2026**; Stage 13 practical validation and Stage 14 portfolio closure were completed **18 November 2026**. Stage/day labels identify learning units; the roadmap's target-day ranges are estimates.
 
 **Current lifecycle override:** Piotr is blocked/unlicensed with a retained shared mailbox; Anna holds the verified mail/file custody. See the [superseding final state](#stage-12-superseding-lifecycle-state) and [current access table](access-matrix.md#final-lifecycle-state--17-november-2026).
 

@@ -2,7 +2,7 @@
 
 Aktualizacja: 17 listopada 2026 r.
 
-Etapy 01–13 są COMPLETE; etap 13 obejmuje zweryfikowane zadania praktyczne, a etap 14 ma status IN_PROGRESS. Opublikowano 153 obrazy: Day 01 — 31, Day 02 — 21, Day 03 — 11, Day 04 — 27, Day 05 — 14, Day 06 — 9, Day 07 — 6, Day 08 — 7, Day 09 — 7, Day 10 — 4, Day 12 — 9, Day 13 — 7. Globalna tabela ma 32 PASS i 0 NOT_RUN; 25 testów offline kodu liczymy osobno. W Day 05 doszły T11–T13, w Day 06 T14–T15, w Day 07 T17, w Day 08 T18–T20, w Day 09 T21–T22, w Day 10 T23 i T31; T16 rozszerzono bez podwójnego liczenia; fazy kontrolne i odzyskanie nie tworzą dodatkowych numerów testów. Piętnaście przypadków M365-001–015 jest rozwiązanych jako ćwiczenia laboratoryjne; T26–T28 zaliczono w etapie 12.
+Wszystkie etapy 01–14 są COMPLETE. Etap 13 obejmuje zweryfikowane zadania praktyczne, a etap 14 końcowy przegląd portfolio i zachowanie labu. Opublikowano 153 obrazy: Day 01 — 31, Day 02 — 21, Day 03 — 11, Day 04 — 27, Day 05 — 14, Day 06 — 9, Day 07 — 6, Day 08 — 7, Day 09 — 7, Day 10 — 4, Day 12 — 9, Day 13 — 7. Globalna tabela ma 32 PASS i 0 NOT_RUN; 25 testów offline kodu liczymy osobno. W Day 05 doszły T11–T13, w Day 06 T14–T15, w Day 07 T17, w Day 08 T18–T20, w Day 09 T21–T22, w Day 10 T23 i T31; T16 rozszerzono bez podwójnego liczenia; fazy kontrolne i odzyskanie nie tworzą dodatkowych numerów testów. Piętnaście przypadków M365-001–015 jest rozwiązanych jako ćwiczenia laboratoryjne; T26–T28 zaliczono w etapie 12.
 
 Zweryfikowano pocztę z zewnętrznym Gmail, zapis i ponowne otwarcie dokumentów OneDrive/SharePoint, trwałość wiadomości Teams oraz odmowę panelu administracyjnego dla Anny. Politykę MFA oceniono w Report-only, włączono i uzyskano Success z istniejącym claimem MFA. Świeże zatwierdzenie push nie zostało uchwycone. Dodatkową rolę CA usunięto; właściciel potwierdził dalszy dostęp adm-lab oraz nowe logowania i aktywny Global Administrator dla obu kont awaryjnych.
 
@@ -192,7 +192,7 @@ Zapisana blokada uniemożliwia nowe logowanie; zachowanie starej sesji jest oddz
 
 ### 14. Portfolio i zachowany lab — dzień 28–30
 
-Status IN_PROGRESS. Właściciel zachowuje obecne zasoby. Przegląd obejmuje zgodność twierdzeń, liczb i dowodów, prywatność, odnośniki oraz lokalną kopię publicznej części repozytorium. Nie wykonano usuwania ani anulowania subskrypcji. Dokładne terminy i ustawienia odnawiania pozostają prywatne; ich świeże sprawdzenie jest jeszcze oczekiwane.
+Status COMPLETE. Właściciel zachowuje obecne zasoby. Przegląd obejmuje zgodność twierdzeń, liczb i dowodów, prywatność, odnośniki oraz lokalną kopię publicznej części repozytorium. Nie wykonano usuwania ani anulowania subskrypcji. Stan subskrypcji, terminy i ustawienia odnawiania sprawdzono prywatnie 18 listopada 2026 r. Dokładne wartości i dane rozliczeniowe nie są publikowane. Odświeżono i zweryfikowano lokalne archiwum publicznej części projektu.
 
 [Etap 14](docs/stages/14-portfolio-and-lab-closure.md) · [Stan zachowanych zasobów](docs/lab-closure.md) · [Podsumowanie portfolio](docs/portfolio-summary.md)
 
@@ -204,7 +204,7 @@ Status IN_PROGRESS. Właściciel zachowuje obecne zasoby. Przegląd obejmuje zgo
 - Instrukcje użytkownika, w tym jeden niemiecki odpowiednik.
 - Zweryfikowany runbook cyklu życia i pięć praktycznych zadań końcowych.
 
-To cele całego projektu. Etapy 01–13 są COMPLETE w przyjętym zakresie; etap 14 jest IN_PROGRESS. T32 ma status PASS według przyjętego 18 listopada kryterium pięciu zadań praktycznych; samodzielny sprawdzian bez procedur nie był oceniany. Publikowane wyniki muszą odpowiadać zapisanym obserwacjom i dowodom; przypisanie licencji lub utworzenie pliku nie kończy etapu.
+Wszystkie etapy 01–14 są COMPLETE w przyjętym i opisanym zakresie. T32 ma status PASS według przyjętego 18 listopada kryterium pięciu zadań praktycznych; samodzielny sprawdzian bez procedur nie był oceniany. Publikowane wyniki muszą odpowiadać zapisanym obserwacjom i dowodom; przypisanie licencji lub utworzenie pliku nie kończy etapu.
 
 W Day 01 wdrożono ograniczony pilot MFA przez Conditional Access w istniejącym tenancie. Windows 11, Chrome 157.0.8103.52 dla Anny i Edge 157.0.4341.46 dla administratorów zapisano na podstawie raportu właściciela. Service health pokazało pięć advisories dla Microsoft 365 suite; nie wnioskujemy z tego o zdrowiu wszystkich usług ani o odtworzonym incydencie. Licencje Premium umożliwiają rozszerzenia z Intune. Dodatkowy [pilot Copilot](docs/copilot-pilot-plan.md) obejmuje trzy sesje, około 5–7 godzin, zintegrowane z etapami 06, 08, 10 i 13; mamy jedno miejsce Copilot. Własna domena i udostępnienie zewnętrzne pozostają rozszerzeniami. PIM, pełne odtworzenie E5/Entra Suite, hybrydowy Exchange, Teams Phone i zaawansowane holdy są poza zakresem podstawowym.
 

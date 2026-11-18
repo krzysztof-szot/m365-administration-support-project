@@ -4,7 +4,7 @@
 
 <p align="center">
   <img alt="14 learning stages" src="https://img.shields.io/badge/LABS-14%20STAGES-6f42c1?style=for-the-badge">
-  <img alt="Project review; 13 of 14 stages complete" src="https://img.shields.io/badge/PROGRESS-13%20%2F%2014%20COMPLETE-0078D4?style=for-the-badge">
+  <img alt="Project complete; 14 of 14 stages complete" src="https://img.shields.io/badge/PROGRESS-14%20%2F%2014%20COMPLETE-0078D4?style=for-the-badge">
   <img alt="Global matrix: 32 pass" src="https://img.shields.io/badge/CHECKS-32%20PASS%20%2F%200%20NOT%20RUN-607078?style=for-the-badge">
 </p>
 
@@ -29,16 +29,16 @@
 
 A hands-on Microsoft 365 administration and support lab for the fictional organization **Baltic Finance**.
 
-The project is designed to connect user accounts, licenses, email, collaboration, desktop clients and employee lifecycle tasks through controlled service requests and troubleshooting exercises. Each stage will record the administrative decision, the affected user's experience and the observed result.
+The project connects user accounts, licenses, email, collaboration, desktop clients and employee lifecycle tasks through controlled service requests and troubleshooting exercises. Its 14 completed stages record the administrative decisions, user experience and observed results within their documented scope.
 
 This repository complements the owner's Microsoft Entra, hybrid security and IAM automation projects with everyday Microsoft 365 administration and IT support.
 
 ## Project Overview
 
-**Status: Stages 01–13 COMPLETE; Stage 14 IN_PROGRESS.**\
+**Status: Stages 01–14 COMPLETE.**\
 Earlier owner subscription views showed **Business Standard (25 seats)**, **Business Premium (25 seats)** and **Business Premium with Copilot (1 seat)**. A fresh closing review of term dates and recurring billing is recorded separately in the retained-state inventory. Three pilot accounts exist; Piotr now remains blocked/unlicensed as a retained shared-mailbox anchor. Licensing recovery, a three-user MFA scope, Finance groups, alias delivery, distribution recovery, shared-mailbox delegation, calendar permissions, room booking and mail-flow diagnosis/recovery are documented. See the [current baseline](docs/01-environment-baseline.md) for the observed state and source limits.
 
-**Recorded execution: 13 completed stages, with Stage 13 assessed against its revised practical scope, 32 PASS / 0 NOT_RUN, 15 resolved lab cases and 153 indexed captures.** The completed stages connect working services to scoped MFA, entitlement recovery, group ownership, delegated mail/calendar behavior and evidence-supported mail-flow diagnosis, desktop identity correction, offline synchronization recovery, private-channel authorization/restoration and knowledge-site access diagnosis, OneDrive pause/resume and content-verified version/deleted-file recovery, followed by current service/change review and user knowledge validation. [Implementation index](docs/stages/README.md) · [Results](tests/README.md) · [Evidence](evidence/README.md)
+**Recorded execution: 14 completed stages, with Stage 13 assessed against its revised practical scope, 32 PASS / 0 NOT_RUN, 15 resolved lab cases and 153 indexed captures.** The completed stages connect working services to scoped MFA, entitlement recovery, group ownership, delegated mail/calendar behavior and evidence-supported mail-flow diagnosis, desktop identity correction, offline synchronization recovery, private-channel authorization/restoration and knowledge-site access diagnosis, OneDrive pause/resume and content-verified version/deleted-file recovery, followed by current service/change review and user knowledge validation. [Implementation index](docs/stages/README.md) · [Results](tests/README.md) · [Evidence](evidence/README.md)
 
 The completed stages now also include guided employee movement, blocked sign-in, retained-mail custody and approved file handover after product unassignment.
 
@@ -58,7 +58,7 @@ Each stage is designed to include:
 | Architecture | Implementation | Validation | Evidence |
 |:---:|:---:|:---:|:---:|
 | [View design](#target-architecture) | [Browse stages](#implementation-progress) | [Open test matrix](tests/test-matrix.csv) | [Browse evidence](evidence/README.md) |
-| Target design and recorded baseline | 13 complete; Stage 14 in progress | 32 PASS / 0 NOT_RUN | 153 captures across Days 01–10, Day 12 and Day 13 |
+| Target design and recorded baseline | 14 of 14 stages complete | 32 PASS / 0 NOT_RUN | 153 captures across Days 01–10, Day 12 and Day 13 |
 
 ## Technologies and Concepts
 
@@ -312,7 +312,7 @@ flowchart TB
 
 ## Implementation Progress
 
-**13 of 14 stages completed. Stages 01–13 COMPLETE; Stage 14 IN_PROGRESS.**
+**14 of 14 stages completed. Stages 01–14 COMPLETE.**
 
 The schedule targets approximately **50–65 hours over a 30-day trial**, including documentation. Day ranges are estimates and must fit the actual subscription end date. Notes and evidence are saved throughout the project; the final days are a buffer.
 
@@ -333,13 +333,13 @@ The schedule targets approximately **50–65 hours over a 30-day trial**, includ
 | 11 | 21–23 | Read-only operational PowerShell reports | [Stage notes](docs/stages/11-powershell-reporting.md) | COMPLETE |
 | 12 | 24–25 | Employee onboarding, access change and offboarding | [Stage notes](docs/stages/12-employee-lifecycle.md) | COMPLETE |
 | 13 | 26–27 | Cross-workload practical validation | [Stage plan](docs/stages/13-independent-capstone.md) | COMPLETE |
-| 14 | 28–30 | Portfolio review and lab closure | [Stage plan](docs/stages/14-portfolio-and-lab-closure.md) | IN_PROGRESS |
+| 14 | 28–30 | Portfolio review and lab closure | [Stage plan](docs/stages/14-portfolio-and-lab-closure.md) | COMPLETE |
 
 [Full roadmap](docs/roadmap.md) · [Test matrix](tests/test-matrix.csv) · [Support backlog](samples/ticket-backlog.csv) · [Polish coaching plan](PROJECT-PLAN_PL.md)
 
 ### Detailed Lab Notes
 
-Expand a stage to see its scope. Stages 01–12 are complete; the final two records distinguish practical validation from the original independent-assessment criterion. T03 and T16 were first exercised in Day 01; T06 first ran in Day 02 and was extended in Day 03 without adding another global check. Stage 07 extends T16 on the new Finance Team and adds the private-channel boundary check T17. Stage 11 adds T24/T25; its 25 offline code cases are counted separately.
+Expand a stage to see its scope. All 14 stages are complete; Stage 13 uses the documented practical-validation criterion and Stage 14 records the retained lab and portfolio review. T03 and T16 were first exercised in Day 01; T06 first ran in Day 02 and was extended in Day 03 without adding another global check. Stage 07 extends T16 on the new Finance Team and adds the private-channel boundary check T17. Stage 11 adds T24/T25; its 25 offline code cases are counted separately.
 
 <details>
 <summary><strong>Stage 01 — Tenant baseline and administrative roles</strong> · complete</summary>
@@ -591,9 +591,9 @@ Five practical tasks verify Helpdesk on-behalf mail, desktop account/function, t
 ---
 
 <details>
-<summary><strong>Stage 14 — Portfolio review and retained lab</strong> · in_progress</summary>
+<summary><strong>Stage 14 — Portfolio review and retained lab</strong> · COMPLETE</summary>
 
-The owner retains resources. Documentation/evidence claims, source/output hashes, internal links, private-identifier boundaries and public-only offline preservation are reviewed. No destructive cleanup or billing mutation is performed. Exact subscription review stays private and is pending.
+The owner retains resources. Documentation/evidence claims, source/output hashes, internal links, private-identifier boundaries and public-only offline preservation are reviewed. No destructive cleanup or billing mutation is performed. Subscription status, term dates and renewal settings were reviewed privately on 18 November 2026; the closing review is complete.
 
 [Review record](docs/stages/14-portfolio-and-lab-closure.md) · [Closure inventory](docs/lab-closure.md) · [Portfolio summary](docs/portfolio-summary.md) · [Documentation QA](tests/day-14.md)
 
