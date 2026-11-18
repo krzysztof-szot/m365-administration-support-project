@@ -72,3 +72,7 @@ The reporting laptop is separate from BFL-WKS01, which remains the earlier Offic
 ## Stage 12 current custody and access
 
 The diagram now reflects scoped final Piotr removals; earlier functional descriptions retain their stage dates. New Private BFL-M365-IT retains Marek Owner after Piotr's successful mover edit and later removal. Piotr is a blocked/unlicensed shared-mailbox anchor, with correct Anna FullAccess and retained-mail reading verified. Anna has a separate approved V1 copy in her own licensed OneDrive. The source follows unlicensed-account rules, not indefinite archival assurance. Knowledge membership removal is reported but the effective-permission query is inconclusive. This is not a tenant-wide ACL/role inventory or a whole-drive migration. [Actual lifecycle record](stages/12-employee-lifecycle.md) · [Runbook](../runbooks/employee-lifecycle.md).
+
+## Retained portfolio state
+
+The owner retains the current lab. Selected Stage 13 rechecks corroborate post-offboarding Finance/Helpdesk/Piotr state. Single-file sharing was temporary and removed; actual offline work on a new D13 TXT ends at full V2. These are verified practical operations rather than an unaided assessment. [Closure inventory](lab-closure.md) records source dates, remaining dependencies and untested scope.

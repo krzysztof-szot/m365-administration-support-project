@@ -2,7 +2,7 @@
 
 Aktualizacja: 17 listopada 2026 r.
 
-Etapy 01–12 są COMPLETE; etapy 13–14 pozostają PLANNED. Opublikowano 146 obrazów: Day 01 — 31, Day 02 — 21, Day 03 — 11, Day 04 — 27, Day 05 — 14, Day 06 — 9, Day 07 — 6, Day 08 — 7, Day 09 — 7, Day 10 — 4, Day 12 — 9. Globalna tabela ma 31 PASS i 1 NOT_RUN; 25 testów offline kodu liczymy osobno. W Day 05 doszły T11–T13, w Day 06 T14–T15, w Day 07 T17, w Day 08 T18–T20, w Day 09 T21–T22, w Day 10 T23 i T31; T16 rozszerzono bez podwójnego liczenia; fazy kontrolne i odzyskanie nie tworzą dodatkowych numerów testów. Piętnaście przypadków M365-001–015 jest rozwiązanych jako ćwiczenia laboratoryjne; T26–T28 zaliczono w etapie 12.
+Etapy 01–12 są COMPLETE; etap 13 jest PARTIAL w zakresie pierwotnego sprawdzianu samodzielności, a etap 14 ma status IN_PROGRESS. Opublikowano 153 obrazy: Day 01 — 31, Day 02 — 21, Day 03 — 11, Day 04 — 27, Day 05 — 14, Day 06 — 9, Day 07 — 6, Day 08 — 7, Day 09 — 7, Day 10 — 4, Day 12 — 9, Day 13 — 7. Globalna tabela ma 31 PASS i 1 NOT_RUN; 25 testów offline kodu liczymy osobno. W Day 05 doszły T11–T13, w Day 06 T14–T15, w Day 07 T17, w Day 08 T18–T20, w Day 09 T21–T22, w Day 10 T23 i T31; T16 rozszerzono bez podwójnego liczenia; fazy kontrolne i odzyskanie nie tworzą dodatkowych numerów testów. Piętnaście przypadków M365-001–015 jest rozwiązanych jako ćwiczenia laboratoryjne; T26–T28 zaliczono w etapie 12.
 
 Zweryfikowano pocztę z zewnętrznym Gmail, zapis i ponowne otwarcie dokumentów OneDrive/SharePoint, trwałość wiadomości Teams oraz odmowę panelu administracyjnego dla Anny. Politykę MFA oceniono w Report-only, włączono i uzyskano Success z istniejącym claimem MFA. Świeże zatwierdzenie push nie zostało uchwycone. Dodatkową rolę CA usunięto; właściciel potwierdził dalszy dostęp adm-lab oraz nowe logowania i aktywny Global Administrator dla obu kont awaryjnych.
 
@@ -184,17 +184,17 @@ Zapisana blokada uniemożliwia nowe logowanie; zachowanie starej sesji jest oddz
 
 **Stage 12 COMPLETE; T26–T28 PASS; M365-015 RESOLVED.** Zweryfikowany [runbook](runbooks/employee-lifecycle.md), [wyniki](tests/day-12.md), [9 dowodów](evidence/day-12/README.md) i [opis etapu](docs/stages/12-employee-lifecycle.md). Brak automatycznego przywrócenia konta; wyjątek RBAC z etapu 05 pozostaje nierozwiązany.
 
-### 13. Sprawdzian samodzielności — dzień 26–27
+### 13. Weryfikacja praktyczna — dzień 26–27
 
-Rozwiąż pięć zadań na podstawie objawów, bez podanej sekwencji naprawy. Korzystaj ze swoich notatek i oficjalnej dokumentacji. Uzasadnij diagnozę, zakres zmiany, możliwość cofnięcia i sprawdzenie wyniku albo eskalację.
+18 listopada wykonano i zweryfikowano pięć zadań: obieg Helpdesku z Anną w imieniu skrzynki, Word i klasyczny Outlook Marka, tymczasową edycję jednego pliku oraz cofnięcie dostępu, zapis offline z późniejszą synchronizacją V2 i świeże raporty Piotr/Finance/Helpdesk zgodne z wybranymi widokami portalu. Operacje wykonano ze wsparciem procedur i przygotowanych launcherów. Nie przeprowadzono pierwotnego pięciozadaniowego wykonania bez podanej sekwencji; **T32 pozostaje NOT_RUN, etap 13 PARTIAL**.
 
-Szczegółowe zadania i warunki zakończenia: [etap 13](docs/stages/13-independent-capstone.md).
+[Etap 13](docs/stages/13-independent-capstone.md) · [Wyniki](tests/day-13.md) · [7 obrazów](evidence/day-13/README.md) · [Aktualne wyciągi](samples/capstone/README.md)
 
-### 14. Portfolio i zakończenie labu — dzień 28–30
+### 14. Portfolio i zachowany lab — dzień 28–30
 
-Zapisuj dowody na bieżąco. Ostatnie dni zostaw na poprawki, eksport materiałów i opis stanu końcowego przed wygaśnięciem triala. Sprawdź zgodność README, wyników i ograniczeń z rzeczywistymi obserwacjami.
+Status IN_PROGRESS. Właściciel zachowuje obecne zasoby. Przegląd obejmuje zgodność twierdzeń, liczb i dowodów, prywatność, odnośniki oraz lokalną kopię publicznej części repozytorium. Nie wykonano usuwania ani anulowania subskrypcji. Dokładne terminy i ustawienia odnawiania pozostają prywatne; ich świeże sprawdzenie jest jeszcze oczekiwane.
 
-Szczegółowe zadania i warunki zakończenia: [etap 14](docs/stages/14-portfolio-and-lab-closure.md).
+[Etap 14](docs/stages/14-portfolio-and-lab-closure.md) · [Stan zachowanych zasobów](docs/lab-closure.md) · [Podsumowanie portfolio](docs/portfolio-summary.md)
 
 ## Docelowy rezultat
 
@@ -204,14 +204,14 @@ Szczegółowe zadania i warunki zakończenia: [etap 14](docs/stages/14-portfolio
 - Instrukcje użytkownika, w tym jeden niemiecki odpowiednik.
 - Zweryfikowany runbook cyklu życia i pięć samodzielnych zadań końcowych.
 
-To cele całego projektu. Etapy 01–12 są COMPLETE, a etapy 13–14 pozostają PLANNED. Publikowane wyniki muszą odpowiadać zapisanym obserwacjom i dowodom; przypisanie licencji lub utworzenie pliku nie kończy etapu.
+To cele całego projektu. Etapy 01–12 są COMPLETE; pierwotny cel samodzielnego etapu 13 pozostaje PARTIAL, a etap 14 jest IN_PROGRESS. Publikowane wyniki muszą odpowiadać zapisanym obserwacjom i dowodom; przypisanie licencji lub utworzenie pliku nie kończy etapu.
 
 W Day 01 wdrożono ograniczony pilot MFA przez Conditional Access w istniejącym tenancie. Windows 11, Chrome 157.0.8103.52 dla Anny i Edge 157.0.4341.46 dla administratorów zapisano na podstawie raportu właściciela. Service health pokazało pięć advisories dla Microsoft 365 suite; nie wnioskujemy z tego o zdrowiu wszystkich usług ani o odtworzonym incydencie. Licencje Premium umożliwiają rozszerzenia z Intune. Dodatkowy [pilot Copilot](docs/copilot-pilot-plan.md) obejmuje trzy sesje, około 5–7 godzin, zintegrowane z etapami 06, 08, 10 i 13; mamy jedno miejsce Copilot. Własna domena i udostępnienie zewnętrzne pozostają rozszerzeniami. PIM, pełne odtworzenie E5/Entra Suite, hybrydowy Exchange, Teams Phone i zaawansowane holdy są poza zakresem podstawowym.
 
 ## Start
 
-Przejrzyj [wyniki](tests/README.md), [przypadki](tickets/README.md) i [baseline](docs/01-environment-baseline.md), a następnie rozpocznij [etap 13](docs/stages/13-independent-capstone.md). Rzeczywiste dane logowania, domenę, identyfikatory, termin triala i szczegóły rozliczeń przechowuj prywatnie. Źródła techniczne i licencyjne: [Microsoft](docs/sources.md).
+Przejrzyj [wyniki](tests/README.md), [przypadki](tickets/README.md) i [baseline](docs/01-environment-baseline.md), a następnie przejrzyj [stan zachowanych zasobów](docs/lab-closure.md). Rzeczywiste dane logowania, domenę, identyfikatory, termin triala i szczegóły rozliczeń przechowuj prywatnie. Źródła techniczne i licencyjne: [Microsoft](docs/sources.md).
 
 ## Screeny podczas ćwiczeń
 
-Przed istotnym punktem dowodowym prowadzący wskazuje moment wykonania screena, widok i nazwę pliku. Zgodnie z ustaleniem z Day 05 ograniczamy liczbę obrazów do potrzebnej konfiguracji i wyników; pomocnicze odczyty mogą być potwierdzone tekstowo z jawnym przypisaniem źródła. [Indeks dowodów](evidence/README.md) opisuje 146 opublikowanych obrazów; Stage 11 ma dowody tekstowe i eksporty bez nowych screenów. W obrazach Day 03 zanonimizowano wskazane identyfikatory, domenę oraz nazwisko zewnętrznego nadawcy; ograniczenia interpretacji opisano w indeksie. W Day 04 podmieniono 02 na wersję z zasłoniętą domeną, a zapisane wyniki odróżniają konfigurację, fakty widoczne na screenach i potwierdzenia właściciela. Nazwy i moment wykonania nowych dowodów będą wskazywane podczas kolejnych ćwiczeń. Kodów QR rejestracji i sekretów uwierzytelniania nie publikujemy.
+Przed istotnym punktem dowodowym prowadzący wskazuje moment wykonania screena, widok i nazwę pliku. Zgodnie z ustaleniem z Day 05 ograniczamy liczbę obrazów do potrzebnej konfiguracji i wyników; pomocnicze odczyty mogą być potwierdzone tekstowo z jawnym przypisaniem źródła. [Indeks dowodów](evidence/README.md) opisuje 153 opublikowane obrazy; Stage 11 ma dowody tekstowe i eksporty bez nowych screenów. W obrazach Day 03 zanonimizowano wskazane identyfikatory, domenę oraz nazwisko zewnętrznego nadawcy; ograniczenia interpretacji opisano w indeksie. W Day 04 podmieniono 02 na wersję z zasłoniętą domeną, a zapisane wyniki odróżniają konfigurację, fakty widoczne na screenach i potwierdzenia właściciela. Nazwy i moment wykonania nowych dowodów będą wskazywane podczas kolejnych ćwiczeń. Kodów QR rejestracji i sekretów uwierzytelniania nie publikujemy.

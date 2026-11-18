@@ -1,6 +1,6 @@
 # Functional check matrix
 
-Current status after Stages 01–12: **32 global checks: 31 PASS, 1 NOT_RUN.** Stages 13–14 remain PLANNED.
+Current matrix: **32 global checks: 31 PASS, 1 NOT_RUN.** Stage 13 is PARTIAL for the original independent criterion; Stage 14 is IN_PROGRESS.
 
 | Check | First execution and evidence |
 | --- | --- |
@@ -66,3 +66,7 @@ T24 compares selected product/group/named-delegate values; it does not independe
 ## Day 12 evidence boundary
 
 [Day 12](day-12.md) adds T26–T28 without extra IDs. Captured blocked/unlicensed UI and mailbox type, selected read-only diagnostics and owner-attributed mail/copy/control reopens are distinguished. Knowledge membership removal is reported, but the attempted Check Permissions query returns a sharing-policy message rather than effective levels; no complete item-grant purge is asserted. The selected Anna copy is not a whole-OneDrive migration or indefinite preservation of the unlicensed source. Stage 11 source/tests and historical samples remain unchanged.
+
+## Day 13 practical validation and Day 14 review
+
+[Day 13](day-13.md) records five verified practical subcases and three current report exports, with selected portal agreement. T32 remains NOT_RUN because the original independent five-task execution was not performed. These subcases do not add IDs or alter earlier passes. [Day 14](day-14.md) checks documentation, privacy, links and preservation rather than adding a workload-test count. Exact private billing review is kept outside public evidence.

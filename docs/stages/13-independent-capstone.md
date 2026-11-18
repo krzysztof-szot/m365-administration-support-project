@@ -1,47 +1,59 @@
-# Stage 13 — Independent administration and troubleshooting assessment
+# Stage 13 — Cross-workload practical validation
 
-Status: PLANNED  
+Status: PARTIAL  
 Target days: 26–27  
-Execution date: not recorded
+Execution date: 18 November 2026, Europe/Warsaw
 
-## Learning objective
+## Recorded scope
 
-Demonstrate independent diagnosis across workloads without a step-by-step repair guide.
+Five practical tasks were performed and verified by the owner using supplied procedures and report launchers. The original goal also required an independent five-task assessment without a supplied repair sequence. That independent execution was not performed, so **T32 remains NOT_RUN** and the original stage is PARTIAL. Practical success is recorded separately from that unassessed criterion.
 
-## Before starting
+This is a synthetic lab. Several tasks validate healthy services rather than repair a current outage.
 
-Confirm the required service entitlement, task-appropriate role, affected synthetic identities and recovery path. Record the actual tenant/client context privately. Earlier stages provide the baseline; unresolved prerequisites remain BLOCKED rather than assumed successful.
+## Verified practical tasks
 
-## Planned exercises
+| Subcase | Observed result | Verification |
+| --- | --- | --- |
+| CAP-01 — Helpdesk mail | Marek receives Anna on behalf of Helpdesk; Marek's return reply is read by Anna in Helpdesk | Capture 01 shows actual received sender; other hops owner-confirmed |
+| CAP-02 — desktop identity | Word user and subscription identify Marek; local document reopens with full contents; classic Outlook round trip works | Capture 02 account/product UI; capture 03 received reply and connection status; local persistence and VM attribution owner-confirmed |
+| CAP-03 — one-file permission | Initial Marek denial, temporary edit/save, Anna sees reopened edit; Marek stays outside Finance Team; removal restores item denial | Initial/member/owner controls reported; capture 04 saved text; capture 05 identifies denied m365.marek |
+| CAP-04 — offline work | Pinned V1 opens offline; V2 saved/reopened offline; reconnect produces full matching V2 in cloud and locally | Capture 06 Offline/local V2; capture 07 full cloud V2; reconnect/local reopen/final health owner-confirmed |
+| CAP-05 — current reporting | Piotr successful empty license read; Finance Anna-only; Helpdesk Anna configured delegates; selected fresh portal agreement | Actual CSV/JSON and source/output hashes inspected; redacted extracts published |
 
-1. Select five tasks covering mail, client identity, collaboration permissions, synchronization and lifecycle reporting.
-2. Use your own runbooks and official sources to choose diagnostic steps.
-3. Record expected outcomes before changes and keep recovery paths.
-4. Classify each task as resolved, partially resolved or requiring escalation based on evidence.
+## Decisions and source boundaries
 
-## Training case
+FullAccess and sender authorization were checked separately. The actual received mail identifies `M365 Anna Finance on behalf of BFL-M365-Helpdesk`. Existing Anna delegation was used; no new grant is reported for the mail task. Word shows `Subscription Product for` Marek and Microsoft 365 Apps for business, Version 2610 / Build 20527.20196 / Current Channel. Its current frame does not show a fresh bitness or activation-token audit. A local save/reopen is not OneDrive synchronization evidence.
 
-Five training requests are presented as symptoms; the repair sequence is not supplied.
+The temporary collaboration target is only `LAB-D13-ACCESS-01.docx` in Finance. Anna creates the baseline; Marek's edit is reported saved and Anna sees it after reopening. Capture 04 has an AF avatar, so its contents/editing UI do not independently identify Marek as the current editor. Capture 05 explicitly identifies Marek in the final item denial. Exact temporary-grant source and final inheritance/ACL inventory were not captured; no Team/site-wide grant, complete ACL restoration or tenant-wide purge is claimed. Anna retains the file and saved line.
 
-This is a planned lab scenario. No incident, root cause or repair outcome has been observed yet.
+The offline target is `M365-Lab-D13/LAB-D13-OFFLINE-01.txt` in Marek's work OneDrive. Complete final text:
 
-## Exit checks
+```text
+LAB-D13-OFFLINE-01
+Version: V2
+Edited offline by Marek.
+```
 
-- [ ] Each task has a supported diagnosis or a justified escalation.
-- [ ] Changes are scoped and have recorded recovery paths.
-- [ ] Final functional and regression checks use the affected identities.
-- [ ] The operator can explain the decisions without reading a copied click sequence.
+The file was marked Always keep on this device before a controlled disconnect of the lab VM. Online-only blue-cloud status means the content is not locally downloaded; it can coexist with a healthy synchronized client. Capture 06 shows Offline and pending sync; capture 07 shows the full cloud contents but not the final client-health panel. The owner confirms VM connectivity restored, fresh local/web agreement and `Backed up and synced`. No measured latency, payload hash equality, backup or whole-drive recovery is inferred.
 
-## Execution record
+## Current report reconciliation
 
-- Starting state and expected result: not recorded.
-- Actions and reasoning: not recorded.
-- Observations and propagation delays: not recorded.
-- Functional/negative/recovery results: NOT_RUN.
-- Evidence: none.
-- Remaining resources, restoration and limitations: not recorded.
-- What I can explain without a click-by-click guide: not recorded.
+| Selected target | API/report result | Fresh portal observation |
+| --- | --- | --- |
+| Piotr | COMPLETE / 0, zero DATA and one EMPTY marker; current identity verified | Zero assigned products; sign-in blocked |
+| Finance | Private; Anna human Owner and direct human Member; three DATA rows | Private, Owners Anna, Members Anna |
+| Helpdesk | Five configured rows: three SELF, Anna FullAccess and Anna SendOnBehalf; no human SendAs | FullAccess Anna, no human SendAs, Send on behalf Anna |
 
-Use the [lab-note template](../LAB-NOTE-TEMPLATE.md), [test matrix](../../tests/test-matrix.csv) and [ticket workflow](../../tickets/README.md). Mark completion only after evidence supports the relevant exit checks.
+Metadata account/tenant, selected target, source hashes and CSV output hashes verify. Graph includes broader write scopes; the source calls read APIs, not a least-privilege session demonstration. The Helpdesk total is not five people. A failed read with zero data would not establish no licenses; the actual Piotr EMPTY response is a successful selected-target read.
+
+The main Stage 11 license sample is for Marek and is not a historical Piotr baseline. Historical Finance/Helpdesk samples are unchanged; the new [current extracts](../../samples/capstone/README.md) preserve their own observation time and coverage. No new workload mutation is made by the reports.
+
+## Remaining state and assessment limit
+
+Anna's retained Piotr mailbox/file custody, blocked unlicensed Piotr anchor, existing pilot security scope and the disabled training transport rule remain as previously recorded. The Finance test document keeps its saved edit with Anna access and Marek denied. The local Word test remains in VM Downloads; the OneDrive TXT remains V2. Existing D09/D10 originals were not test targets. No extra M365 backlog incident is created.
+
+A separately recorded independent assessment could address the remaining T32 criterion.
+
+[Seven captures](../../evidence/day-13/README.md) · [Day 13 test record](../../tests/day-13.md) · [Current extracts](../../samples/capstone/README.md) · [Portfolio review](14-portfolio-and-lab-closure.md)
 
 [Back to stage index](README.md)

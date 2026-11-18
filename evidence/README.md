@@ -1,6 +1,6 @@
 # Evidence handling
 
-**146 owner-supplied captures are indexed across Days 01–10 and Day 12; Stage 11 adds reviewed console/export evidence.** Configuration, captured functional results and owner-reported checks are labelled separately.
+**153 owner-supplied captures are indexed across Days 01–10, Day 12 and Day 13; Stage 11 adds reviewed console/export evidence.** Configuration, captured functional results and owner-reported checks are labelled separately.
 
 | Stage | Screenshots | Results |
 | --- | --- | --- |
@@ -15,8 +15,9 @@
 | [Day 09](day-09/README.md) | 7 | Work OneDrive baseline, paused/resumed labels, history and full-content version/deleted-file recovery |
 | [Day 10](day-10/README.md) | 4 | Current Service health, future change notice, four Knowledge articles and local-content/cloud-presence recovery evidence |
 | [Day 12](day-12/README.md) | 9 | Lifecycle baseline, mover access, handover, blocked sign-in, shared mailbox, retained mail and product unassignment |
+| [Day 13](day-13/README.md) | 7 | Practical mail/client/file/offline/report validation; original independence not assessed |
 
-Stage 11 uses [console/export evidence](day-11/README.md) and reviewed redacted samples, with no new screenshots. Future evidence folders do not establish execution. Stages 13–14 remain planned.
+Stage 11 uses [console/export evidence](day-11/README.md) and reviewed redacted samples, with no new screenshots. Future evidence folders do not establish execution. Stage 13 practical results are indexed with the independent-assessment limit; Stage 14 is IN_PROGRESS.
 
 ## Current publication review
 
@@ -64,3 +65,7 @@ Three owner-run COMPLETE report exports were checked locally, including source/o
 ## Day 12 lifecycle publication review
 
 Nine new original PNGs preserve source bytes; all previous 137 images are unchanged. [Day 12 captions](day-12/README.md) distinguish visible configuration/content from owner-attributed actors, session effects, final reopens and bounded controls. Raw OWA error identifiers and raw tenant exports stay private. The Knowledge query's policy message is textual/inconclusive, not a captured effective denial. Selected redacted API facts and final manual confirmations are labelled separately. Total images: 146 (145 PNG plus one JPG).
+
+## Day 13 and final portfolio review
+
+Seven additional original PNGs bring the image total to 153. Their GitHub hashes match staged source copies; all previous images are preserved. [Day 13](day-13/README.md) attributes actors, saved/reopened controls and final health, including AF avatar in 04 and cloud-only crop in 07. [Day 14](day-14/README.md) adds file/link/privacy/archive review without new workload screenshots. Raw private diagnostics remain local.

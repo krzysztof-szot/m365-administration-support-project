@@ -1,0 +1,4 @@
+Provenance,Scenario,Actor,Target,Outcome,ExitCode,DataRows,EmptyMarkers,StartedUtc
+LIVE_REDACTED,current-piotr-licenses,adm-lab,m365.piotr,COMPLETE,0,0,1,2026-11-18T06:07:23.1472678Z
+LIVE_REDACTED,current-finance,adm-lab,BFL-M365-Finance,COMPLETE,0,3,0,2026-11-18T06:07:23.6107509Z
+LIVE_REDACTED,current-helpdesk,adm-lab,bfl-m365-helpdesk,COMPLETE,0,5,0,2026-11-18T06:11:07.6029886Z

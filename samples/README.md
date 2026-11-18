@@ -21,3 +21,7 @@ Stage 10 added a case-impact/urgency review, a prepared escalation package and u
 Piotr now has Department IT / Job title IT Support Specialist, unchanged display/login identifiers, no assigned product license and a blocked anchoring identity. The immediately previous exact title was not freshly captured. Historical Stage 11 report extracts retain their original memberships/delegation and are not silently rewritten to resemble current state.
 
 [lifecycle-mailbox-observations.csv](lifecycle-mailbox-observations.csv) contains selected redacted facts from actual pre/post-delegate-repair Exchange reads, pre-unassignment licensing observations, and separately labelled final owner/capture confirmations. It excludes domains, object/archive identifiers and raw diagnostic output. It is not a new production report or a post-unassignment API inventory. [Stage 12](../docs/stages/12-employee-lifecycle.md) records custody and preservation limits. Earlier paragraphs describing M365-015 as planned apply to the historical Stage 09/10 snapshot.
+
+## Current practical-validation extracts
+
+[capstone/](capstone/README.md) contains actual current Piotr/Finance/Helpdesk observations with redacted identities, EMPTY and DATA rows distinguished and source/output checks. Older report samples remain historical. No new support case or independent-assessment pass is inferred.

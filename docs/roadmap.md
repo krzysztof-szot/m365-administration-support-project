@@ -1,6 +1,6 @@
 # Thirty-day learning roadmap
 
-Status: **Stages 01–12 COMPLETE; Stages 13–14 PLANNED.** There are 146 indexed captures, fifteen resolved lab cases and **31 PASS / 1 NOT_RUN**. See [Day 01](../tests/day-01.md), [Day 02](../tests/day-02.md), [Day 03](../tests/day-03.md), [Day 04](../tests/day-04.md), [Day 05](../tests/day-05.md), [Day 06](../tests/day-06.md), [Day 07](../tests/day-07.md), [Day 08](../tests/day-08.md), [Day 09](../tests/day-09.md), [Day 10](../tests/day-10.md) [Day 11](../tests/day-11.md) and [Day 12](../tests/day-12.md). T16 was first passed early and rechecked on the new Finance Team; T17 is newly passed. Stage 08 adds T18–T20 on the independent knowledge site, with a revoked-link/library-access comparison and an isolated folder restriction/restoration.
+Status: **Stages 01–12 COMPLETE; Stage 13 PARTIAL; Stage 14 IN_PROGRESS.** There are 153 indexed captures, fifteen resolved lab cases and **31 PASS / 1 NOT_RUN**. See [Day 01](../tests/day-01.md), [Day 02](../tests/day-02.md), [Day 03](../tests/day-03.md), [Day 04](../tests/day-04.md), [Day 05](../tests/day-05.md), [Day 06](../tests/day-06.md), [Day 07](../tests/day-07.md), [Day 08](../tests/day-08.md), [Day 09](../tests/day-09.md), [Day 10](../tests/day-10.md), [Day 11](../tests/day-11.md) and [Day 12](../tests/day-12.md). T16 was first passed early and rechecked on the new Finance Team; T17 is newly passed. Stage 08 adds T18–T20 on the independent knowledge site, with a revoked-link/library-access comparison and an isolated folder restriction/restoration.
 
 The target workload is about 50–65 hours including documentation. The ranges below are estimates, not elapsed execution dates. Record the actual subscription expiry privately and shorten the schedule if necessary. Save evidence after each session rather than waiting until the end.
 
@@ -18,8 +18,8 @@ The target workload is about 50–65 hours including documentation. The ranges b
 | 10 | 19–20 | [Support operations and user knowledge](stages/10-support-operations-and-knowledge.md) | COMPLETE | 3–4 h |
 | 11 | 21–23 | [Read-only operational PowerShell reports](stages/11-powershell-reporting.md) | COMPLETE | 6–8 h |
 | 12 | 24–25 | [Employee onboarding, access change and offboarding](stages/12-employee-lifecycle.md) | COMPLETE | 4–5 h |
-| 13 | 26–27 | [Independent administration and troubleshooting assessment](stages/13-independent-capstone.md) | PLANNED | 4–5 h |
-| 14 | 28–30 | [Portfolio review and lab closure](stages/14-portfolio-and-lab-closure.md) | PLANNED | 2–3 h |
+| 13 | 26–27 | [Independent administration and troubleshooting assessment](stages/13-independent-capstone.md) | PARTIAL | 4–5 h |
+| 14 | 28–30 | [Portfolio review and lab closure](stages/14-portfolio-and-lab-closure.md) | IN_PROGRESS | 2–3 h |
 
 The hour ranges total 50–65 hours including learning, screenshots and documentation; they are estimates, not measured elapsed work. The Copilot extension adds 5–7 hours. Learning-unit labels do not establish calendar dates: Stages 01–04 were all executed on 14 November 2026; Stages 05–09 were executed on 16 November 2026. Stage 06 used the dedicated BFL-WKS01 VM, activated Microsoft 365 Apps and classic Outlook, and verified identity/offline recovery plus existing calendar/Helpdesk delegation. Stage 07 attached Teams to Finance, verified standard/private file boundaries and temporary channel membership, and tested a computer/phone meeting with audio and screen sharing. Stage 08 verifies the independent knowledge site, reader/editor roles, metadata, link revocation and restored folder inheritance; its original DOCX lock recovery includes the owner's closure/waiting explanation.
 
@@ -59,3 +59,7 @@ Executed on 17 November 2026 on the physical laptop: three read-only reports, se
 ## Stage 12 execution
 
 Executed on 17 November 2026: existing-user readiness, Operations → IT mover with old/new access controls, saved block and fresh denied sign-in, selected-file custody and existing-mailbox SharedMailbox conversion. Wrong delegate identity was corrected and verified. License removal follows inspected Exchange facts; Anna mail/copy and active-owner controls remain usable. T26–T28 PASS, M365-015 RESOLVED. Knowledge effective-level inspection is inconclusive with its actual policy message retained; this is not a complete access purge. [Stage record](stages/12-employee-lifecycle.md) · [Verified runbook](../runbooks/employee-lifecycle.md).
+
+## Final review scope
+
+Five practical Stage 13 tasks were verified using supplied procedures; original independent T32 remains NOT_RUN. Stage 14 is IN_PROGRESS, with resource retention selected and public-only preservation/audit recorded. [Day 13 results](../tests/day-13.md) · [Closure](lab-closure.md).

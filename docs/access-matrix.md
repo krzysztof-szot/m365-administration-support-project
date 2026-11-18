@@ -93,3 +93,7 @@ adm-lab successfully exports selected license, group and Helpdesk state. Graph c
 Marek's license read of Piotr succeeds. In Exchange, a same-session Get-Mailbox read of Marek's own mailbox succeeds, while Helpdesk lookup reports not found; restoring adm-lab returns seven configured entries. This establishes account-dependent visibility and correct failure status, not deletion, an explicit 403, effective mailbox opening rights or a particular RBAC assignment. A separate supplemental ACL call exposes nested HTTP 401 whose exact cause is unconfirmed. At Stage 11, named delegation was Anna Full Access/SOB, Piotr Full Access/Send As; no report granted Marek access.
 
 [Day 11 details](../tests/day-11.md) · [Redacted samples](../samples/reports/README.md)
+
+## Stage 13 selected rechecks
+
+Fresh reports/portal on 18 November retain Finance Private/Anna-only human owner/member and Helpdesk Anna FullAccess/SOB with no human SendAs or Piotr delegate returned. Piotr licenseDetails is successfully empty and block remains per owner. Only a new Finance document temporarily grants Marek edit while he stays outside the Team; final item denial as Marek and working Anna control are verified. Final exact inheritance is not captured. [Day 13](../tests/day-13.md) · [Current samples](../samples/capstone/README.md) · [Retained state](lab-closure.md).
