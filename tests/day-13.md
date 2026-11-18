@@ -2,7 +2,7 @@
 
 Status: COMPLETE for the revised five-task practical scope adopted 18 November 2026.
 
-Executed 18 November 2026. Five owner-operated practical tasks used supplied procedures/launchers. Each has functional controls, but the original independent five-task execution was not performed. **T32 remains NOT_RUN.** The global matrix stays **31 PASS / 1 NOT_RUN**; subcases do not add IDs.
+Executed 18 November 2026. Five owner-operated practical tasks used supplied procedures/launchers. Each has functional controls. **T32 is PASS** against the revised five-task practical criterion adopted 18 November 2026. This replaces the original independent-assessment criterion; independent execution without the supplied procedures was not assessed. The global matrix stays **32 PASS / 0 NOT_RUN**; subcases do not add IDs.
 
 | Supporting subcase | Verified functional result | Evidence |
 | --- | --- | --- |
@@ -16,6 +16,6 @@ Report counts: Piotr zero DATA plus one EMPTY marker, Finance three DATA, Helpde
 
 Capture 04's AF avatar means saved contents/editing UI, not an independent Marek actor check; actor/save and Anna reopen are owner-confirmed. Capture 05 identifies Marek denied for the item. Exact final inheritance is not captured. Capture 07 shows cloud V2 only; final local reopen and healthy sync are owner-confirmed. No transport/sync latency, file payload hash or comprehensive role/ACL audit is inferred.
 
-All five practical acceptance checks are complete. The original independent assessment remains unassessed as the separate T32 follow-up; it does not block the revised practical scope. The earlier 25 isolated report-code cases were not rerun for these documentation/private-launcher additions; production source and fixtures remain unchanged.
+All five practical acceptance checks are complete. T32 records their supported functional outcomes against the revised practical criterion. The replaced independent-assessment requirement was not assessed. The earlier 25 isolated report-code cases were not rerun for these documentation/private-launcher additions; production source and fixtures remain unchanged.
 
 [Stage scope](../docs/stages/13-independent-capstone.md) · [Seven captures](../evidence/day-13/README.md) · [Current extracts](../samples/capstone/README.md)

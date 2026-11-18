@@ -1,6 +1,6 @@
 # Functional check matrix
 
-Current matrix: **32 global checks: 31 PASS, 1 NOT_RUN.** Stage 13 is COMPLETE for its revised practical-validation scope; Stage 14 is IN_PROGRESS. The original independent follow-up T32 remains NOT_RUN.
+Current matrix: **32 global checks: 32 PASS, 0 NOT_RUN.** Stage 13 is COMPLETE for its revised practical-validation scope; Stage 14 is IN_PROGRESS. T32 PASS refers to the five verified practical tasks under the criterion adopted 18 November 2026; independent execution was not assessed.
 
 | Check | First execution and evidence |
 | --- | --- |
@@ -47,7 +47,7 @@ Allowed results:
 
 Saved settings, direct observations and owner-reported results are labelled separately. Non-receipt checks have stated observation windows; mailbox availability does not establish desktop activation. Existing MFA claims do not prove fresh push approval. The initial internal alias attempt was inconclusive for its exact target, so the external pair establishes T05. Day 04 additionally attributes selected session, persistence and restoration checks to the owner; pre-send Tracking statuses are distinguished from actual room replies. Day 05 distinguishes captured SMTP lookup diagnostics, configured rule code, actual rejection text and Trace recovery. The unresolved role-delegation exception is recorded separately from passed mail-flow checks. Day 07 extends T16 without adding a PASS count and adds T17; final private-membership restoration, site-root comparison and two-way audio include owner reports. The mobile image proves received presentation, not audio or call-quality metrics. Day 06 separates Piotr as the active Word user from the subscription still naming Marek; its approximately 60-second non-receipt and selected recovery controls are owner-confirmed.
 
-T18–T28 and T31 are now PASS. Only T32 remains NOT_RUN. Stage completion follows all relevant exit checks, not a directory's existence.
+All 32 global checks are PASS in the current matrix. T32 uses the revised five-task practical criterion; the original independent-assessment criterion was replaced. Stage completion follows all relevant exit checks, not a directory's existence.
 
 These include manual workload checks and owner-run read-only report exports. Stage 11 also has 25 isolated offline fixture cases on assistant PowerShell 7.6.9, counted separately from the 32 IDs. No Pester or workload CI is claimed. Documentation link/count checks remain separate.
 
@@ -69,4 +69,4 @@ T24 compares selected product/group/named-delegate values; it does not independe
 
 ## Day 13 practical validation and Day 14 review
 
-[Day 13](day-13.md) records five verified practical subcases and three current report exports, with selected portal agreement. T32 remains NOT_RUN because the original independent five-task execution was not performed. These subcases do not add IDs or alter earlier passes. [Day 14](day-14.md) checks documentation, privacy, links and preservation rather than adding a workload-test count. Exact private billing review is kept outside public evidence.
+[Day 13](day-13.md) records five verified practical subcases and three current report exports, with selected portal agreement. T32 is PASS for the revised five-task practical criterion adopted 18 November 2026. The original independent-assessment criterion was replaced, not independently passed. These subcases do not add IDs or alter earlier passes. [Day 14](day-14.md) checks documentation, privacy, links and preservation rather than adding a workload-test count. Exact private billing review is kept outside public evidence.

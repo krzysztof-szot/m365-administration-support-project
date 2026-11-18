@@ -41,7 +41,7 @@ This preserves the project evidence outside the live tenant. It is not an export
 
 ## Remaining limitations and recovery
 
-- T32 remains NOT_RUN: five practical tasks are verified, but original independent five-task execution was not performed. Stage 13 is COMPLETE under its revised practical scope; that original independent follow-up is outside the revised completion criterion.
+- T32 is PASS and Stage 13 COMPLETE for the revised five-task practical-validation criterion adopted 18 November 2026. The original independent-assessment criterion was replaced; independent execution without supplied procedures was not assessed.
 - The Stage 05 Exchange custom-role delegation exception remains unresolved; broad Graph scopes and selected effective-role limits remain disclosed.
 - The Knowledge effective-permission inspection is inconclusive; precise propagation, universal session revocation and exhaustive item/role inventories were not proved.
 - Optional Copilot generated-output exercises, custom-domain mail authentication, external-sharing extensions and broader device-management deployment remain unexecuted.

@@ -1,6 +1,6 @@
 # Day 14 — Documentation and preservation review
 
-Review date: 18 November 2026. Stage 14 status: **IN_PROGRESS**. This is repository/evidence QA, not an additional workload test or an automatic T32 pass.
+Review date: 18 November 2026. Stage 14 status: **IN_PROGRESS**. This is repository/evidence QA, not an additional workload test. T32 uses the separately documented practical-validation criterion.
 
 ## Verification scope
 
@@ -12,8 +12,8 @@ A public-only ZIP is built from the explicit reviewed public file list and check
 
 ## Acceptance boundaries
 
-- Global matrix: **31 PASS / 1 NOT_RUN**, with only original independent T32 NOT_RUN. Its five practical supporting subcases are described without an unaided-execution claim.
-- Stage 13: COMPLETE for the revised five-task practical-validation scope. The original independent follow-up T32 remains NOT_RUN and is outside the revised completion criterion.
+- Global matrix: **32 PASS / 0 NOT_RUN**, with T32 PASS for the revised five-task practical criterion. Supplied procedures were allowed; independent execution was not assessed.
+- Stage 13: COMPLETE for the revised five-task practical-validation scope. T32 is PASS for that practical criterion; the original independent-assessment criterion was replaced.
 - Retained lab state is owner-selected; no resource or billing mutation is performed during review.
 - Fresh subscription term dates and recurring-billing settings have been requested privately and remain unconfirmed. An older check is not substituted for this closing review.
 - The earlier 25 isolated offline code cases remain historical code checks; unchanged source/fixtures do not require a redundant rerun.
