@@ -1,6 +1,6 @@
 # Environment baseline and current lab state
 
-Current state after **Stages 01–12 COMPLETE**. Stages 01–04 were executed **14 November 2026**; Stages 05–09 were executed **16 November 2026**. Stages 10–12 were executed **17 November 2026**. Stage/day labels identify learning units; the roadmap's target-day ranges are estimates.
+Current state after **Stages 01–13 COMPLETE**. Stages 01–04 were executed **14 November 2026**; Stages 05–09 were executed **16 November 2026**. Stages 10–12 were executed **17 November 2026**; Stage 13 practical validation was executed **18 November 2026**. Stage/day labels identify learning units; the roadmap's target-day ranges are estimates.
 
 **Current lifecycle override:** Piotr is blocked/unlicensed with a retained shared mailbox; Anna holds the verified mail/file custody. See the [superseding final state](#stage-12-superseding-lifecycle-state) and [current access table](access-matrix.md#final-lifecycle-state--17-november-2026).
 
@@ -81,7 +81,7 @@ The same-session Marek own-mailbox control succeeds while Helpdesk lookup fails;
 
 ## Stage 12 superseding lifecycle state
 
-This section supersedes the earlier Piotr license/membership/delegation snapshot above; those rows preserve historical exercises. The project now has 12 complete stages, fifteen resolved cases and 31 PASS / 1 NOT_RUN (T32 only).
+This section supersedes the earlier Piotr license/membership/delegation snapshot above; those rows preserve historical exercises. At Stage 12 closure, the project had 12 complete stages, fifteen resolved cases and 31 PASS / 1 NOT_RUN (T32 only). Stage 13 later completed its revised practical scope without changing T32.
 
 Piotr exists with sign-in blocked, no product license, Department IT and Job title IT Support Specialist. His unchanged display name still says Operations. Finance Team/backing group and DL retain Anna only; new Private IT retains Marek Owner after Piotr removal. Piotr's Helpdesk FullAccess/SendAs and Knowledge Visitors membership were removed per owner. Anna still opens Helpdesk; Marek still opens the IT document. MFA group scope remains deliberately retained. Knowledge effective levels were not obtained: its attempted query returned a sharing-policy message.
 

@@ -5,10 +5,10 @@ Fictional organization: Baltic Finance. Recorded work spans 14–18 November 202
 ## Results supported by the repository
 
 - Fifteen resolved lab cases cover licensing, alias/distribution delivery, delegated mail, room conflict, scoped transport rejection/recovery, client identity/offline behavior, collaboration boundaries and employee lifecycle custody.
-- The 32-ID global matrix records **31 PASS / 1 NOT_RUN**. The original independent five-task assessment T32 remains unperformed; five practical Stage 13 tasks have separately verified outcomes using supplied procedures.
+- The 32-ID global matrix records **31 PASS / 1 NOT_RUN**. Stage 13 is COMPLETE for its revised five-task practical scope, with verified outcomes using supplied procedures. The original independent five-task assessment T32 remains unperformed as a separate follow-up outside that revised completion criterion.
 - Three read-only report scripts have actual selected live exports, source/output hash checks, explicit incomplete/failure handling and separately counted 25 isolated offline code cases.
 - 153 original owner captures are indexed with what is visible versus what is owner-confirmed. Four user articles include English procedures and a German companion; a lifecycle runbook records actual custody, license decisions and limits.
-- Current scope: **Stages 01–12 COMPLETE; Stage 13 PARTIAL; Stage 14 IN_PROGRESS.** Role-audit, workload automation and optional Copilot-output coverage remain limited to the recorded checks.
+- Current scope: **Stages 01–13 COMPLETE; Stage 14 IN_PROGRESS.** Role-audit, workload automation and optional Copilot-output coverage remain limited to the recorded checks.
 
 ## Examples to explain in an interview or review
 

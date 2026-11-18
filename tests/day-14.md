@@ -13,7 +13,7 @@ A public-only ZIP is built from the explicit reviewed public file list and check
 ## Acceptance boundaries
 
 - Global matrix: **31 PASS / 1 NOT_RUN**, with only original independent T32 NOT_RUN. Its five practical supporting subcases are described without an unaided-execution claim.
-- Stage 13: PARTIAL for the original independent objective, with practical functionality verified.
+- Stage 13: COMPLETE for the revised five-task practical-validation scope. The original independent follow-up T32 remains NOT_RUN and is outside the revised completion criterion.
 - Retained lab state is owner-selected; no resource or billing mutation is performed during review.
 - Fresh subscription term dates and recurring-billing settings have been requested privately and remain unconfirmed. An older check is not substituted for this closing review.
 - The earlier 25 isolated offline code cases remain historical code checks; unchanged source/fixtures do not require a redundant rerun.

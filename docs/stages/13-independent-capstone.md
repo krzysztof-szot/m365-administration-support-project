@@ -1,12 +1,14 @@
 # Stage 13 — Cross-workload practical validation
 
-Status: PARTIAL  
+Status: COMPLETE  
 Target days: 26–27  
 Execution date: 18 November 2026, Europe/Warsaw
 
 ## Recorded scope
 
-Five practical tasks were performed and verified by the owner using supplied procedures and report launchers. The original goal also required an independent five-task assessment without a supplied repair sequence. That independent execution was not performed, so **T32 remains NOT_RUN** and the original stage is PARTIAL. Practical success is recorded separately from that unassessed criterion.
+Stage completion is assessed against a revised scope adopted on 18 November 2026: execute and verify the five practical tasks below. All five are complete. The owner performed the operations using supplied procedures and report launchers.
+
+The original plan also required an independent five-task assessment without a supplied repair sequence. That assessment was not performed. It is retained as a separate follow-up, **T32 remains NOT_RUN**, and it is outside the revised Stage 13 completion criterion. COMPLETE therefore records practical completion, not an independent-assessment result.
 
 This is a synthetic lab. Several tasks validate healthy services rather than repair a current outage.
 
@@ -52,7 +54,7 @@ The main Stage 11 license sample is for Marek and is not a historical Piotr base
 
 Anna's retained Piotr mailbox/file custody, blocked unlicensed Piotr anchor, existing pilot security scope and the disabled training transport rule remain as previously recorded. The Finance test document keeps its saved edit with Anna access and Marek denied. The local Word test remains in VM Downloads; the OneDrive TXT remains V2. Existing D09/D10 originals were not test targets. No extra M365 backlog incident is created.
 
-A separately recorded independent assessment could address the remaining T32 criterion.
+A separately recorded independent assessment could complete the T32 follow-up.
 
 [Seven captures](../../evidence/day-13/README.md) · [Day 13 test record](../../tests/day-13.md) · [Current extracts](../../samples/capstone/README.md) · [Portfolio review](14-portfolio-and-lab-closure.md)
 

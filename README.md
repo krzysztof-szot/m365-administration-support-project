@@ -4,7 +4,7 @@
 
 <p align="center">
   <img alt="14 learning stages" src="https://img.shields.io/badge/LABS-14%20STAGES-6f42c1?style=for-the-badge">
-  <img alt="Project review; 12 of 14 stages complete; independent criterion remains" src="https://img.shields.io/badge/PROGRESS-12%20%2F%2014%20COMPLETE-0078D4?style=for-the-badge">
+  <img alt="Project review; 13 of 14 stages complete" src="https://img.shields.io/badge/PROGRESS-13%20%2F%2014%20COMPLETE-0078D4?style=for-the-badge">
   <img alt="Global matrix: 31 pass and 1 not run" src="https://img.shields.io/badge/CHECKS-31%20PASS%20%2F%201%20NOT%20RUN-607078?style=for-the-badge">
 </p>
 
@@ -35,10 +35,10 @@ This repository complements the owner's Microsoft Entra, hybrid security and IAM
 
 ## Project Overview
 
-**Status: Stages 01–12 COMPLETE; Stage 13 PARTIAL; Stage 14 IN_PROGRESS.**\
+**Status: Stages 01–13 COMPLETE; Stage 14 IN_PROGRESS.**\
 Earlier owner subscription views showed **Business Standard (25 seats)**, **Business Premium (25 seats)** and **Business Premium with Copilot (1 seat)**. A fresh closing review of term dates and recurring billing is recorded separately in the retained-state inventory. Three pilot accounts exist; Piotr now remains blocked/unlicensed as a retained shared-mailbox anchor. Licensing recovery, a three-user MFA scope, Finance groups, alias delivery, distribution recovery, shared-mailbox delegation, calendar permissions, room booking and mail-flow diagnosis/recovery are documented. See the [current baseline](docs/01-environment-baseline.md) for the observed state and source limits.
 
-**Recorded execution: 12 completed stages, Stage 13 PARTIAL for the original independent criterion, 31 PASS / 1 NOT_RUN, 15 resolved lab cases and 153 indexed captures.** The completed stages connect working services to scoped MFA, entitlement recovery, group ownership, delegated mail/calendar behavior and evidence-supported mail-flow diagnosis, desktop identity correction, offline synchronization recovery, private-channel authorization/restoration and knowledge-site access diagnosis, OneDrive pause/resume and content-verified version/deleted-file recovery, followed by current service/change review and user knowledge validation. [Implementation index](docs/stages/README.md) · [Results](tests/README.md) · [Evidence](evidence/README.md)
+**Recorded execution: 13 completed stages, with Stage 13 assessed against its revised practical scope, 31 PASS / 1 NOT_RUN, 15 resolved lab cases and 153 indexed captures.** The completed stages connect working services to scoped MFA, entitlement recovery, group ownership, delegated mail/calendar behavior and evidence-supported mail-flow diagnosis, desktop identity correction, offline synchronization recovery, private-channel authorization/restoration and knowledge-site access diagnosis, OneDrive pause/resume and content-verified version/deleted-file recovery, followed by current service/change review and user knowledge validation. [Implementation index](docs/stages/README.md) · [Results](tests/README.md) · [Evidence](evidence/README.md)
 
 The completed stages now also include guided employee movement, blocked sign-in, retained-mail custody and approved file handover after product unassignment.
 
@@ -58,7 +58,7 @@ Each stage is designed to include:
 | Architecture | Implementation | Validation | Evidence |
 |:---:|:---:|:---:|:---:|
 | [View design](#target-architecture) | [Browse stages](#implementation-progress) | [Open test matrix](tests/test-matrix.csv) | [Browse evidence](evidence/README.md) |
-| Target design and recorded baseline | 12 complete; Stage 13 partial; Stage 14 in_progress | 31 PASS / 1 NOT_RUN | 153 captures across Days 01–10, Day 12 and Day 13 |
+| Target design and recorded baseline | 13 complete; Stage 14 in progress | 31 PASS / 1 NOT_RUN | 153 captures across Days 01–10, Day 12 and Day 13 |
 
 ## Technologies and Concepts
 
@@ -312,7 +312,7 @@ flowchart TB
 
 ## Implementation Progress
 
-**12 of 14 stages completed. Stages 01–12 COMPLETE; Stage 13 PARTIAL; Stage 14 IN_PROGRESS.**
+**13 of 14 stages completed. Stages 01–13 COMPLETE; Stage 14 IN_PROGRESS.**
 
 The schedule targets approximately **50–65 hours over a 30-day trial**, including documentation. Day ranges are estimates and must fit the actual subscription end date. Notes and evidence are saved throughout the project; the final days are a buffer.
 
@@ -332,7 +332,7 @@ The schedule targets approximately **50–65 hours over a 30-day trial**, includ
 | 10 | 19–20 | Support operations and user knowledge | [Stage notes](docs/stages/10-support-operations-and-knowledge.md) | COMPLETE |
 | 11 | 21–23 | Read-only operational PowerShell reports | [Stage notes](docs/stages/11-powershell-reporting.md) | COMPLETE |
 | 12 | 24–25 | Employee onboarding, access change and offboarding | [Stage notes](docs/stages/12-employee-lifecycle.md) | COMPLETE |
-| 13 | 26–27 | Independent administration and troubleshooting assessment | [Stage plan](docs/stages/13-independent-capstone.md) | PARTIAL |
+| 13 | 26–27 | Cross-workload practical validation | [Stage plan](docs/stages/13-independent-capstone.md) | COMPLETE |
 | 14 | 28–30 | Portfolio review and lab closure | [Stage plan](docs/stages/14-portfolio-and-lab-closure.md) | IN_PROGRESS |
 
 [Full roadmap](docs/roadmap.md) · [Test matrix](tests/test-matrix.csv) · [Support backlog](samples/ticket-backlog.csv) · [Polish coaching plan](PROJECT-PLAN_PL.md)
@@ -578,11 +578,11 @@ Revalidated existing Piotr services, moved Operations → IT, then blocked sign-
 ---
 
 <details>
-<summary><strong>Stage 13 — Cross-workload practical validation</strong> · practical work verified; independent criterion unassessed</summary>
+<summary><strong>Stage 13 — Cross-workload practical validation</strong> · COMPLETE · five practical tasks verified</summary>
 
 Five practical tasks verify Helpdesk on-behalf mail, desktop account/function, temporary single-file access and revocation, actual offline edit/sync return, and current Piotr/Finance/Helpdesk reports with selected portal agreement. Seven original captures and redacted extracts preserve what was seen versus owner-confirmed.
 
-**Original stage status: PARTIAL. T32 remains NOT_RUN.** The owner executed the operations using supplied procedures/launchers; unaided independent five-task execution was not assessed.
+**Status: COMPLETE for the revised five-task practical scope, adopted 18 November 2026.** The owner executed the operations using supplied procedures/launchers. The original independent-assessment criterion is retained separately as T32 NOT_RUN and is outside this revised completion criterion.
 
 [Stage scope](docs/stages/13-independent-capstone.md) · [Results](tests/day-13.md) · [7 captures](evidence/day-13/README.md) · [Current extracts](samples/capstone/README.md)
 

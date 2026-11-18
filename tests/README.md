@@ -1,6 +1,6 @@
 # Functional check matrix
 
-Current matrix: **32 global checks: 31 PASS, 1 NOT_RUN.** Stage 13 is PARTIAL for the original independent criterion; Stage 14 is IN_PROGRESS.
+Current matrix: **32 global checks: 31 PASS, 1 NOT_RUN.** Stage 13 is COMPLETE for its revised practical-validation scope; Stage 14 is IN_PROGRESS. The original independent follow-up T32 remains NOT_RUN.
 
 | Check | First execution and evidence |
 | --- | --- |
