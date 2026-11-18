@@ -3,9 +3,9 @@
 <p align="center"><strong>Exchange Online · Teams · SharePoint · IT Support</strong></p>
 
 <p align="center">
-  <img alt="14 learning stages" src="https://img.shields.io/badge/LABS-14%20STAGES-6f42c1?style=for-the-badge">
-  <img alt="Project complete; 14 of 14 stages complete" src="https://img.shields.io/badge/PROGRESS-14%20%2F%2014%20COMPLETE-0078D4?style=for-the-badge">
-  <img alt="Global matrix: 32 pass" src="https://img.shields.io/badge/CHECKS-32%20PASS%20%2F%200%20NOT%20RUN-607078?style=for-the-badge">
+  <img alt="14 documented labs" src="https://img.shields.io/badge/LABS-14%20DOCUMENTED-6f42c1?style=for-the-badge">
+  <img alt="Educational scope completed" src="https://img.shields.io/badge/STATUS-COMPLETED-238636?style=for-the-badge">
+  <img alt="153 evidence screenshots" src="https://img.shields.io/badge/EVIDENCE-153%20SCREENSHOTS-0078D4?style=for-the-badge">
 </p>
 
 <p align="center">
