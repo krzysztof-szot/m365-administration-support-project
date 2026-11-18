@@ -2,15 +2,61 @@
 
 **7 reviewed owner-supplied PNG captures**, preserved without image editing or re-encoding. Execution: **16 November 2026**. [Stage](../../docs/stages/08-sharepoint-and-sharing.md) · [Results](../../tests/day-08.md).
 
-| File | Captured observation | Attribution / limit |
-| --- | --- | --- |
-| [01-knowledge-site-permissions.png](01-knowledge-site-permissions.png) | Communication-site template and expanded permissions: Anna Full Control; members/visitors None | Anna creation and site path owner-confirmed; initial state, not final roles |
-| [02-knowledge-site-roles.png](02-knowledge-site-roles.png) | Anna Full Control, Marek Edit and Piotr Read | Configuration; functional checks supplied separately |
-| [03-knowledge-library-metadata.png](03-knowledge-library-metadata.png) | Knowledge lists original KB-01 with Category Mail and Status Draft | Owner confirms save/refresh and same original item without replacement; does not establish lock-release time |
-| [04-knowledge-reader-piotr.png](04-knowledge-reader-piotr.png) | Original checklist plus Marek's saved line; Viewing and disabled controls | Piotr identity, editing unavailable, Marek save and Anna reopen explicitly owner-confirmed |
-| [05-knowledge-sharing-settings.png](05-knowledge-sharing-settings.png) | Checklist opens in Piotr's browser via redacted sharing-style URL; Viewing | Despite its filename, the actual image shows opening, not link settings. Audience/recipient/Can view and revocation are text confirmations; tab text alone is not an original-item identity audit |
-| [06-knowledge-restricted-access-denied-piot.png](06-knowledge-restricted-access-denied-piot.png) | "You need access" and Piotr-specific "don't have access to this item" | Owner filename ends -piot.png and is retained unchanged. Fresh-session target and positive controls are owner-confirmed |
-| [07-knowledge-folder-inheritance-before.png](07-knowledge-folder-inheritance-before.png) | Folder inherits Knowledge; three SharePoint groups: Members Edit, Owners Full Control, Visitors Read | Owner clipboard capture, collected before the restriction; numbering is an index, not an asserted chronological timestamp. Raw before/after Check Permissions output and final restoration are not captured |
+## 01 — Knowledge site permissions
+
+![01 — Knowledge site permissions](01-knowledge-site-permissions.png)
+
+**Shows:** Communication-site template and expanded permissions: Anna Full Control; members/visitors None
+
+**Scope and limits:** Anna creation and site path owner-confirmed; initial state, not final roles
+
+## 02 — Knowledge site roles
+
+![02 — Knowledge site roles](02-knowledge-site-roles.png)
+
+**Shows:** Anna Full Control, Marek Edit and Piotr Read
+
+**Scope and limits:** Configuration; functional checks supplied separately
+
+## 03 — Knowledge library metadata
+
+![03 — Knowledge library metadata](03-knowledge-library-metadata.png)
+
+**Shows:** Knowledge lists original KB-01 with Category Mail and Status Draft
+
+**Scope and limits:** Owner confirms save/refresh and same original item without replacement; does not establish lock-release time
+
+## 04 — Knowledge reader Piotr
+
+![04 — Knowledge reader Piotr](04-knowledge-reader-piotr.png)
+
+**Shows:** Original checklist plus Marek's saved line; Viewing and disabled controls
+
+**Scope and limits:** Piotr identity, editing unavailable, Marek save and Anna reopen explicitly owner-confirmed
+
+## 05 — Knowledge document opened through a sharing link
+
+![05 — Knowledge document opened through a sharing link](05-knowledge-sharing-settings.png)
+
+**Shows:** Checklist opens in Piotr's browser via redacted sharing-style URL; Viewing
+
+**Scope and limits:** Despite its filename, the actual image shows opening, not link settings. Audience/recipient/Can view and revocation are text confirmations; tab text alone is not an original-item identity audit
+
+## 06 — Restricted item access denied for Piotr
+
+![06 — Restricted item access denied for Piotr](06-knowledge-restricted-access-denied-piot.png)
+
+**Shows:** "You need access" and Piotr-specific "don't have access to this item"
+
+**Scope and limits:** Owner filename ends -piot.png and is retained unchanged. Fresh-session target and positive controls are owner-confirmed
+
+## 07 — Knowledge folder inheritance before
+
+![07 — Knowledge folder inheritance before](07-knowledge-folder-inheritance-before.png)
+
+**Shows:** Folder inherits Knowledge; three SharePoint groups: Members Edit, Owners Full Control, Visitors Read
+
+**Scope and limits:** Owner clipboard capture, collected before the restriction; numbering is an index, not an asserted chronological timestamp. Raw before/after Check Permissions output and final restoration are not captured
 
 ## Interpretation boundaries
 

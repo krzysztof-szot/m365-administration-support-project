@@ -2,12 +2,29 @@
 
 Four owner-supplied PNGs from **17 November 2026**. Original filenames and bytes are preserved. [Stage](../../docs/stages/10-support-operations-and-knowledge.md) · [Results](../../tests/day-10.md).
 
-| Capture | What it supports |
-| --- | --- |
-| [01 — Service health](01-service-health-review.png) | Eight visible Advisory rows; Exchange and Teams each one advisory, suite five; OneDrive and SharePoint Healthy. Per-service counts overlap |
-| [02 — Message center change](02-message-center-change.png) | MC1545696, protected-PDF annotation announcement, publication date, broad mid/late-January 2027 timing, detailed late-January rollout and no required feature enablement |
-| [03 — Knowledge articles](03-knowledge-articles-library.png) | BFL-M365-Knowledge / Knowledge, all four article filenames, Anna attribution in Modified By, retained original KB-01 and test folder |
-| [04 — Recovery verification](04-knowledge-article-recovery-verified.png) | D10 file listed in OneDrive web and Explorer's work OneDrive folder; green file status and all three original V1 lines in Notepad |
+## 01 — Service health
+
+![01 — Service health](01-service-health-review.png)
+
+**Shows:** Eight visible Advisory rows; Exchange and Teams each one advisory, suite five; OneDrive and SharePoint Healthy. Per-service counts overlap
+
+## 02 — Message center change
+
+![02 — Message center change](02-message-center-change.png)
+
+**Shows:** MC1545696, protected-PDF annotation announcement, publication date, broad mid/late-January 2027 timing, detailed late-January rollout and no required feature enablement
+
+## 03 — Knowledge articles
+
+![03 — Knowledge articles](03-knowledge-articles-library.png)
+
+**Shows:** BFL-M365-Knowledge / Knowledge, all four article filenames, Anna attribution in Modified By, retained original KB-01 and test folder
+
+## 04 — Recovery verification
+
+![04 — Recovery verification](04-knowledge-article-recovery-verified.png)
+
+**Shows:** D10 file listed in OneDrive web and Explorer's work OneDrive folder; green file status and all three original V1 lines in Notepad
 
 ## Interpretation boundaries
 

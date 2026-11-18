@@ -2,19 +2,71 @@
 
 Status: **11 screenshots published; Stage 03 COMPLETE.** Execution date: **14 November 2026**. External alias addressing is verified by the matched sent/received pair; internal recipient display alone is not used as proof of the alias target.
 
-| File | Observation and scope |
-| --- | --- |
-| [01-anna-finance-alias-config.png](01-anna-finance-alias-config.png) | Primary/default m365.anna and secondary SMTP address m365.finance are configured on the same mailbox. |
-| [02-mail-sent-to-finance-alias.png](02-mail-sent-to-finance-alias.png) | Piotr's internal ALIAS-01 attempt at displayed 13:31; the visible recipient is Anna's display name. |
-| [03-finance-alias-mail-received-anna.png](03-finance-alias-mail-received-anna.png) | Anna receives ALIAS-01. Privately inspected headers name her primary address; this attempt alone is not alias-target proof. |
-| [03a-finance-alias-external-sent.png](03a-finance-alias-external-sent.png) | Gmail sent-message details explicitly show recipient m365.finance for LAB-D03-ALIAS-02 at displayed 13:47. |
-| [03b-finance-alias-external-received.png](03b-finance-alias-external-received.png) | Anna receives the matching external ALIAS-02 message at displayed 13:47. Paired with 03a, this verifies alias delivery. |
-| [04-dl-membership-piotr-missing.png](04-dl-membership-piotr-missing.png) | During the controlled fault, DL-M365-Finance has Anna as its sole member. |
-| [05-piotr-direct-mail-control.png](05-piotr-direct-mail-control.png) | Piotr receives LAB-D03-CONTROL-01 directly from Marek at displayed 13:58; his mailbox still receives mail. |
-| [06-anna-dl-mail-piotr-excluded.png](06-anna-dl-mail-piotr-excluded.png) | Anna receives LAB-D03-DL-02 from the DL at displayed 13:59. Piotr's non-receipt is separately owner-reported. |
-| [07-dl-membership-piotr-restored.png](07-dl-membership-piotr-restored.png) | After repair, the DL again lists Anna and Piotr. |
-| [08-dl-mail-after-repair-anna.png](08-dl-mail-after-repair-anna.png) | Anna receives the new LAB-D03-DL-03 test at displayed 14:09. |
-| [09-dl-mail-after-repair-piotr.png](09-dl-mail-after-repair-piotr.png) | Piotr receives the same new DL-03 test at displayed 14:09, confirming restored distribution. |
+## 01 — Anna Finance alias config
+
+![01 — Anna Finance alias config](01-anna-finance-alias-config.png)
+
+**Shows:** Primary/default m365.anna and secondary SMTP address m365.finance are configured on the same mailbox.
+
+## 02 — Mail sent to Finance alias
+
+![02 — Mail sent to Finance alias](02-mail-sent-to-finance-alias.png)
+
+**Shows:** Piotr's internal ALIAS-01 attempt at displayed 13:31; the visible recipient is Anna's display name.
+
+## 03 — Finance alias mail received Anna
+
+![03 — Finance alias mail received Anna](03-finance-alias-mail-received-anna.png)
+
+**Shows:** Anna receives ALIAS-01. Privately inspected headers name her primary address; this attempt alone is not alias-target proof.
+
+## 03a — Finance alias external sent
+
+![03a — Finance alias external sent](03a-finance-alias-external-sent.png)
+
+**Shows:** Gmail sent-message details explicitly show recipient m365.finance for LAB-D03-ALIAS-02 at displayed 13:47.
+
+## 03b — Finance alias external received
+
+![03b — Finance alias external received](03b-finance-alias-external-received.png)
+
+**Shows:** Anna receives the matching external ALIAS-02 message at displayed 13:47. Paired with 03a, this verifies alias delivery.
+
+## 04 — DL membership Piotr missing
+
+![04 — DL membership Piotr missing](04-dl-membership-piotr-missing.png)
+
+**Shows:** During the controlled fault, DL-M365-Finance has Anna as its sole member.
+
+## 05 — Piotr direct mail control
+
+![05 — Piotr direct mail control](05-piotr-direct-mail-control.png)
+
+**Shows:** Piotr receives LAB-D03-CONTROL-01 directly from Marek at displayed 13:58; his mailbox still receives mail.
+
+## 06 — Anna DL mail Piotr excluded
+
+![06 — Anna DL mail Piotr excluded](06-anna-dl-mail-piotr-excluded.png)
+
+**Shows:** Anna receives LAB-D03-DL-02 from the DL at displayed 13:59. Piotr's non-receipt is separately owner-reported.
+
+## 07 — DL membership Piotr restored
+
+![07 — DL membership Piotr restored](07-dl-membership-piotr-restored.png)
+
+**Shows:** After repair, the DL again lists Anna and Piotr.
+
+## 08 — DL mail after repair Anna
+
+![08 — DL mail after repair Anna](08-dl-mail-after-repair-anna.png)
+
+**Shows:** Anna receives the new LAB-D03-DL-03 test at displayed 14:09.
+
+## 09 — DL mail after repair Piotr
+
+![09 — DL mail after repair Piotr](09-dl-mail-after-repair-piotr.png)
+
+**Shows:** Piotr receives the same new DL-03 test at displayed 14:09, confirming restored distribution.
 
 ## Alias test interpretation
 

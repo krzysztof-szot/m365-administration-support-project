@@ -2,29 +2,131 @@
 
 Status: **21 screenshots published; Stage 02 COMPLETE.** Execution date: **14 November 2026**. These images were uploaded by the owner. Captured configuration and functional results are distinguished from reported checks.
 
-| File | Observation and scope |
-| --- | --- |
-| [01-pilot-users-baseline.png](01-pilot-users-baseline.png) | Anna has the Copilot bundle; Marek has ordinary Premium; Piotr starts Unlicensed. |
-| [02-piotr-unlicensed-baseline.png](02-piotr-unlicensed-baseline.png) | Piotr: Poland usage location, zero assigned licenses and zero apps. |
-| [03-piotr-signin-success.png](03-piotr-signin-success.png) | Piotr successfully opens My Account before receiving a product license. |
-| [04-piotr-outlook-before-license.png](04-piotr-outlook-before-license.png) | 2026-11-14T10:50:51.023Z: Outlook HTTP 500; OwaUserHasNoMailboxAndNoLicenseAssignedException. |
-| [05-piotr-license-assigned.png](05-piotr-license-assigned.png) | Piotr has ordinary Business Premium selected; Poland; 22 of 25 Premium seats available at capture. |
-| [05a-piotr-exchange-plan-enabled.png](05a-piotr-exchange-plan-enabled.png) | Exchange Online Plan 1 is enabled within Piotr's Premium assignment. |
-| [06-piotr-outlook-after-license.png](06-piotr-outlook-after-license.png) | Piotr's Outlook mailbox opens after licensing; provisioning elapsed time was not measured. |
-| [07-piotr-mail-sent-after-license.png](07-piotr-mail-sent-after-license.png) | Piotr sends LAB-D02 — Piotr mailbox recovery to Anna at displayed 12:09. |
-| [08-piotr-mail-received-after-license.png](08-piotr-mail-received-after-license.png) | Anna's matching reply arrives in Piotr's Inbox at displayed 12:12. |
-| [09-mfa-pilot-three-members.png](09-mfa-pilot-three-members.png) | SG-M365-MFA-Pilot now contains Anna, Marek and Piotr as direct members. |
-| [10-piotr-mfa-policy-success.png](10-piotr-mfa-policy-success.png) | Piotr, My Signins, displayed 12:16:28: CA-M365-001-Require-MFA-Pilot returns Success. |
-| [11-marek-mfa-policy-success.png](11-marek-mfa-policy-success.png) | Marek, One Outlook Web, displayed 12:21:24: the same pilot policy returns Success. |
-| [12-finance-m365-group-settings.png](12-finance-m365-group-settings.png) | BFL-M365-Finance is Private; its site link is present and the UI offers Add Teams. |
-| [13-finance-m365-group-members.png](13-finance-m365-group-members.png) | Microsoft 365 group members are Anna and Piotr; Marek is not listed. |
-| [14-finance-m365-group-owner.png](14-finance-m365-group-owner.png) | Anna is the Microsoft 365 group's owner. |
-| [15-exchange-recipient-admin-role.png](15-exchange-recipient-admin-role.png) | adm-lab: Exchange Recipient Administrator; Direct, Active, tenant scope, Permanent; displayed start 12:49:04. |
-| [16-finance-distribution-list-overview.png](16-finance-distribution-list-overview.png) | DL-M365-Finance is a Distribution list group with one owner, two members and its own email address. |
-| [17-finance-distribution-list-members-owner.png](17-finance-distribution-list-members-owner.png) | DL owner Anna; members Anna and Piotr. |
-| [18-dl-mail-sent-by-marek.png](18-dl-mail-sent-by-marek.png) | Marek sends LAB-D02-DL-01 only to the DL at displayed 13:01. |
-| [19-dl-mail-received-anna.png](19-dl-mail-received-anna.png) | The matching DL message is present in Anna's Inbox. |
-| [20-dl-mail-received-piotr.png](20-dl-mail-received-piotr.png) | The matching DL message is present in Piotr's Inbox. |
+## 01 — Pilot users baseline
+
+![01 — Pilot users baseline](01-pilot-users-baseline.png)
+
+**Shows:** Anna has the Copilot bundle; Marek has ordinary Premium; Piotr starts Unlicensed.
+
+## 02 — Piotr unlicensed baseline
+
+![02 — Piotr unlicensed baseline](02-piotr-unlicensed-baseline.png)
+
+**Shows:** Piotr: Poland usage location, zero assigned licenses and zero apps.
+
+## 03 — Piotr signin success
+
+![03 — Piotr signin success](03-piotr-signin-success.png)
+
+**Shows:** Piotr successfully opens My Account before receiving a product license.
+
+## 04 — Piotr Outlook before license
+
+![04 — Piotr Outlook before license](04-piotr-outlook-before-license.png)
+
+**Shows:** 2026-11-14T10:50:51.023Z: Outlook HTTP 500; OwaUserHasNoMailboxAndNoLicenseAssignedException.
+
+## 05 — Piotr license assigned
+
+![05 — Piotr license assigned](05-piotr-license-assigned.png)
+
+**Shows:** Piotr has ordinary Business Premium selected; Poland; 22 of 25 Premium seats available at capture.
+
+## 05a — Piotr exchange plan enabled
+
+![05a — Piotr exchange plan enabled](05a-piotr-exchange-plan-enabled.png)
+
+**Shows:** Exchange Online Plan 1 is enabled within Piotr's Premium assignment.
+
+## 06 — Piotr Outlook after license
+
+![06 — Piotr Outlook after license](06-piotr-outlook-after-license.png)
+
+**Shows:** Piotr's Outlook mailbox opens after licensing; provisioning elapsed time was not measured.
+
+## 07 — Piotr mail sent after license
+
+![07 — Piotr mail sent after license](07-piotr-mail-sent-after-license.png)
+
+**Shows:** Piotr sends LAB-D02 — Piotr mailbox recovery to Anna at displayed 12:09.
+
+## 08 — Piotr mail received after license
+
+![08 — Piotr mail received after license](08-piotr-mail-received-after-license.png)
+
+**Shows:** Anna's matching reply arrives in Piotr's Inbox at displayed 12:12.
+
+## 09 — MFA pilot three members
+
+![09 — MFA pilot three members](09-mfa-pilot-three-members.png)
+
+**Shows:** SG-M365-MFA-Pilot now contains Anna, Marek and Piotr as direct members.
+
+## 10 — Piotr MFA policy success
+
+![10 — Piotr MFA policy success](10-piotr-mfa-policy-success.png)
+
+**Shows:** Piotr, My Signins, displayed 12:16:28: CA-M365-001-Require-MFA-Pilot returns Success.
+
+## 11 — Marek MFA policy success
+
+![11 — Marek MFA policy success](11-marek-mfa-policy-success.png)
+
+**Shows:** Marek, One Outlook Web, displayed 12:21:24: the same pilot policy returns Success.
+
+## 12 — Finance M365 group settings
+
+![12 — Finance M365 group settings](12-finance-m365-group-settings.png)
+
+**Shows:** BFL-M365-Finance is Private; its site link is present and the UI offers Add Teams.
+
+## 13 — Finance M365 group members
+
+![13 — Finance M365 group members](13-finance-m365-group-members.png)
+
+**Shows:** Microsoft 365 group members are Anna and Piotr; Marek is not listed.
+
+## 14 — Finance M365 group owner
+
+![14 — Finance M365 group owner](14-finance-m365-group-owner.png)
+
+**Shows:** Anna is the Microsoft 365 group's owner.
+
+## 15 — Exchange recipient admin role
+
+![15 — Exchange recipient admin role](15-exchange-recipient-admin-role.png)
+
+**Shows:** adm-lab: Exchange Recipient Administrator; Direct, Active, tenant scope, Permanent; displayed start 12:49:04.
+
+## 16 — Finance distribution list overview
+
+![16 — Finance distribution list overview](16-finance-distribution-list-overview.png)
+
+**Shows:** DL-M365-Finance is a Distribution list group with one owner, two members and its own email address.
+
+## 17 — Finance distribution list members owner
+
+![17 — Finance distribution list members owner](17-finance-distribution-list-members-owner.png)
+
+**Shows:** DL owner Anna; members Anna and Piotr.
+
+## 18 — DL mail sent by Marek
+
+![18 — DL mail sent by Marek](18-dl-mail-sent-by-marek.png)
+
+**Shows:** Marek sends LAB-D02-DL-01 only to the DL at displayed 13:01.
+
+## 19 — DL mail received Anna
+
+![19 — DL mail received Anna](19-dl-mail-received-anna.png)
+
+**Shows:** The matching DL message is present in Anna's Inbox.
+
+## 20 — DL mail received Piotr
+
+![20 — DL mail received Piotr](20-dl-mail-received-piotr.png)
+
+**Shows:** The matching DL message is present in Piotr's Inbox.
 
 ## Reported checks and limits
 

@@ -4,17 +4,59 @@ Execution date: **16 November 2026**. Nine owner-supplied captures support [Stag
 
 ## Capture index
 
-| File | Observation and scope |
-| --- | --- |
-| [01-office-activation-marek.png](01-office-activation-marek.png) | Marek is signed in, but Microsoft 365 Apps for business shows Activation Required and a reduced-functionality warning. Starting state, not activation success or subscription-expiry proof. |
-| [02-office-activated-marek.png](02-office-activated-marek.png) | Marek with Subscription Product, activation warning absent; Word Version 2610 / Build 20527.20196 / Current Channel. Local document persistence is separately owner-confirmed. |
-| [03-outlook-classic-mail-test.png](03-outlook-classic-mail-test.png) | Marek opens OWA-01 in desktop Outlook; OUTLOOK-01 is also in the list. Both send/receive directions are explicitly owner-confirmed. |
-| [04-office-wrong-identity.png](04-office-wrong-identity.png) | User Information names Piotr; Product Information still names Marek as subscription account. Shows the controlled identity mismatch, not an activation outage or a Piotr license switch. |
-| [05-outlook-working-offline.png](05-outlook-working-offline.png) | Work Offline selected and Working Offline on the status bar; older RECOVERY-01 remains readable. Web receipt and about 60 seconds of no desktop OFFLINE-01 are owner-confirmed. |
-| [06-outlook-online-recovery.png](06-outlook-online-recovery.png) | Same OFFLINE-01 opened after reconnect, with Connected to: Microsoft Exchange. New outbound SYNC-02 receipt in web is owner-confirmed. |
-| [07-outlook-shared-calendar-readonly.png](07-outlook-shared-calendar-readonly.png) | Anna's shared folder, CAL-01 Finance planning, 16 November 10:00–10:30, and Appointment (Read-Only). Marek session and denied editing are owner-confirmed; the body is retained Stage 04 content. |
-| [08-outlook-shared-mailbox-desktop.png](08-outlook-shared-mailbox-desktop.png) | Piotr's mailbox context and Helpdesk Inbox with Marek's final SHARED-01 reply. Quoted exchange shows Helpdesk's earlier response; sender receipt and full operation sequence are also owner-confirmed. |
-| [09-outlook-version.png](09-outlook-version.png) | Owner's additional version-only crop: Outlook Version 2610, Build 20527.20196, Click-to-Run, Current Channel. 64-bit comes from the owner's text, not this crop. |
+### 01 — Office activation Marek
+
+![01 — Office activation Marek](01-office-activation-marek.png)
+
+**Shows:** Marek is signed in, but Microsoft 365 Apps for business shows Activation Required and a reduced-functionality warning. Starting state, not activation success or subscription-expiry proof.
+
+### 02 — Office activated Marek
+
+![02 — Office activated Marek](02-office-activated-marek.png)
+
+**Shows:** Marek with Subscription Product, activation warning absent; Word Version 2610 / Build 20527.20196 / Current Channel. Local document persistence is separately owner-confirmed.
+
+### 03 — Outlook classic mail test
+
+![03 — Outlook classic mail test](03-outlook-classic-mail-test.png)
+
+**Shows:** Marek opens OWA-01 in desktop Outlook; OUTLOOK-01 is also in the list. Both send/receive directions are explicitly owner-confirmed.
+
+### 04 — Office wrong identity
+
+![04 — Office wrong identity](04-office-wrong-identity.png)
+
+**Shows:** User Information names Piotr; Product Information still names Marek as subscription account. Shows the controlled identity mismatch, not an activation outage or a Piotr license switch.
+
+### 05 — Outlook working offline
+
+![05 — Outlook working offline](05-outlook-working-offline.png)
+
+**Shows:** Work Offline selected and Working Offline on the status bar; older RECOVERY-01 remains readable. Web receipt and about 60 seconds of no desktop OFFLINE-01 are owner-confirmed.
+
+### 06 — Outlook online recovery
+
+![06 — Outlook online recovery](06-outlook-online-recovery.png)
+
+**Shows:** Same OFFLINE-01 opened after reconnect, with Connected to: Microsoft Exchange. New outbound SYNC-02 receipt in web is owner-confirmed.
+
+### 07 — Outlook shared calendar readonly
+
+![07 — Outlook shared calendar readonly](07-outlook-shared-calendar-readonly.png)
+
+**Shows:** Anna's shared folder, CAL-01 Finance planning, 16 November 10:00–10:30, and Appointment (Read-Only). Marek session and denied editing are owner-confirmed; the body is retained Stage 04 content.
+
+### 08 — Outlook shared mailbox desktop
+
+![08 — Outlook shared mailbox desktop](08-outlook-shared-mailbox-desktop.png)
+
+**Shows:** Piotr's mailbox context and Helpdesk Inbox with Marek's final SHARED-01 reply. Quoted exchange shows Helpdesk's earlier response; sender receipt and full operation sequence are also owner-confirmed.
+
+### 09 — Outlook version
+
+![09 — Outlook version](09-outlook-version.png)
+
+**Shows:** Owner's additional version-only crop: Outlook Version 2610, Build 20527.20196, Click-to-Run, Current Channel. 64-bit comes from the owner's text, not this crop.
 
 ## Interpretation boundaries
 

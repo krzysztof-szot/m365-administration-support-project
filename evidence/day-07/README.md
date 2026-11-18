@@ -4,14 +4,41 @@ Execution date: **16 November 2026**. Six owner-supplied captures: **five PNGs a
 
 ## Capture index
 
-| File | Observation and scope |
-| --- | --- |
-| [01-finance-team-members.png](01-finance-team-members.png) | BFL-M365-Finance: Anna Owner, Piotr Member; one owner/one member and no Marek entry. From a group and Private privacy are separately owner-confirmed. |
-| [02-standard-channel-file-piotr.png](02-standard-channel-file-piotr.png) | STANDARD-01 with the Anna baseline and appended Piotr line. Piotr identity, edit/save, direct SharePoint access and Anna's reopened view are owner-confirmed. |
-| [03-private-channel-members.png](03-private-channel-members.png) | Finance-Confidential initially has Anna as sole owner and zero other members/guests. This is the initial configuration, not a separate post-removal capture. |
-| [04-private-file-access-denied-piotr.png](04-private-file-access-denied-piotr.png) | You need access / You don't have access to this item at the private-site path. Piotr identity, invisible channel and working standard-file control are owner-confirmed. The reviewed replacement masks both the tenant hostname and its repeat in Source. |
-| [05-private-file-access-after-membership.png](05-private-file-access-after-membership.png) | PRIVATE-01 open in Piotr's browser context after temporary channel membership. Its Anna-only text records the original baseline; it does not describe membership during this temporary grant. Final removal and fresh denial are owner-reported. |
-| [06-meeting-screen-share-piotr.jpg](06-meeting-screen-share-piotr.jpg) | Phone Teams meeting view receiving Anna's presentation of STANDARD-01; Anna label and participant initials visible. Two-device context, two-way audio, dynamic view change and meeting closure are owner-confirmed. Original JPG format retained. |
+### 01 — Finance team members
+
+![01 — Finance team members](01-finance-team-members.png)
+
+**Shows:** BFL-M365-Finance: Anna Owner, Piotr Member; one owner/one member and no Marek entry. From a group and Private privacy are separately owner-confirmed.
+
+### 02 — Standard channel file Piotr
+
+![02 — Standard channel file Piotr](02-standard-channel-file-piotr.png)
+
+**Shows:** STANDARD-01 with the Anna baseline and appended Piotr line. Piotr identity, edit/save, direct SharePoint access and Anna's reopened view are owner-confirmed.
+
+### 03 — Private channel members
+
+![03 — Private channel members](03-private-channel-members.png)
+
+**Shows:** Finance-Confidential initially has Anna as sole owner and zero other members/guests. This is the initial configuration, not a separate post-removal capture.
+
+### 04 — Private file access denied Piotr
+
+![04 — Private file access denied Piotr](04-private-file-access-denied-piotr.png)
+
+**Shows:** You need access / You don't have access to this item at the private-site path. Piotr identity, invisible channel and working standard-file control are owner-confirmed. The reviewed replacement masks both the tenant hostname and its repeat in Source.
+
+### 05 — Private file access after membership
+
+![05 — Private file access after membership](05-private-file-access-after-membership.png)
+
+**Shows:** PRIVATE-01 open in Piotr's browser context after temporary channel membership. Its Anna-only text records the original baseline; it does not describe membership during this temporary grant. Final removal and fresh denial are owner-reported.
+
+### 06 — Meeting screen share Piotr
+
+![06 — Meeting screen share Piotr](06-meeting-screen-share-piotr.jpg)
+
+**Shows:** Phone Teams meeting view receiving Anna's presentation of STANDARD-01; Anna label and participant initials visible. Two-device context, two-way audio, dynamic view change and meeting closure are owner-confirmed. Original JPG format retained.
 
 ## Interpretation boundaries
 
